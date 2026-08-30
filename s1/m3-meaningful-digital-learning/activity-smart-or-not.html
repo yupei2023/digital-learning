@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l="en";try{l=localStorage.getItem("dl:lang")||"en"}catch(e){}if(l!=="zh")l="en";var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<title data-zh="跟做活动 · M3 有意义的数字化学习 · Digital Learning 数字化学习" data-en="Activity · M3 Meaningful Digital Learning · Digital Learning">Activity · M3 Meaningful Digital Learning · Digital Learning</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../index.html">Digital Learning 数字化学习</a>
+  <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w11.html"><span class="zh">第 11 周</span><span class="en">Week 11</span></a><a href="w12.html"><span class="zh">第 12 周</span><span class="en">Week 12</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="reading.html"><span class="zh">读本</span><span class="en">Reader</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
+  <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
+</div></header>
+<main id="main">
+
+<p class="kicker"><span class="zh">M3 · 第 11 周跟做活动 · 约 5 分钟 · 不计分</span><span class="en">M3 · Week 11 follow-along · ~5 min · ungraded</span></p>
+<h1><span class="zh">这条目标 SMART 吗？</span><span class="en">Is this goal SMART?</span></h1>
+<p class="zh">八条学习目标。点一张卡片，再点一个筐：它最缺的是什么？有两条的答案是“看情况”——放进去之后，要写出“对我来说现实的条件是____”（只保存在你自己的浏览器里）。全部放完后点“检查”。每一条都有解释——解释比对错更重要。</p><p class="en">Eight study goals. Tap a card, then tap a bin: what does it lack most? Two of them are “it depends” — after placing them, write “the condition that makes it realistic for me is ____” (saved only in this browser). When all eight are placed, press Check. Every card has an explanation — the explanation matters more than the score.</p>
+<div class="sorter" id="sorter">
+<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
+<div class="bins">
+<div class="bin" data-bin="sm"><h4><span class="zh">🔍 不够清晰、不可测（S / M）</span><span class="en">🔍 Not clear or measurable (S / M)</span></h4></div>
+<div class="bin" data-bin="ar"><h4><span class="zh">⛰️ 做不到或不现实（A / R）</span><span class="en">⛰️ Not doable or realistic (A / R)</span></h4></div>
+<div class="bin" data-bin="t"><h4><span class="zh">⏳ 没有时间截点（T）</span><span class="en">⏳ No deadline (T)</span></h4></div>
+<div class="bin" data-bin="ok"><h4><span class="zh">✅ 五个字母都有</span><span class="en">✅ All five letters</span></h4></div>
+<div class="bin" data-bin="dep"><h4><span class="zh">🤔 看情况（写出条件）</span><span class="en">🤔 It depends (name the condition)</span></h4></div>
+</div>
+<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<div id="result" aria-live="polite"></div>
+</div>
+<script>
+(function(){
+var items=[
+["我要变得更会学习。","I want to become better at learning.","sm","不知道“更会”是什么样子、到哪天算到了——永远没有“做到了”的那一刻。","No way to know what “better” looks like or when it counts as reached — the moment of “done” never comes."],
+["寒假开始前，完成《学会如何学习》模块 1–2 的全部视频和两次小测；每周三晚饭后、周六上午各 30 分钟。","Before the winter break, finish all videos and both quizzes of modules 1–2 of Learning How to Learn; 30 min after dinner on Wednesdays and 30 min on Saturday mornings.","ok","能数（视频 + 两次小测）、有截止（寒假前）、有时段、每周 1 小时——五个字母都在。","Countable (videos + two quizzes), a deadline (before the break), named slots, an hour a week — all five letters present."],
+["这学期把 Coursera 上所有和学习方法有关的课都学完。","This semester, finish every course on Coursera about learning methods.","ar","“所有”——有几十门。目标不是不清楚，是做不到。缩小到一门或一个子集才是 R。","“Every” — there are dozens. The goal is not unclear; it is impossible. Shrinking to one course or one subset is what R means."],
+["以后有空就学主修课。","I'll study the core course whenever I'm free.","t","“有空”不是一个时段，也没有到期日。一周过去了，从来没有“空”。","“Free” is not a slot and has no due date. A week passes and “free” never comes."],
+["每天学主修课 2 小时。","Study the core course two hours every day.","dep","对已经排满的学期，这不现实；对寒假、或课很少的一周，可能现实。条件是什么？写下来。","Unrealistic in a full semester; possibly realistic over the break or in a light week. What is the condition? Write it down."],
+["尽快把主修课学完。","Finish the core course as soon as possible.","t","“尽快”不是日期。没有截止的目标，会一直排在“明天”。","“As soon as possible” is not a date. A goal with no deadline stays on tomorrow's list forever."],
+["本周日前学完主修课第 1 节，并在日志里写下一个卡住的地方。","By this Sunday, finish lesson 1 of the core course and write one sticking point in my log.","ok","小、可数、有截止、这周就能做——这是一级台阶大小的目标。","Small, countable, dated, doable this week — a goal the size of one stair step."],
+["用英文原版学主修课，遇到不懂的词就查。","Take the core course in the original English and look up every word I don't know.","dep","英语够用时，这是读本第 09 章说的“多语对照”；生词太多时，每节课都会被查词打断。条件也许是“每节生词不超过 10 个”。","When your English is adequate this is Ch. 09's “two languages side by side”; when new words pile up, every lesson drowns in dictionary look-ups. The condition might be “no more than 10 new words per lesson”."]
+];
+var binName={sm:["不够清晰、不可测","Not clear or measurable"],ar:["做不到或不现实","Not doable or realistic"],t:["没有时间截点","No deadline"],ok:["五个字母都有","All five letters"],dep:["看情况","It depends"]};
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function sp(zh,en){return '<span class="zh">'+esc(zh)+'</span><span class="en">'+esc(en)+'</span>'}
+var pool=document.getElementById('pool'),sel=null,placed={};
+var condKey='dl:m3:smart-conditions';
+function loadCond(){try{return JSON.parse(localStorage.getItem(condKey)||'{}')}catch(e){return {}}}
+function saveCond(o){try{localStorage.setItem(condKey,JSON.stringify(o))}catch(e){}}
+function chip(i){var c=document.createElement('span');c.className='chip';c.tabIndex=0;c.setAttribute('role','button');c.dataset.i=i;c.innerHTML=sp(items[i][0],items[i][1]);
+ function pick(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('sel')});sel=c;c.classList.add('sel')}
+ c.addEventListener('click',pick);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});return c}
+function build(){pool.innerHTML='';document.querySelectorAll('.bin').forEach(function(b){b.querySelectorAll('.chip,.explain,.cond').forEach(function(x){x.remove()})});placed={};sel=null;document.getElementById('result').textContent='';items.forEach(function(_,i){pool.appendChild(chip(i))})}
+document.querySelectorAll('.bin').forEach(function(b){function drop(){if(!sel)return;b.appendChild(sel);placed[sel.dataset.i]=b.dataset.bin;sel.classList.remove('sel');sel=null}b.addEventListener('click',function(e){if(e.target.closest('.chip')||e.target.closest('.cond'))return;drop()});b.tabIndex=0;b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();drop()}})});
+pool.addEventListener('click',function(e){if(e.target===pool&&sel){pool.appendChild(sel);delete placed[sel.dataset.i];sel.classList.remove('sel');sel=null}});
+document.getElementById('check').addEventListener('click',function(){var n=Object.keys(placed).length;if(n<items.length){var left=items.length-n;document.getElementById('result').innerHTML=sp('还有 '+left+' 张卡片没放。',left+' card'+(left>1?'s':'')+' still unsorted.');return}
+ var ok=0,cond=loadCond();document.querySelectorAll('.chip').forEach(function(c){var i=c.dataset.i,right=placed[i]===items[i][2];c.classList.add(right?'right':'wrong');if(right)ok++;var ex=c.nextElementSibling;if(!ex||!ex.classList.contains('explain')){ex=document.createElement('div');ex.className='explain';c.after(ex)}
+  var where=sp('应放在“'+binName[items[i][2]][0]+'”','belongs in “'+binName[items[i][2]][1]+'”');
+  ex.innerHTML=(right?'✅ ':'❌ '+where+' · ')+sp(items[i][3],items[i][4]);
+  if(items[i][2]==='dep'){var cd=ex.nextElementSibling;if(!cd||!cd.classList.contains('cond')){cd=document.createElement('div');cd.className='cond';cd.innerHTML='<label>'+sp('对我来说现实的条件是：','The condition that makes it realistic for me:')+' <input type="text" size="28" placeholder="____"></label>';ex.after(cd);var inp=cd.querySelector('input');inp.value=cond[i]||'';inp.addEventListener('input',function(){cond[i]=inp.value;saveCond(cond)})}}
+ });
+ document.getElementById('result').innerHTML=sp('对了 '+ok+' / 8。不计分；重要的是每条的解释——以及你为“看情况”写下的条件。',ok+' of 8. Ungraded — the explanations are the point, and so is the condition you wrote for “it depends”.')});
+document.getElementById('reset').addEventListener('click',build);build();
+})();
+</script>
+<div class="next"><a href="lesson-2-smart-goal.html"><span class="zh">← 微课 2</span><span class="en">← Micro-lesson 2</span></a><a href="w11.html#task"><span class="zh">回到第 11 周任务 →</span><span class="en">Back to Week 11 task →</span></a></div>
+
+</main>
+<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 第一学期 M3</footer>
+<script src="../../assets/lang.js"></script>
+</body>
+</html>

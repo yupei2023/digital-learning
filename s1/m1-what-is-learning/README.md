@@ -40,7 +40,7 @@ Semester 1, W8–9 · 10 pts · ✅ Assisted · ≤ 120 min/week (watch & read 5
 | 15 | `media/scripts.md` | 素材来源表 + 四段微课的录制脚本 Sources table + recording scripts（中英双语，≤ 5 分钟/段），B 站上传后把嵌入代码填回页面 Recording scripts for the four micro-lessons |
 | 16 | `media/handouts/` · `media/captions/` · `media/alt-text.md` | Oakley 手册 4 份（中英）；字幕；替代文字 Four Oakley handouts; captions; alt text |
 
-### C · 导师材料 Mentor materials（`mentor/`，不公开发布 not published）
+### C · 导师材料 Mentor materials（已移出公开仓库，存于项目文件夹 `../mentor/s1-m1-what-is-learning/` moved out of the public repo to the project-level `mentor/` folder）
 
 | # | 文件 File | 材料 Material |
 |---|---|---|

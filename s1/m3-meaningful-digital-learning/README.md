@@ -50,7 +50,7 @@ English parallel: ① Write one SMART goal for your core external course (or its
 | 15 | `media/scripts.md` | 素材来源表（来源、链接、许可依据、访问状态；每个 BV 号经 API 核实）+ 四段微课录制脚本（中英双语，≤ 5 分钟/段，用教师自己的话：周三心率、咖啡流程、跳绳"休息一下再来"）。候选视频 `[placeholder: 待搜索——方向：B 站上 Oakley《学会如何学习》"拖延 / 番茄钟 / 习惯"分 P（M1 已用同一转载系列 BV1nK4y197Pj，先查其余分 P）；中文的"SMART 目标"公开讲解；不用教师 2021 年 `3 What is meaningful online learning.pptx`（含旧机构标识）]` |
 | 16 | `media/handouts/` · `media/captions/` · `media/alt-text.md` | 手册：一页"我的学习计划"模板 PDF（中英，含 SMART 五格 + 一周表格 + 复盘四问）`[placeholder: 是否做 PDF，还是只在任务页给可复制的文本模板]`；Oakley《我的学习日记》（`../m1-what-is-learning/media/handouts/my-learning-journal-*.pdf`，链接复用不复制）；字幕 `lesson-N.zh.srt / .en.srt`；替代文字（楼梯 / 金字塔示意、SMART 五格、一周时段示意——全部 HTML + CSS 画，**不用任何 2021 年幻灯片导出的图片**）|
 
-### C · 导师材料 Mentor materials（`mentor/`，不公开发布 not published）
+### C · 导师材料 Mentor materials（不入公开仓库：存于项目文件夹 `../mentor/s1-m3-meaningful-digital-learning/`，`mentor/` 已加入 .gitignore not in the public repo: project-level `mentor/` folder, ignored by git）
 
 | # | 文件 File | 材料 Material |
 |---|---|---|
@@ -120,7 +120,7 @@ English parallel: ① Write one SMART goal for your core external course (or its
 - 流程：发布步骤自足，不写"B2 / B4 教过"而无链接；"登记表 →"固定入口（先占位）；单元结尾链接指向单元首页而非空页（W1、W2、W4）。
 - 语言：目标用 ①②③ 圆圈数字；标签 ✅ 辅助 加说明链接；不放教师"小抄"式提纲（L4、L5、L3）。
 - 教学法：§0 起点先触碰自身经验（这里是"上次的计划怎么停的"）；跟做含"看情况 / 说出条件"；自测含情境题；收尾用提取而非摘要；日志第 1 行建构句干、第 3 行回访 M1 意图；任务给真实读者（J1、J4、J6、J3、J10、J8、J7）。
-- 信息控制：mentor/ 文件不拼写禁用词；第 07 章、校本教材动机段、《路》中的校名与大学名一律不上页；想学更多不含 AI 主题；不出现"先自己尝试再问 AI"（J0、年计划 §6.4）。
+- 信息控制：mentor/ 文件不拼写禁用词；第 07 章、校本教材动机段、《路》中的校名与大学名一律不上页；想学更多不含 AI 主题；不出现任何 AI 使用顺序的话术（J0、年计划 §6.4，见导师手册·信息控制节）。
 - 隐私：日程截图隐去他人与敏感信息（课程名以外的事件用"私事"代替）；写的是自己的时间，不写家人的。
 
 ## 待 ShiFu 决定 Open questions（按影响大小排序 by impact）
