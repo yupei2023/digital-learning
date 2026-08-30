@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<title data-zh="跟做活动 · M0 绪论 · Digital Learning 数字化学习" data-en="Follow-along activity · M0 Orientation · Digital Learning">Follow-along activity · M0 Orientation · Digital Learning</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../index.html">Digital Learning 数字化学习</a>
+  <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w1.html"><span class="zh">第 1 周</span><span class="en">Week 1</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="reading.html"><span class="zh">读本</span><span class="en">Reader</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
+  <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
+</div></header>
+<main id="main">
+
+<p class="kicker"><span class="zh">M0 · 第 1 周跟做活动 · 约 10 分钟 · 不计分</span><span class="en">M0 · Week 1 follow-along · ~10 min · ungraded</span></p>
+<h1><span class="zh">这门课是不是这样？</span><span class="en">Is this course like that?</span></h1>
+<p class="zh">点一张卡片，再点一个筐，把它放进去。全部放完后点“检查”。每一条都有解释——解释比对错更重要。</p><p class="en">Tap a card, then tap a bin to place it. When all ten are placed, press Check. Every card has an explanation — the explanation matters more than the score.</p>
+<div class="sorter" id="sorter">
+<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
+<div class="bins">
+<div class="bin" data-bin="yes"><h4><span class="zh">✅ 是这样</span><span class="en">✅ That's right</span></h4></div>
+<div class="bin" data-bin="no"><h4><span class="zh">❌ 不是这样</span><span class="en">❌ That's wrong</span></h4></div>
+</div>
+<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<div id="result" aria-live="polite"></div>
+</div>
+<script>
+(function(){
+var items=[["每周有固定的上课时间，大家同时在线。", "There is a fixed class time each week when everyone is online.", "no", "完全异步：没有上课时间，周一开放页面，周日前完成即可。", "Fully asynchronous: no class meetings; pages open Monday, finish by Sunday."], ["作业发布在我自己的网站上。", "My work is published on my own website.", "yes", "第 3 周建站，此后每周的作品都放在作品集页。", "You build the site in Week 3; every week's work goes on its Portfolio page."], ["有讨论区，可以发帖和回帖。", "There is a forum for posting and replying.", "no", "没有讨论区，用个人反思代替；问题先看 FAQ，再邮件。", "No forum — reflection replaces discussion; FAQ first, then email."], ["迟交会扣分。", "Late work loses points.", "no", "没有迟交处罚，只有建议节奏；落后了先做本周，再在缓冲周补。", "No late penalty — only a suggested pace; catch up in buffer weeks."], ["每周学习不超过 2 小时，外部课程也算在内。", "Study is at most 2 hours a week, external course included.", "yes", "每页标明用时，各项相加 ≤ 120 分钟；选做不计入。", "Each page states its time; the total is ≤ 120 minutes; optional items don't count."], ["所有作业都必须用 AI。", "Every assignment requires AI.", "no", "除第二学期第 8 单元的指定任务外，没有任何作业强制用 AI。", "Nothing requires AI except Module 8's designated tasks in Semester 2."], ["用了 AI，要在作业结尾写两三句使用说明。", "If I use AI, I end the work with a two–three-sentence use note.", "yes", "✅ 辅助 任务的规则：用了什么工具、帮了什么忙。", "The rule for ✅ Assisted tasks: which tool, what it helped with."], ["网站要用真名，放一张正脸照片。", "My site needs my real name and a face photo.", "no", "用英文名或化名，不放正脸照片，不写学校全名，默认不被搜索收录。", "Pseudonym, no face photos, no full school name, no-index by default."], ["公开学习者也用同一张量规给自己打分。", "Open learners self-score with the same rubric.", "yes", "同一页面、同一量规；期末可打印“学习完成声明”。", "Same pages, same rubrics; a printable completion statement at the end."], ["页面上的自测题计入总分。", "The page's self-quiz counts toward my grade.", "no", "自测题不计分、可重做，只为自查；总分来自导师按量规评分的任务。", "Quizzes are ungraded and retakeable; grades come from rubric-scored tasks."]];
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function sp(zh,en){return '<span class="zh">'+esc(zh)+'</span><span class="en">'+esc(en)+'</span>'}
+var pool=document.getElementById('pool'),sel=null,placed={};
+function chip(i){var c=document.createElement('span');c.className='chip';c.tabIndex=0;c.setAttribute('role','button');c.dataset.i=i;c.innerHTML=sp(items[i][0],items[i][1]);
+ function pick(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('sel')});sel=c;c.classList.add('sel')}
+ c.addEventListener('click',pick);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});return c}
+function build(){pool.innerHTML='';document.querySelectorAll('.bin').forEach(function(b){b.querySelectorAll('.chip,.explain').forEach(function(x){x.remove()})});placed={};sel=null;document.getElementById('result').textContent='';items.forEach(function(_,i){pool.appendChild(chip(i))})}
+document.querySelectorAll('.bin').forEach(function(b){function drop(){if(!sel)return;b.appendChild(sel);placed[sel.dataset.i]=b.dataset.bin;sel.classList.remove('sel');sel=null}b.addEventListener('click',function(e){if(e.target.closest('.chip'))return;drop()});b.tabIndex=0;b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();drop()}})});
+pool.addEventListener('click',function(e){if(e.target===pool&&sel){pool.appendChild(sel);delete placed[sel.dataset.i];sel.classList.remove('sel');sel=null}});
+document.getElementById('check').addEventListener('click',function(){var n=Object.keys(placed).length;if(n<items.length){var left=items.length-n;document.getElementById('result').innerHTML=sp('还有 '+left+' 张卡片没放。',left+' card'+(left>1?'s':'')+' still unsorted.');return}
+ var ok=0;document.querySelectorAll('.chip').forEach(function(c){var i=c.dataset.i,right=placed[i]===items[i][2];c.classList.add(right?'right':'wrong');if(right)ok++;var ex=c.nextElementSibling;if(!ex||!ex.classList.contains('explain')){ex=document.createElement('div');ex.className='explain';c.after(ex)}
+  var where=items[i][2]==='yes'?sp('应放在“是这样”','belongs in That\'s right'):sp('应放在“不是这样”','belongs in That\'s wrong');
+  ex.innerHTML=(right?'✅ ':'❌ '+where+' · ')+sp(items[i][3],items[i][4])});
+ document.getElementById('result').innerHTML=sp('对了 '+ok+' / 10。不计分；重要的是每条的解释。',ok+' of 10. Ungraded — the explanations are the point.')});
+document.getElementById('reset').addEventListener('click',build);build();
+})();
+</script>
+<div class="next"><a href="lesson-3-course-guide.html"><span class="zh">← 课程说明</span><span class="en">← Course guide</span></a><a href="w1.html#task"><span class="zh">回到第 1 周任务 →</span><span class="en">Back to the Week 1 task →</span></a></div>
+
+</main>
+<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 第一学期 M0 · 绪论 Orientation</footer>
+<script src="../../assets/lang.js"></script>
+</body>
+</html>
