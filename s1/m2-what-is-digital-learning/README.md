@@ -16,7 +16,7 @@ Semester 1, W10 · 10 pts · ✅ Assisted · ≤ 120 min/week (watch & read 40 �
 | 1 | 三条目标与分值 Objectives & points | 见下"单元目标"；3 · 4 · 3 = 10，只有一项计分任务 | `index.html`、`w10.html` §1、`rubric.html`、`task-1…html`、`mentor/` |
 | 2 | 预算分法 Budget split | 方案 B：看/读 40 · 做 60 · 反思 20（按 M1 实测校准；年计划 §3b 默认为 50 · 40 · 30）| `w10.html` §2、`index.html`、本文件 |
 | 3 | 第 07 章范围 Ch. 07 scope | "三无"+"边走边学"必读（2 195 字，约 10 分钟）；"边学边用"选读，折叠在读本页并列入"想学更多" | `reading.html`、`want-more.html` |
-| 4 | 第 07 章禁用词 Ch. 07 redaction | 书稿第 460 行改为"我就读的大学位于美国中部时区"；"北京四中"改为"早年工作时的老校长"；"FLA 在线项目"改为"学校的在线教育项目"；三处【图】占位删除。段落均未塌陷，无需 [placeholder]。读本页末尾加了一句说明 | `reading.html` |
+| 4 | 第 07 章禁用词 Ch. 07 redaction | 书稿第 460 行改为"我就读的大学位于美国中部时区"；提及前任学校名称的两处改为"早年工作时的老校长""学校的在线教育项目"；三处【图】占位删除。段落均未塌陷，无需 [placeholder]。读本页末尾加了一句说明 | `reading.html` |
 | 5 | 立场短文的读者与字数 Audience & length | 给学习者自己学校的公开信（"尊敬的我的学校"），300–500 字/词；不必真寄，想寄先给家长看 | `task-1…html`、`lesson-3…html`、`w10.html` §5 |
 | 6 | §0 起点 Starting point | 加入：5 分钟写三行（用手机学过什么 · 哪次真学会 · 哪次在刷），从任务写作里出，净增 0 | `w10.html` §0 |
 | 7 | 微课视频 Videos | B 站第三方视频，BV 号已经 API 核实：微课 1 吴恩达《MOOC 如何影响个人及社会》（7 min）；微课 3 吴恩达《MOOC 会取代学校吗》（4.5 min）；微课 2 无必看视频，文字版为材料，选看 Lara Boyd（14 min）。教师 2021 年自录绪论视频未剪用 | `lesson-1/2/3`、`w10.html` §3、`media/scripts.md` |
