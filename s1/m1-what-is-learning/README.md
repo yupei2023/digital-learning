@@ -48,7 +48,8 @@ Semester 1, W8–9 · 10 pts · ✅ Assisted · ≤ 120 min/week (watch & read 5
 | 18 | `mentor/feedback-bank.md` | 反馈句式库（按三条目标 × 四级）+ 本单元的信息控制提醒（不谈 P-FACET）Feedback phrase bank + disclosure reminder |
 
 ### 共享组件（仓库级，一次开发，各单元复用）Shared, repo-level（`../../assets/`）
-- `site.css`：双语版式（中文先行、英文并行）、可放大、屏幕阅读器友好
+- `site.css`：双语版式（英文默认显示，页眉按钮切换中文；每段文字都有 zh/en 两份）、可放大、屏幕阅读器友好
+- `lang.js`：English / 中文 切换按钮，选择保存在学习者自己的浏览器 Language toggle, saved in the learner's browser
 - `checklist.js`：可勾选自评清单，保存在学习者自己的浏览器
 - `quiz.js`：即时反馈自测题
 - `progress.js`：单元进度条（本地保存）
