@@ -3,15 +3,15 @@
 第一学期 W10 · 10 分 · ✅ 辅助（允许 AI 辅助，附使用说明）· 每周 ≤ 120 分钟（看/读 40 · 做 60 · 反思 20）
 Semester 1, W10 · 10 pts · ✅ Assisted · ≤ 120 min/week (watch & read 40 · do 60 · reflect & log 20)
 
-状态 Status 2026-08-30：**全部页面已建成并通过本地检查，等 ShiFu 内容审阅。** All pages built and locally checked; awaiting ShiFu's content review. 下面第一节列出我在没有 ShiFu 决定的情况下采用的默认值——每一条都可以推翻。The first section lists the defaults I adopted without ShiFu's decision — every one can be overturned.
+状态 Status 2026-08-30：**全部页面已建成、通过本地检查，十二项设计决定已确认。** All pages built and locally checked; the twelve design decisions are confirmed (see the first section).
 
 ---
 
-## 假定 Assumptions pending ShiFu's review
+## 已定 Decisions (2026-08-30)
 
-按 ShiFu "准备好材料后再审内容" 的指示，以下十二项按我的推荐默认值建成；ShiFu 审阅时任何一项都可改，改动落点已注明。Built on my recommended defaults per ShiFu's "prepare, then review" instruction; each can be changed at review, and where the change lands is noted.
+ShiFu 已将全部待定事项委托协调者决定（2026-08-30）：以下十二项**全部按已建成的默认值确认**（决定者：ShiFu，经协调者 decided by ShiFu via the orchestrator）。唯一的内容补充：微课 3、任务页、量规页各加一行"立场不计分，理由才计分——强的信可以支持任何一方"。另记录：② 行"先对方后立场"为硬性规则；吴恩达视频保留；大陆播放实测在 W10 前由导师完成（仍标待实测）；登记表占位保留；`mentor/` 留在仓库；"证据不足"门槛与 M1 一致；共享组件事项延后。All twelve confirmed as built; one content addition (the "position is not scored" line on three pages); the other rulings recorded here need no page change.
 
-| # | 假定 Assumption | 采用的默认 Default used | 改动落点 Where a change lands |
+| # | 事项 Item | 已定 Decision (confirmed as built) | 落点 Where it lives |
 |---|---|---|---|
 | 1 | 三条目标与分值 Objectives & points | 见下"单元目标"；3 · 4 · 3 = 10，只有一项计分任务 | `index.html`、`w10.html` §1、`rubric.html`、`task-1…html`、`mentor/` |
 | 2 | 预算分法 Budget split | 方案 B：看/读 40 · 做 60 · 反思 20（按 M1 实测校准；年计划 §3b 默认为 50 · 40 · 30）| `w10.html` §2、`index.html`、本文件 |
