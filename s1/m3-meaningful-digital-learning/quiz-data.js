@@ -13,10 +13,10 @@ window.DL_QUIZ=[
   "why": ["“有空”不是一个时段。解药是给它一个每周固定的白格子——微课 3 的重复事件。四个原因里没有“不够努力”。", "“Free” is not a slot. The remedy is a fixed weekly white square — micro-lesson 3's repeating event. “Not enough effort” is not one of the four causes."]
  },
  {
-  "q": ["读本第 10 章第一个锦囊“为你所用”。下面哪种情况正是它在说的？", "Reader Ch. 10, the first tip — “make it serve you”. Which situation is it describing?"],
-  "options": [["小明报了三门课，下载了二十份资料，一门也没学", "Xiao Ming enrolled in three courses, downloaded twenty files, and learned none"], ["小明只学一门课，学完了", "Xiao Ming took one course and finished it"], ["小明把学习和喝咖啡连在一起", "Xiao Ming chained studying to coffee"], ["小明去图书馆学习", "Xiao Ming studies in the library"]],
+  "q": ["小明报了主修课三周了，收藏了十个学习网站，日志每周都写“资料很多，还没开始”。读本第 10 章的四个锦囊里，哪一个在说他？这周他该先做的一个动作是什么？", "Xiao Ming enrolled in his core course three weeks ago, has bookmarked ten study sites, and his log says every week “lots of material, haven't started”. Which of Ch. 10's four tips is about him, and what is the one action to take this week?"],
+  "options": [["“为你所用”——关掉收藏夹，按表学完第 1 节", "“Make it serve you” — close the bookmarks and finish lesson 1 by the plan"], ["“社群参与”——先找一个学习群", "“Join a community” — find a study group first"], ["“时间合理”——把每周 1 小时改成 3 小时", "“Keep time reasonable” — raise the weekly hour to three"], ["“流程操作”——再收藏几个更好的网站", "“Run it as a routine” — bookmark a few better sites"]],
   "a": 0,
-  "why": ["“报了课，不等于学到了本领；下载了资料，不等于读到了内容。”资料只有用了才是你的。后两项是第三、第四个锦囊。", "“Enrolling is not learning; downloading is not reading.” A resource is yours only once you use it. The last two options are the third and fourth tips."]
+  "why": ["“报了课，不等于学到了本领；收藏了资料，不等于读到了内容。”资料只有用了才是你的——所以先学完一节，而不是再找一份资料。", "“Enrolling is not learning; bookmarking is not reading.” A resource is yours only once you use it — so finish one lesson before collecting one more site."]
  },
  {
   "q": ["小林把主修课排在每晚 10 点。两次都没做——那时他已经困得睁不开眼。按微课 4，他最该先改哪一处？", "Xiao Lin scheduled the core course at 10 p.m. He missed both slots — by then he could barely keep his eyes open. By micro-lesson 4, what should he change first?"],
@@ -25,10 +25,10 @@ window.DL_QUIZ=[
   "why": ["挡住他的是“时间不对”，对应的改法是换时间。理由要指向发生的事：“因为两次都困得睁不开眼。”“更努力”不是改法。", "What got in the way was the wrong time, so the change is to move the slot. The reason points to what happened: “because both times I was too sleepy.” “Try harder” is not a change."]
  },
  {
-  "q": ["下面哪一句是量规认可的“有理由的调整”？", "Which of these is a “justified change” the rubric accepts?"],
-  "options": [["“我改到周六早上，因为周三晚饭后两次都被作业挤掉了。”", "“I moved it to Saturday morning, because after dinner on Wednesday got squeezed out by homework both times.”"], ["“我下周一定做到。”", "“Next week I'll definitely do it.”"], ["“我要更自律。”", "“I'll be more disciplined.”"], ["“我改到周六早上。”", "“I moved it to Saturday morning.”"]],
+  "q": ["小雨的复盘：“周六那次用了，学到视频 2.1；周二那次没用——那天放学后去看牙，回家已经 8 点半。我改了这一处：周二晚上改成周日下午 3 点。”她的理由算不算“有理由”？下一步她还差什么？", "Xiao Yu's review: “Used Saturday's slot, reached video 2.1; missed Tuesday's — I had a dental appointment after school and got home at 8:30. The one thing I changed: Tuesday evening → Sunday 3 p.m.” Does her reason count — and what is she still missing?"],
+  "options": [["算——理由是一件具体的事；还差把周日下午 3 点真的建进日历并重新截图", "Yes — the reason is a concrete event; what's missing is putting Sunday 3 p.m. into the calendar and re-capturing the screenshot"], ["不算——看牙是借口，她应该更努力", "No — the dentist is an excuse; she should try harder"], ["不算——改时段不算调整，只有改目标才算", "No — moving a slot is not a change; only changing the goal counts"], ["算——所以复盘到此结束，不用再截图", "Yes — so the review is complete; no new screenshot needed"]],
   "a": 0,
-  "why": ["一个理由里一定有一件具体的事。第二、三句是愿望；第四句有改动但没有理由——按“发展中”计。", "A reason always contains one concrete event. Options 2 and 3 are wishes; option 4 has a change but no reason — Developing."]
+  "why": ["理由里有一件真实的事（看牙、8 点半到家），改动是一个新时段——这正是达标写法。但量规还要看改动“落到日程上”：新截图能看出周日下午 3 点，才满分。", "The reason holds a real event (the dentist, home at 8:30) and the change is a new slot — exactly the Meets pattern. But the rubric also needs the change on the calendar: full marks once the new screenshot shows Sunday 3 p.m."]
  },
  {
   "q": ["小雨的主修课是英文的。学到“rational number”时她一头懵：数字怎么会“有道理”？读本第 09 章的“多语对照”建议她怎么做？", "Xiao Yu's core course is in English. At “rational number” she is baffled — how can a number “have reason”? What does Ch. 09's “two languages side by side” suggest?"],

@@ -3,7 +3,7 @@
 第一学期 W11–12 · 15 分 · ✅ 辅助（允许 AI 辅助，附使用说明）· 每周 ≤ 120 分钟，**含主修外部课程 60 分钟**（年计划 §3b："单元周·有外部课"：看/读 20 · 做 30 · 反思 10 · 外部 60）
 Semester 1, W11–12 · 15 pts · ✅ Assisted · ≤ 120 min/week **including 60 min of the core external course** (Year Plan §3b: watch & read 20 · do 30 · reflect 10 · external 60)
 
-状态 Status 2026-08-30：**仅 README，等 ShiFu 批准目标、分值、预算与读本节选后再建页面。** README only; pages are built after ShiFu approves objectives, points, budget, and the reader excerpt. 标 `[placeholder]` 的地方是尚未定夺的事，不是遗漏。Every `[placeholder]` is an open decision, not an omission.
+状态 Status 2026-08-30：**全部页面已建成，并按 _tongxue 首测与 _jonassen 首评修订（r2）；本地提交，未推送。** All pages built and revised (r2) after the student test and curriculum review; committed locally, not pushed. 决定记录与逐条回应见 `feedback/s1-m3-meaningful-digital-learning_xiaobai-response_2026-08-30.md`。ShiFu 2026-08-30 批准：目标与 5·4·6 分值、预算方案 B、第 09 章节选（开头 + 多语对照）、自带日历、期中自检写进日志、《路》三条路节选、§0 起点、R = 现实、B 站视频、`mentor/` 移出仓库。 标 `[placeholder]` 的地方是尚未定夺的事，不是遗漏。Every `[placeholder]` is an open decision, not an omission.
 
 核心问题 Essential questions（教纲 v7）：怎样让数字化学习更高效？怎样制定并实现学习计划？How do I learn more effectively — and how do I build and keep a plan?
 
@@ -22,7 +22,7 @@ English parallel: ① Write one SMART goal for your core external course (or its
 
 ---
 
-## 网页材料 Materials（共 18 项 18 items）· 状态 Status：全部未建 none built
+## 网页材料 Materials（共 18 项 18 items）· 状态 Status：全部已建 all built（r2）
 
 ### A · 学习者看到的页面 Learner-facing pages（公开发布 published）
 
@@ -135,3 +135,7 @@ English parallel: ① Write one SMART goal for your core external course (or its
 8. **R 的取法**：教材 Realistic vs 模板 Relevant——页面统一为 R = 现实，"为什么重要"单列。
 9. **微课视频来源**：搜 B 站第三方（Oakley 转载系列其余分 P）还是教师新录四段 ≤ 5 分钟（脚本我先写进 media/scripts.md）。
 10. **登记表工具与网址**、**`mentor/` 是否移出公开仓库**——与 M1 W2、J0 同一待办。
+
+## 修订记录 Revisions
+
+- **r2 · 2026-08-30**：按 _tongxue 首测（W1–W5、L1–L6、V1–V4）与 _jonassen 首评（J0–J8）修订。新建站级页面 `../../external-courses.html`（外部课程菜单，含"指定子集"说明），M3 八处菜单引用全部链到它；每次学完记一行（L3 / J1①）；自评清单分"发布前 / 周日前"（W2）；用时表与量规表改手机卡片（V1、V3）；lesson-3 一周网格图、lesson-1 楼梯图（V2、V3）；lesson-4 加第五种改法"换方法"（J5）与"先判断：哪一段得 6 分"（J3①）；自测第 3、5 题换情境（J6、J3②）；W11 日志第 2 行句干（J3③）；w12 FAQ 消除"愿望当理由"的矛盾（J2）；task-1 加可选"告诉家人"一行（J7）；删读本页"127 分钟"（L6 / J0）。未改、待 ShiFu：J2 并列达标路径、J4 目标 ② 措辞、J1 ②③ 跨单元回访线。
