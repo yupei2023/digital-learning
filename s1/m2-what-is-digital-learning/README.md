@@ -7,6 +7,10 @@ Semester 1, W10 · 10 pts · ✅ Assisted · ≤ 120 min/week (watch & read 40 �
 
 ---
 
+## 修订记录 r2 Revision log (2026-08-30, after the three reviews)
+
+依据 `feedback/s1-m2-…_tongxue_2026-08-30.md`（L1–L7、V1–V3、W1–W5）、`review/s1-m2-…_jonassen_2026-08-30.md`（J0–J9）、`feedback/s1-m2-…_wukong-review_2026-08-30.md`（D1–D5、L1–L4、W1–W4、V1–V2）修订；逐条回应见 `feedback/s1-m2-what-is-digital-learning_xiaobai-response-r2_2026-08-30.md`。要点：字数 500–800 字；"手机和 AI 二选一"三处可见；第 07 章结尾三段移入必读；读本第 05 / 07 章补全英文全文；对方理由须有来源（问过的人 / 自己的经历 / 读本章节），量规 ①②③ 行同步；范例 C（禁止立场，达标）；自测第 2、6 题改情境题；信的骨架图与名词四格图（纯 CSS）；六张表手机端卡片化；w10 加节内目录、微课 3 移到写信前、登记表说明卡（不再出现 "placeholder"）、页脚指向第 11 周；`mentor/` 移出公开仓库（保留在本地，与 M1 一致）。
+
 ## 已定 Decisions (2026-08-30)
 
 ShiFu 已将全部待定事项委托协调者决定（2026-08-30）：以下十二项**全部按已建成的默认值确认**（决定者：ShiFu，经协调者 decided by ShiFu via the orchestrator）。唯一的内容补充：微课 3、任务页、量规页各加一行"立场不计分，理由才计分——强的信可以支持任何一方"。另记录：② 行"先对方后立场"为硬性规则；吴恩达视频保留；大陆播放实测在 W10 前由导师完成（仍标待实测）；登记表占位保留；`mentor/` 留在仓库；"证据不足"门槛与 M1 一致；共享组件事项延后。All twelve confirmed as built; one content addition (the "position is not scored" line on three pages); the other rulings recorded here need no page change.
@@ -17,7 +21,7 @@ ShiFu 已将全部待定事项委托协调者决定（2026-08-30）：以下十�
 | 2 | 预算分法 Budget split | 方案 B：看/读 40 · 做 60 · 反思 20（按 M1 实测校准；年计划 §3b 默认为 50 · 40 · 30）| `w10.html` §2、`index.html`、本文件 |
 | 3 | 第 07 章范围 Ch. 07 scope | "三无"+"边走边学"必读（2 195 字，约 10 分钟）；"边学边用"选读，折叠在读本页并列入"想学更多" | `reading.html`、`want-more.html` |
 | 4 | 第 07 章禁用词 Ch. 07 redaction | 书稿第 460 行改为"我就读的大学位于美国中部时区"；提及前任学校名称的两处改为"早年工作时的老校长""学校的在线教育项目"；三处【图】占位删除。段落均未塌陷，无需 [placeholder]。读本页末尾加了一句说明 | `reading.html` |
-| 5 | 立场短文的读者与字数 Audience & length | 给学习者自己学校的公开信（"尊敬的我的学校"），300–500 字/词；不必真寄，想寄先给家长看 | `task-1…html`、`lesson-3…html`、`w10.html` §5 |
+| 5 | 立场短文的读者与字数 Audience & length | 给学习者自己学校的公开信（"致我的学校"），**500–800 字 / 350–600 词**（2026-08-30 r2 按 _wukong D1 改）；不必真寄，想寄先给家长看 | `task-1…html`、`lesson-3…html`、`w10.html` §5 |
 | 6 | §0 起点 Starting point | 加入：5 分钟写三行（用手机学过什么 · 哪次真学会 · 哪次在刷），从任务写作里出，净增 0 | `w10.html` §0 |
 | 7 | 微课视频 Videos | B 站第三方视频，BV 号已经 API 核实：微课 1 吴恩达《MOOC 如何影响个人及社会》（7 min）；微课 3 吴恩达《MOOC 会取代学校吗》（4.5 min）；微课 2 无必看视频，文字版为材料，选看 Lara Boyd（14 min）。教师 2021 年自录绪论视频未剪用 | `lesson-1/2/3`、`w10.html` §3、`media/scripts.md` |
 | 8 | 登记表与 mentor/ 位置 Sheet & mentor/ | 与 M1 相同的 `[placeholder: 登记表网址]`（index 第 2 步、w10 清单第 11 条、FAQ、任务页步骤 6）；`mentor/` 暂留公开仓库内，与 M1 的 J0 决定一并处理 | 四处占位；`mentor/` |

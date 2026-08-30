@@ -25,6 +25,10 @@ Principle: name what you saw (specific) → why this level → one next step. 3�
 - 发展中："少玩手机"是口号，不是对策。改成一个动作：什么时候、在哪里、把手机放到哪？/ 四项都列了，但没说为什么。每项加一句"因为……"。
 - 尚未达标：优势和风险各只有一项。回到微课 2 的表格，再挑一项你自己遇到过的。
 
+## 以学校的身份回一句 One line "as the school"（J4）
+- 如果我是你的学校，读到"____"我会反问：____。你的信里已经预想了校长的回音吗？把你的回答写进下一封。
+- 你预想校长会说"____"——很像真的。你的回答"____"我认了 / 我还想追问：____。
+
 ## 日志 Log
 - 日志第 1 行写出了改变你看法的那个说法（"____"），这正是日志的用处。
 - 收尾时你先合上页面再写要点——这是 M1 学的"提取"，你用上了。
@@ -39,5 +43,5 @@ Principle: name what you saw (specific) → why this level → one next step. 3�
 - 有问题随时邮件我；想约 15 分钟视频也可以。
 
 ## 信息控制提醒 Disclosure reminder
-本单元的话题涉及 AI。回复学生关于 AI 的任何问题时，只按教纲《人工智能使用规范》的三条底线回答；不推荐工具、不讲用法、不预告第二学期的内容。其余要点见导师手册·信息控制节。
-When students ask about AI, answer strictly by the syllabus AI Use Policy's three rules; do not recommend tools, teach methods, or preview Semester 2. Everything else: see the mentor handbook, disclosure section.
+本单元的话题涉及 AI。可以讨论学生信里关于 AI 的推理（理由强不强、对策做不做得到）；关于 AI 工具本身，只按教纲《人工智能使用规范》的三条底线回答，不推荐工具、不讲用法、不预告第二学期的内容。其余要点见导师手册·信息控制节。
+You may discuss the reasoning about AI in a student's letter (is the case strong, is the mitigation doable); about AI tools themselves, answer strictly by the syllabus AI Use Policy's three rules — do not recommend tools, teach methods, or preview Semester 2. Everything else: see the mentor handbook, disclosure section.
