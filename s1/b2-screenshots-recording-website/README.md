@@ -6,6 +6,9 @@ Semester 1, W3 · 5 pts · 🚫 **Independent** (no AI anywhere; a mirror — sc
 状态 Status 2026-08-30：**r1 —— 无人值守流水线整单元建成，本地提交，未推送。** 原本"待 ShiFu 批准"的每一项都按推荐选项落实，逐条列在下方"替 ShiFu 决定的事项"，请 ShiFu 过目。标 `[placeholder]` 的是真正未知的事实（建站平台与注册说明、登记表网址、开课信）；视频的大陆播放待 ShiFu 实测。本次提交同时把 B1 第 2 周页尾链接改为直链本单元（了结 B1 README 决定 23），并在课程首页加了 B2 一行。
 Built in full (r1) in the unattended pipeline and committed locally, not pushed. Every would-be "pending ShiFu" item took the recommended option; each is listed under "Decisions made on ShiFu's behalf" below. `[placeholder]` marks genuinely unknown facts (the builder platform, the tracking-sheet address, the welcome letter); mainland playback of the videos awaits ShiFu's test. This commit also flips B1's Week-2 footer link to point here (closing B1 README decision 23) and adds the B2 line on the course home.
 
+状态 Status 2026-08-30（二）：**r2 —— 已按 _tongxue 首测报告（2 P1 · 4 P2 · 3 P3）与 _jonassen 单元评估（J1–J4）修订并重新生成。** 学生页面不再出现任何裸 `[placeholder]`：一律改为“开课前公布”样式的双语说明卡与标签（沿 M5 收尾日卡的做法）；并跨模块在 M0 课程说明“你的网站”一节新增公开的「你的建站平台」框（id=`builder`），B2 各页指向它——公开学习者从此有了不依赖开课信的出口（W2 · P1 了结）。开课信规格清单建于 `mentor/welcome-letter-spec.md`（J1）。逐条处理见 `feedback/s1-b2-screenshots-recording-website_xiaobai-response_2026-08-30.md`；新增代决定见下方第 23–29 条。全部检查（生成、双语对照、站点检查、390px、禁用词）重跑通过，结果在响应文件里。
+Status r2: revised per _tongxue's first test and _jonassen's module review, regenerated, all checks re-run (results in the response file). No raw `[placeholder]` remains on any student page — replaced by bilingual “published before launch” cards/tags in the M5 style; a public “Your site builder” box was added to the M0 course guide (the one cross-module edit), giving open learners a path that does not depend on the welcome letter; the welcome-letter specification now lives in `mentor/welcome-letter-spec.md`.
+
 核心问题 Essential question（教纲 v7 W3 行）：我的学习会留在哪里？Where will my learning live?
 
 **本单元的特别之处 What makes B2 different**：登记表从本周启用——"提交 = 发布到自己网站 + 登记链接"的全年机制在本周建立。学生第一次拥有公开可访问的页面，所以**隐私四条与"不被搜索引擎收录"**贯穿页面各处，导师评分表把隐私巡查列为先于打分的主业。**建站平台未定**（年计划 §7：Wix 首选，Strikingly / Weebly / Carrd 顺位候补，均待大陆实测），全单元只教五个通用动作（选模板 → 改文字与图片 → 发布 → 复制链接 → 设不收录），页面写"开课信将告知本课程指定的建站平台 [placeholder]"——平台定下后无需改页面，只需在开课信里补平台名与官方教程链接。The tracking sheet starts this week — the all-year "submit = publish + register" machinery is built here. Students gain their first publicly reachable pages, so the four privacy rules and no-index run through everything, and the mentor sheet makes the privacy sweep the week's first job. The builder is undecided (Year Plan §7), so the module teaches only the five universal moves and defers the platform name to the welcome letter.
@@ -51,6 +54,14 @@ English parallel: ① Build and publish the three-page site on the course's buil
 20. **自测题（第 6 节）6 题**：情境题（求助姿势、截图打码、录屏 vs 截图、不收录含义、关于我可放什么、网站故障第一步）；正确项位置 2·0·3·1·2·0，分散无规律。
 21. **导师评分表的新列**：链接登记日期 · 链接打开 ✓ · 三页齐 ✓ · 不收录 ✓ · 隐私巡查 ✓ · 基线已抄入日志 ✓（B1"基线自存"列的双保险落位）；每生约 9 分钟（逐页巡查比 B1 读信略长）。
 22. **平台共性问题的回路**：导师周日向教师汇报建站平台的共性卡点，供开课信补充说明——平台未定期间，页面写不了的细节由开课信兜住。
+23. **（r2 · W1）占位的呈现方式**：学生页面上的全部裸 `[placeholder]`（w3 §5 与 FAQ1、任务页三处、微课 4、单元首页）改为“开课前公布”的双语说明卡或标签——页面今天就读得完整；事实本身仍未知，由 `mentor/welcome-letter-spec.md` 与本 README 继续追踪。
+24. **（r2 · W2）公开学习者的平台名出口**：跨模块小改——M0 lesson-3“你的网站”一节里旧句“具体平台以第 3 周页面为准”（与 B2 循环互指）改为指向新增的「你的建站平台」框（id=`builder`，“开课前在此公布平台名与注册说明”）；B2 的 w3 FAQ1、任务页第 1 步与“要做什么”、微课 4、单元首页均链到该框。M0 无生成器，系直接编辑 HTML；本次提交仅有的模块外页面改动。
+25. **（r2 · J2）隐私判断两小步照评审措辞实施**：微课 4 隐私卡加“化名保护的不只是安全，还有日志的诚实——追不到真人的页面，才敢写真话”；任务第 5 步加生成性判据“这条信息能帮陌生人定位到真实的我吗”与两个边界例（小区门口照片—删；喜欢的乐队—留）。访客之眼 5→6 分钟、备份截图 5→4，任务仍 50、合计仍 120。
+26. **（r2 · J3）日志提示第 1 行加可选后半句**（“这个‘家’现在最像我的是哪一处？我想让它长成什么样？”）——0 净增分钟。
+27. **（r2 · J4）家人参观**从 want-more“做”清单移入任务页公开学习者 FAQ，作为建议（非要求）：家里人是公开学习者的第一位真访客。
+28. **（r2 · W5）跟做三幕改 7 + 6 + 12**：第三幕（_tongxue 实测最紧，含 4:20 视频）加到 12 分钟；未采纳其“第二幕 5 分钟”方案，保住打码演练的时间，改从第一、二幕各匀 1 分钟。合计仍 25。
+29. **（r2 · W4）Game Bar 诚实化**：微课 3 Windows 行与跟做第三幕明写“只录当前打开的应用、录不了桌面——先开好浏览器再按 Win + G”，避免学生把系统限制当成自己的错。
+
 
 ---
 
@@ -101,7 +112,7 @@ English parallel: ① Build and publish the three-page site on the course's buil
 
 | 微课 25 | 跟做 25 | 任务 50 | 反思/日志 20 |
 |---|---|---|---|
-| 截图（电脑与手机）7 · 标注与提问 6 · 录屏 6 · 我的网站三页 6 | 两张截图 8 · 标注 + 一句问题 7 · 30 秒录屏 10 | 注册选模板 12 · 关于我 8 · 日志页 + 第一条 10 · 作品集占位 5 · 访客之眼检查 5 · 发布/不收录/登记 5 · 备份截图 5 | 自测题（第 6 节）5 · 三行日志 15 |
+| 截图（电脑与手机）7 · 标注与提问 6 · 录屏 6 · 我的网站三页 6 | 两张截图 7 · 标注 + 一句问题 6 · 30 秒录屏 12 | 注册选模板 12 · 关于我 8 · 日志页 + 第一条 10 · 作品集占位 5 · 访客之眼检查 6 · 发布/不收录/登记 5 · 备份截图 4 | 自测题（第 6 节）5 · 三行日志 15 |
 
 诚实的估计：首次 ×1.5，实际约 150–180 分钟（模板犹豫与改了又改都算学习）；页面在时间表下方明说，且无迟交处罚。选做不计入：首页科普视频（5:18）、按设备挑看的全部链接、want-more 全部、任务页复用视频。
 
@@ -125,7 +136,7 @@ English parallel: ① Build and publish the three-page site on the course's buil
 ## 待 ShiFu 实测 / 过目 For ShiFu
 - 上方"替 ShiFu 决定的事项"22 条，尤其第 1–4（分值、② 行无半分档、③ 行不收成果、平台完全不落名）、第 9（视频计入分钟 + 6 段无简介视频抽查）。
 - 15 个 B 站视频的大陆播放实测。
-- 占位：建站平台与注册说明、登记表网址、开课信本身（三处均写"见开课信 [placeholder]"）。
+- 未知事实（原占位）：建站平台与注册说明、登记表网址、开课信本身——学生页面现以“开课前公布”卡片承接，不再出现 [placeholder] 字样；开课信需包含的全部事实与依赖页面清单见 `mentor/welcome-letter-spec.md`（J1，请 ShiFu 过目并执笔开课信）。
 - 建站平台大陆实测（年计划 §7 的顺位核验法）完成后：平台名与官方新手教程只需写进开课信，本单元页面无需改动。
 - 一致性提示：M5 兜底卡与 B1 自测页写"第 3 周网站上线后抄进第一条日志作双保险"——B2 已如约实建（目标 ② + 任务硬性要求），语义完全一致，无需回改。
 
