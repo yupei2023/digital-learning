@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<title data-zh="跟做活动 · M5 学期作品集与反思 · Digital Learning 数字化学习" data-en="Activity · M5 Semester Portfolio & Reflection · Digital Learning">Activity · M5 Semester Portfolio & Reflection · Digital Learning</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w15.html"><span class="zh">第 15 周</span><span class="en">Week 15</span></a><a href="w16.html"><span class="zh">第 16 周</span><span class="en">Week 16</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="reading.html"><span class="zh">读本</span><span class="en">Reader</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
+  <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
+</div></header>
+<main id="main">
+
+<p class="kicker"><span class="zh">M5 · 第 15 周跟做活动 · 约 5 分钟 · 不计分</span><span class="en">M5 · Week 15 follow-along · ~5 min · ungraded</span></p>
+<h1><span class="zh">成长说明，还是产品介绍？</span><span class="en">Growth note, or product description?</span></h1>
+<p class="zh">八条说明，两个筐。点一条，再点一个筐。全部放完点“检查”——每条都有解释，说清它差的那一步（如果差的话）。不计分；解释比对错更重要。</p><p class="en">Eight notes, two bins. Tap a note, then tap a bin. When all eight are placed, press Check — every note carries an explanation naming the missing step (if any). Ungraded; the explanations matter more than the score.</p>
+<div class="video">
+<div class="ratio"><iframe src="https://player.bilibili.com/player.html?bvid=BV1KME2zuEMw&high_quality=1&danmaku=0&autoplay=0" scrolling="no" allowfullscreen title="大学里高回报的小事：建立个人电子档案袋 A personal e-portfolio, the small habit that pays"></iframe></div>
+<p class="cap"><span class="zh"><b>大学里高回报的小事：建立个人电子档案袋</b> · 1:11 · B 站 UP 主 鞭炮小狗 · 2025（单元首页的同一段）</span><span class="en"><b>A high-return small habit: build a personal e-portfolio</b> · 1:11 · Bilibili uploader 鞭炮小狗 · 2025 (the same clip as the module home)</span> · <a href="https://www.bilibili.com/video/BV1KME2zuEMw" target="_blank" rel="noopener"><span class="zh">在 B 站打开 ↗</span><span class="en">Open on Bilibili ↗</span></a><br><span class="zh">分类的时候记住三句的口诀：当时 · 现在 · 证据。缺哪一句，就“还差一步”。</span><span class="en">Sort with the three-sentence rule in mind — then · now · proof. Whichever sentence is missing, the note is “one step short”.</span></p>
+</div>
+<div class="sorter" id="sorter">
+<h3><span class="zh">说明卡</span><span class="en">Note cards</span></h3>
+<div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
+<div class="bins">
+<div class="bin" data-bin="yes"><h4><span class="zh">✅ 像成长说明</span><span class="en">✅ Reads like a growth note</span></h4></div>
+<div class="bin" data-bin="no"><h4><span class="zh">✳️ 还差一步</span><span class="en">✳️ One step short</span></h4></div>
+</div>
+<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<div id="result" aria-live="polite"></div>
+</div>
+<script>
+(function(){
+// [zh, en, bin, why_zh, why_en]
+var items=[
+["第 8 周录的学习故事：当时录了 5 遍才敢发；现在再听，我会把一半的“然后”删掉；它证明我能把一次经历讲成有条理的 3 分钟。","Week 8's learning story: five takes before I dared publish; listening now I'd cut half the “and then”s; it proves I can turn an experience into three orderly minutes.","yes","当时（卡点）、现在（变化）、证据（能力）三句齐全。","Then (the snag), now (the change), proof (the ability) — all three sentences present."],
+["这是我的思维导图，用 XMind 做的，一个中心三个分支。","My mind map, made in XMind — one centre, three branches.","no","只有“它长什么样”。差的一步：当时卡在哪、现在怎么看、它证明什么。","Only what it looks like. Missing: where you got stuck, how you see it now, what it proves."],
+["我做得很认真，收获很大，学到了很多东西。","I worked very hard, gained a lot, and learned many things.","no","放在任何人任何作品下都成立——等于什么都没说。换成只有你能写的那三句。","True under anyone's work — which means it says nothing. Replace it with the three sentences only you could write."],
+["M3 的计划表：当时排了周二、周六各一小时，第二周就没守住；现在看，改到晚饭后的那次调整才是真进步；它证明我会用证据改计划。","The M3 plan: Tuesday and Saturday slots that collapsed by week two; looking back, moving them to after dinner was the real progress; it proves I can revise a plan on evidence.","yes","三句齐，而且“没守住”写得诚实——诚实的卡点最有说服力。","All three sentences, and the collapse is honest — an honest snag persuades most."],
+["这门课很有意思，视频都很好看。","This course was interesting and the videos were fun.","no","这是课程评价，不是成长说明——主语得是你，不是课。","A course review, not a growth note — the subject must be you, not the course."],
+["闪卡组：当时做到第 3 张才发现分不清两个术语；这组卡寒假我还会再考自己一遍；它证明我能用工具查出自己哪里没懂。","The flashcard deck: card 3 exposed two terms I couldn't tell apart; I'll run the deck again over the break; it proves I can use a tool to find what I haven't understood.","yes","三句齐，还顺手回答了 M4 那条的追加问题“打算怎么用”。","All three sentences — and it even answers the M4 entry's extra question, “how will I use it”."],
+["外部课程：我完成了四周里的三次学习。","External course: I did three of the four weekly sessions.","no","有进度，差一步：加一件卡过的事（哪次没学成、为什么）和它证明的能力。","Progress, one step short: add one thing that stuck (which session fell through, why) and the ability it proves."],
+["第一条日志只有一句话，最新的一条三行都写满了：把两张截图放在一起，变化不用我解释——但我还是写了一句：它证明我从“不知道写什么”变成了“知道这周该看什么”。","My first log was one line; the latest fills all three. Side by side the change needs no caption — but I wrote one anyway: it proves I went from “nothing to say” to “knowing what to look at each week”.","yes","用两个时间点的实物做对照，再补一句证据——这就是整个 M5 的方法，缩在一条里。","Two moments' actual artifacts set side by side, plus one proof sentence — the whole of M5's method in a single entry."]
+];
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function sp(zh,en){return '<span class="zh">'+esc(zh)+'</span><span class="en">'+esc(en)+'</span>'}
+var binName={yes:["✅ 像成长说明","✅ Reads like a growth note"],no:["✳️ 还差一步","✳️ One step short"]};
+var pool=document.getElementById('pool'),sel=null,placed={};
+function chip(i){var c=document.createElement('span');c.className='chip';c.tabIndex=0;c.setAttribute('role','button');c.dataset.i=i;c.innerHTML=sp(items[i][0],items[i][1]);
+ function pick(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('sel')});sel=c;c.classList.add('sel')}
+ c.addEventListener('click',pick);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});return c}
+function build(){pool.innerHTML='';document.querySelectorAll('.bin').forEach(function(b){b.querySelectorAll('.chip,.explain').forEach(function(x){x.remove()})});placed={};sel=null;document.getElementById('result').textContent='';items.forEach(function(_,i){pool.appendChild(chip(i))})}
+document.querySelectorAll('.bin').forEach(function(b){function drop(){if(!sel)return;b.appendChild(sel);placed[sel.dataset.i]=b.dataset.bin;sel.classList.remove('sel');sel=null}b.addEventListener('click',function(e){if(e.target.closest('.chip'))return;drop()});b.tabIndex=0;b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();drop()}})});
+pool.addEventListener('click',function(e){if(e.target===pool&&sel){pool.appendChild(sel);delete placed[sel.dataset.i];sel.classList.remove('sel');sel=null}});
+document.getElementById('check').addEventListener('click',function(){var n=Object.keys(placed).length;if(n<items.length){var left=items.length-n;document.getElementById('result').innerHTML=sp('还有 '+left+' 张卡没放。',left+' card'+(left>1?'s':'')+' still unsorted.');return}
+ var ok=0;document.querySelectorAll('.chip').forEach(function(c){var i=c.dataset.i,right=placed[i]===items[i][2];c.classList.add(right?'right':'wrong');if(right)ok++;var ex=c.nextElementSibling;if(!ex||!ex.classList.contains('explain')){ex=document.createElement('div');ex.className='explain';c.after(ex)}
+  ex.innerHTML=(right?'✅ ':'❌ '+sp('应放在“'+binName[items[i][2]][0]+'”','belongs in “'+binName[items[i][2]][1]+'”')+' · ')+sp(items[i][3],items[i][4]);
+ });
+ document.getElementById('result').innerHTML=sp('对了 '+ok+' / 8。不计分——现在回头看你自己写的说明：八张卡里，它最像哪一张？',ok+' of 8. Ungraded — now re-read your own notes: which of the eight cards do they most resemble?')});
+document.getElementById('reset').addEventListener('click',build);build();
+})();
+</script>
+<div class="next"><a href="lesson-2-growth-note.html"><span class="zh">← 微课 2</span><span class="en">← Micro-lesson 2</span></a><a href="w15.html#task"><span class="zh">回到第 15 周任务 →</span><span class="en">Back to the Week 15 task →</span></a></div>
+
+</main>
+<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 第一学期 M5</footer>
+<script src="../../assets/lang.js"></script>
+</body>
+</html>
