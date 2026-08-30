@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l="en";try{l=localStorage.getItem("dl:lang")||"en"}catch(e){}if(l!=="zh")l="en";var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<title data-zh="跟做活动 · M2 什么是数字化学习 · Digital Learning 数字化学习" data-en="Follow-along activity · M2 What is Digital Learning? · Digital Learning">Follow-along activity · M2 What is Digital Learning? · Digital Learning</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../index.html">Digital Learning 数字化学习</a>
+  <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w10.html"><span class="zh">第 10 周</span><span class="en">Week 10</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="reading.html"><span class="zh">读本</span><span class="en">Reader</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
+  <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
+</div></header>
+<main id="main">
+
+<p class="kicker"><span class="zh">M2 · 第 10 周跟做活动 · 约 10 分钟 · 不计分</span><span class="en">M2 · Week 10 follow-along · ~10 min · ungraded</span></p>
+<h1><span class="zh">帮助，妨碍，还是看情况？</span><span class="en">Help, hinder, or it depends?</span></h1>
+<p class="zh">点一张卡片，再点一个筐，把它放进去。放进“看情况”的卡片，检查后会多出一行，请写：<b>有效的条件是____</b>。全部放完后点“检查”。每一条都有解释——解释和你写的条件，比对错更重要。</p><p class="en">Tap a card, then tap a bin. Cards in “it depends” get an extra line after checking: <b>it helps on condition that ____</b>. Place all ten, then press Check. Every card has an explanation — the explanation and your condition matter more than the score.</p>
+<div class="sorter" id="sorter">
+<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
+<div class="bins">
+<div class="bin" data-bin="good"><h4><span class="zh">✅ 帮助学习</span><span class="en">✅ Helps learning</span></h4></div>
+<div class="bin" data-bin="weak"><h4><span class="zh">⚠️ 妨碍学习</span><span class="en">⚠️ Hinders learning</span></h4></div>
+<div class="bin" data-bin="dep"><h4><span class="zh">🤔 看情况</span><span class="en">🤔 It depends</span></h4></div>
+</div>
+<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<div id="result" aria-live="polite"></div>
+</div>
+<script>
+(function(){
+var items=[["上课时用平板查老师刚说的一个术语，查完就回到课堂", "Look up a term the teacher just used on a tablet, then return to class", "dep", "看情况：查完立刻回来，是帮助；查完顺手打开别的，是妨碍。条件在“查完之后”。", "It depends: back to class right away — helps; wandering off after — hinders. The condition is what happens after the lookup."], ["晚上背单词时，手机放在另一个房间", "Phone in another room while memorising vocabulary at night", "good", "去掉了切换的诱惑——M1 微课 2 的“不分心”条件。", "Removes the temptation to switch — M1's “no multitasking” condition."], ["看完一段讲得很清楚的解题视频，觉得懂了，直接做下一题", "Watch a clear worked-example video, feel you get it, move straight to the next problem", "weak", "能力错觉：流畅不等于会。合上视频自己讲一遍才知道。", "Illusion of competence: fluent is not the same as able. Close it and explain it yourself to find out."], ["同一个物理定律，看了学校老师讲，又看了一个外国老师讲", "Watch the same physics law taught by your school teacher, then by a teacher abroad", "good", "第 05 章：给大脑一个更丰富的笼子。", "Ch. 05: a richer cage for the brain."], ["一边写作文一边回同学的消息", "Reply to classmates' messages while writing an essay", "weak", "大脑在两件事之间切换，两件都做不好。", "The brain keeps switching; both suffer."], ["搜索一个历史事件，用第一条结果写进作业", "Search a historical event and put the first result straight into homework", "weak", "第一条不一定对；至少找第二个来源核对。", "The first result is not necessarily right; check a second source."], ["让 AI 帮忙列出一篇文章的提纲，然后自己写全文", "Ask AI for an outline, then write the full piece yourself", "dep", "看情况：提纲是脚手架，全文是你的，就是辅助；提纲之后连段落也让它写，就是拐杖。附 AI 使用说明。", "It depends: the outline is scaffolding and the text is yours — assistance; if it writes the paragraphs too — a crutch. Add the AI use note."], ["用翻译软件读一篇英文材料，关键句子先自己猜再看译文", "Read an English text with a translator, guessing each key sentence before looking", "good", "工具帮你读，不替你读——B3 的规则。", "The tool helps you read; it does not read for you — the B3 rule."], ["周末在网上跟一门公开课，每周固定一小时", "Follow a public online course on weekends, one fixed hour a week", "good", "“无时不刻”加上固定时段——第 07 章作者靠的就是节奏。", "“No fixed hour” plus a fixed slot — the rhythm Ch. 07's author relied on."], ["睡前躺在床上刷学习博主的视频", "Scroll study-influencer videos in bed before sleep", "dep", "看情况：看一段、记一句、放下手机，是帮助；一直刷到深夜，既是分心也偷走了睡眠（M1：睡眠是条件）。", "It depends: one clip, one note, phone down — helps; scrolling into the night — distraction plus stolen sleep (M1: sleep is a condition)."]];
+var KEY='dl:m2:conditions';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function sp(zh,en){return '<span class="zh">'+esc(zh)+'</span><span class="en">'+esc(en)+'</span>'}
+function loadC(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return {}}}
+function saveC(o){try{localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}}
+var pool=document.getElementById('pool'),sel=null,placed={};
+function chip(i){var c=document.createElement('span');c.className='chip';c.tabIndex=0;c.setAttribute('role','button');c.dataset.i=i;c.innerHTML=sp(items[i][0],items[i][1]);
+ function pick(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('sel')});sel=c;c.classList.add('sel')}
+ c.addEventListener('click',pick);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});return c}
+function build(){pool.innerHTML='';document.querySelectorAll('.bin').forEach(function(b){b.querySelectorAll('.chip,.explain').forEach(function(x){x.remove()})});placed={};sel=null;document.getElementById('result').textContent='';items.forEach(function(_,i){pool.appendChild(chip(i))})}
+document.querySelectorAll('.bin').forEach(function(b){function drop(){if(!sel)return;b.appendChild(sel);placed[sel.dataset.i]=b.dataset.bin;sel.classList.remove('sel');sel=null}b.addEventListener('click',function(e){if(e.target.closest('.chip')||e.target.closest('.explain'))return;drop()});b.tabIndex=0;b.addEventListener('keydown',function(e){if(e.target!==b)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();drop()}})});
+pool.addEventListener('click',function(e){if(e.target===pool&&sel){pool.appendChild(sel);delete placed[sel.dataset.i];sel.classList.remove('sel');sel=null}});
+var names={good:['帮助学习','Helps'],weak:['妨碍学习','Hinders'],dep:['看情况','It depends']};
+document.getElementById('check').addEventListener('click',function(){var n=Object.keys(placed).length;if(n<items.length){var left=items.length-n;document.getElementById('result').innerHTML=sp('还有 '+left+' 张卡片没放。',left+' card'+(left>1?'s':'')+' still unsorted.');return}
+ var ok=0,conds=loadC();document.querySelectorAll('.chip').forEach(function(c){var i=c.dataset.i,right=placed[i]===items[i][2];c.classList.add(right?'right':'wrong');if(right)ok++;var ex=c.nextElementSibling;if(!ex||!ex.classList.contains('explain')){ex=document.createElement('div');ex.className='explain';c.after(ex)}
+  var where=sp('应放在“'+names[items[i][2]][0]+'”','belongs in '+names[items[i][2]][1]);
+  ex.innerHTML=(right?'✅ ':'❌ '+where+' · ')+sp(items[i][3],items[i][4]);
+  if(items[i][2]==='dep'){var lab=document.createElement('label');lab.innerHTML=sp('有效的条件是：','It helps on condition that: ');var inp=document.createElement('input');inp.type='text';inp.style.cssText='width:100%;max-width:32em;margin-top:.3em;padding:.35em .5em';inp.value=conds[i]||'';inp.setAttribute('aria-label','condition 条件');inp.addEventListener('input',function(){conds[i]=inp.value;saveC(conds)});ex.appendChild(document.createElement('br'));ex.appendChild(lab);ex.appendChild(inp)}});
+ document.getElementById('result').innerHTML=sp('对了 '+ok+' / 10。不计分；重要的是每条的解释，和你给“看情况”写下的条件——它们只保存在你自己的浏览器里，写公开信时回来抄。',ok+' of 10. Ungraded — what matters is each explanation and the conditions you wrote for “it depends”; they are saved only in this browser, so come back and copy them into your letter.')});
+document.getElementById('reset').addEventListener('click',build);build();
+})();
+</script>
+<div class="next"><a href="lesson-2-benefits-and-risks.html"><span class="zh">← 微课 2</span><span class="en">← Micro-lesson 2</span></a><a href="w10.html#task"><span class="zh">回到第 10 周任务 →</span><span class="en">Back to Week 10 task →</span></a></div>
+
+</main>
+<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 第一学期 M2</footer>
+<script src="../../assets/lang.js"></script>
+</body>
+</html>
