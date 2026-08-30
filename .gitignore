@@ -2,3 +2,5 @@
 .vmark/
 __*.html
 mentor/
+# Semester 2 stays local until S2 launch (disclosure control: M8/P-FACET). Remove this line at S2 W4.
+/s2/
