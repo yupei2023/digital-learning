@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="zh-CN" data-lang="zh">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>(function(){var l="en";try{l=localStorage.getItem("dl:lang")||"en"}catch(e){}if(l!=="zh")l="en";var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 4 · M1 什么是学习 · Digital Learning 数字化学习" data-en="Micro-lesson 4 · M1 What is Learning? · Digital Learning">Micro-lesson 4 · M1 What is Learning? · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
 </head>

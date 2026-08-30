@@ -8,8 +8,25 @@ All four micro-lesson slots now carry established materials and are usable as-is
 |---|---|---|
 | 1 什么是学习 | Oakley《学会如何学习》1.1.4 什么是学习？（5:41）+ 教师 2021 年课堂讲稿要点（文字）+ 选看：麦克法兰《学习的本质是什么》（7:25）| B 站 BV1nK4y197Pj p4；讲稿要点整理自 `教学 Instuction/1 什么是学习/VoiceThread-What is learning(revised).docx`（**不使用该 pptx 幻灯片：含旧机构标识**）；B 站 BV17moCBbEh6 |
 | 2 有效与无效策略 | Oakley 1.2.2 实践使记忆永存（6:31）+ 1.2.4 睡眠（3:16）+《学习十大建议》手册；选看 1.1.1 集中与发散（4:41）| BV1nK4y197Pj p6 / p8 / p1；`media/handouts/10-top-ideas-*.pdf` |
-| 3 讲学习经历 | 教师 2021 年 VoiceThread 讲稿中的亲身故事（中英）+《我的学习日记》手册；选看 Kaufman TEDx（19:20）| `教学 Instuction/1 什么是学习/VoiceThread-What is learning(revised).docx`；`media/handouts/my-learning-journal-*.pdf`；BV1ZE41197iW |
+| 3 讲学习经历 | 教师 2021 年 VoiceThread 讲稿中的亲身故事（中英）+ Oakley 4.1.5 改变你的思维，转变你的人生（6:16，必看）+《我的学习日记》手册；选看 Kaufman TEDx（19:20）| `教学 Instuction/1 什么是学习/VoiceThread-What is learning(revised).docx`；BV1nK4y197Pj p45；`media/handouts/my-learning-journal-*.pdf`；BV1ZE41197iW |
 | 4 写学习观 | 麦克法兰《学习的本质是什么》（7:25）；选看 Oakley 1.3.1 单元总结（4:29）| BV17moCBbEh6；BV1nK4y197Pj p10 |
+
+## 补充视频（2026-08-30，ShiFu 指示“只有文字的页面也要有视频”）Added videos for previously text-only pages
+
+| 页面 Page | 视频 Video | 时长 | 必看/选看 | 来源 Source | 许可依据 Licence basis | 状态 Status |
+|---|---|---|---|---|---|---|
+| `index.html` 单元首页 | Oakley《学会如何学习》4.1.1 怎样成为更好的学习者 | 4:49 | 选看（不计入每周预算） | B 站 BV1nK4y197Pj p41，UP 主 _愚人金_ | 公开转载的 Coursera 公开课片段，B 站官方外链播放器嵌入，不下载不再分发 | API 核实 2026-08-30；待大陆实测 |
+| `lesson-3-learning-story.html` 微课 3 | Oakley 4.1.5 改变你的思维，转变你的人生（卡哈尔的故事） | 6:16 | **必看**（计入 W9：微课 3–4 由 15 → 20 分钟；任务 2 写作 45 → 40） | BV1nK4y197Pj p45 | 同上 | 同上 |
+| `reading.html` 第 02 章 | Oakley 1.1.4 什么是学习？（与微课 1 同段） | 5:41 | 选看 | BV1nK4y197Pj p4 | 同上 | 同上 |
+| `reading.html` 第 03 章 | Oakley 4.1.4 不需要羡慕天才 | 6:26 | 选看 | BV1nK4y197Pj p44 | 同上 | 同上 |
+| `reading.html` 第 04 章 一 | Oakley 2.2.1 是什么激励了你？（乙酰胆碱、多巴胺、血清素） | 5:01 | 选看 | BV1nK4y197Pj p20 | 同上 | 同上 |
+| `reading.html` 第 04 章 二 | 《刻意练习》作者埃里克森《Peak》解读 | 7:21 | 选看 | B 站 BV1Lq4y1S7cq，UP 主 商业纪录片 | 公开发布的 B 站视频，官方外链播放器嵌入 | 同上 |
+| `activity-sort-strategies.html` 跟做活动 | Oakley 2.1.5 能力错觉 | 8:32 | 选看（检查完再看） | BV1nK4y197Pj p19 | 同上 | 同上 |
+| `task-1-learning-story.html` 任务 1 | Oakley 3.1.4 冲浪练习：过程与结果 | 4:03 | 选看 | BV1nK4y197Pj p30 | 同上 | 同上 |
+| `task-2-my-view-of-learning.html` 任务 2 | Sejnowski 与 Oakley 总结课程 4.2.6 | 2:35 | 选看 | BV1nK4y197Pj p51 | 同上 | 同上 |
+
+未采用：BV1MhLS6FEAg《成瘾真相：一个视频彻底搞懂多巴胺》（12:13，医学科普联盟）——以戒瘾为框架、偏长，第 04 章改用 Oakley 2.2.1。
+Not used: BV1MhLS6FEAg (12:13, framed around addiction and quitting; Ch. 04 uses Oakley 2.2.1 instead).
 
 嵌入方式：B 站官方外链播放器 `player.bilibili.com/player.html?bvid=…&p=…`，关闭弹幕、不自动播放，并附直达链接。所有 B 站视频已通过 API 核实存在（2026-08-29）；开课前仍需从大陆网络实测播放。
 Embeds use Bilibili's official external player with danmaku off and no autoplay, plus a direct link. All videos verified via the Bilibili API on 2026-08-29; still play-test from a mainland connection before launch.
@@ -57,6 +74,8 @@ MIT 的校训是 mens et manus——心智与手，知行合一。真正的学�
 接下来做十张卡片的分类活动。不计分，看解释。
 
 ## 微课 3 · 怎样讲好一次学习经历（≈ 4:00）
+
+（2026-08-30：六步与"好的归因"两段已复制到 w8 §5 任务卡片，微课 3 页保留完整示范故事；若日后自录，本段仍按下稿。）
 
 【镜头：教师出镜，讲自己的跳绳故事片段】
 

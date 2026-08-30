@@ -174,62 +174,62 @@ window.DL_QUIZ=[
    "Internal motivation is self-rewarding and does not depend on outside rewards."
   ]
  },
- {
+  {
   "q": [
-   "讲“成功学习经历”时，量规要求把成功归因于什么？",
-   "What must the learning story attribute success to?"
+   "小明说：“我英语能学好，是因为我有语言天赋。”按本单元的说法，这句话缺了什么？",
+   "Xiao Ming says: “I'm good at English because I have a gift for languages.” By this module's standard, what is missing?"
   ],
   "options": [
    [
-    "运气",
-    "Luck"
+    "一个更谦虚的说法",
+    "A more modest phrasing"
    ],
    [
-    "天赋",
-    "Talent"
+    "把成功归因到具体的方法或条件",
+    "Attributing the success to specific methods or conditions"
    ],
    [
-    "具体的方法或条件",
-    "Specific methods or conditions"
+    "一个更大的成功",
+    "A bigger success"
    ],
    [
-    "老师的水平",
-    "The teacher's skill"
-   ]
-  ],
-  "a": 2,
-  "why": [
-   "“我努力了”“我聪明”都太笼统；要说出你具体做了什么、在什么条件下。",
-   "“I worked hard” or “I'm smart” is too vague — name what you did and under what conditions."
-  ]
- },
- {
-  "q": [
-   "“我的学习观”短文的一个硬性要求是什么？",
-   "One hard requirement of the mini-essay is:"
-  ],
-  "options": [
-   [
-    "至少 1000 字",
-    "At least 1000 words"
-   ],
-   [
-    "引用读本中至少两个概念",
-    "Cite at least two reader concepts"
-   ],
-   [
-    "必须用英文写",
-    "Must be in English"
-   ],
-   [
-    "必须用 AI 润色",
-    "Must be polished by AI"
+    "老师的评价",
+    "The teacher's opinion"
    ]
   ],
   "a": 1,
   "why": [
-   "300–500 字，中文或英文皆可，引用读本至少两个概念并和自己的观点连起来。",
-   "300–500 words in either language; cite at least two reader concepts and connect them to your own view."
+   "“天赋”“努力”“运气”都不是可以复制的原因。要说出他具体做了什么（比如每天听十分钟）、在什么条件下——这样下次还能用。",
+   "“Gift”, “effort” and “luck” are not repeatable causes. Name what he actually did (ten minutes of listening a day, say) and under what conditions — then it can be used again."
+  ]
+ },
+ {
+  "q": [
+   "小红把课文读了三遍，感觉“很熟了”，考试却写不出来。读本或微课里哪个说法最能解释这件事？",
+   "Xiao Hong read the text three times and felt she “knew it”, yet could not write it in the test. Which idea from the reader or the micro-lessons best explains this?"
+  ],
+  "options": [
+   [
+    "上学 ≠ 学习",
+    "Schooling ≠ learning"
+   ],
+   [
+    "重读带来的“眼熟”是错觉，提取才是记住",
+    "The familiarity from rereading is an illusion; retrieval is what makes memory"
+   ],
+   [
+    "两个门卫：情绪和动机",
+    "The two gatekeepers: emotion and motivation"
+   ],
+   [
+    "学习发生在大脑中",
+    "Learning happens in the brain"
+   ]
+  ],
+  "a": 1,
+  "why": [
+   "第三遍“眼熟”只说明她认得出课文，不等于能从记忆里拿出来。合上书回忆一次，比再读一遍更能告诉她到底记住了没有。",
+   "Feeling familiar on pass three only means she recognises the text, not that she can pull it from memory. One closed-book recall would have told her more than another reading."
   ]
  }
 ];

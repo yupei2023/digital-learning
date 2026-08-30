@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="zh-CN" data-lang="zh">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>(function(){var l="en";try{l=localStorage.getItem("dl:lang")||"en"}catch(e){}if(l!=="zh")l="en";var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="跟做活动 · M1 什么是学习 · Digital Learning 数字化学习" data-en="Follow-along activity · M1 What is Learning? · Digital Learning">Follow-along activity · M1 What is Learning? · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
@@ -17,21 +17,28 @@
 <main id="main">
 
 <p class="kicker"><span class="zh">M1 · 第 8 周跟做活动 · 约 10 分钟 · 不计分</span><span class="en">M1 · Week 8 follow-along · ~10 min · ungraded</span></p>
-<h1><span class="zh">策略分类：有效，还是效果有限？</span><span class="en">Sort the strategies: effective, or limited?</span></h1>
-<p class="zh">点一张卡片，再点一个筐，把它放进去。全部放完后点“检查”。每一条都有解释——解释比对错更重要。</p><p class="en">Tap a card, then tap a bin to place it. When all ten are placed, press Check. Every card has an explanation — the explanation matters more than the score.</p>
+<h1><span class="zh">策略分类：有效、效果有限，还是看情况？</span><span class="en">Sort the strategies: effective, limited — or it depends?</span></h1>
+<p class="zh">点一张卡片，再点一个筐，把它放进去。全部放完后点“检查”。每一条都有解释——解释比对错更重要。有三张卡片的答案是“看情况”：它们有效与否取决于条件，检查后请写一行“有效的条件是____”。</p><p class="en">Tap a card, then tap a bin to place it. When all ten are placed, press Check. Every card has an explanation — the explanation matters more than the score. Three cards belong in “it depends”: whether they work hinges on conditions, so after checking you will write one line, “it works when ____”.</p>
 <div class="sorter" id="sorter">
 <h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
 <div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
 <div class="bins">
 <div class="bin" data-bin="good"><h4><span class="zh">✅ 有效</span><span class="en">✅ Effective</span></h4></div>
 <div class="bin" data-bin="weak"><h4><span class="zh">⚠️ 效果有限</span><span class="en">⚠️ Limited</span></h4></div>
+<div class="bin" data-bin="depends"><h4><span class="zh">🤔 看情况</span><span class="en">🤔 It depends</span></h4></div>
 </div>
 <p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
 <div id="result" aria-live="polite"></div>
+<div id="conditions" hidden><p><b><span class="zh">写一行（只保存在你自己的浏览器里，不计分）</span><span class="en">Write one line (saved only in this browser, ungraded)</span></b></p><p><span class="zh">“看情况”的三张卡片，选一张：它<b>有效的条件</b>是____。</span><span class="en">Pick one of the three “it depends” cards: it <b>works when</b> ____.</span></p><textarea id="cond" rows="2" style="width:100%;font:inherit;padding:.5rem;border:1px solid var(--line);border-radius:8px"></textarea><p class="checklist-status" id="cond-status"></p></div>
+</div>
+<h2><span class="zh">选看 · 检查完再看（8.5 分钟）</span><span class="en">Optional · after you have checked (8.5 min)</span></h2>
+<div class="video">
+<div class="ratio"><iframe src="https://player.bilibili.com/player.html?bvid=BV1nK4y197Pj&p=19&high_quality=1&danmaku=0&autoplay=0" scrolling="no" allowfullscreen title="Illusions of competence (Learning How to Learn 2.1.5) 能力错觉"></iframe></div>
+<p class="cap"><span class="zh"><b>能力错觉</b> · 约 8.5 分钟 · B 站 UP 主 _愚人金_（Coursera《学会如何学习》中英字幕转载）</span><span class="en"><b>Illusions of competence (Learning How to Learn 2.1.5)</b> · ~8.5 min · Bilibili uploader _愚人金_ (re-upload of Coursera's Learning How to Learn with bilingual captions)</span> · <a href="https://www.bilibili.com/video/BV1nK4y197Pj?p=19" target="_blank" rel="noopener"><span class="zh">在 B 站打开 ↗</span><span class="en">Open on Bilibili ↗</span></a><br><span class="zh">十张卡片背后的研究：为什么重读和划重点让人“感觉会了”其实没会，为什么合上书回忆最有效，为什么换个地方学也有用。看完回头看你放错的卡片——是不是都放在了“感觉良好”的一边？不计入本周 120 分钟。</span><span class="en">The research behind the ten cards: why rereading and highlighting make you feel competent when you are not, why closed-book recall works best, and why changing where you study helps. Then look again at the cards you misplaced — did they all land on the “feels good” side? Not counted in this week's 120 minutes.</span></p>
 </div>
 <script>
 (function(){
-var items=[["考前一晚把所有内容看一遍", "Read everything the night before the exam", "weak", "临时突击：明天可能记得，一周后大多忘光。", "Cramming survives to tomorrow, not next week."], ["合上书，把刚学的内容默写或复述出来", "Close the book and recall what you just learned", "good", "提取练习：回忆本身在加固记忆。", "Retrieval practice strengthens memory."], ["用荧光笔把重要句子划出来", "Highlight the important sentences", "weak", "手在动，大脑可以不动；划完不回忆几乎没用。", "Hands move, brain may not; useless without recall afterwards."], ["把内容分到几天，每天学一点", "Spread the material over several days", "good", "间隔练习：快忘了再捡起来，记得更牢。", "Spaced practice: picking it up as it fades makes it stick."], ["做完一道题，向自己解释为什么这样解", "Explain to yourself why the solution works", "good", "自我解释：把步骤变成道理，能迁移。", "Self-explanation turns steps into transferable reasons."], ["一边刷手机一边背单词", "Memorise vocabulary with your phone open", "weak", "大脑在两件事之间来回切换，两件都做不好。", "The brain keeps switching — both suffer."], ["把课本重读三遍", "Reread the textbook three times", "weak", "第二遍的“眼熟”是错觉，不是记住。", "Familiarity on the second pass is an illusion, not memory."], ["把学到的东西讲给别人听", "Teach what you learned to someone else", "good", "要讲清楚就得先想清楚——这是提取 + 自我解释。", "To explain you must recall and reason — retrieval plus self-explanation."], ["把不同类型的题混在一起练", "Mix different types of problems in one session", "good", "交错练习：训练“先判断是哪类问题”。", "Interleaving trains you to identify the problem type first."], ["少睡两小时，多学两小时", "Sleep two hours less to study two hours more", "weak", "记忆在睡眠中整理；熬夜是拆东墙补西墙。", "Memory consolidates in sleep; all-nighters rob Peter to pay Paul."]];
+var items=[["考前一晚把所有内容看一遍", "Read everything the night before the exam", "weak", "临时突击：明天可能记得，一周后大多忘光。", "Cramming survives to tomorrow, not next week."], ["合上书，把刚学的内容默写或复述出来", "Close the book and recall what you just learned", "good", "提取练习：回忆本身在加固记忆。", "Retrieval practice strengthens memory."], ["用荧光笔把重要句子划出来", "Highlight the important sentences", "depends", "看情况：只划少量、划完合上书回忆，有用；整页划黄、划完就算，几乎没用——手在动，大脑可以不动。", "It depends: a few lines, then close the book and recall — useful; a whole yellow page and nothing after — nearly useless. Hands move, brain may not."], ["把内容分到几天，每天学一点", "Spread the material over several days", "good", "间隔练习：快忘了再捡起来，记得更牢。", "Spaced practice: picking it up as it fades makes it stick."], ["做完一道题，向自己解释为什么这样解", "Explain to yourself why the solution works", "good", "自我解释：把步骤变成道理，能迁移。", "Self-explanation turns steps into transferable reasons."], ["一边刷手机一边背单词", "Memorise vocabulary with your phone open", "weak", "大脑在两件事之间来回切换，两件都做不好。", "The brain keeps switching — both suffer."], ["把课本重读三遍", "Reread the textbook three times", "depends", "看情况：隔几天再读、读前先回忆再核对，有用；连着读三遍，第二遍的“眼熟”只是错觉。", "It depends: reread days later, recalling first and checking after — useful; three passes in a row, and the familiarity on pass two is an illusion."], ["把学到的东西讲给别人听", "Teach what you learned to someone else", "depends", "看情况：不看书讲、对方会追问，是提取 + 自我解释；照着笔记念一遍，只是重读换了个形式。", "It depends: explaining from memory to someone who asks questions is retrieval plus self-explanation; reading your notes aloud is just rereading in disguise."], ["把不同类型的题混在一起练", "Mix different types of problems in one session", "good", "交错练习：训练“先判断是哪类问题”。", "Interleaving trains you to identify the problem type first."], ["少睡两小时，多学两小时", "Sleep two hours less to study two hours more", "weak", "记忆在睡眠中整理；熬夜是拆东墙补西墙。", "Memory consolidates in sleep; all-nighters rob Peter to pay Paul."]];
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function sp(zh,en){return '<span class="zh">'+esc(zh)+'</span><span class="en">'+esc(en)+'</span>'}
 var pool=document.getElementById('pool'),sel=null,placed={};
@@ -43,9 +50,12 @@ document.querySelectorAll('.bin').forEach(function(b){function drop(){if(!sel)re
 pool.addEventListener('click',function(e){if(e.target===pool&&sel){pool.appendChild(sel);delete placed[sel.dataset.i];sel.classList.remove('sel');sel=null}});
 document.getElementById('check').addEventListener('click',function(){var n=Object.keys(placed).length;if(n<items.length){var left=items.length-n;document.getElementById('result').innerHTML=sp('还有 '+left+' 张卡片没放。',left+' card'+(left>1?'s':'')+' still unsorted.');return}
  var ok=0;document.querySelectorAll('.chip').forEach(function(c){var i=c.dataset.i,right=placed[i]===items[i][2];c.classList.add(right?'right':'wrong');if(right)ok++;var ex=c.nextElementSibling;if(!ex||!ex.classList.contains('explain')){ex=document.createElement('div');ex.className='explain';c.after(ex)}
-  var where=items[i][2]==='good'?sp('应放在“有效”','belongs in Effective'):sp('应放在“效果有限”','belongs in Limited');
+  var where=items[i][2]==='good'?sp('应放在“有效”','belongs in Effective'):items[i][2]==='depends'?sp('应放在“看情况”','belongs in It depends'):sp('应放在“效果有限”','belongs in Limited');
   ex.innerHTML=(right?'✅ ':'❌ '+where+' · ')+sp(items[i][3],items[i][4])});
- document.getElementById('result').innerHTML=sp('对了 '+ok+' / 10。不计分；重要的是每条的解释。',ok+' of 10. Ungraded — the explanations are the point.')});
+ document.getElementById('result').innerHTML=sp('对了 '+ok+' / 10。不计分；重要的是每条的解释。',ok+' of 10. Ungraded — the explanations are the point.');document.getElementById('conditions').hidden=false});
+var ta=document.getElementById('cond'),cs=document.getElementById('cond-status'),ck='dl:cond:'+location.pathname;try{ta.value=localStorage.getItem(ck)||''}catch(e){}
+function cstat(){cs.innerHTML=ta.value.trim()?sp('已保存在你的浏览器里。','Saved in your browser.'):''}
+ta.addEventListener('input',function(){try{localStorage.setItem(ck,ta.value)}catch(e){}cstat()});cstat();
 document.getElementById('reset').addEventListener('click',build);build();
 })();
 </script>
