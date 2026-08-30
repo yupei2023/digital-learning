@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="zh-CN" data-lang="zh">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>(function(){var l="en";try{l=localStorage.getItem("dl:lang")||"en"}catch(e){}if(l!=="zh")l="en";var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="Digital Learning 数字化学习 · 课程首页" data-en="Digital Learning · Course home">Digital Learning · Course home</title>
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -15,8 +15,14 @@
 <main id="main">
 <p class="kicker"><span class="zh">2026–27 · 公开、免费、完全异步的自学课程</span><span class="en">2026–27 · Public, free, fully asynchronous self-study</span></p>
 <h1>Digital Learning 数字化学习<br><span class="zh">自由学习</span><span class="en">Learn Freely</span></h1>
-<div class="card note"><span class="zh">课程首页尚在建设中（占位页）。目前可用的样板单元：</span><span class="en">Course home under construction (placeholder). Model module available now:</span>
-<ul><li><a href="s1/m1-what-is-learning/index.html"><span class="zh">第一学期 M1 · 什么是学习</span><span class="en">Semester 1, M1 · What is Learning?</span></a></li></ul></div>
+<div class="card note"><b><span class="zh">第 1 周从这里开始</span><span class="en">Week 1 starts here</span></b><br><span class="zh">这门课没有教室，只有页面和你。先走完绪论的入门四步。</span><span class="en">No classroom here — only the pages and you. Start with the orientation's four-step map.</span><br>→ <a href="s1/m0-orientation/index.html"><span class="zh">第一学期 M0 · 绪论：这是一门什么样的课？</span><span class="en">Semester 1, M0 · Orientation: What kind of course is this?</span></a></div>
+<h2><span class="zh">第一学期</span><span class="en">Semester 1</span></h2>
+<ul>
+<li><a href="s1/m0-orientation/index.html"><span class="zh">第 1 周 · M0 绪论</span><span class="en">Week 1 · M0 Orientation</span></a></li>
+<li><a href="s1/m1-what-is-learning/index.html"><span class="zh">第 8–9 周 · M1 什么是学习</span><span class="en">Weeks 8–9 · M1 What is Learning?</span></a></li>
+<li><a href="s1/m3-meaningful-digital-learning/index.html"><span class="zh">第 11–12 周 · M3 有意义的数字化学习</span><span class="en">Weeks 11–12 · M3 Meaningful Digital Learning</span></a></li>
+</ul>
+<p class="src"><span class="zh">其余单元陆续上线。课程首页仍在建设中。</span><span class="en">Further modules follow. The course home is still under construction.</span></p>
 </main>
 <footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan</footer>
 <script src="assets/lang.js"></script>

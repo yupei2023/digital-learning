@@ -1,9 +1,12 @@
-/* Language switch: English (default) / 中文. Every bilingual unit is <span class="zh"> + <span class="en">;
-   site.css shows one of them according to html[data-lang]. The choice is saved in this browser only
-   (localStorage "dl:lang"); the tiny inline script in each page's <head> applies it before first paint. */
+/* Language switch: 中文 / English. Every bilingual unit is <span class="zh"> + <span class="en">;
+   site.css shows one of them according to html[data-lang].
+   Default: the learner's own choice if they have pressed the button before (localStorage "dl:lang");
+   otherwise the browser language — Chinese for zh-* browsers, English for everything else.
+   The tiny inline script in each page's <head> applies the same rule before first paint. */
 (function(){
   var root=document.documentElement;
   function stored(){try{return localStorage.getItem('dl:lang')}catch(e){return null}}
+  function browser(){var n=(navigator.language||'').toLowerCase();return n.indexOf('zh')===0?'zh':'en'}
   function current(){var l=root.getAttribute('data-lang');return l==='zh'?'zh':'en'}
   function apply(lang,save){
     root.setAttribute('data-lang',lang);
@@ -20,5 +23,5 @@
   function toggle(){apply(current()==='zh'?'en':'zh',true)}
   document.querySelectorAll('[data-lang-toggle]').forEach(function(b){b.addEventListener('click',toggle)});
   var s=stored();
-  apply(s==='zh'?'zh':'en',false);
+  apply(s==='zh'||s==='en'?s:browser(),false);
 })();

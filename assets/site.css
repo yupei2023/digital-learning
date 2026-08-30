@@ -103,3 +103,29 @@ summary{cursor:pointer;font-weight:600}
 .gallery figcaption{font-size:.85rem;padding:.4rem .6rem;color:var(--muted)}
 .handout{display:flex;gap:.8rem;align-items:center;background:#fff;border:1px solid var(--line);border-radius:8px;padding:.6rem .9rem;margin:.5rem 0}
 .handout .icon{font-size:1.6rem}
+/* mobile card layout (V1): tables with class "cards" stack one row per card below 600px;
+   each td carries its column label in data-zh / data-en; the header row (tr.head) is hidden */
+@media (max-width:600px){
+ table.cards tr.head{display:none}
+ table.cards,table.cards tbody,table.cards tr,table.cards td{display:block;width:100%}
+ table.cards tr{border:1px solid var(--line);border-radius:var(--radius);margin:.8rem 0;background:#fff;overflow:hidden}
+ table.cards td{border:0;border-top:1px dotted var(--line);padding:.6rem .8rem}
+ table.cards td:first-child{border-top:0}
+ table.cards td[data-en]::before{content:attr(data-en);display:block;font-weight:700;color:var(--accent);font-size:.85rem;margin-bottom:.2rem}
+ html[data-lang="zh"] table.cards td[data-zh]::before{content:attr(data-zh)}
+ .rubric th:first-child{width:auto}
+}
+/* CSS figures, no images (V2, V3): a flow of numbered boxes, a four-step loop, a door with two guards */
+.flow{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:.8rem 0;counter-reset:f}
+.flow li{flex:1 1 9rem;min-width:9rem;background:#fff;border:2px solid var(--accent);border-radius:8px;padding:.5rem .6rem;font-size:.92rem;margin:0}
+.flow li::before{counter-increment:f;content:counter(f);display:inline-block;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:1.4rem;font-size:.8rem;font-weight:700;margin-right:.4rem}
+.flow li.key{border-color:var(--warn);background:var(--warn-soft)}
+.flow li.key::before{background:var(--warn)}
+.flow-note{font-size:.88rem;color:var(--warn);margin:.2rem 0 .8rem}
+.loop{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.8rem 0}
+.loop div{background:#fff;border:2px solid var(--ok);border-radius:8px;padding:.5rem 1.6rem .5rem .7rem;font-size:.92rem;position:relative}
+.loop div::after{content:attr(data-arrow);position:absolute;right:.4rem;bottom:.2rem;color:var(--ok);font-weight:700;font-size:1.1rem}
+.gate{display:flex;justify-content:center;align-items:flex-end;gap:.6rem;margin:.8rem 0;flex-wrap:wrap}
+.gate .guard{background:var(--warn-soft);border:2px solid var(--warn);border-radius:8px;padding:.5rem .8rem;font-weight:700}
+.gate .door{border:3px solid var(--ink);border-bottom:0;border-radius:2rem 2rem 0 0;padding:1.6rem 1rem .4rem;text-align:center;min-width:7rem;font-weight:700}
+.fig-cap{font-size:.85rem;color:var(--muted);margin:.2rem 0 1rem}
