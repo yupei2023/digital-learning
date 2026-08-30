@@ -10,8 +10,11 @@ Two of the three micro-lesson slots carry established materials; one is text-onl
 | 2 利与弊 | 无必看视频；文字版为材料。选看：Lara Boyd《看完这个视频，大脑不再一样》（14:25，中英字幕）| B 站 BV1KP4y1u7nD，UP 主 观人己（TEDxVancouver 转载）| 同上 | 已核实 · 选看 |
 | 3 怎样写公开信 | 吴恩达《MOOC（慕课）会取代学校吗？》（4:27，中文问答）| B 站 BV1Lx411P7p3，UP 主 PuNaDSmile，果壳网原创 2014 | 同上 | 已核实 · 待大陆播放实测 |
 | 想学更多 | Amishi Jha《如何驯服你的注意力》（18:09，中英字幕）| B 站 BV1ZY4y1M7r6，UP 主 学习漫漫路（TED 转载）| 直达链接，不嵌入 | 已核实 · 选看 |
+| 微课 2 选看 | TED-Ed《人们为什么会误传信息》Why people fall for misinformation（5:16，中英字幕）| B 站 BV1dK411K7KU，上传账号已注销（视频仍在线）| B 站官方外链播放器嵌入 + 直达链接 | 已核实 2026-08-30 · 待实测（账号注销，开课前确认仍可播；备选：在 B 站搜同名 TED-Ed 其他转载）|
+| 微课 2 选看 | Oakley《实践使记忆永存》1.2.2（6:31，中英字幕，M1 已用）| B 站 BV1nK4y197Pj p6，UP 主 _愚人金_ | 同上 | 已核实（M1 同源）· 待实测 |
+| 微课 3 选看 | TED-Ed《5 个提升批判性思维的小方法》（4:30，中英字幕）| B 站 BV1oW411P7ki，UP 主 小天使不想取什么昵称 | 同上 | 已核实 2026-08-30 · 待实测 |
 
-未采用 Rejected：Daphne Koller TED（B 站上只找到她的 ICML 药物发现讲座，非教育主题）；`教学 Instuction/2 What is online learning/` 中的两个 mp4（`What Is ELearning_1080p.mp4`、`What is Online Learning_480p.mp4`）来源不明，不用；同文件夹 `.pptx` 含旧机构标识，不用。
+未采用 Rejected（2026-08-30 “相关视频”检索）：可汗 GPT-4 TED（BV1Xa4y137rR，AI 主题，第一学期不用）· TTC《与虚假消息之战》（BV1gJ411H7tu，2 h 14 min，太长）· TED《造谣一张嘴》（BV18V411d7gJ，45 min）· 纪录片《超负荷大脑》（BV1hJ411k7SE，83 min）· Andy Puddicombe 专注 10 分钟（BV1f741127T7，28 min 三段）· 成都七中语文网课实录（BV1vE411C75j，22 min，是课堂实录不是“屏幕改变命运”的报道）· Daphne Koller TED（B 站上只找到她的 ICML 药物发现讲座，非教育主题）；`教学 Instuction/2 What is online learning/` 中的两个 mp4（`What Is ELearning_1080p.mp4`、`What is Online Learning_480p.mp4`）来源不明，不用；同文件夹 `.pptx` 含旧机构标识，不用。
 
 嵌入方式：`player.bilibili.com/player.html?bvid=…&p=1&high_quality=1&danmaku=0&autoplay=0`，关闭弹幕、不自动播放，附直达链接。
 
