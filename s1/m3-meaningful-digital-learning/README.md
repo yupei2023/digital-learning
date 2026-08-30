@@ -3,7 +3,7 @@
 第一学期 W11–12 · 15 分 · ✅ 辅助（允许 AI 辅助，附使用说明）· 每周 ≤ 120 分钟，**含主修外部课程 60 分钟**（年计划 §3b："单元周·有外部课"：看/读 20 · 做 30 · 反思 10 · 外部 60）
 Semester 1, W11–12 · 15 pts · ✅ Assisted · ≤ 120 min/week **including 60 min of the core external course** (Year Plan §3b: watch & read 20 · do 30 · reflect 10 · external 60)
 
-状态 Status 2026-08-30：**全部页面已建成，并按 _tongxue 首测与 _jonassen 首评修订（r2）；本地提交，未推送。** All pages built and revised (r2) after the student test and curriculum review; committed locally, not pushed. 决定记录与逐条回应见 `feedback/s1-m3-meaningful-digital-learning_xiaobai-response_2026-08-30.md`。ShiFu 2026-08-30 批准：目标与 5·4·6 分值、预算方案 B、第 09 章节选（开头 + 多语对照）、自带日历、期中自检写进日志、《路》三条路节选、§0 起点、R = 现实、B 站视频、`mentor/` 移出仓库。 标 `[placeholder]` 的地方是尚未定夺的事，不是遗漏。Every `[placeholder]` is an open decision, not an omission.
+状态 Status 2026-08-30：**全部页面已建成；r2 按 _tongxue 首测与 _jonassen 首评（a）修订，r3 按 ShiFu "review M3 and let _xiaobai revise" 的授权合并两份评估（a + b）的余项；本地提交，未推送。** All pages built; r2 applied the student test and review (a), r3 merged the remaining items of both reviews (a + b) under ShiFu's authorisation; committed locally, not pushed. 决定记录与逐条回应见 `feedback/s1-m3-meaningful-digital-learning_xiaobai-response_2026-08-30.md`。ShiFu 2026-08-30 批准：目标与 5·4·6 分值、预算方案 B、第 09 章节选（开头 + 多语对照）、自带日历、期中自检写进日志、《路》三条路节选、§0 起点、R = 现实、B 站视频、`mentor/` 移出仓库。 标 `[placeholder]` 的地方是尚未定夺的事，不是遗漏。Every `[placeholder]` is an open decision, not an omission.
 
 核心问题 Essential questions（教纲 v7）：怎样让数字化学习更高效？怎样制定并实现学习计划？How do I learn more effectively — and how do I build and keep a plan?
 
@@ -11,10 +11,10 @@ Semester 1, W11–12 · 15 pts · ✅ Assisted · ≤ 120 min/week **including 6
 
 单元目标（= 量规评分行）Module objectives (= rubric rows) — **待 ShiFu 批准 pending approval**：
 ① 为自己的主修外部课程（或其指定子集）写出一条 SMART 学习目标，并说明它为什么对自己重要；
-② 用一个日程工具，把从本周到寒假的学习时段排进自己真实的一周，并按表执行一周；
+② 用一个日程工具，把从本周到寒假的学习时段排进自己真实的一周，并如实记录这一周的执行情况；
 ③ 对照计划复盘这一周，指出按计划做了什么、没做什么，做出至少一处有理由的调整。
 
-English parallel: ① Write one SMART goal for your core external course (or its named subset), and say why it matters to you; ② Using a scheduling tool, place your study slots from this week to the winter break into your real week, and follow the plan for one week; ③ Review the week against the plan — what went to plan, what didn't — and make at least one justified change.
+English parallel: ① Write one SMART goal for your core external course (or its named subset), and say why it matters to you; ② Using a scheduling tool, place your study slots from this week to the winter break into your real week, and keep an honest record of how the plan went for one week; ③ Review the week against the plan — what went to plan, what didn't — and make at least one justified change.
 
 目标来源与改动说明 Where these come from：蓝图 v6 §7 M3 三条目标（① SMART 目标；② 日程工具排一周计划并执行；③ 复盘并做至少一处有理由的调整）。改动三处：① 的对象从"本学期的个人学习目标"改为"主修外部课程"（外部课程线 v2 §5："M3 学习计划模板以主修课为对象；量规行'目标可测'→'目标指向主修课（或子集）的完成'"），并加"为什么对自己重要"（呼应 2021 校本教材 M3 的动机目标：先有动机，再有目标）；② 明确"排进自己真实的一周"和"排到寒假"（年计划 W11–12 行）；③ 保留，措辞改为学习动词（_jonassen J5）。2021 校本教材的另两条动机目标（描述内外部动机、以外部动机促进内部动机）已在 M1 读本第 04 章覆盖，不重复设目标，只在微课 1 里回访。Adapted from Blueprint v6 §7: ① now targets the core external course (External Course Thread §5) and adds "why it matters"; ② says "your real week" and "to the break"; ③ kept, in learning verbs. The 2021 motivation objectives are covered by M1 Ch. 04 and are revisited, not re-set.
 
@@ -137,5 +137,32 @@ English parallel: ① Write one SMART goal for your core external course (or its
 10. **登记表工具与网址**、**`mentor/` 是否移出公开仓库**——与 M1 W2、J0 同一待办。
 
 ## 修订记录 Revisions
+
+- **r3 · 2026-08-30**（ShiFu 授权："review M3 and let _xiaobai revise"；逐条见下表，每一条都可单独回退）。
+  - 首页脚本：M3 全部页面改用站级"浏览器语言默认"头部脚本（提交 390fef6 的规则，此前 M3 仍是旧脚本）。
+  - **J4（a）** 目标 ② 末句 "并按表执行一周" → "并如实记录这一周的执行情况"，六处同步：README、index、w11 §1、rubric ② 行、task-1 量规行、w12 §1 说明；w11 任务卡说明改为"'如实记录执行'的证据在复盘里，本周只评 ① 行"。导师评分表同步。
+  - **J2（a + b）** 量规 ③ 行"达标"加并列路径："全按表做了，说明撑住它的是什么（具体的事）、下周最危险的时段、预案——预案写进日历备注，新截图可见"；"发展中"加"不改的人只写'撑住了'没有预案"；"尚未达标"改为"既没有调整也没有说明为什么不改"。同步：task-2 硬性要求、模板（加一行"全按表做了的人写……"）、步骤 2、3、评分表；w12 任务卡、清单第 4 条、FAQ 2（两条路都达标）、核心要点；lesson-4 新增一节"全按表做了？那也是信息"；导师评分表与句式库。
+  - **J3 ①（b）** 量规 ③ 行"达标"加"改法与'挡住我的是'指向同一件事"，"发展中"加"改法不对着原因（内容卡住却换时段）"；task-2、w12 清单同步；lesson-4 "先判断"答案后补一句第三种"发展中"（事件具体、改法不对）。
+  - **J1（b）** w12 收尾句改为"上次的计划（起点第 3 行）是因为四个原因里的哪一个停下来的；这一次的表为它做了什么不同的事"（合上 §0 的圈）。
+  - **J9（b）** w12 日志第 1 行句干改为"复盘之后，我对'上次为什么停下来'的解释变了吗？"；三行日志改为编号列表，与 w11 同构。
+  - **J5（b）** 第 09 章"多语对照"改为"主修课是英文的必读，中文课选读"：reading 导读与章标签、w12 §2 用时表、§3 读本卡、清单第 2 条、index 两周地图；w12 日志第 2 行加可选句干"这周有哪个概念，我用两种语言各看了一遍？"。
+  - **J4（b）** lesson-3 第 2 步：事件备注里写上第 10 周公开信里给自己定的对策；task-2 模板加勾选框"□ M2 里我担心的那个风险真的出现了（____）"。（M2 w10 §7 的承诺由此落地。）
+  - **J6（b）** task-1 步骤 1 加"对照跟做里写下的'对我来说现实的条件'"；w11 §0 末尾加"第 10 周做过一周记录实验的，把记录放在旁边"。
+  - **J10（b）** w11 FAQ 新增公开学习者的截止日换算（第 14 周末或自定日期）；lesson-2 T 行、lesson-3 第 2 步、task-1 步骤 2 各加一句指向该 FAQ。
+  - **J8（b）** 自测第 6 题由"有理数"（读本原文再认）换为 negative number / 负数的新情境；第 3 题 r2 已换。
+  - **_tongxue Q5** w11 FAQ 1 加"发布后换课：同一页改目标和日程、重截图，不另建、不重新登记，日志第 3 行写一句"。
+  - **_tongxue W4** 两条无链接资源补上真实链接（ctext.org 庄子·养生主；OpenLearn 课程页），仍标 待实测。
+  - **W1（M0）** M0 课程说明页与 M0 想学更多的"外部课程菜单"字样链到 `../../external-courses.html`（课程首页 `index.html` 另一会话在改，未动）。
+  - **J7（a + b）· 撤回** r2 加在 task-1 模板里的可选行"我把这个时段告诉了____，他们说____"按 ShiFu 的指令撤回（触及个体学习者边界，与 M2 Q1 同一裁定，待 ShiFu）。
+  - **不在学生页、待 ShiFu 的项目**见下"待 ShiFu 决定 · r3"。
+
+## 待 ShiFu 决定 · r3 Pending ShiFu (r3)
+
+1. `[pending ShiFu]` **J7 · 告诉家人一句话**（a + b）：task-1 模板可选行"我把这个时段告诉了____（家里的一个人），请他们那个时间不叫我"。单向告知、不计分。是否在"个体学习者"规则之内——与 M2 Q1 同一划界。r2 曾加入，r3 已从学生页撤回；ShiFu 点头即恢复（+1 分钟，任务 1 的 20 分钟内）。
+2. `[pending ShiFu]` **J1 ②③ · 跨单元回访线**（a）：W13、W14 日志第 3 行可选句干"M3 里我改的那一处，这周起作用了吗？没有，我再改哪一处？"（每周 1 分钟）；M5 成长说明加"我的计划从 W11 到 W14 改过几次、为什么"。M4 README 由另一会话持有，本会话未写入——**交接 hand-off：M4 / M5 构建者请把这两句写进各自 README 的日志节**。w12 "下一步"未预告此事，以免承诺 M4 尚未建的内容。
+3. `[pending ShiFu]` **M1 J9 登记门槛**（b J0）："链接已登记"仍作"证据不足"门槛出现在 rubric 规范要求里，与 M1 保持一致，等 ShiFu 对 M1 J9 的裁定。
+4. **无超过 120 分钟的项目**：r3 所有新增均为替换原句或落在既有任务分钟内；W11 = 20 + 30 + 10 + 60 = 120，W12 = 17 + 33 + 10 + 60 = 120（中文主修课者 W12 −5，第 09 章改为选读不计入）。
+5. 期中自检不匿名（a Q5、_tongxue Q4）——沿 r2 待决，未动。
+
 
 - **r2 · 2026-08-30**：按 _tongxue 首测（W1–W5、L1–L6、V1–V4）与 _jonassen 首评（J0–J8）修订。新建站级页面 `../../external-courses.html`（外部课程菜单，含"指定子集"说明），M3 八处菜单引用全部链到它；每次学完记一行（L3 / J1①）；自评清单分"发布前 / 周日前"（W2）；用时表与量规表改手机卡片（V1、V3）；lesson-3 一周网格图、lesson-1 楼梯图（V2、V3）；lesson-4 加第五种改法"换方法"（J5）与"先判断：哪一段得 6 分"（J3①）；自测第 3、5 题换情境（J6、J3②）；W11 日志第 2 行句干（J3③）；w12 FAQ 消除"愿望当理由"的矛盾（J2）；task-1 加可选"告诉家人"一行（J7）；删读本页"127 分钟"（L6 / J0）。未改、待 ShiFu：J2 并列达标路径、J4 目标 ② 措辞、J1 ②③ 跨单元回访线。

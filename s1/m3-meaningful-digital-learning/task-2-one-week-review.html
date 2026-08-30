@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>(function(){var l="en";try{l=localStorage.getItem("dl:lang")||"en"}catch(e){}if(l!=="zh")l="en";var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="任务 2 · M3 有意义的数字化学习 · Digital Learning 数字化学习" data-en="Task 2 · M3 Meaningful Digital Learning · Digital Learning">Task 2 · M3 Meaningful Digital Learning · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
@@ -28,7 +28,7 @@
 <h2><span class="zh">硬性要求</span><span class="en">Hard requirements</span></h2>
 <ul>
 <li><span class="zh">三问都要答；“没做什么”要写那一刻你在做什么，不写“我忘了”。</span><span class="en">Answer all three questions; for “what didn't”, write what you were doing at that moment, not “I forgot”.</span></li>
-<li><span class="zh">只改<b>一处</b>；理由里必须有一件<b>这一周真实发生的事</b>。“我会更努力”按“发展中”计。</span><span class="en">Change <b>one</b> thing; the reason must contain <b>one real event from this week</b>. “I'll try harder” rates Developing.</span></li>
+<li><span class="zh">只改<b>一处</b>，改法要和“挡住我的是”指向同一件事；理由里必须有一件<b>这一周真实发生的事</b>。“我会更努力”按“发展中”计。<b>全按表做了的可以不改</b>——但要写出：撑住它的是什么、下周最危险的时段、预案（预案写进日历备注）。</span><span class="en">Change <b>one</b> thing, and the change must match what got in the way; the reason must contain <b>one real event from this week</b>. “I'll try harder” rates Developing. <b>If everything went to plan you may keep it</b> — but write what held it, the riskiest slot next week, and your fallback (in the calendar note).</span></li>
 <li><span class="zh">改动必须<b>落到日历上</b>，新截图能看出来（换了时段 / 拆成两段 / 结束日期变了……）。</span><span class="en">The change must <b>land on the calendar</b>, visible in the new screenshot (slot moved / split in two / end date changed…).</span></li>
 <li><span class="zh">结尾附 AI 使用说明（或“本文未使用 AI”）。</span><span class="en">End with an AI use note (or “No AI was used”).</span></li>
 </ul>
@@ -38,8 +38,10 @@
 按计划做了什么：表上____个时段，我用了____个；学到了____。
 没做什么：没用上的那次（____ 周几），那一刻我在____。
 挡住我的是：□ 时间不对 □ 目标太大 □ 一步太大 □ 没有开关 □ 内容卡住（____）→ 我换的方法：____
+　　　　　　□ M2 里我担心的那个风险真的出现了（____）
 我改了这一处：把____改成____，
 因为这一周____（发生了什么）。
+（全按表做了的人写：撑住它的是____；下周最危险的时段是____，因为____；预案：____——已写进日历备注。）
 
 改过之后的日程（周视图截图）：
 [截图]
@@ -49,8 +51,10 @@ AI 使用说明：……（或：本文未使用 AI）</pre><pre class="en" styl
 What went to plan: ____ slots on the timetable, I used ____; I got as far as ____.
 What didn't: the slot I missed (____day), at that moment I was ____.
 What got in the way: □ wrong time □ goal too big □ step too big □ no switch □ stuck on content (____) → the method I switched to: ____
+                    □ the risk I named in M2 actually showed up (____)
 The one thing I changed: ____ → ____,
 because this week ____ (what happened).
+(If everything went to plan: what held it: ____; the riskiest slot next week is ____, because ____; fallback: ____ — written into the calendar note.)
 
 The revised schedule (week-view screenshot):
 [screenshot]
@@ -59,8 +63,8 @@ AI use note: … (or: No AI was used)</pre></div>
 <h2><span class="zh">步骤</span><span class="en">Steps</span></h2>
 <ol class="steps">
 <li><span class="zh">对着上周的截图，先在草稿里答完第 12 周页面第 4 节的三句话。</span><span class="en">With last week's screenshot open, first answer the three sentences from section 4 of the Week 12 page in your draft.</span></li>
-<li><span class="zh">用微课 4 的表格选一种改法，写出带“因为”的理由。</span><span class="en">Pick one kind of change from micro-lesson 4's table and write the reason with a “because”.</span></li>
-<li><span class="zh">在日历里真的改掉它（挪时段 / 拆两段 / 改结束日期），重新截周视图，隐私处理同任务 1。</span><span class="en">Actually make the change in the calendar (move / split / new end date), re-capture the week view, same privacy handling as Task 1.</span></li>
+<li><span class="zh">用微课 4 的表格选一种改法——改法要对着“挡住我的是”那一栏——写出带“因为”的理由。全按表做了的，写撑住它的是什么、最危险的时段和预案。</span><span class="en">Pick one kind of change from micro-lesson 4's table — the change must face what got in the way — and write the reason with a “because”. If everything held, write what held it, the riskiest slot, and the fallback.</span></li>
+<li><span class="zh">在日历里真的改掉它（挪时段 / 拆两段 / 改结束日期 / 在事件备注里写上换的方法或预案），重新截周视图，隐私处理同任务 1。</span><span class="en">Actually make the change in the calendar (move / split / new end date / the new method or the fallback written in the event note), re-capture the week view, same privacy handling as Task 1.</span></li>
 <li><span class="zh">发布：① 打开你的网站编辑器，找到“M3 任务 1”那一条；② 填上“我的学习策略”那一行，在下方粘贴复盘模板并填好，插入新截图；③ 点“发布”，复制链接（还是同一页的链接）。</span><span class="en">Publish: ① open your site editor and find the “M3 Task 1” entry; ② fill the “my strategy” line, paste and fill the review template beneath, insert the new screenshot; ③ press Publish and copy the link (the same page's link).</span></li>
 <li><span class="zh">（在校学生）登记：<b>登记表 →</b> [网址将在开课信中公布]，任务编号 M3-2。</span><span class="en">(Enrolled) Register: <b>Tracking sheet →</b> [address in the welcome letter], task number M3-2.</span></li>
 <li><span class="zh">按改过的表学主修课第二周（60 分钟）；写三行日志和单元收尾。</span><span class="en">Do your second core-course hour by the revised timetable (60 min); write the log and the module wrap-up.</span></li>
@@ -68,7 +72,7 @@ AI use note: … (or: No AI was used)</pre></div>
 <h2><span class="zh">评分 · 量规第 ③ 行（6 分）</span><span class="en">Scoring · Rubric row ③ (6 pts)</span></h2>
 <div class="table-wrap"><table class="cards rubric">
 <tr class="head"><th><span class="zh">达标 · 6</span><span class="en">Meets · 6</span></th><th><span class="zh">发展中 · 4</span><span class="en">Developing · 4</span></th><th><span class="zh">尚未达标 · 2</span><span class="en">Not yet · 2</span></th><th><span class="zh">证据不足 · 0</span><span class="en">No evidence · 0</span></th></tr>
-<tr><td data-zh="达标 · 6" data-en="Meets · 6"><span class="zh">三问都答了；改了一处，理由指向这一周真实发生的事；改动已落到日程上，新截图能看出来。</span><span class="en">All three questions answered; one change, with a reason pointing to what really happened this week; the change is on the calendar, visible in the new screenshot.</span></td><td data-zh="发展中 · 4" data-en="Developing · 4"><span class="zh">有调整但理由笼统（“更努力”），或理由具体但没落到日程上，或只答了一两问。</span><span class="en">A change with a vague reason (“try harder”), or a specific reason not carried to the calendar, or only one or two questions answered.</span></td><td data-zh="尚未达标 · 2" data-en="Not yet · 2"><span class="zh">只有汇报（“这周学了两次”），没有调整；或调整与这一周无关。</span><span class="en">A report only, no change; or a change unrelated to the week.</span></td><td data-zh="证据不足 · 0" data-en="No evidence · 0"><span class="zh">未发布 / 打不开 / 不是本人的一周。</span><span class="en">Not published / unreachable / not the learner's own week.</span></td></tr>
+<tr><td data-zh="达标 · 6" data-en="Meets · 6"><span class="zh">三问都答了；改了一处，改法与“挡住我的是”指向同一件事，理由指向这一周真实发生的事；改动已落到日程上，新截图能看出来。<b>或</b>：全按表做了，写了撑住它的是什么（具体的事）、下周最危险的时段和预案——预案在日历备注里，新截图能看到。</span><span class="en">All three questions answered; one change that matches what got in the way, with a reason pointing to what really happened this week; the change is on the calendar, visible in the new screenshot. <b>Or</b>: everything held, and the review says what held it (concrete), the riskiest slot next week, and the fallback — in the calendar note, visible in the new screenshot.</span></td><td data-zh="发展中 · 4" data-en="Developing · 4"><span class="zh">有调整但理由笼统（“更努力”），或改法不对着原因（内容卡住却换时段），或没落到日程上，或只答了一两问；不改的人只写了“撑住了”，没有预案。</span><span class="en">A change with a vague reason (“try harder”), or a change that does not face the cause (stuck on content, yet the slot was moved), or not carried to the calendar, or only one or two questions answered; or “it held” with no fallback.</span></td><td data-zh="尚未达标 · 2" data-en="Not yet · 2"><span class="zh">只有汇报（“这周学了两次”），既没有调整，也没有说明为什么不改；或调整与这一周无关。</span><span class="en">A report only, with neither a change nor a reason for keeping the plan; or a change unrelated to the week.</span></td><td data-zh="证据不足 · 0" data-en="No evidence · 0"><span class="zh">未发布 / 打不开 / 不是本人的一周。</span><span class="en">Not published / unreachable / not the learner's own week.</span></td></tr>
 </table></div>
 <p><span class="zh">完整量规</span><span class="en">Full rubric</span> → <a href="rubric.html">rubric.html</a></p>
 <div class="next"><a href="w12.html"><span class="zh">← 回到第 12 周</span><span class="en">← Back to Week 12</span></a><a href="rubric.html"><span class="zh">完整量规 →</span><span class="en">Full rubric →</span></a></div>

@@ -31,9 +31,9 @@ window.DL_QUIZ=[
   "why": ["理由里有一件真实的事（看牙、8 点半到家），改动是一个新时段——这正是达标写法。但量规还要看改动“落到日程上”：新截图能看出周日下午 3 点，才满分。", "The reason holds a real event (the dentist, home at 8:30) and the change is a new slot — exactly the Meets pattern. But the rubric also needs the change on the calendar: full marks once the new screenshot shows Sunday 3 p.m."]
  },
  {
-  "q": ["小雨的主修课是英文的。学到“rational number”时她一头懵：数字怎么会“有道理”？读本第 09 章的“多语对照”建议她怎么做？", "Xiao Yu's core course is in English. At “rational number” she is baffled — how can a number “have reason”? What does Ch. 09's “two languages side by side” suggest?"],
-  "options": [["查一下英文词源：rational 来自 ratio，“比”——能写成两个整数之比的数", "Check the English root: rational comes from ratio — a number that can be written as a ratio of two integers"], ["跳过这个概念", "Skip the concept"], ["只看中文翻译", "Read only the Chinese translation"], ["换一门中文课", "Switch to a Chinese course"]],
+  "q": ["小林的主修课是英文的。视频里说 “a negative number”，他愣住了：negative 不是“消极”吗？数字怎么会消极？按读本第 09 章的“多语对照”，他这 30 分钟里该做什么？", "Xiao Lin's core course is in English. The video says “a negative number” and he freezes: doesn't negative mean “pessimistic”? How can a number be pessimistic? By Ch. 09's “two languages side by side”, what should he do in these 30 minutes?"],
+  "options": [["用中文再看一遍这个概念：negative number 是“负数”，negative 在数学里只是“小于零”；再回英文视频，把这个词记成“负”", "Look at the concept in Chinese: negative number is 负数, and in maths negative just means “less than zero”; then go back to the English video with the word filed as “负”"], ["先把 negative 的所有中文意思背下来", "Memorise every Chinese meaning of negative first"], ["跳过这一节", "Skip the lesson"], ["换一门中文课", "Switch to a Chinese course"]],
   "a": 0,
-  "why": ["用另一种语言再学一遍，有时能解开中文名字造成的误会——“有理数”的“理”其实是“比”。", "Learning it again in the other language can dissolve a confusion the Chinese name created — the “理” in 有理数 is really “ratio”."]
+  "why": ["同一个词在两种语言里各看一遍，误会常常当场解开：日常英语的 negative 是“消极”，数学里的 negative 是“负”。这是“内容卡住”时的一种换法——不动表，改这 30 分钟里做的事。", "Seeing the same term in both languages usually dissolves the confusion on the spot: everyday negative is “pessimistic”, mathematical negative is “below zero”. This is one way to change method when stuck on content — leave the timetable alone, change what happens inside the 30 minutes."]
  }
 ];
