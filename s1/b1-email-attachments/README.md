@@ -6,16 +6,21 @@ Semester 1, W2 · 5 pts · 🚫 **Independent** (no AI anywhere; a mirror — sc
 状态 Status 2026-08-30：**r1 —— 无人值守流水线整单元建成，本地提交，未推送。** 原本"待 ShiFu 批准"的每一项都按推荐选项落实，逐条列在下方"替 ShiFu 决定的事项"，请 ShiFu 过目。标 `[placeholder]` 的是真正未知的事实（自测正式题目、导师姓名与邮箱、开课信）；视频的大陆播放待 ShiFu 实测。
 Built in full (r1) in the unattended pipeline and committed locally, not pushed. Every would-be "pending ShiFu" item took the recommended option; each is listed under "Decisions made on ShiFu's behalf" below. `[placeholder]` marks genuinely unknown facts; mainland playback of the videos awaits ShiFu's test.
 
+状态 Status 2026-08-30（r2）：**按 _tongxue 首测（L1–L4 · V1 · W1–W3）与 _jonassen 评估（J1–J4）完成修订**：任务顺序倒转（自测 + 基线在写给导师之前，三封邮件成上行坡）；目标 ①② 措辞对齐量规证据；量规 ② 行补"不回信不扣分"与公开学习者口径；微课 1–2 新增自绘无品牌"写邮件界面"SVG 示意图；学生编号说明、手机路径提示、页尾链接改为"回到课程首页（B2 即将上线）"。逐条回应见 `feedback/s1-b1-email-attachments_xiaobai-response_2026-08-30.md`；新增决定见下方第 19–25 条与"给 B2–B6 构建者的模板说明"。
+r2: revised per the student test and the curriculum review — task order inverted (self-check + baseline before the mentor email; the week's three emails now form a rising ramp), objectives ①② re-aligned to what the rubric actually evidences, rubric row ② clarified (no reply costs nothing; open-learner alternative), a fresh unbranded compose-window SVG in lessons 1–2, the student-ID explanation, a phone-path note, and an honest footer link. Point-by-point response in feedback/; new decisions 19–25 and the B2–B6 template notes below.
+
 核心问题 Essential question（教纲 v7 W2 行）：我能写一封得体的邮件吗？Can I write a proper email?
 
 **本单元的特别之处 What makes B1 different**：学生的**第一个计分周**（W1 = M0 绪论不计分），也是每位学生与导师的第一次邮件往来——全页从零讲起、语气欢迎、不设任何预备知识。本周还没有个人网站（W3 才建），所以**没有登记表链接：导师收到邮件 = 提交**；三行日志先写在草稿里，W3 网站上线后搬进日志页。The students' **first graded week** (W1 = ungraded M0), and each student's first email exchange with the mentor — everything explained from zero, welcoming tone, no assumed knowledge. No website exists yet (that is W3), so **there is no tracking-sheet link: the mentor receiving the email IS the submission**; the three-line log lives in a draft until the site goes live.
 
 单元目标（= 量规评分行）Module objectives (= rubric rows)：
-① 发出一封格式规范的自我介绍邮件：主题一句话说清"谁 · 什么事"，称呼得体，正文分三小段（我是谁 · 我为什么学这门课 · 一个问题或期待），署名完整——并知道 24–48 小时的回复预期；
-② 正确使用附件与"收件人 / 抄送 / 回复 / 全部回复"：附件按课程命名规则命名、在正文中提到；说出收件人与抄送的分工、"回复"与"全部回复"各在什么时候用；
+① 发出一封格式规范的自我介绍邮件：主题一句话说清"谁 · 什么事"，称呼得体，正文分三小段（我是谁 · 我为什么学这门课 · 一个问题或期待），署名完整；
+② 正确使用附件与"回复"：附件按课程命名规则命名、在正文中提到；收到导师回信后用"回复"按钮接一句（不回信不扣分）；
 ③ 完成"学习状态自测"（第 2 周 · 不计分），并把结果邮件发给自己（主题"我的第 2 周基线 My Week-2 baseline"）——既是本周技能的一次真实练习，也为第 16 周的对照保存基线。
 
-English parallel: ① Send one properly formatted self-introduction email (subject = who and what in one line; proper greeting; three short paragraphs; full sign-off; the 24–48 h reply expectation known); ② Use attachments and To / Cc / Reply / Reply-all correctly (attachment named by the course rule and mentioned in the body; To vs Cc, Reply vs Reply-all explained); ③ Complete the learning self-check (ungraded) and email the results to yourself (subject "我的第 2 周基线 My Week-2 baseline") — practice of the week's skill and insurance for Week 16.
+另有不进量规的知识点（收件人与抄送的分工、"回复"与"全部回复"的用法、24–48 小时回复预期），由不计分的自测题与分箱卡显式承接——页面注明"自测与分箱卡帮你检查——不计分"（r2 · 评估 J2，原句与新句见决定 20）。
+
+English parallel: ① Send one properly formatted self-introduction email (subject = who and what in one line; proper greeting; three short paragraphs; full sign-off); ② Use attachments and Reply correctly (attachment named by the course rule and mentioned in the body; the mentor's reply answered with the Reply button — not replying costs nothing); ③ Complete the learning self-check (ungraded) and email the results to yourself (subject "我的第 2 周基线 My Week-2 baseline") — practice of the week's skill and insurance for Week 16.
 
 目标来源 Where these come from：年计划 v2.1 §2 W2 行（主题、称呼、正文、署名、抄送、全部回复；附件与文件名；任务与 T0）+ §3a 单元目标 ①（规范邮件与回复/抄送）+ 教纲 v7 W2 行与"学习礼仪"第 1 条（24–48 小时）+ §9 前后测（T0 基线；学生视角一律称"学习状态自测"）+ **M5 评估 J2（已接受）**：W2 基线页以"把结果邮件发给自己（主题'我的第 2 周基线'）"收尾，由流水线带入本单元——已写进目标 ③、任务步骤、自评清单第 8–9 条与导师评分表"基线自存"列。
 
@@ -46,13 +51,30 @@ English parallel: ① Send one properly formatted self-introduction email (subje
 17. **密送（Bcc）只讲存在与隐私用法**：不进任务与量规——本学段用不到，讲多反而混淆；抄送/回复为主。
 18. **公开学习者版本**：发给自己或约定亲友，量规自评；FAQ 提示"发给自己还能看到收件的样子"，并把自评分数留作 M5 作品集的现成证据。
 
+r2 新增决定（2026-08-30 · 回应 _tongxue 首测与 _jonassen 评估）：
+
+19. **J1/L1 · 任务顺序倒转（零净增分钟）**：任务步骤、w2 时间表与任务卡、自评清单、建议节奏、微课 4 预告、自测页用法全部改为"备附件 → 学习状态自测 + 基线发给自己 → 照模板写信 → 对照检查 → 发送"。模板句"我已完成本周的学习状态自测"自此写下即为事实；三封邮件排成上行坡：测试信（彩排）→ 基线信（固定主题）→ 计分信（导师）。分钟数字全部不变，仍 120。
+20. **J2 · 目标 ①② 重新措辞（请 ShiFu 定夺）**：① 删去尾句"——并知道 24–48 小时的回复预期"；② 原句"正确使用附件与'收件人 / 抄送 / 回复 / 全部回复'：……说出收件人与抄送的分工、'回复'与'全部回复'各在什么时候用"改为"正确使用附件与'回复'：附件按课程命名规则命名、在正文中提到；收到导师回信后用'回复'按钮接一句（不回信不扣分）"。删去的两处知识动词改由目标下方一句显式承接（自测题与分箱卡检查、不计分）；量规行同步引用新句，"目标 = 量规行"逐字契约保持。未新增任何计分项。
+21. **J3 · 公开学习者的 ② 行"回复"项**：量规 ② 行达标格与任务页 FAQ 各加一句——以彩排里给自己那封"回复"（或亲友的回信）计。
+22. **L3 · ② 行"不回信不扣分"上墙**：量规 ② 行达标格写明"导师回信晚或你没有回信：不扣分——只有回了、但另写新邮件的才算'缺一样'"（导师评分表原有此口径，现在学生也看得到）。
+23. **W1 · 页尾链接口径**：B2 建成前，w2 页尾"下一步"指向课程首页并如实命名"回到课程首页（B2 · 第 3 周即将上线）→"——不用"第 3 周"当按钮名指向还不存在的页面；B2 建成后改回直链。B2–B6 期间各周页沿用此口径。
+24. **V1 · 自绘界面示意图**：微课 1–2 各嵌同一张自绘无品牌"写邮件界面"内联 SVG 线框（双语标签随语言开关切换、figure 带 role="img" 与双语替代文字；标注收件人 · 抄送 · 主题 · 正文 · 附件文件名出现位置 · 回形针 · 发送）——视频打不开或从没见过写信界面的学习者也有画面可对照。已记入 media/alt-text.md 与 media/scripts.md。
+25. **Q2 · 样题基线的口径**：自测页警示卡加一句"开课后以正式题为准——本页与第 16 周复测页同步换题；换题前用样题发过的基线保留作参考"。
+
 ---
+
+## 给 B2–B6 构建者的模板说明 Template notes for B2–B6（评估 J4 · 2026-08-30）
+
+- **微课前置须逐周说明理由**（如动作不可逆、有安全或隐私风险——B1 的理由：正式邮件发出收不回，先彩排后登台）。**动作可逆的周默认任务式开场：先试 5 分钟，再带着问题进微课**（B2 建站、B3 翻译挑错、B5 搜索都属此类），与 M1–M2 已建立的 §0 起点（先写后学）保持一致。
+- **照抄清单**（B1 已验证的周惯例）：彩排模式（不可逆动作先在自己身上演）；"收件人 / 访客的眼睛"回看动作；"得体补救也是内容"（错误处理写进微课、FAQ、量规、评分表，四处一致）；向后一周的伏笔（如命名规则预告 B4）；页尾链接口径（决定 23）。
+- **不必复制**：每周再发明一封"仪式性第二邮件"——基线信是 M5 对照线的一次性设计，不是周模板；② 行的 1.5 半分档只是 B1 分值凑整的产物，也不是标准做法。
+- English gist: micro-lessons-first needs a stated per-week reason (e.g. irreversibility); reversible weeks default to try-first-5-minutes-then-lessons. Copy the rehearsal pattern, the recipient's/visitor's-eye review, graceful-recovery-as-content, and next-week foreshadowing; do not copy the ritual second email or the half-point level.
 
 ## 一周地图 The week's map
 
 | 周 | 主题 | 学习者做什么 | 计分 |
 |---|---|---|---|
-| W2 | 第一封正式邮件 | §0 情境（导师的收件箱 + 1987 第一封邮件）→ 微课 1 六个部位 → 微课 2 附件与文件名 → 微课 3 收件人/抄送/全部回复 → 微课 4 发出去之后 → 跟做彩排（测试邮件 + 8 卡分箱）→ **任务：带附件的规范自我介绍邮件发导师** → 学习状态自测 + 基线发给自己 → 自测 6 题 → 三行日志（草稿）| ① + ② = 5 分；③ ✓ |
+| W2 | 第一封正式邮件 | §0 情境（导师的收件箱 + 1987 第一封邮件）→ 微课 1 六个部位 → 微课 2 附件与文件名 → 微课 3 收件人/抄送/全部回复 → 微课 4 发出去之后 → 跟做彩排（测试邮件 + 8 卡分箱）→ 学习状态自测 + 基线发给自己 → **任务：带附件的规范自我介绍邮件发导师** → 自测 6 题 → 三行日志（草稿）| ① + ② = 5 分；③ ✓ |
 
 ## 网页材料 Materials（18 项 · 全部已建 all built）
 
@@ -61,8 +83,8 @@ English parallel: ① Send one properly formatted self-introduction email (subje
 |---|---|---|---|
 | 1 | `index.html` | 单元首页：1987 第一封邮件引入 → 核心问题 → 三条目标 → 一周地图 → 预计用时 → AI 标注（#ai）→ 进度条 → 怎么开始 | 电子邮件入门 BV1ic836TE6k（8:00，选看）|
 | 2 | `w2.html` | 第 2 周，十段 + §0 情境引入（导师的收件箱）| 小五 BV1nY8n6KEgY（2:41，微课 1 同段）|
-| 3 | `lesson-1-anatomy-of-an-email.html` | 六个部位表 + 主题公式 + 邮件≠聊天三条 + 对照示例（还差一步版 vs 规范版）| BV1nY8n6KEgY（2:41）|
-| 4 | `lesson-2-attachments-and-filenames.html` | 三个动作：添加 · 命名规则"课程-周-内容-化名" · 正文提及；忘附件的补救 | BV1M34y1x764（2:24）|
+| 3 | `lesson-1-anatomy-of-an-email.html` | 六个部位表 + 自绘"写邮件界面"SVG 示意图（r2）+ 主题公式 + 邮件≠聊天三条 + 对照示例（还差一步版 vs 规范版）| BV1nY8n6KEgY（2:41）|
+| 4 | `lesson-2-attachments-and-filenames.html` | 三个动作：添加 · 命名规则"课程-周-内容-化名"（中英文件名均可，r2）· 正文提及；忘附件的补救 + 同一张界面示意图（r2）| BV1M34y1x764（2:24）|
 | 5 | `lesson-3-to-cc-and-reply-all.html` | 三个框（收件人/抄送/密送）+ 两个按钮判断句 + 全班"收到"事故 + cc 冷知识 | BV1ZA411y7o8（0:36）+ 两条链接 |
 | 6 | `lesson-4-after-you-hit-send.html` | 24–48 小时节奏 · 两个工作日后礼貌追问 · 导师期待/不期待表 · 发送前五秒钟 | BV14V4y1n7Cs（2:00）|
 | 7 | `activity-first-email-rehearsal.html` | 跟做两幕：热身（存联系人 + 给自己发测试邮件 + 练"回复"）+ 8 卡分箱（页内 JS 即时反馈）| BV1eWgazpEKY（4:04）|
@@ -95,13 +117,27 @@ English parallel: ① Send one properly formatted self-introduction email (subje
 
 | 微课 25 | 跟做 25 | 任务 50 | 反思/日志 20 |
 |---|---|---|---|
-| 六个部位 7 · 附件与文件名 6 · 收件人与抄送 6 · 发出去之后 6 | 热身测试邮件 15 · 分箱 10 | 备附件 10 · 写主题与正文 15 · 对照检查 5 · 发送 2 · 学习状态自测 12 · 基线发给自己 6 | 自测题（第 6 节）5 · 三行日志 15 |
+| 六个部位 7 · 附件与文件名 6 · 收件人与抄送 6 · 发出去之后 6 | 热身测试邮件 15 · 分箱 10 | 备附件 10 · 学习状态自测 12 · 基线发给自己 6 · 写主题与正文 15 · 对照检查 5 · 发送 2 | 自测题（第 6 节）5 · 三行日志 15 |
 
 诚实的估计：首次 ×1.5，实际约 150–180 分钟（第一封正式邮件写了删、删了写都算学习）；页面在时间表下方明说，且无迟交处罚。选做不计入：首页入门视频（8:00）、want-more 全部、任务页复用视频。
 
 ---
 
-## 检查结果 Checks（r1 · 2026-08-30）
+## 检查结果 Checks（r2 · 2026-08-30 · 修订后全量重跑 re-run in full after the r2 revision）
+
+| 检查 | 结果 |
+|---|---|
+| `tools/parity_check.py`（12 页 + 1 讲义 + 课程首页，含新 SVG 的双语标签）| PASS · 0 issues |
+| `tools/site_checks.py`（链接锚点 · 禁用词 · 页脚 · 无头 Chrome 双语 console · 390px 双语无溢出）| PASS · 14/14 页（任务页新时长标签首轮 390px 溢出，缩短后通过）|
+| 必做分钟 = 120（w2 时间表中英两版逐项复核：顺序已倒转，数字未动）| PASS · 中英均 items 合计 120 · printed 120 |
+| 禁用词扫描（S1 清单：模块 + media + mentor/s1-b1 + tools/b1，共 33 个文件）| PASS · 0 命中 |
+| 页脚措辞 · "free" 不在页脚 | PASS |
+| checklist.js / quiz.js / progress.js 行为（无头 Chrome console 双语核验）| PASS · 全部页面无 console 错误 |
+| B 站 BV 号 | 本轮未增删视频；10 个条目维持 r1 的 API 核实（2026-08-30）；**大陆播放仍待 ShiFu 实测** |
+| 非 B 站外链 | 本单元仍无站外链接；页尾"回到课程首页"链接解析 ✓ |
+| 自测题正确项位置 | 未动 · 1·3·0·2·1·0 |
+
+r1 检查记录（2026-08-30）
 
 | 检查 | 结果 |
 |---|---|

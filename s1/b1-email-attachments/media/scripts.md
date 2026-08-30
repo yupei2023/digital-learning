@@ -21,6 +21,7 @@ All micro-lesson slots, the follow-along and the task page carry public Bilibili
 | index 情境引入 | 1987 年中国第一封电子邮件的故事（"越过万里长城……"） | 教师校本教材二稿《什么是在线学习》一节（`../校本教材-在线学习/230217 (2稿) ….docx`），史实段落改写，**未使用任何提及前任职学校的句子与旧图** | 教师自有文字 | 站内 |
 | self-check | 学习状态自测样题 3 条（仅示意格式） | 与 M5 复测页同一份样题（本课程自拟）；正式题目 **[placeholder] 待定**（教纲 v7 §9：工具待选） | — | — |
 | media/handouts | 规范邮件六件套模板 | `media/handouts/email-template.html`（双语网页，可打印；与 M3–M5 讲义同一做法，未另出 PDF） | 本课程自制 | 站内 |
+| lesson-1 · lesson-2 | "写邮件界面"示意图（自绘内联 SVG 线框：双语标签、无品牌、有替代文字） | 页内代码（r2 新增，回应同学测试 V1） | 本课程自制 | 站内 |
 
 嵌入方式：B 站官方外链播放器 `player.bilibili.com/player.html?bvid=…&high_quality=1&danmaku=0&autoplay=0`，关闭弹幕、不自动播放，并附直达链接与时长。所有 BV 号 2026-08-30 经 `api.bilibili.com/x/web-interface/view` 核实存在、公开、单 P。
 Embeds use Bilibili's official external player with danmaku off and no autoplay, plus a direct link and duration. Every BV id was checked against the Bilibili view API on 2026-08-30 (exists, public, single part).
@@ -45,4 +46,4 @@ Embeds use Bilibili's official external player with danmaku off and no autoplay,
 开场（20 秒）：两类事故——放错框、按错钮。三个框各 40 秒：收件人"请您办"、抄送"告诉您一声"、密送"悄悄告诉您"（隐私用法）。两个按钮（1 分钟）：判断句"这句话对每个人都有用吗"，配"全班收到请回复"事故。结尾（20 秒）：这学期几乎只用"回复"。
 
 ### 微课 4 · 发出去之后
-开场（20 秒）：点下发送，邮件开始替你说话。24–48 小时的节奏与两个工作日后的礼貌追问（1.5 分钟）。导师在看什么、不看什么（1 分钟）：评投入与格式，不评文笔。发送前五秒钟的习惯（40 秒）。预告：本周第二封邮件——把自测基线发给自己（30 秒）。
+开场（20 秒）：点下发送，邮件开始替你说话。24–48 小时的节奏与两个工作日后的礼貌追问（1.5 分钟）。导师在看什么、不看什么（1 分钟）：评投入与格式，不评文笔。发送前五秒钟的习惯（40 秒）。预告口径（r2 已倒序）：自测与基线邮件排在给导师写信之前——"先发给自己，再写给导师"（30 秒）。
