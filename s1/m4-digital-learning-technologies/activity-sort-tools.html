@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<title data-zh="跟做活动 · M4 数字化学习技术 · Digital Learning 数字化学习" data-en="Activity · M4 Digital Learning Technologies · Digital Learning">Activity · M4 Digital Learning Technologies · Digital Learning</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w13.html"><span class="zh">第 13 周</span><span class="en">Week 13</span></a><a href="w14.html"><span class="zh">第 14 周</span><span class="en">Week 14</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="reading.html"><span class="zh">读本</span><span class="en">Reader</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
+  <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
+</div></header>
+<main id="main">
+
+<p class="kicker"><span class="zh">M4 · 第 13 周跟做活动 · 约 5 分钟 · 不计分</span><span class="en">M4 · Week 13 follow-along · ~5 min · ungraded</span></p>
+<h1><span class="zh">六类分类：这件工具在做什么？</span><span class="en">Sort the six: what is this tool doing?</span></h1>
+<p class="zh">十二张卡，每张是“一件工具 + 一种用法”。点一张卡，再点一个筐。其中三张是“看用法”卡——两个筐都对，放进任一个之后，要写出“当我用它____的时候，它就是这一类”（只保存在你自己的浏览器里）。全部放完后点“检查”。每张卡都有解释——解释比对错更重要。</p><p class="en">Twelve cards, each “one tool + one use”. Tap a card, then tap a bin. Three are “depends on use” cards — two bins are both right; after placing one, write “when I use it to ____, it is this category” (saved only in this browser). When all twelve are placed, press Check. Every card has an explanation — the explanation matters more than the score.</p>
+<div class="video">
+<div class="ratio"><iframe src="https://player.bilibili.com/player.html?bvid=BV1UJ41137XG&high_quality=1&danmaku=0&autoplay=0" scrolling="no" allowfullscreen title="康康｜6 个学习必备 App 安利 Six must-have study apps"></iframe></div>
+<p class="cap"><span class="zh"><b>康康｜6 个学习必备 App 安利</b> · 6:44 · B 站 UP 主 是你们的康康 · 2019（微课 1 的同一段）</span><span class="en"><b>Six must-have study apps</b> · 6:44 · Bilibili uploader 是你们的康康 · 2019 (the same clip as micro-lesson 1)</span> · <a href="https://www.bilibili.com/video/BV1UJ41137XG" target="_blank" rel="noopener"><span class="zh">在 B 站打开 ↗</span><span class="en">Open on Bilibili ↗</span></a><br><span class="zh">做完十二张卡，再回头把视频里的六个 App 也分一分——它们不在卡片里，是留给你的第十三到十八张。</span><span class="en">After the twelve cards, go back and sort the six apps in the video too — they are not on the cards; they are your cards thirteen to eighteen.</span></p>
+</div>
+<div class="sorter" id="sorter">
+<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
+<div class="bins">
+<div class="bin" data-bin="c1"><h4><span class="zh">1 · 做出来（内容创造）</span><span class="en">1 · Make it (content creation)</span></h4></div>
+<div class="bin" data-bin="c2"><h4><span class="zh">2 · 放出去（分享与在线文档）</span><span class="en">2 · Share it (sharing &amp; online documents)</span></h4></div>
+<div class="bin" data-bin="c3"><h4><span class="zh">3 · 画出来（知识呈现）</span><span class="en">3 · Draw it (knowledge representation)</span></h4></div>
+<div class="bin" data-bin="c4"><h4><span class="zh">4 · 走进去（沉浸）</span><span class="en">4 · Step into it (immersive)</span></h4></div>
+<div class="bin" data-bin="c5"><h4><span class="zh">5 · 找得回（检索与管理）</span><span class="en">5 · Find it again (search &amp; management)</span></h4></div>
+<div class="bin" data-bin="c6"><h4><span class="zh">6 · 考自己（自测与练习）</span><span class="en">6 · Test yourself (self-testing &amp; practice)</span></h4></div>
+</div>
+<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<div id="result" aria-live="polite"></div>
+</div>
+<script>
+(function(){
+// [zh, en, accepted bins (string or array), why_zh, why_en]
+var items=[
+["用 OBS 录一段 2 分钟的讲解视频，发给不懂的人看","Record a 2-minute explainer with OBS to send to someone who doesn't know it","c1","做出一件别人看得到的东西——这是“做出来”。","You made something others can see — that is “make it”."],
+["把作品发布到我的个人网站“作品集”页","Publish the artifact on the Portfolio page of my website","c2","放到别人能看到的地方。本课程里，第 2 类的“做”就是这一步。","Put it where others can see it. In this course, this step IS category 2's “doing”."],
+["用 XMind 把主修课第 2 单元画成一张导图","Draw unit 2 of my core course as a mind map in XMind","c3","把脑子里的一团画成结构，看见连接和空白——“画出来”。","Turning the tangle into a structure, seeing the links and the gaps — “draw it”."],
+["在 PhET 里拖动折射率滑块，看光线怎么弯","Drag the refractive-index slider in PhET and watch the ray bend","c4","真实验做不了，在浏览器里“进去”做一遍——“走进去”。","Can't run the real experiment, so you step in and run it in the browser — “step into it”."],
+["把主修课的三个网页加进浏览器“阅读列表”，周六再读","Add three course pages to the browser reading list to read on Saturday","c5","找到、存住、日后找得回——“找得回”。第 5 周教过。","Find it, keep it, find it again later — “find it again”. Week 5 taught this."],
+["合上书，用 Anki 过一遍自己写的 10 张卡","Book closed, run through the 10 cards I wrote in Anki","c6","合上书考自己，就是提取练习——“考自己”。","Testing yourself with the book closed is retrieval practice — “test yourself”."],
+["在“全景故宫”里走一遍太和殿","Walk through the Hall of Supreme Harmony in the Palace Museum panorama","c4","去不了的地方，在屏幕里走一遍——“走进去”。","A place you can't go, walked through on screen — “step into it”."],
+["用纸卡写 10 个问答，按间隔表隔天考自己","Write 10 Q–A paper cards and test myself every other day by a spacing table","c6","没有软件也是第 6 类：提取 + 间隔。工具是“用法”，不是“软件”。","No software, still category 6: retrieval + spacing. A tool is a use, not a program."],
+["用百度学术找一篇讲“间隔重复”的文章并存下来","Find and save an article on spaced repetition with Baidu Scholar","c5","检索和保存——“找得回”。","Searching and saving — “find it again”."],
+["用手机录音，合上书把一个概念讲一遍，再回放听哪里卡了","Record myself on the phone explaining a concept with the book closed, then listen for where I stalled",["c6","c1"],"看用法：合上书讲、讲完自己听——是“考自己”；如果录来发给别人看，就是“做出来”。条件是：这段录音给谁听？","Depends on use: book closed, then listening to yourself — “test yourself”; if you record it to send to someone, “make it”. The condition: who is the recording for?"],
+["用 WPS 演示做三页讲解页","Make three explainer slides in WPS Presentation",["c1","c3"],"看用法：做给别人看的讲解页——“做出来”；如果只是把结构画给自己看——“画出来”。条件是：这三页是给谁看的？","Depends on use: slides to show others — “make it”; if it's only to lay out the structure for yourself — “draw it”. The condition: who are the three slides for?"],
+["用在线文档给自己列一张主修课术语表，随时接着写","List my course's terms in an online document and keep adding anywhere",["c2","c3"],"看用法：随处接着写、放在网上——“放出去”；列表的过程本身是把知识外显——“画出来”。条件是：我更看重“随处能写”还是“看见结构”？","Depends on use: kept online to continue anywhere — “share it”; the listing itself externalises knowledge — “draw it”. The condition: do I value “write anywhere” or “see the structure” more?"]
+];
+var binName={c1:["1 · 做出来","1 · Make it"],c2:["2 · 放出去","2 · Share it"],c3:["3 · 画出来","3 · Draw it"],c4:["4 · 走进去","4 · Step into it"],c5:["5 · 找得回","5 · Find it again"],c6:["6 · 考自己","6 · Test yourself"]};
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function sp(zh,en){return '<span class="zh">'+esc(zh)+'</span><span class="en">'+esc(en)+'</span>'}
+function accepts(i){var a=items[i][2];return Array.isArray(a)?a:[a]}
+var pool=document.getElementById('pool'),sel=null,placed={};
+var condKey='dl:m4:sort-conditions';
+function loadCond(){try{return JSON.parse(localStorage.getItem(condKey)||'{}')}catch(e){return {}}}
+function saveCond(o){try{localStorage.setItem(condKey,JSON.stringify(o))}catch(e){}}
+function chip(i){var c=document.createElement('span');c.className='chip';c.tabIndex=0;c.setAttribute('role','button');c.dataset.i=i;c.innerHTML=sp(items[i][0],items[i][1]);
+ function pick(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('sel')});sel=c;c.classList.add('sel')}
+ c.addEventListener('click',pick);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});return c}
+function build(){pool.innerHTML='';document.querySelectorAll('.bin').forEach(function(b){b.querySelectorAll('.chip,.explain,.cond').forEach(function(x){x.remove()})});placed={};sel=null;document.getElementById('result').textContent='';items.forEach(function(_,i){pool.appendChild(chip(i))})}
+document.querySelectorAll('.bin').forEach(function(b){function drop(){if(!sel)return;b.appendChild(sel);placed[sel.dataset.i]=b.dataset.bin;sel.classList.remove('sel');sel=null}b.addEventListener('click',function(e){if(e.target.closest('.chip')||e.target.closest('.cond'))return;drop()});b.tabIndex=0;b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();drop()}})});
+pool.addEventListener('click',function(e){if(e.target===pool&&sel){pool.appendChild(sel);delete placed[sel.dataset.i];sel.classList.remove('sel');sel=null}});
+document.getElementById('check').addEventListener('click',function(){var n=Object.keys(placed).length;if(n<items.length){var left=items.length-n;document.getElementById('result').innerHTML=sp('还有 '+left+' 张卡片没放。',left+' card'+(left>1?'s':'')+' still unsorted.');return}
+ var ok=0,cond=loadCond();document.querySelectorAll('.chip').forEach(function(c){var i=c.dataset.i,acc=accepts(i),right=acc.indexOf(placed[i])>=0;c.classList.add(right?'right':'wrong');if(right)ok++;var ex=c.nextElementSibling;if(!ex||!ex.classList.contains('explain')){ex=document.createElement('div');ex.className='explain';c.after(ex)}
+  var where=sp('应放在“'+acc.map(function(k){return binName[k][0]}).join('”或“')+'”','belongs in “'+acc.map(function(k){return binName[k][1]}).join('” or “')+'”');
+  ex.innerHTML=(right?'✅ ':'❌ '+where+' · ')+sp(items[i][3],items[i][4]);
+  if(acc.length>1){var cd=ex.nextElementSibling;if(!cd||!cd.classList.contains('cond')){cd=document.createElement('div');cd.className='cond';cd.innerHTML='<label>'+sp('当我用它____的时候，它就是这一类：','When I use it to ____, it is this category:')+' <input type="text" size="28" placeholder="____"></label>';ex.after(cd);var inp=cd.querySelector('input');inp.value=cond[i]||'';inp.addEventListener('input',function(){cond[i]=inp.value;saveCond(cond)})}}
+ });
+ document.getElementById('result').innerHTML=sp('对了 '+ok+' / 12。不计分；重要的是每张卡的解释——以及你为三张“看用法”卡写下的条件。',ok+' of 12. Ungraded — the explanations are the point, and so are the conditions you wrote for the three “depends on use” cards.')});
+document.getElementById('reset').addEventListener('click',build);build();
+})();
+</script>
+<div class="next"><a href="lesson-1-six-categories.html"><span class="zh">← 微课 1</span><span class="en">← Micro-lesson 1</span></a><a href="w13.html#task"><span class="zh">回到第 13 周任务 →</span><span class="en">Back to Week 13 task →</span></a></div>
+
+</main>
+<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 第一学期 M4</footer>
+<script src="../../assets/lang.js"></script>
+</body>
+</html>
