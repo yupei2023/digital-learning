@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<title data-zh="学习状态自测 · B1 规范邮件与附件 · Digital Learning 数字化学习" data-en="Learning self-check · B1 Email & Attachments · Digital Learning">Learning self-check · B1 Email & Attachments · Digital Learning</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w2.html"><span class="zh">第 2 周</span><span class="en">Week 2</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
+  <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
+</div></header>
+<main id="main">
+
+<p class="kicker"><span class="zh">B1 · 学习状态自测（第 2 周）· 不计分 · 结果只在你自己的浏览器里</span><span class="en">B1 · Learning self-check (Week 2) · ungraded · results stay in your own browser</span></p>
+<h1><span class="zh">学习状态自测</span><span class="en">Learning self-check</span></h1>
+<p class="zh">这份自测<b>不是考试</b>：没有对错，不计分，不影响任何评分；答案只在你自己的浏览器里显示，<b>不会上传</b>。它是给这学期的你拍的一张“起点照片”——第 15–16 周做学期反思时，你会用同一份题再测一次，和今天的自己并排对照。所以照实答，比“答得好看”重要一百倍。</p><p class="en">This self-check is <b>not a test</b>: no right answers, no points, no effect on any score; results display only in your own browser and are <b>never uploaded</b>. It is a photo of your starting point — in Weeks 15–16 you retake the same items and set that self beside today's. So honest answers beat good-looking ones a hundred to one.</p>
+
+<div class="card warn" style="border-color:var(--accent)"><b><span class="zh">[placeholder] 正式题目待定</span><span class="en">[placeholder] The official items are not yet chosen</span></b><br><span class="zh">这份自测的正式题目（约 15–20 题）将在开课前确定并替换本页内容；第 16 周的复测页用同一份题。下面的 <b>3 条样题只是示意格式</b>：1–5 分自评，1 = 还做不到，5 = 能稳定做到并能教别人。</span><span class="en">The official items (about 15–20) will be finalised before launch and will replace this page's content; the Week-16 retake page uses the same set. The <b>3 sample items below only show the format</b>: self-rate 1–5, where 1 = can't yet and 5 = do it reliably and could teach it.</span></div>
+
+<h2><span class="zh">样题（示意）</span><span class="en">Sample items (format only)</span></h2>
+<div class="card" id="sc-form">
+<ol>
+<li style="margin-bottom:.8rem"><span class="zh">面对一个真实的学习任务，我能从认得的工具里选出合适的一件，并说出选它、不选别件的理由。</span><span class="en">Given a real learning task, I can choose a suitable tool from those I know, and say why it — and why not the others.</span><br><span class="sc-scale" data-item="0" style="display:inline-flex;gap:.6rem;margin-top:.3rem"></span></li>
+<li style="margin-bottom:.8rem"><span class="zh">我能为自己排出每周固定的学习时段，守不住的时候能找到原因并改一处。</span><span class="en">I can schedule fixed weekly study slots for myself, and when one collapses I can find the cause and change one thing.</span><br><span class="sc-scale" data-item="1" style="display:inline-flex;gap:.6rem;margin-top:.3rem"></span></li>
+<li style="margin-bottom:.8rem"><span class="zh">学完一段内容，我能用自测（合上书考自己）查出自己哪里还没懂。</span><span class="en">After studying something, I can use self-testing (book closed) to find what I have not yet understood.</span><br><span class="sc-scale" data-item="2" style="display:inline-flex;gap:.6rem;margin-top:.3rem"></span></li>
+</ol>
+<p><button id="sc-show"><span class="zh">看一下我的结果（只在本页显示）</span><span class="en">Show my results (displays on this page only)</span></button></p>
+<div id="sc-result" aria-live="polite"></div>
+</div>
+<script>
+(function(){
+var scales=document.querySelectorAll('.sc-scale');
+scales.forEach(function(s){var idx=s.getAttribute('data-item');for(var v=1;v<=5;v++){var l=document.createElement('label');l.style.cssText='display:inline-flex;align-items:center;gap:.2rem';var r=document.createElement('input');r.type='radio';r.name='sc'+idx;r.value=v;l.appendChild(r);l.appendChild(document.createTextNode(v));s.appendChild(l)}});
+document.getElementById('sc-show').addEventListener('click',function(){
+ var out=[],sum=0,n=0;
+ scales.forEach(function(s,i){var c=document.querySelector('input[name=sc'+s.getAttribute('data-item')+']:checked');if(c){out.push((i+1)+' · '+c.value);sum+=+c.value;n++}});
+ var el=document.getElementById('sc-result');
+ if(!n){el.innerHTML='<span class="zh">还没有选择任何一项。</span><span class="en">Nothing selected yet.</span>';return}
+ el.innerHTML='<span class="zh">本次（样题）：'+out.join('，')+'；合计 '+sum+' 分。把逐项分抄下来——下一步就把它发进你自己的邮箱。本页不保存、不上传。</span><span class="en">This round (samples): '+out.join(', ')+'; total '+sum+'. Copy the per-item scores down — the next step mails them to your own inbox. Nothing is saved or uploaded here.</span>';
+});
+})();
+</script>
+
+<h2><span class="zh">最关键的一步：把基线存进你的邮箱</span><span class="en">The step that matters most: bank the baseline in your inbox</span></h2>
+<div class="card note">
+<p><span class="zh">浏览器一关，本页的结果就没了。所以做完自测，立刻给<b>你自己</b>发一封邮件——这一步是本周任务的一部分：</span><span class="en">Close this browser tab and the results are gone. So the moment you finish, email <b>yourself</b> — this step is part of this week's task:</span></p>
+<pre class="zh" style="white-space:pre-wrap;font:inherit;margin:0">收件人：你自己的邮箱地址
+主题：我的第 2 周基线 My Week-2 baseline
+正文：逐项分各一行（如 “1 · 3”），最后一行合计。
+      一句话：现在的我觉得最没底的是＿＿。</pre>
+<pre class="en" style="white-space:pre-wrap;font:inherit;margin:0">To: your own address
+Subject: 我的第 2 周基线 My Week-2 baseline
+Body: one line per item (e.g. “1 · 3”), the total on the last line.
+      One sentence: right now I feel least sure about ____.</pre>
+<p><span class="zh"><b>主题请一字不差</b>——第 16 周你要靠在邮箱里搜“我的第 2 周基线”找回它。这封信一举两得：它是本周“规范邮件”技能的又一次真实练习（主题、正文、发送，一样不少），也是给三个多月后的自己存的一份时间胶囊。</span><span class="en"><b>Use the subject word for word</b> — in Week 16 you will find this email by searching your inbox for it. One email, two wins: another real rehearsal of this week's skill (subject, body, send — all of it), and a time capsule banked for the you of three months from now.</span></p>
+</div>
+
+<h2><span class="zh">怎么用这一页</span><span class="en">How to use this page</span></h2>
+<ol class="steps">
+<li><span class="zh">按<b>现在的真实状态</b>逐项自评——不是“希望的自己”。没有对错。</span><span class="en">Rate your <b>actual current state</b>, item by item — not the self you wish for. There are no wrong answers.</span></li>
+<li><span class="zh">点“看一下我的结果”，把逐项分抄下来。</span><span class="en">Press “Show my results” and copy the per-item scores down.</span></li>
+<li><span class="zh">给自己发那封基线邮件（上面的模板；主题一字不差）。</span><span class="en">Send yourself the baseline email (template above; subject word for word).</span></li>
+<li><span class="zh">第 3 周网站上线后，把这份结果再抄进网站的<b>第一条日志</b>——双保险。邮箱和网站，两处只要有一处在，第 16 周就能对照。</span><span class="en">When your site goes live in Week 3, copy the results into its <b>first log entry</b> too — a second safety net. If either the inbox or the site survives, Week 16 has its comparison.</span></li>
+<li><span class="zh">（在校学生 · 自愿）愿意的话，也可以把结果表发给导师——自愿、不影响成绩，不发完全没关系；公开学习者不需要发给任何人。</span><span class="en">(Enrolled · voluntary) If you wish, you may also send the table to your mentor — voluntary, never affecting grades; not sending it is entirely fine. Open learners send it to no one.</span></li>
+</ol>
+<p class="src"><span class="zh">说明：在校学生的自测结果经学校同意、家长知情、学生自愿提交导师，不影响成绩，与登记表分开保存；公开学习者的结果只在本地显示，课程不收集。</span><span class="en">Note: enrolled students' results are shared with mentors with school approval, parent awareness and the student's consent; they never affect grades and are stored apart from the tracking sheet. Open learners' results display locally only — the course collects nothing.</span></p>
+<div class="next"><a href="task-1-self-intro-email.html"><span class="zh">← 回到任务页</span><span class="en">← Back to the task</span></a><a href="w2.html"><span class="zh">回到第 2 周 →</span><span class="en">Back to Week 2 →</span></a></div>
+
+</main>
+<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 第一学期 B1</footer>
+<script src="../../assets/lang.js"></script>
+</body>
+</html>
