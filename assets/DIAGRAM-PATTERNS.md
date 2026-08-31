@@ -18,6 +18,33 @@
 > 下面的骨架里凡是把 fill 类写在 `<g>` 上的，都带着这个坑，照抄前请先搬到 `<text>` 上。
 > Several skeletons below still carry the bug — move the fill class onto the `<text>` before you paste.
 
+> ## ⚠️ 再读这一条 And this one — 手机上，一张能横向滚动的图会默默被切掉三分之一
+>
+> `.dl-scroll` 把过宽的图交给横向滚动。2026-08-31 的学生测试发现：390 px 的手机上正文栏只有 337 px，
+> 512 px 的图**每一张都少了三分之一**，而且没有渐隐、没有箭头、没有滚动条——学生把看得见的部分当成了全图。
+> M4 图注写「六类」，手机上只有四类；B4 写「四角」，只有两角。
+>
+> `diagrams.css` 现在做了三件事，写新图时请按它们来：
+>
+> 1. **565 px 以下，每一张 `.dl-scroll` 图自动长出提示行、右缘虚线剪口和可见滚动条**，图能放得下时三者自动消失。你什么都不用加。
+> 2. **裁掉以后仍然"看起来完整"的图不滚动，改为缩放到放得下**（`class="dl-fit"`，或按 `aria-labelledby` 逐图指定）。
+>    判据很简单：**如果裁掉的部分正好落在格与格之间的缝里，读者就看不出它被裁过——这种图必须整幅显示。**
+> 3. **英文标签在手机上比中文再降一档**（`--dl-en-plain` / `--dl-en-k`）。英文约为对应中文的 1.6 倍宽，
+>    超过 640 单位就会两头被剪。超过约 700 单位的句子，光降字号救不了，必须断成两行或改写。
+>
+> 新图画完，用项目 `tools/figure_fit_check.py` 在**真正的 390 px iframe** 里量一遍。
+> Chrome 会悄悄把 `--window-size=390` 撑宽，第一次就是这样漏掉的。
+> 需要给内容页加类或改标签时，写进 `tools/PHONE-FIGURES.md`。
+>
+> A figure wider than the column scrolls, and on a phone that used to happen in
+> silence: a third of every 512 px drawing was cut off with no fade, no arrow and no
+> scrollbar, and learners read the visible part as the whole picture. `diagrams.css`
+> now (1) gives every scrolling figure a hint line, a dashed cut edge and a visible
+> scrollbar below 565 px, all self-cancelling; (2) makes the figures whose crop reads
+> as finished scale to fit instead — `class="dl-fit"`; (3) steps English down one more
+> notch than Chinese on phones. **Measure a new figure inside a real 390 px iframe**
+> with `tools/figure_fit_check.py`; Chrome's `--window-size=390` lies.
+
 
 Seven shapes for turning an abstract idea or a tangle of steps into one picture a
 solo learner can read in a few seconds. Every one is hand-authored inline SVG:

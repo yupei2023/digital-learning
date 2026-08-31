@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="160" viewBox="0 0 120 160" role="presentation" aria-hidden="true" focusable="false">
-<title>Learning community 学习共同体 · decorative tile</title>
-<desc>A seamless vertical tile. One continuous line runs the whole height: the shared course. Fifteen small open-page marks — one per learner — sit on either side of it, each joined to the shared line by its own short stem and never to another learner. Three stand free: open learners who share the course without a registered place. 可无缝纵向平铺的装饰图样：一条贯通的竖线代表共享的课程；两侧十五个小小的翻页符号各代表一位学习者，每个只用自己的短线连到那条竖线，彼此之间从不相连；其中三个不连线，代表随时可以加入的开放学习者。</desc>
+<title>The course line and the mentor line 课程线与导师线 · decorative tile</title>
+<desc>A seamless vertical tile. Two continuous lines run the whole height: the thinner one is the shared course, the slightly heavier one beside it is the mentor. Fifteen small open-page marks — one per learner — sit on either side of them; each joins the course by its own short stem and never joins another learner. Twelve of those stems also meet the mentor line: every registered learner has a mentor. Three stop at the course line and go no further — open learners, who share the course without a registered place and without a mentor. 可无缝纵向平铺的装饰图样：两条贯通的竖线，细的那条是共享的课程，紧挨着它、略粗的那条是导师。两侧十五个小小的翻页符号各代表一位学习者，每个只用自己的短线连到课程线，彼此之间从不相连；其中十二根短线同时接上导师线——每一位注册学习者都有导师。另外三根停在课程线上不再往前，那是开放学习者：他们共享这门课，但没有注册的位置，也没有导师。</desc>
 <style>
 /* Root-only colour: as an img/background this paints itself and follows the OS
    theme; inlined in a page it inherits the page's currentColor instead. */
@@ -16,24 +16,29 @@ svg:root{color:var(--dl-pattern-ink,#183b5d)}
     <g id="dl-cm-field">
       <!-- the one shared thing: the course itself -->
       <path d="M60 0 V160" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".32"/>
+      <!-- the mentor: one line, a little heavier, and the only thing in this
+           drawing that any learner shares with any other person -->
+      <path d="M66 0 V160" fill="none" stroke="currentColor" stroke-width="2.4" opacity=".3"/>
       <!-- each learner's own field of attention -->
       <g fill="none" stroke="currentColor" stroke-width="1" opacity=".2">
-        <circle cx="32" cy="17.8" r="14"/><circle cx="92" cy="113.8" r="14"/>
-        <circle cx="74" cy="129.3" r="10"/><circle cx="26" cy="81.8" r="12"/>
+        <circle cx="32" cy="17.8" r="14"/><circle cx="92" cy="113.8" r="14"/><circle cx="78" cy="129.3" r="10"/><circle cx="26" cy="81.8" r="12"/>
       </g>
-      <!-- stems: every registered learner reaches the course, none reaches another learner -->
+      <!-- stems. Every learner reaches the course; none reaches another learner.
+           A registered learner's stem also meets the mentor line: from the left it
+           ends on it, from the right it crosses it. The three open learners stop at
+           the course line — they share the course, they have no mentor. -->
       <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".4">
-        <path d="M41 17.8 H58"/><path d="M79 49.8 H62"/><path d="M35 81.8 H58"/><path d="M83 113.8 H62"/>
-        <path d="M47 145.8 H58"/><path d="M71.4 1.3 H62"/><path d="M93.4 65.3 H62"/><path d="M20.6 97.3 H58"/>
-        <path d="M67.4 129.3 H62"/><path d="M71.4 161.3 H62"/>
-        <path d="M98.6 9 H62"/><path d="M78.6 73 H62"/><path d="M39.4 105 H58"/>
+        <path d="M41 17.8 H66"/><path d="M35 81.8 H66"/><path d="M47 145.8 H66"/><path d="M20.6 97.3 H66"/>
+        <path d="M79 49.8 H60"/><path d="M83 113.8 H60"/><path d="M71.4 1.3 H60"/><path d="M93.4 65.3 H60"/><path d="M71.4 129.3 H60"/><path d="M71.4 161.3 H60"/><path d="M98.6 9 H60"/><path d="M78.6 73 H60"/><path d="M92.6 137 H60"/>
+        <path d="M23.8 33.8 H60"/><path d="M50.5 41 H60"/><path d="M39.4 105 H60"/>
       </g>
+      <!-- where each learner meets the course -->
       <g fill="currentColor" opacity=".62">
-        <circle cx="60" cy="17.8" r="1.7"/><circle cx="60" cy="49.8" r="1.7"/><circle cx="60" cy="81.8" r="1.7"/>
-        <circle cx="60" cy="113.8" r="1.7"/><circle cx="60" cy="145.8" r="1.7"/><circle cx="60" cy="1.3" r="1.4"/>
-        <circle cx="60" cy="65.3" r="1.4"/><circle cx="60" cy="97.3" r="1.4"/><circle cx="60" cy="129.3" r="1.4"/>
-        <circle cx="60" cy="161.3" r="1.4"/><circle cx="60" cy="9" r="1.2"/><circle cx="60" cy="73" r="1.2"/>
-        <circle cx="60" cy="105" r="1.2"/>
+        <circle cx="60" cy="17.8" r="1.7"/><circle cx="60" cy="49.8" r="1.7"/><circle cx="60" cy="81.8" r="1.7"/><circle cx="60" cy="113.8" r="1.7"/><circle cx="60" cy="145.8" r="1.7"/><circle cx="60" cy="1.3" r="1.4"/><circle cx="60" cy="65.3" r="1.4"/><circle cx="60" cy="97.3" r="1.4"/><circle cx="60" cy="129.3" r="1.4"/><circle cx="60" cy="161.3" r="1.4"/><circle cx="60" cy="9" r="1.2"/><circle cx="60" cy="73" r="1.2"/><circle cx="60" cy="105" r="1.2"/><circle cx="60" cy="137" r="1.1"/><circle cx="60" cy="33.8" r="1.4"/><circle cx="60" cy="41" r="1.2"/>
+      </g>
+      <!-- where a registered learner meets the mentor -->
+      <g fill="currentColor" opacity=".5">
+        <circle cx="66" cy="17.8" r="1.15"/><circle cx="66" cy="49.8" r="1.15"/><circle cx="66" cy="81.8" r="1.15"/><circle cx="66" cy="113.8" r="1.15"/><circle cx="66" cy="145.8" r="1.15"/><circle cx="66" cy="1.3" r="1.15"/><circle cx="66" cy="65.3" r="1.15"/><circle cx="66" cy="97.3" r="1.15"/><circle cx="66" cy="129.3" r="1.15"/><circle cx="66" cy="161.3" r="1.15"/><circle cx="66" cy="9" r="1.15"/><circle cx="66" cy="73" r="1.15"/><circle cx="66" cy="137" r="1.15"/>
       </g>
       <!-- the learners: individual marks in a shared field, never a huddle -->
       <use href="#dl-cm-mark" transform="translate(32 16)"/>
@@ -45,7 +50,7 @@ svg:root{color:var(--dl-pattern-ink,#183b5d)}
       <use href="#dl-cm-mark" transform="translate(18 32) scale(.72)"/>
       <use href="#dl-cm-mark" transform="translate(100 64) scale(.72)"/>
       <use href="#dl-cm-mark" transform="translate(14 96) scale(.72)"/>
-      <use href="#dl-cm-mark" transform="translate(74 128) scale(.72)"/>
+      <use href="#dl-cm-mark" transform="translate(78 128) scale(.72)"/>
       <use href="#dl-cm-mark" transform="translate(78 160) scale(.72)"/>
       <use href="#dl-cm-mark" transform="translate(104 8) scale(.56)"/>
       <use href="#dl-cm-mark" transform="translate(46 40) scale(.56)"/>

@@ -97,9 +97,50 @@
   font-size:.85rem;
   line-height:1.55;
 }
-/* a wide figure that must not be squeezed below legibility */
-.dl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* ── 2b · a figure too wide for the column ─────────────────────────────────
+   `.dl-scroll` lets a wide drawing be scrolled sideways rather than squeezed
+   below legibility. Until 2026-08-31 it did that *silently*: on a 390 px phone
+   the 337 px column showed only the left two-thirds of a 512 px drawing, with
+   no fade, no arrow and no scrollbar. The student tester read the visible part
+   as the whole picture — M4's map captioned "six" showed four (findings V1/L1).
+   Three affordances now run together, and each cancels itself when the figure
+   fits: the scrollbar is painted only on real overflow, and the fade and the
+   hint line live inside the phone media query in §5. */
+.dl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:.35rem}
 .dl-scroll>svg{min-width:30rem}
+
+/* (a) a real, visible scrollbar instead of the platform's invisible overlay one.
+   -webkit-appearance:none is what makes iOS Safari draw a persistent bar, and
+   Blink honours ::-webkit-scrollbar only while neither `scrollbar-width` nor
+   `scrollbar-color` is set on the element — so neither is set here. Firefox
+   keeps its own default bar; the hint line and the cut edge below carry the
+   signal on every engine regardless. */
+.dl-scroll::-webkit-scrollbar{-webkit-appearance:none;height:7px}
+.dl-scroll::-webkit-scrollbar-track{background:var(--dl-line);border-radius:4px}
+.dl-scroll::-webkit-scrollbar-thumb{background:var(--dl-accent);border-radius:4px}
+
+/* (b) some figures must not be cropped at all, because their crop reads as a
+   finished picture rather than a cut one: on a phone M4's map showed a tidy 2×2
+   of four cells under a caption saying six, B1's downloads folder lost the ?/✓
+   column that is the point of it, B2's ladder lost its ③→② return arrow. Those
+   scale to fit instead of scrolling — see the list in §5. `.dl-fit` on the <svg>
+   is the markup-side way to say it; the attribute selectors beside it name the
+   ten figures that already needed the treatment on 2026-08-31, so the fix works
+   without touching their markup. When one of those figures is next edited, add
+   class="dl-fit" to its <svg> and drop its id from the two `:is()` lists in §5.
+   Keep the two lists identical.
+
+   Fitting never changes a drawing's internal layout — every coordinate is in
+   viewBox units — only the scale it is rendered at, 0.80× to about 0.58×. */
+
+/* (c) two drawings, one figure — the last resort for a figure that neither
+   scrolls nor fits well: a wide drawing for the column and a narrow, stacked
+   drawing for the phone. Put the wide <svg> inside .dl-scroll as usual and add
+   a second <svg class="dl-stack"> as a direct child of the <figure>, before the
+   <figcaption>. §5 swaps them. display:none also removes the hidden one from
+   the accessibility tree, so a screen reader hears one description, not two —
+   which is why this must not be done with visibility or opacity. */
+.dl-fig>.dl-stack{display:none;width:100%;height:auto}
 
 /* ── 3 · drawing helpers ────────────────────────────────────────────────────
    Put these classes on SVG shapes instead of hard-coding fill/stroke, so every
@@ -140,22 +181,152 @@
 .dl-fig .dl-t-sm{font-size:var(--dl-fs-sm)}
 .dl-fig .dl-t-xs{font-size:var(--dl-fs-xs)}
 .dl-fig text{fill:var(--dl-ink)}
-/* English runs about 1.6× the width of the Chinese it translates. Add
-   class="en dl-long" to any English label that will not fit its box, and it
-   drops one size step instead of spilling over the edge. */
-.dl-fig .en.dl-long{font-size:var(--dl-fs-sm)}
-.dl-fig .dl-t-sm .en.dl-long,.dl-fig .en.dl-long.dl-t-sm{font-size:var(--dl-fs-xs)}
+/* English runs about 1.6× the width of the Chinese it translates, so it is the
+   language that overruns the 640-unit canvas — Chinese was clean site-wide when
+   the tester measured on 2026-08-31, English clipped 15 labels on 8 pages.
+   Add class="en dl-long" to any English label that will not fit its box and it
+   drops one size step; `dl-longer` drops it two. `--dl-en-k` squeezes every
+   English label a little further on phones (§5) without touching Chinese, and
+   can be lowered on one <g> or one <svg> when a single group needs more room.
+   `--dl-en-plain` does the same for the English labels that carry no
+   `dl-long` at all. A label still wider than about 640 units after both steps
+   needs a line break or fewer words in the markup, not a smaller size — see
+   tools/PHONE-FIGURES.md. */
+:root{--dl-en-k:1;--dl-en-plain:1}
+.dl-fig text.en{font-size:calc(1em*var(--dl-en-plain))}
+.dl-fig .en.dl-long{font-size:calc(var(--dl-fs-sm)*var(--dl-en-k))}
+.dl-fig .dl-t-lg .en.dl-long,.dl-fig .en.dl-long.dl-t-lg{font-size:calc(var(--dl-fs)*var(--dl-en-k))}
+.dl-fig .dl-t-sm .en.dl-long,.dl-fig .en.dl-long.dl-t-sm{font-size:calc(var(--dl-fs-xs)*var(--dl-en-k))}
+.dl-fig .dl-t-xs .en.dl-long,.dl-fig .en.dl-long.dl-t-xs{font-size:calc(var(--dl-fs-xs)*var(--dl-en-k)*.88)}
+.dl-fig .en.dl-longer{font-size:calc(var(--dl-fs-xs)*var(--dl-en-k)*.9)}
+.dl-fig .dl-t-sm .en.dl-longer,.dl-fig .en.dl-longer.dl-t-sm{font-size:calc(var(--dl-fs-xs)*var(--dl-en-k)*.8)}
 /* Chinese sits slightly higher than Latin on the same baseline; nudge it back. */
 .dl-fig text.zh{dominant-baseline:auto}
 
 /* ── 5 · phones ─────────────────────────────────────────────────────────────
-   A 640-unit figure lands at about 0.55× on a 390 px screen, so 14-unit text
-   would read as 7.7 px. Grow the labels as the drawing shrinks. */
+   Two regimes, and the difference between them is the whole of finding V1.
+
+   A figure that FITS the column lands at about 0.53× on a 390 px screen, so a
+   14-unit label would read as 7.4 px — hence the grown tokens below.
+   A figure inside `.dl-scroll` does NOT fit: it is held at 32rem and scrolled,
+   so it lands at about 0.80×, and the same grown tokens made its labels 30%
+   larger than they needed to be. That over-correction is what pushed 15 English
+   labels off the 640-unit canvas (finding V2). Scrolled figures therefore get
+   their own, smaller token set — sized for 0.80×, not 0.53×.
+
+   Column arithmetic, so the breakpoint is not a guess: main is 1rem-padded and
+   .dl-fig adds .6rem plus a 1px border, i.e. 53.2 px of chrome at a 16 px root.
+   A 32rem (512 px) drawing therefore overflows below 565.2 px of viewport, and
+   565px is the width at which every affordance here switches on. */
 @media (max-width:600px){
   :root{--dl-fs-lg:21px; --dl-fs:18px; --dl-fs-sm:16px; --dl-fs-xs:14.5px}
   .dl-fig{padding:.7rem .6rem;margin:1rem 0}
   .dl-fig figcaption{font-size:.82rem}
   .dl-scroll>svg{min-width:32rem}
+}
+
+@media (max-width:565px){
+  :root{--dl-en-k:.9;--dl-en-plain:.93}
+
+  /* the scrolled regime: labels sized for 0.80×, not for 0.53× */
+  .dl-scroll>svg{--dl-fs-lg:17px; --dl-fs:15px; --dl-fs-sm:13.5px; --dl-fs-xs:12.5px}
+
+  /* ── the affordance ──────────────────────────────────────────────────────
+     The figure becomes a three-row grid so that ::after can be dropped into the
+     same cell as the scroller and be exactly as tall as the drawing — no
+     guessing at the caption's height. ::before is the hint line; it is the only
+     place on the site where the word 滑动 / swipe appears, and before this pass
+     the word appeared nowhere at all. */
+  .dl-fig:has(>.dl-scroll){
+    display:grid;grid-template-columns:minmax(0,1fr);
+    grid-template-rows:auto auto auto;
+  }
+  .dl-fig:has(>.dl-scroll)::before{
+    grid-row:1;
+    margin:0 0 .35rem;
+    color:var(--dl-accent);font-size:.76rem;font-weight:700;line-height:1.3;
+    letter-spacing:.01em;
+  }
+  html[data-lang="zh"] .dl-fig:has(>.dl-scroll)::before{content:"← 左右滑动查看全图 →"}
+  html[data-lang="en"] .dl-fig:has(>.dl-scroll)::before{content:"← swipe to see the whole figure →"}
+  .dl-fig:has(>.dl-scroll)>.dl-scroll{grid-row:2}
+  .dl-fig:has(>.dl-scroll)>figcaption{grid-row:3}
+  /* the edge: a fade that lifts the drawing's right edge off the page, a dashed
+     rule that says "cut here, not finished here", and a chevron. Pointer events
+     off so it never eats a swipe. */
+  .dl-fig:has(>.dl-scroll)::after{
+    content:"›";
+    grid-row:2;justify-self:end;align-self:stretch;
+    display:flex;align-items:center;justify-content:flex-end;
+    width:2.3rem;padding-right:.15rem;
+    box-sizing:border-box;
+    border-right:2px dashed var(--dl-accent);
+    background:linear-gradient(to right,rgba(255,255,255,0),var(--dl-card) 78%);
+    color:var(--dl-accent);font-size:1.7rem;font-weight:700;line-height:1;
+    pointer-events:none;
+  }
+
+  /* ── the ten figures that must not be cropped at all ─────────────────────
+     Keep this list identical to the one in §2b. They scale to fit instead of
+     scrolling, so they take the fitting regime's tokens back — the very tokens
+     they were drawn against, which is why fitting cannot disturb their internal
+     layout. Their affordance is switched off: nothing scrolls, so nothing needs
+     announcing. Five of them are then tuned by hand further down, to buy back
+     some of the size the smaller scale costs; the other five are legible on the
+     defaults and are left alone. */
+  .dl-scroll>svg:is(.dl-fit,[aria-labelledby="fig-m4six-t"],[aria-labelledby="fig-b4-threat-t"],[aria-labelledby="fig-b6-map-t"],[aria-labelledby="fig-ch04-motiv-t"],[aria-labelledby="fig-ch04-doors-t"],[aria-labelledby="fig-m4keep-t"],[aria-labelledby="fig-b1-downloads-t"],[aria-labelledby="fig-b6-time-t"],[aria-labelledby="fig-m3tips-t"],[aria-labelledby="fig-b2-moves-t"]){
+    min-width:0;
+    --dl-fs-lg:21px; --dl-fs:18px; --dl-fs-sm:16px; --dl-fs-xs:14.5px;
+  }
+  .dl-fig:has(>.dl-scroll>svg:is(.dl-fit,[aria-labelledby="fig-m4six-t"],[aria-labelledby="fig-b4-threat-t"],[aria-labelledby="fig-b6-map-t"],[aria-labelledby="fig-ch04-motiv-t"],[aria-labelledby="fig-ch04-doors-t"],[aria-labelledby="fig-m4keep-t"],[aria-labelledby="fig-b1-downloads-t"],[aria-labelledby="fig-b6-time-t"],[aria-labelledby="fig-m3tips-t"],[aria-labelledby="fig-b2-moves-t"])){
+    /* a little wider than the column: cancels most of main's 1rem gutter, which
+       buys the drawing about 10% more scale for free */
+    margin-inline:-.8rem;padding-inline:.4rem;
+  }
+  .dl-fig:has(>.dl-scroll>svg:is(.dl-fit,[aria-labelledby="fig-m4six-t"],[aria-labelledby="fig-b4-threat-t"],[aria-labelledby="fig-b6-map-t"],[aria-labelledby="fig-ch04-motiv-t"],[aria-labelledby="fig-ch04-doors-t"],[aria-labelledby="fig-m4keep-t"],[aria-labelledby="fig-b1-downloads-t"],[aria-labelledby="fig-b6-time-t"],[aria-labelledby="fig-m3tips-t"],[aria-labelledby="fig-b2-moves-t"]))::before,
+  .dl-fig:has(>.dl-scroll>svg:is(.dl-fit,[aria-labelledby="fig-m4six-t"],[aria-labelledby="fig-b4-threat-t"],[aria-labelledby="fig-b6-map-t"],[aria-labelledby="fig-ch04-motiv-t"],[aria-labelledby="fig-ch04-doors-t"],[aria-labelledby="fig-m4keep-t"],[aria-labelledby="fig-b1-downloads-t"],[aria-labelledby="fig-b6-time-t"],[aria-labelledby="fig-m3tips-t"],[aria-labelledby="fig-b2-moves-t"]))::after{content:none}
+
+  /* the two-drawing swap — see §2b (c) */
+  .dl-fig:has(>.dl-stack)>.dl-scroll{display:none}
+  .dl-fig:has(>.dl-stack)>.dl-stack{display:block}
+  .dl-fig:has(>.dl-stack)::before,.dl-fig:has(>.dl-stack)::after{content:none}
+
+  /* Per-figure label sizes, for the five fitting figures whose text is small
+     enough at 0.58× to be worth enlarging. Each number is the largest that
+     still keeps the longest Chinese label inside its own box; the comment gives
+     the cell width the label has to live in. Raising one of these DOES change
+     the drawing's layout — re-measure with tools/figure_fit_check.py after. */
+
+  /* M4 六类工具地图 · 3×2 grid, cells 190 units wide. Cropped it showed a tidy
+     2×2 of four cells under a caption that says six — the one figure the tester
+     believed over its own caption. */
+  .dl-scroll>svg[aria-labelledby="fig-m4six-t"]{--dl-fs-lg:24px; --dl-fs:21px; --dl-fs-sm:19px; --dl-fs-xs:17px}
+
+  /* B4 四角威胁图 and B6 工作台四角图 · same 2×2 geometry, boxes 230 units wide,
+     labels left-anchored with 214 units of room. Cropped they showed two
+     corners and a half of a figure whose entire claim is "four". */
+  .dl-scroll>svg[aria-labelledby="fig-b4-threat-t"],
+  .dl-scroll>svg[aria-labelledby="fig-b6-map-t"]{--dl-fs-lg:23px; --dl-fs:21px; --dl-fs-sm:17px; --dl-fs-xs:16px}
+
+  /* M1 内部/外部动机对照 · two 290-unit columns; the figure IS the comparison,
+     so one column on screen is not a partial figure, it is a different claim. */
+  .dl-scroll>svg[aria-labelledby="fig-ch04-motiv-t"]{--dl-fs-lg:25px; --dl-fs:22px; --dl-fs-sm:17px; --dl-fs-xs:16px}
+
+  /* M1 七扇门 · door labels are two characters in a 58-unit door and can go
+     large; the two sentences underneath run the full 640 and must stay small,
+     and their English needs a further squeeze to stay on the canvas. */
+  .dl-scroll>svg[aria-labelledby="fig-ch04-doors-t"]{--dl-fs-lg:24px; --dl-fs:15px; --dl-fs-sm:19px; --dl-fs-xs:19px}  /* --dl-fs is only the 「我」 marker, inside a 26-unit circle */
+  .dl-scroll>svg[aria-labelledby="fig-ch04-doors-t"] .dl-t-sm.dl-b{--dl-fs-sm:26px;--dl-fs-xs:15px}  /* xs is the English door label: one word per 86-unit door pitch */
+  .dl-scroll>svg[aria-labelledby="fig-ch04-doors-t"] .dl-t-sm.dl-muted{--dl-fs-sm:20px;--dl-fs-xs:20px;--dl-en-k:.62}
+
+  /* M2 天平图 · one English label overran by 13 units; a 6% squeeze on this
+     figure's English clears it without a markup change. */
+  svg[aria-labelledby="fig-l3-balance-t"]{--dl-en-k:.78}
+
+  /* B1 写邮件窗口 keeps the scroll + affordance treatment rather than fitting:
+     its crop cuts the example strings mid-word, so it never reads as finished,
+     and at 0.58× its densest row (the attachment chip) collides with the label
+     beside it. Affordance is the honest fix here, not a squeeze. */
 }
 
 /* ── 6 · motion ─────────────────────────────────────────────────────────────
@@ -181,5 +352,7 @@
 }
 @media print{
   .dl-fig{break-inside:avoid;page-break-inside:avoid;border-color:#999}
-  .dl-scroll{overflow:visible}
+  .dl-scroll{overflow:visible;padding-bottom:0}
+  .dl-scroll>svg{min-width:0}
+  .dl-fig::before,.dl-fig::after{content:none!important}
 }
