@@ -1,6 +1,6 @@
 # M5 图片替代文字清单 Alt-text list
 
-本单元页面上没有放置图片文件：所有"图"都是 HTML 表格（挑作品四条标准表、全学期作品地图、五段模板表、量规、分值表）或页内表单（学习状态自测样题、学习完成声明），语言开关可以切换，屏幕阅读器可以直接读。学习者自己的作品与截图在他们的网站上，本清单不管。
+本单元页面上没有放置图片文件：所有"图"都是 HTML 表格（挑作品四条标准表、全学期作品地图、五段模板表、量规、分值表）或页内表单（学习状态自测 12 题、学习完成声明），语言开关可以切换，屏幕阅读器可以直接读。学习者自己的作品与截图在他们的网站上，本清单不管。
 No image files are placed in this module: every "figure" is an HTML table (the four criteria, the semester map, the five-part template, the rubric, the points table) or an in-page form (the self-check samples, the self-completion statement), so the language switch applies and screen readers read them directly. Learners' own works and screenshots live on their sites and are outside this list.
 
 若日后录制微课视频并配图，按下表填写 `alt`：

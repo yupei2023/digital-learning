@@ -58,6 +58,12 @@ English parallel: ① Name the learning problem each of the six tool categories 
 23. **W5 · 登记表网址**：占位保留（与 M1、M3 同一待办）。
 24. **计时规则冲突（请 ShiFu 裁定）**：流水线要求 _tongxue 报告分钟数，而 _tongxue 的定义（按 ShiFu 的标准）不做时间估计——r1、r2 两轮均按定义拒绝计时，改为核对页面自报数字。两条规则请定其一；本次修订**未**改 _tongxue 的定义。
 
+### ShiFu 裁定落实（2026-08-30 · r3）Implemented under ShiFu's rulings
+
+以下不是"替 ShiFu 决定"，是 ShiFu 已裁定、本轮照办的事项（裁定原文见项目根 `DECISIONS-PENDING-SHIFU_2026-08-30.md` 的「✅ ShiFu 的裁定」表）。
+
+25. **B11 · 微评的读者 = 同学与导师（裁定：同学与导师）**：第 17 条的保守做法作废。课程没有讨论区、不互访网站，所以这条裁定通过课程已有的机制落地——**导师汇编**：第 14 周导师把全班微评汇成一份「同学们的工具推荐」清单（化名 · 工具名 · 一句好处 · 一句卡点，按六类分组），教师合成全班版后邮件发回给每一个人；与第二学期 M7「学习者推荐榜」同构。落点三处：`lesson-2-micro-review.html` 与 `task-1-try-and-review.html` 的读者提示各一句；`mentor/s1-m4-…/scoring-sheet.md` 每周流程新增第 5 条（编发规则：只用化名、不写评价高低、原句照抄、学生说不收就不收）。页面仍**不提"下一届"**——承诺的是每年编发这份清单，这件事导师每年做得到。
+
 ---
 
 ## 六类工具 The six categories（已落实到 `lesson-1-six-categories.html`）
@@ -160,8 +166,8 @@ English parallel: ① Name the learning problem each of the six tool categories 
 
 ## 待 ShiFu 实测 / 过目 For ShiFu
 - 工具注册方式（幕布、WPS 云、NOBOOK、PhET 镜像、Zotero / Anki 同步、Outlook.com）与 14 个 B 站视频的大陆播放。
-- 上方"替 ShiFu 决定的事项"13 条，尤其第 3（≤ 2 分钟视频）、第 4（删聊天式工具一句、地名保留）、第 6（康康片）。
-- 登记表网址（占位，与 M1、M3 同一待办）。
+- 上方"替 ShiFu 决定的事项"13 条，尤其第 3（≤ 2 分钟视频）、第 4（删聊天式工具一句、地名保留）、第 6（康康片）。B11（微评的读者）已由 ShiFu 裁定并落实，见第 25 条。
+- 登记表网址（占位，与 M1、M3 同一待办）：工具与栏目已由 ShiFu 授权定稿（腾讯问卷 · 四栏），规格见 `mentor/welcome-letter-spec.md`「登记表规格」一节；**只差 ShiFu 建表后把网址填进开课信**。
 
 ## 来源材料 Source material（2026-08-30 核对）
 | 来源 | 位置 | 用法 |

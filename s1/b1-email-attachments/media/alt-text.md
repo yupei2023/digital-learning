@@ -1,6 +1,6 @@
 # B1 图片替代文字清单 Alt-text list
 
-本单元只有一张自绘图——微课 1–2 的"写邮件界面"内联 SVG 线框（r2 新增：无品牌，双语标签随语言开关切换，figure 带 role="img" 与双语替代文字，见下表首行）。其余"图"都是 HTML 表格（六个部位表、三个框表、量规、时间表、讲义模板）或页内交互（分箱卡片、学习状态自测样题），语言开关可以切换，屏幕阅读器可以直接读。学习者自己的附件与截图在他们自己的设备上，本清单不管。
+本单元只有一张自绘图——微课 1–2 的"写邮件界面"内联 SVG 线框（r2 新增：无品牌，双语标签随语言开关切换，figure 带 role="img" 与双语替代文字，见下表首行）。其余"图"都是 HTML 表格（六个部位表、三个框表、量规、时间表、讲义模板）或页内交互（分箱卡片、学习状态自测 12 题），语言开关可以切换，屏幕阅读器可以直接读。学习者自己的附件与截图在他们自己的设备上，本清单不管。
 One drawn figure exists in this module — the compose-window inline SVG wireframe in micro-lessons 1–2 (added in r2: unbranded, bilingual labels following the language switch, the figure carrying role="img" and bilingual alt text; first row below). Every other "figure" is an HTML table (the six parts, the three boxes, the rubric, the time table, the handout template) or an in-page interaction (the sorting cards, the self-check samples), so the language switch applies and screen readers read them directly. Learners' own attachments live on their own devices and are outside this list.
 
 若日后录制微课视频并配图，按下表填写 `alt`：
