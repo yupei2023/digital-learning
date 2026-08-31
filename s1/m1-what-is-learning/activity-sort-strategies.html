@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="策略分类：有效、效果有限，还是看情况？ M1 · 第 8 周跟做活动 · 约 10 分钟 · 不计分 · Sort the strategies: effective, limited — or it depends? M1 · Week 8 follow-along · ~10 min · ungraded">
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="跟做活动 · M1 什么是学习 · Digital Learning 数字化学习" data-en="Follow-along activity · M1 What is Learning? · Digital Learning">Follow-along activity · M1 What is Learning? · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
@@ -24,14 +25,14 @@ header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 <h1><span class="zh">策略分类：有效、效果有限，还是看情况？</span><span class="en">Sort the strategies: effective, limited — or it depends?</span></h1>
 <p class="zh">点一张卡片，再点一个筐，把它放进去。全部放完后点“检查”。每一条都有解释——解释比对错更重要。有三张卡片的答案是“看情况”：它们有效与否取决于条件，检查后请写一行“有效的条件是____”。</p><p class="en">Tap a card, then tap a bin to place it. When all ten are placed, press Check. Every card has an explanation — the explanation matters more than the score. Three cards belong in “it depends”: whether they work hinges on conditions, so after checking you will write one line, “it works when ____”.</p>
 <div class="sorter" id="sorter">
-<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<h2><span class="zh">卡片</span><span class="en">Cards</span></h2>
 <div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
 <div class="bins">
-<div class="bin" data-bin="good"><h4><span class="zh">✅ 有效</span><span class="en">✅ Effective</span></h4></div>
-<div class="bin" data-bin="weak"><h4><span class="zh">⚠️ 效果有限</span><span class="en">⚠️ Limited</span></h4></div>
-<div class="bin" data-bin="depends"><h4><span class="zh">🤔 看情况</span><span class="en">🤔 It depends</span></h4></div>
+<div class="bin" data-bin="good"><h3><span class="zh">✅ 有效</span><span class="en">✅ Effective</span></h3></div>
+<div class="bin" data-bin="weak"><h3><span class="zh">⚠️ 效果有限</span><span class="en">⚠️ Limited</span></h3></div>
+<div class="bin" data-bin="depends"><h3><span class="zh">🤔 看情况</span><span class="en">🤔 It depends</span></h3></div>
 </div>
-<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<p><button type="button" id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button type="button" class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
 <div id="result" aria-live="polite"></div>
 <div id="conditions" hidden><p><b><span class="zh">写一行（只保存在你自己的浏览器里，不计分）</span><span class="en">Write one line (saved only in this browser, ungraded)</span></b></p><p><span class="zh">“看情况”的三张卡片，选一张：它<b>有效的条件</b>是____。</span><span class="en">Pick one of the three “it depends” cards: it <b>works when</b> ____.</span></p><textarea id="cond" rows="2" style="width:100%;font:inherit;padding:.5rem;border:1px solid var(--line);border-radius:8px"></textarea><p class="checklist-status" id="cond-status"></p></div>
 </div>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="六类分类：这件工具在做什么？ M4 · 第 13 周跟做活动 · 约 5 分钟 · 不计分 · Sort the six: what is this tool doing? M4 · Week 13 follow-along · ~5 min · ungraded">
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="跟做活动 · M4 数字化学习技术 · Digital Learning 数字化学习" data-en="Activity · M4 Digital Learning Technologies · Digital Learning">Activity · M4 Digital Learning Technologies · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
@@ -29,17 +30,17 @@ header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 <p class="cap"><span class="zh"><b>康康｜6 个学习必备 App 安利</b> · 6:44 · B 站 UP 主 是你们的康康 · 2019（微课 1 的同一段）</span><span class="en"><b>Six must-have study apps</b> · 6:44 · Bilibili uploader 是你们的康康 · 2019 (the same clip as micro-lesson 1)</span> · <a href="https://www.bilibili.com/video/BV1UJ41137XG" target="_blank" rel="noopener"><span class="zh">在 B 站打开 ↗</span><span class="en">Open on Bilibili ↗</span></a><br><span class="zh">做完十二张卡，再把视频里的六个 App 也分一分——它们不在卡片里，是留给你的第十三到十八张：<b>墨墨背单词</b>（背单词）· <b>微信读书</b>（读电子书）· <b>网易云电台</b>（听音频节目）· <b>学习强国</b>（新闻与学习资料）· <b>腾讯文档</b>（在线文档）· <b>Forest</b>（专注计时）。（名单据视频整理，待核；视频打不开也能分。）</span><span class="en">After the twelve cards, sort the video's six apps too — not on the cards, they are your cards thirteen to eighteen: <b>墨墨背单词 Momo</b> (vocabulary) · <b>微信读书 WeChat Reading</b> (e-books) · <b>网易云电台 NetEase Cloud Radio</b> (audio programmes) · <b>学习强国 Xuexi Qiangguo</b> (news and study material) · <b>腾讯文档 Tencent Docs</b> (online documents) · <b>Forest</b> (a focus timer). (List compiled from the video, to verify; you can sort without it.)</span></p>
 </div>
 <div class="sorter" id="sorter">
-<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<h2><span class="zh">卡片</span><span class="en">Cards</span></h2>
 <div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
 <div class="bins">
-<div class="bin" data-bin="c1"><h4><span class="zh">1 · 做出来（内容创造）</span><span class="en">1 · Make it (content creation)</span></h4></div>
-<div class="bin" data-bin="c2"><h4><span class="zh">2 · 放出去（分享与在线文档）</span><span class="en">2 · Share it (sharing &amp; online documents)</span></h4></div>
-<div class="bin" data-bin="c3"><h4><span class="zh">3 · 画出来（知识呈现）</span><span class="en">3 · Draw it (knowledge representation)</span></h4></div>
-<div class="bin" data-bin="c4"><h4><span class="zh">4 · 走进去（沉浸）</span><span class="en">4 · Step into it (immersive)</span></h4></div>
-<div class="bin" data-bin="c5"><h4><span class="zh">5 · 找得回（检索与管理）</span><span class="en">5 · Find it again (search &amp; management)</span></h4></div>
-<div class="bin" data-bin="c6"><h4><span class="zh">6 · 考自己（自测与练习）</span><span class="en">6 · Test yourself (self-testing &amp; practice)</span></h4></div>
+<div class="bin" data-bin="c1"><h3><span class="zh">1 · 做出来（内容创造）</span><span class="en">1 · Make it (content creation)</span></h3></div>
+<div class="bin" data-bin="c2"><h3><span class="zh">2 · 放出去（分享与在线文档）</span><span class="en">2 · Share it (sharing &amp; online documents)</span></h3></div>
+<div class="bin" data-bin="c3"><h3><span class="zh">3 · 画出来（知识呈现）</span><span class="en">3 · Draw it (knowledge representation)</span></h3></div>
+<div class="bin" data-bin="c4"><h3><span class="zh">4 · 走进去（沉浸）</span><span class="en">4 · Step into it (immersive)</span></h3></div>
+<div class="bin" data-bin="c5"><h3><span class="zh">5 · 找得回（检索与管理）</span><span class="en">5 · Find it again (search &amp; management)</span></h3></div>
+<div class="bin" data-bin="c6"><h3><span class="zh">6 · 考自己（自测与练习）</span><span class="en">6 · Test yourself (self-testing &amp; practice)</span></h3></div>
 </div>
-<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<p><button type="button" id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button type="button" class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
 <div id="result" aria-live="polite"></div>
 </div>
 <script>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="这条目标 SMART 吗？ M3 · 第 11 周跟做活动 · 约 5 分钟 · 不计分 · Is this goal SMART? M3 · Week 11 follow-along · ~5 min · ungraded">
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="跟做活动 · M3 有意义的数字化学习 · Digital Learning 数字化学习" data-en="Activity · M3 Meaningful Digital Learning · Digital Learning">Activity · M3 Meaningful Digital Learning · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
@@ -25,16 +26,16 @@ header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 <h1><span class="zh">这条目标 SMART 吗？</span><span class="en">Is this goal SMART?</span></h1>
 <p class="zh">八条学习目标。点一张卡片，再点一个筐：它最缺的是什么？有两条的答案是“看情况”——放进去之后，要写出“对我来说现实的条件是____”（只保存在你自己的浏览器里）。全部放完后点“检查”。每一条都有解释——解释比对错更重要。</p><p class="en">Eight study goals. Tap a card, then tap a bin: what does it lack most? Two of them are “it depends” — after placing them, write “the condition that makes it realistic for me is ____” (saved only in this browser). When all eight are placed, press Check. Every card has an explanation — the explanation matters more than the score.</p>
 <div class="sorter" id="sorter">
-<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<h2><span class="zh">卡片</span><span class="en">Cards</span></h2>
 <div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
 <div class="bins">
-<div class="bin" data-bin="sm"><h4><span class="zh">🔍 不够清晰、不可测（S / M）</span><span class="en">🔍 Not clear or measurable (S / M)</span></h4></div>
-<div class="bin" data-bin="ar"><h4><span class="zh">⛰️ 做不到或不现实（A / R）</span><span class="en">⛰️ Not doable or realistic (A / R)</span></h4></div>
-<div class="bin" data-bin="t"><h4><span class="zh">⏳ 没有时间截点（T）</span><span class="en">⏳ No deadline (T)</span></h4></div>
-<div class="bin" data-bin="ok"><h4><span class="zh">✅ 五个字母都有</span><span class="en">✅ All five letters</span></h4></div>
-<div class="bin" data-bin="dep"><h4><span class="zh">🤔 看情况（写出条件）</span><span class="en">🤔 It depends (name the condition)</span></h4></div>
+<div class="bin" data-bin="sm"><h3><span class="zh">🔍 不够清晰、不可测（S / M）</span><span class="en">🔍 Not clear or measurable (S / M)</span></h3></div>
+<div class="bin" data-bin="ar"><h3><span class="zh">⛰️ 做不到或不现实（A / R）</span><span class="en">⛰️ Not doable or realistic (A / R)</span></h3></div>
+<div class="bin" data-bin="t"><h3><span class="zh">⏳ 没有时间截点（T）</span><span class="en">⏳ No deadline (T)</span></h3></div>
+<div class="bin" data-bin="ok"><h3><span class="zh">✅ 五个字母都有</span><span class="en">✅ All five letters</span></h3></div>
+<div class="bin" data-bin="dep"><h3><span class="zh">🤔 看情况（写出条件）</span><span class="en">🤔 It depends (name the condition)</span></h3></div>
 </div>
-<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<p><button type="button" id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button type="button" class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
 <div id="result" aria-live="polite"></div>
 </div>
 <script>

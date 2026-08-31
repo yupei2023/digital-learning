@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="这门课是不是这样？ M0 · 第 1 周跟做活动 · 约 10 分钟 · 不计分 · Is this course like that? M0 · Week 1 follow-along · ~10 min · ungraded">
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="跟做活动 · M0 绪论 · Digital Learning 数字化学习" data-en="Follow-along activity · M0 Orientation · Digital Learning">Follow-along activity · M0 Orientation · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
@@ -24,13 +25,13 @@ header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 <h1><span class="zh">这门课是不是这样？</span><span class="en">Is this course like that?</span></h1>
 <p class="zh">点一张卡片，再点一个筐，把它放进去。全部放完后点“检查”。每一条都有解释——解释比对错更重要。</p><p class="en">Tap a card, then tap a bin to place it. When all ten are placed, press Check. Every card has an explanation — the explanation matters more than the score.</p>
 <div class="sorter" id="sorter">
-<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<h2><span class="zh">卡片</span><span class="en">Cards</span></h2>
 <div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
 <div class="bins">
-<div class="bin" data-bin="yes"><h4><span class="zh">✅ 是这样</span><span class="en">✅ That's right</span></h4></div>
-<div class="bin" data-bin="no"><h4><span class="zh">❌ 不是这样</span><span class="en">❌ That's wrong</span></h4></div>
+<div class="bin" data-bin="yes"><h3><span class="zh">✅ 是这样</span><span class="en">✅ That's right</span></h3></div>
+<div class="bin" data-bin="no"><h3><span class="zh">❌ 不是这样</span><span class="en">❌ That's wrong</span></h3></div>
 </div>
-<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<p><button type="button" id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button type="button" class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
 <div id="result" aria-live="polite"></div>
 </div>
 <script>

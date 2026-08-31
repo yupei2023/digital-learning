@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="帮助，妨碍，还是看情况？ M2 · 第 10 周跟做活动 · 约 10 分钟 · 不计分 · Help, hinder, or it depends? M2 · Week 10 follow-along · ~10 min · ungraded">
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="跟做活动 · M2 什么是数字化学习 · Digital Learning 数字化学习" data-en="Follow-along activity · M2 What is Digital Learning? · Digital Learning">Follow-along activity · M2 What is Digital Learning? · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
@@ -24,15 +25,15 @@ header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 <h1><span class="zh">帮助，妨碍，还是看情况？</span><span class="en">Help, hinder, or it depends?</span></h1>
 <p class="zh">点一张卡片，再点一个筐，把它放进去。放进“看情况”的卡片，检查后会多出一行，请写：<b>有效的条件是____</b>。放错了？再点那张卡，再点别的筐。全部放完后点“检查”，结果和每张卡的解释会出现在筐的上方和卡片下面。请在你写信的那台设备上做这个活动——你写的条件只保存在这台设备的浏览器里。每一条都有解释——解释和你写的条件，比对错更重要。</p><p class="en">Tap a card, then tap a bin. Cards in “it depends” get an extra line after checking: <b>it helps on condition that ____</b>. Misplaced one? Tap the card again, then another bin. Place all ten, then press Check; the result appears above the bins and each card's explanation under the card. Do this on the device you will write the letter on — your conditions are saved only in this device's browser. Every card has an explanation — the explanation and your condition matter more than the score.</p>
 <div class="sorter" id="sorter">
-<h3><span class="zh">卡片</span><span class="en">Cards</span></h3>
+<h2><span class="zh">卡片</span><span class="en">Cards</span></h2>
 <div class="pool" id="pool" aria-label="Unsorted 待分类"></div>
 <div id="result" aria-live="polite"></div>
 <div class="bins">
-<div class="bin" data-bin="good"><h4><span class="zh">✅ 帮助学习</span><span class="en">✅ Helps learning</span></h4></div>
-<div class="bin" data-bin="weak"><h4><span class="zh">⚠️ 妨碍学习</span><span class="en">⚠️ Hinders learning</span></h4></div>
-<div class="bin" data-bin="dep"><h4><span class="zh">🤔 看情况</span><span class="en">🤔 It depends</span></h4></div>
+<div class="bin" data-bin="good"><h3><span class="zh">✅ 帮助学习</span><span class="en">✅ Helps learning</span></h3></div>
+<div class="bin" data-bin="weak"><h3><span class="zh">⚠️ 妨碍学习</span><span class="en">⚠️ Hinders learning</span></h3></div>
+<div class="bin" data-bin="dep"><h3><span class="zh">🤔 看情况</span><span class="en">🤔 It depends</span></h3></div>
 </div>
-<p><button id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
+<p><button type="button" id="check"><span class="zh">检查</span><span class="en">Check</span></button> <button type="button" class="ghost" id="reset"><span class="zh">重来</span><span class="en">Reset</span></button></p>
 </div>
 <script>
 (function(){
