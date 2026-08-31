@@ -3,7 +3,8 @@
 第一学期 W7 · 5 分 · 🚫 **独立**（本单元不使用生成式 AI；新账号过第 5 周三问；录屏导览只录屏幕、隐私先打码）· ≤ 120 分钟（年计划 v2.1 §3b 数字基本功行：微课 25 · 跟做 + 任务 75 · 日志 20；本周块内拆分为跟做 15 + 任务 60，见下"时间预算"）
 Semester 1, W7 · 5 pts · 🚫 **Independent** (no generative AI; new accounts pass Week 5's three questions; the screen tour records screen only, private details masked first) · ≤ 120 min (Year Plan v2.1 §3b Digital Basics row: micro-lessons 25 · follow-along + task 75 · log 20; this week the block splits 15 + 60, see Time budget below)
 
-状态 Status 2026-08-30：**r1 —— 无人值守流水线整单元建成，本地提交，未推送。** 原本"待 ShiFu 批准"的每一项都按推荐选项落实，逐条列在下方"替 ShiFu 决定的事项"，请 ShiFu 过目。学生页面无任何裸 `[placeholder]`——两处未定信息（答疑预约方式、菜单外课程的导师确认登记方式）均以"📌 开课前公布"卡优雅呈现；12 段 B 站视频经 view API 核实，大陆播放待 ShiFu 实测。本次提交同时把 B5 第 6 周页尾链接改为直链本单元（了结 B5 README 决定 20 的"即将上线"口径），并在课程首页加了 B6 一行。
+状态 Status 2026-08-30：**r2 —— 已按 _tongxue 实测报告（0 P1 · 3 P2 · 3 P3）与 _jonassen 单元评估（J1–J6 + 学期结账）修订，并顺带把两条跨单元的线接回 M3 / M5。**逐条回应见 `feedback/s1-b6-my-digital-workspace_xiaobai-response_2026-08-30.md`；本轮新增决定 23–29 见下。
+r1 —— 无人值守流水线整单元建成，本地提交，未推送。 原本"待 ShiFu 批准"的每一项都按推荐选项落实，逐条列在下方"替 ShiFu 决定的事项"，请 ShiFu 过目。学生页面无任何裸 `[placeholder]`——两处未定信息（答疑预约方式、菜单外课程的导师确认登记方式）均以"📌 开课前公布"卡优雅呈现；12 段 B 站视频经 view API 核实，大陆播放待 ShiFu 实测。本次提交同时把 B5 第 6 周页尾链接改为直链本单元（了结 B5 README 决定 20 的"即将上线"口径），并在课程首页加了 B6 一行。
 Built in full (r1) in the unattended pipeline and committed locally, not pushed. Every would-be "pending ShiFu" item took the recommended option; each is listed under "Decisions made on ShiFu's behalf" below. No raw `[placeholder]` on any student page — the two unsettled details (help-session booking, off-menu mentor-confirmation logistics) appear as graceful "published before the course opens" cards; all 12 Bilibili clips verified via the view API, mainland playback awaiting ShiFu's live test. This commit also flips B5's Week-6 footer link to point here and adds the B6 line on the course home.
 
 核心问题 Essential question（教纲 v7 W7 行）：我的数字生活井然有序吗？Is my digital life in order?
@@ -51,6 +52,21 @@ English parallel: ① the workspace assembled (cloud or fallback · weekly remin
 20. **弧线收官卡进 w7 §7 之后**：回望 B1–B6 六样手艺 + "装备齐了"比喻 + **比喻局限言明**（装备买来就是你的，手艺不用会生锈——"还不稳"要靠后面十几周的真实使用养稳）+ "下周起不学工具、研究学习本身"。日志第 3 行预种 M1 W8 的"成功学习经历"（M1 任务的直接素材）。
 21. **导览长短不设闸门**："约 1 分钟"为目标——四角齐、无隐私即达标，40 秒或 1 分 40 都不扣分（任务页 FAQ 明文）；录导览 10 分钟含一次重录余量（"诚实的估计"注明第一遍常录不好）。
 22. **缓冲周 FAQ 照常保留**；新增 FAQ：手机-only 路线、共用电脑（沿 B4/B5 口径）、云盘要手机号（决定 4 的三路线）、两门都不想选/菜单外（决定 7）、导览露脸与配音、答疑预约（开课前公布卡）。导师边界新增"不替学生选课、不当课程测评员"。
+
+### r2 新增（2026-08-30 · 来自 _tongxue 与 _jonassen 两份报告）
+
+23. **菜单外规则是"五条"，不是"四条"**（_tongxue L1）：量规 ② 行"达标"格原写"规则四条对过 / the four rules checked"，与菜单页、任务页、w7 FAQ 的**五条**（免费 · 大陆能打开 · 非 AI · 时长在上限内 · 注册方式清楚）不符。改为"菜单页的五条规则逐条对过 / the menu page's five rules each checked"。rubric 另一处"课程隐私四条"确实是四条（真名 · 正脸照片 · 学校全名 · 可定位信息），未动。
+24. **"主修 + 探索"= 两门都可以留**（_tongxue L2 · 教学口径）：任务页新增一条 FAQ——"两门试学的课我都舍不得，主修到底选哪门？"直说这往往根本不是两难：更想深学的当主修，另一门当探索，谁也不丢；真要决定的只有"哪一门配得上那每周一小时"。ShiFu 若认为该由学生自己想明白（"发呆也是学习"），删掉这条 FAQ 即可。
+25. **目标 ③ 不再数提醒的条数**（_tongxue L3）：三处逐字口径（index / w7 §1 / rubric ③ 行）与 w7 时间表由"设一条下周提醒"改为"设好日历提醒"；跟做第二条只响一次的提醒明确标注"顺手加的，不是硬要求"。
+26. **每周重复提醒的起点定在第 11 周**（_jonassen J2 · **教学取舍，最想请 ShiFu 复核的一条**）：原设计本周就让它每周响，但主修课第 11 周才开学——第 8–10 周它会空响三次，恰好先教会学生忽略它（微课 2 自己那条"提醒越多越不响"的脾气）。r2 取"第 11 周起响"，并保留诚实的兜底句："已经设成本周开始也不必改——第 11 周之前的每一次都只是预告，划掉不算失约。"另一选项是"第 8 周就响、早锚定"，只有教师能权衡；推翻只需改 `tools/b6/lesson-2-calendar-and-reminders.html` 与 `activity-workspace-rehearsal.html` 两处片段。
+27. **导览的隐私清扫加"日历里别人的日程"**（_tongxue W1）：任务页硬性要求、步骤 2、w7 FAQ"导览露脸"、量规隐私条四处同步——导览只需露出"外部课程"那一条，家里共用日历的其他日程先隐藏或只做特写。
+28. **零门槛路线的备份：视频存本地 / U 盘同样算数**（_tongxue W2）：任务步骤 5 补一句——视频发邮箱常常发不动，存进本地"网站备份"文件夹或 U 盘同分（量规不问存在哪），邮箱留给两页正文。
+29. **微课 1 新增"生成分享链接"一段**（_jonassen J3）：M1 w8 FAQ 与任务 1 都写着"生成分享链接（第 7 周 B6 会教）"，而 B6 原本通篇没有——r2 在微课 1 云盘节补一张小卡：分享链接是什么、怎么生成（选中文件 → 分享 → 复制链接，有提取码就一并写在网页上）、没有云盘的两条兜底、以及隐私提醒（只分享那一个文件，不分享整个文件夹）。**与指令的一处偏离**：原拟把"B 站设不公开"写作零门槛替代，但 M1 w8 FAQ 明文写着"不要传到需要手机号注册、又没有'仅链接可见'的视频网站"，而 B 站投稿需要手机号——故改为沿用 M1 自己的口径（先试建站平台上传；放不下就留在本地 / U 盘并在页面上如实说明）。M1 未动（其生成器 `tools/build_m1.py` 已与线上页面脱节）。
+30. **跨单元回接（两条，走各自的生成器）**：
+    - **清单 → M5**（_jonassen J1）：`tools/m5/lesson-3-baseline-and-reflection.html` 加一句选做提示——"第 7 周那张'基本功清单'还在吗？把它和这次自测放在一起看：当时写'还不稳'的哪几行，如今稳了？"落点选微课 3（学生摆材料、动笔前的那一步），不是 w16，因为那里才是"两个时间点并排"真正发生的地方。`build_m5.py` 重跑后 git 确认**只有这一行**变化。
+    - **提醒 → M3**（_jonassen J2）：`tools/m3/lesson-3-schedule.html` 第 2 步加一句——"第 7 周那条'外部课程 · 一小时'就是底子：改名、改起点和时长即可，不必另设一条。"`build_m3.py` 重跑后 git 确认**只有这一行**变化。
+31. **§0 的"疗效复查"**（_jonassen J4）：任务步骤 1 末尾加一句——归置完再找一次 §0 那个文件、记下这回的秒数，两个秒数并排，"搭好了"就从展示变成了检验（数字留着写日志第 1 行）。零分钟成本，无新交付物。
+32. **"数字素养自测"→"学习状态自测"**（_jonassen J1 措辞项）：任务页 FAQ 的口径错误已改，全站学生视角统一为"学习状态自测 / learning self-check"（M5 决定 3、年计划 §9）。
 
 ## 一周地图 The week's map
 
@@ -102,6 +118,16 @@ English parallel: ① the workspace assembled (cloud or fallback · weekly remin
 
 25 + 15 + 60 + 20 = 120。诚实的估计：最易超时的是"归置"（一开整理就想清五年旧账——页面明说"只归置课程文件，大扫除留给选做"）；录导览 10 分钟含一次重录余量。选做不计入：首页电脑入门（3:18）、任务页云盘对比（4:30）、want-more 全部。
 
+## 检查结果 Checks（r2 · 2026-08-30）
+
+| 检查 | 结果 |
+|---|---|
+| `tools/parity_check.py`（B6 12 页 + 1 讲义 + M3 微课 3 + M5 微课 3）| PASS · 15 文件 · 0 issues |
+| `tools/site_checks.py`（链接锚点 · S1 禁用词 · 页脚 · 无头 Chrome 双语 console · 390px 双语无溢出）| PASS · 15/15 页 · 0 failing |
+| 必做分钟 = 120（w7 时间表逐项 25+15+60+20，数字未动；r2 只改了跟做行的**标签**"设一条下周提醒"→"设好日历提醒"）| PASS |
+| 禁用词扫描（S1 清单）| PASS · 0 命中（B6 + M3/M5 两处改动页）|
+| 跨单元改动范围 | `git diff --stat` 确认 M3 与 M5 各**只有 1 行**变化，均由各自生成器产出；`index.html` 与 `assets/site.css`（ShiFu 并行改版）未入本次提交 |
+
 ## 检查结果 Checks（r1 · 2026-08-30）
 
 | 检查 | 结果 |
@@ -118,10 +144,12 @@ English parallel: ① the workspace assembled (cloud or fallback · weekly remin
 | 模块外改动核对 | 提交仅含 B6 模块 + B5 `w6.html` 页尾直链 + 课程首页 B6 一行；**课程首页与 `assets/site.css` 的改版是 ShiFu 并行进行的未提交工作，已完整保留在工作区、未入本次提交**（见"待 ShiFu"末条）|
 
 ## 待 ShiFu 实测 / 过目 For ShiFu
-- 上方"替 ShiFu 决定的事项"22 条，尤其第 1–2（选择页计分与 75 分钟块拆分）、第 4（云盘三路线的政策口径——本单元最核心的决定）、第 5（"还不稳"同分的评估哲学）、第 7（菜单外确认与答疑预约的"开课前公布"卡——开课信需兑现这两处）、第 11（视频通话礼仪的取舍）。
+- 上方"替 ShiFu 决定的事项"32 条（r1 的 1–22 + r2 的 23–32），尤其第 1–2（选择页计分与 75 分钟块拆分）、第 4（云盘三路线的政策口径——本单元最核心的决定）、第 5（"还不稳"同分的评估哲学）、第 7（菜单外确认与答疑预约的"开课前公布"卡——开课信需兑现这两处）、第 11（视频通话礼仪的取舍）。
 - 12 个 B 站视频的大陆播放实测；3 段无简介视频（BV13Y411F7oS / BV1xy421i7uM / BV1d94y1C7TD）的内容抽查。
 - 坚果云免费版的注册流程与额度实测（微课 1 表内"待实测"）。
 - 开课信待补两件：一对一答疑预约方式；菜单外课程导师确认的登记方式（`tools/welcome-letter-spec.md` 可续记）。
+- **r2 未做、留给 ShiFu 定范围的一条**（_jonassen J5）：微课 1 立誓"从今天起，备份跟着每一次发布"，但 M1–M5 每个任务的发布步骤里都没有这句提示（那些单元先建成，未回接）。_jonassen 建议至少在发布最密集的 M5 两周各加一句"发布后照第 7 周规矩备份"，是否遍及 M1–M4 由 ShiFu 定。r2 未动——这是**范围决定**，且 M1/M2/M4 的生成器与线上页面已脱节，回接需要先把生成器对齐，不是一句话的事。
+- **_jonassen 提给 ShiFu 的问题（原样转达）**：① "还不稳"的导师汇总是否要产生**学生可见**的回应（如 M1–M4 里的回炉小练习）？若要，落点在哪——那些单元已建成。② 触点 1 的两处"开课前公布"卡都押在开课信上，`tools/welcome-letter-spec.md` 是否就是唯一台账？③ 决定 26 的提醒起点取舍（第 8 周就响 vs 第 11 周起响）。
 - **课程首页改版并行进行中**：本次构建期间，工作区出现了课程首页（`index.html`）与 `assets/site.css` 的整页改版（module-row 新版式）——不是 _xiaobai 所改。处理方式：本次提交里的首页仍是旧版 + B6 一行（不动 ShiFu 未提交的工作）；同时已把 B6 的 module-row **按新版式补进工作区的新首页**（B5 行之后），ShiFu 提交改版时它会一并入库。构建中途曾有一次脚本误插损坏新首页文件头，已当场修复并核对（`<!DOCTYPE` 完整、新版式未受影响）。
 
 ## 来源材料 Source material（2026-08-30 核对）
