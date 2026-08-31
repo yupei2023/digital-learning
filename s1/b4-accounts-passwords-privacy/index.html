@@ -6,12 +6,17 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="单元首页 · B4 账号、密码与隐私 · Digital Learning 数字化学习" data-en="Module home · B4 Accounts, Passwords & Privacy · Digital Learning">Module home · B4 Accounts, Passwords & Privacy · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 <script src="quiz-data.js"></script>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html" aria-current="page"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w5.html"><span class="zh">第 5 周</span><span class="en">Week 5</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -39,6 +44,55 @@
 </ol>
 <p><span class="zh">这三条也是本单元量规的评分行（第 ③ 条不计分，完成即可）。</span><span class="en">These three are also the rubric rows (row ③ is ungraded — completing it is enough).</span> → <a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a></p>
 <p class="reader-note"><span class="zh">本周你还会学到：密码泄露和"撞库"是怎么回事、"永不外传"清单上有哪些信息（验证码在最前面）、密码管理器有哪几条路可选。这些不进量规——第 5 周页面的自测题帮你检查，不计分。</span><span class="en">You will also learn this week: how password leaks and credential stuffing work, what belongs on the never-share list (verification codes at the top), and the routes a password manager can take. None of it is graded — the Week 5 self-quiz checks it for you, ungraded.</span></p>
+
+<h2><span class="zh">四个对手，四把锁</span><span class="en">Four adversaries, four locks</span></h2>
+<p><span class="zh">"我的账号安全吗"这个问题，要先问清楚<b>"防谁"</b>才答得出。本周四段微课其实是四个不同的回答——下面这张图把它们摆在一起看：四个角是四个对手，各有各的进门方式；每个角里那把锁，就是对付它的那一课。</span><span class="en">The question "are my accounts safe?" becomes answerable only after a second question: <b>safe from whom?</b> This week's four micro-lessons are four different answers — and the figure below sets them side by side: four corners, four adversaries, each with its own way in; the lock named inside each corner is the lesson that stops that one.</span></p>
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg viewBox="0 0 640 430" role="img" aria-labelledby="fig-b4-threat-t">
+<title id="fig-b4-threat-t">四个对手围着你的两个数字之家：猜密码的程序、被偷了数据的网站、打电话来要验证码的人、拿得到你设备的人。四支箭头从四角指向中央，每个角里都写着挡住它的那把锁。Four adversaries around your two digital homes — guessing programs, breached websites, callers after your verification code, and whoever can reach your device. Four arrows point inward from the corners, and each corner names the lock that stops it.</title>
+<defs><marker id="dlArrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="dl-head" d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<rect class="dl-field" x="20" y="20" width="600" height="390" rx="18"/>
+<rect class="dl-node is-warn" x="42" y="44" width="230" height="134" rx="10"/>
+<rect class="dl-node is-warn" x="368" y="44" width="230" height="134" rx="10"/>
+<rect class="dl-node is-warn" x="42" y="252" width="230" height="134" rx="10"/>
+<rect class="dl-node is-warn" x="368" y="252" width="230" height="134" rx="10"/>
+<g class="dl-link" marker-end="url(#dlArrow)">
+  <path d="M272 178 L300 200"/><path d="M368 178 L340 200"/><path d="M272 252 L300 230"/><path d="M368 252 L340 230"/>
+</g>
+<circle class="dl-node is-key" cx="320" cy="215" r="30"/>
+<g class="dl-t dl-b" text-anchor="middle">
+  <text class="zh dl-acc" x="320" y="221">我</text><text class="en dl-acc" x="320" y="221">me</text>
+</g>
+<g class="dl-t dl-b">
+  <text class="zh dl-caution" x="58" y="76">猜密码的程序</text><text class="en dl-caution" x="58" y="76">Guessing programs</text>
+  <text class="zh dl-caution" x="384" y="76">出了事的网站</text><text class="en dl-caution" x="384" y="76">A breached website</text>
+  <text class="zh dl-caution" x="58" y="284">来要验证码的人</text><text class="en dl-long dl-caution" x="58" y="284">Callers after your code</text>
+  <text class="zh dl-caution" x="384" y="284">拿得到你设备的人</text><text class="en dl-long dl-caution" x="384" y="284">Whoever holds your device</text>
+</g>
+<g class="dl-t-sm">
+  <text class="zh dl-muted" x="58" y="102">一秒能试上百万次</text><text class="en dl-long dl-muted" x="58" y="102">millions of tries a second</text>
+  <text class="zh dl-muted" x="58" y="122">人类的花招它全背过</text><text class="en dl-long dl-muted" x="58" y="122">it knows every human trick</text>
+  <text class="zh dl-muted" x="384" y="102">你拦不住，也不怪你</text><text class="en dl-long dl-muted" x="384" y="102">not your fault, unpreventable</text>
+  <text class="zh dl-muted" x="384" y="122">偷来的钥匙挨个试别的门</text><text class="en dl-long dl-muted" x="384" y="122">stolen keys tried elsewhere</text>
+  <text class="zh dl-muted" x="58" y="310">自称客服、自称老师</text><text class="en dl-long dl-muted" x="58" y="310">"customer service", they say</text>
+  <text class="zh dl-muted" x="58" y="330">六位数字等于万能钥匙</text><text class="en dl-long dl-muted" x="58" y="330">six digits are a master key</text>
+  <text class="zh dl-muted" x="384" y="310">共用的电脑、没锁的手机</text><text class="en dl-long dl-muted" x="384" y="310">a shared PC, unlocked phone</text>
+  <text class="zh dl-muted" x="384" y="330">浏览器里存着全部钥匙</text><text class="en dl-long dl-muted" x="384" y="330">the browser holds every key</text>
+</g>
+<g class="dl-t-sm dl-b">
+  <text class="zh dl-good" x="58" y="152">锁：够长的密码短语</text><text class="en dl-long dl-good" x="58" y="152">lock: a long passphrase</text>
+  <text class="zh dl-good" x="384" y="152">锁：一号一钥</text><text class="en dl-long dl-good" x="384" y="152">lock: one key per door</text>
+  <text class="zh dl-good" x="58" y="360">锁：验证码永不外传</text><text class="en dl-long dl-good" x="58" y="360">lock: never share a code</text>
+  <text class="zh dl-good" x="384" y="360">锁：锁屏 + 两步验证</text><text class="en dl-long dl-good" x="384" y="360">lock: screen lock + step 2</text>
+</g>
+<g class="dl-t-xs" text-anchor="middle">
+  <text class="zh dl-muted" x="320" y="400">微课 4 管的不是贼，是你自己交出去的信息。</text><text class="en dl-muted" x="320" y="400">Micro-lesson 4 is about no thief — it is about what you hand over yourself.</text>
+</g>
+</svg>
+</div>
+<figcaption><span class="zh">四角图（本课程自绘）：中央是你，四角是四个对手，箭头是它们进门的方向。四把锁分别由微课 1、微课 2、微课 2、微课 3 教给你——所以"安全"从来不是一件事，而是四件互不替代的事。</span><span class="en">The four-corner map (drawn by this course): you at the centre, four adversaries at the corners, the arrows their way in. The four locks are taught by micro-lessons 1, 2, 2 and 3 — which is why "safe" is never one thing but four, none of which substitutes for another.</span></figcaption>
+</figure>
 
 <h2><span class="zh">一周地图</span><span class="en">The week's map</span></h2>
 <div class="table-wrap"><table>

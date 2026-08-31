@@ -6,11 +6,16 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 4 · B4 账号、密码与隐私 · Digital Learning 数字化学习" data-en="Micro-lesson 4 · B4 Accounts, Passwords & Privacy · Digital Learning">Micro-lesson 4 · B4 Accounts, Passwords & Privacy · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w5.html"><span class="zh">第 5 周</span><span class="en">Week 5</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -32,6 +37,48 @@
 <li><span class="zh"><b>② 谁能看到它？</b>同一条信息，去处不同，分量完全不同：发给导师的邮件只有一个人看；填进注册表单，是交给了那家公司的服务器（上周"不把个人信息粘进翻译框"的原因，正在这里——<b>粘进任何网页框的文字都会上传，而且收不回</b>）；发布到网站上，就是给了全世界。发之前，把去处想一遍。</span><span class="en"><b>② Who can see it?</b> The same information weighs differently by destination: an email to your mentor reaches one person; a sign-up form hands it to that company's servers (here at last is the reason behind last week's "no personal information in the translation box" — <b>text pasted into any web box is uploaded, and cannot be recalled</b>); publishing it on your site gives it to the world. Trace the destination before sending.</span></li>
 <li><span class="zh"><b>③ 和别的信息拼起来，能不能找到真实的我？</b>这是最容易漏的一问。单独看都无害的碎片，拼起来就是坐标：校服照片 + 小区门口的街景 + 生日蛋糕的日期 = 陌生人能找到你本人。所以判断一条信息，别只看它自己，要看它<b>和你已经公开的一切</b>加在一起是什么。</span><span class="en"><b>③ Pieced together with everything else, does it locate the real me?</b> The most-missed question of the three. Fragments harmless alone become coordinates together: a school-uniform photo + the street view at the compound gate + the date on a birthday cake = a stranger finding the actual you. Judge no piece of information by itself — judge it <b>added to everything you have already made public</b>.</span></li>
 </ol>
+<figure class="dl-fig">
+<svg viewBox="0 0 640 340" role="img" aria-labelledby="fig-b4-gate-t">
+<title id="fig-b4-gate-t">一道门，三位守门人：这一格暴露了什么、谁能看到它、拼起来会不会找到真实的我。三问都放行，信息才出门。A gate with three questions standing guard — what does this reveal, who can see it, and pieced together does it locate the real me. Nothing leaves until all three let it through.</title>
+<defs><marker id="dlArrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="dl-head" d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<path class="dl-node is-key" d="M224 284 V204 A96 96 0 0 1 416 204 V284 Z"/>
+<rect class="dl-node is-warn" x="26" y="168" width="186" height="116" rx="10"/>
+<rect class="dl-node is-warn" x="428" y="168" width="186" height="116" rx="10"/>
+<path class="dl-axis" d="M20 284 H620"/>
+<g class="dl-link" marker-end="url(#dlArrow)"><path d="M212 252 H236"/><path d="M428 252 H404"/></g>
+<path class="dl-link is-key" marker-end="url(#dlArrow)" d="M320 196 V138"/>
+<g class="dl-t-lg" text-anchor="middle">
+  <text class="zh dl-acc" x="320" y="34">要出门的信息</text><text class="en dl-acc" x="320" y="34">Information about to travel</text>
+</g>
+<g class="dl-t-sm" text-anchor="middle">
+  <text class="zh dl-muted" x="320" y="58">一格表单 · 一栏资料 · 一张截图</text><text class="en dl-muted" x="320" y="58">a form field · a profile row · a screenshot</text>
+</g>
+<g class="dl-t-sm dl-b" text-anchor="middle">
+  <text class="zh dl-acc" x="320" y="226">③ 拼起来呢？</text><text class="en dl-long dl-acc" x="320" y="226">③ And pieced together?</text>
+</g>
+<g class="dl-t-sm" text-anchor="middle">
+  <text class="zh dl-muted" x="320" y="250">和已经公开的一切加起来</text><text class="en dl-long dl-muted" x="320" y="250">added to all you already show</text>
+  <text class="zh dl-muted" x="320" y="274">能找到真实的我吗</text><text class="en dl-long dl-muted" x="320" y="274">can a stranger find me?</text>
+</g>
+<g class="dl-t dl-b">
+  <text class="zh" x="42" y="200">① 暴露了什么</text><text class="en dl-long" x="42" y="200">① What is revealed?</text>
+  <text class="zh" x="444" y="200">② 谁能看到它</text><text class="en dl-long" x="444" y="200">② Who can see it?</text>
+</g>
+<g class="dl-t-sm">
+  <text class="zh dl-muted" x="42" y="226">别看它要什么</text><text class="en dl-long dl-muted" x="42" y="226">not what it asks for</text>
+  <text class="zh dl-muted" x="42" y="248">看你交出了什么</text><text class="en dl-long dl-muted" x="42" y="248">but what you give</text>
+  <text class="zh dl-muted" x="42" y="272">选填的格子留空</text><text class="en dl-long dl-muted" x="42" y="272">leave optional blank</text>
+  <text class="zh dl-muted" x="444" y="226">一个人？一家公司？</text><text class="en dl-long dl-muted" x="444" y="226">a person? a company?</text>
+  <text class="zh dl-muted" x="444" y="248">还是全世界？</text><text class="en dl-long dl-muted" x="444" y="248">or the whole world?</text>
+  <text class="zh dl-muted" x="444" y="272">粘进网页框收不回</text><text class="en dl-long dl-muted" x="444" y="272">pasted in a box: gone</text>
+</g>
+<g class="dl-t-xs" text-anchor="middle">
+  <text class="zh dl-muted" x="320" y="316">三个都放行，它才出门——三问不禁止发布，只是把决定权交回你手里。</text><text class="en dl-muted" x="320" y="316">All three must let it pass. The questions ban nothing — they hand the decision back to you.</text>
+</g>
+</svg>
+<figcaption><span class="zh">门图（本课程自绘）：两侧的守门人问的是眼前这一条，站在门洞里的第 ③ 问最容易被忽略——它问的是这一条<b>和你已经公开的一切加在一起</b>是什么。</span><span class="en">The gate (drawn by this course): the two flanking guards ask about the piece in front of you; the third, standing in the doorway itself, is the one most often missed — it asks what this piece becomes <b>added to everything you have already made public</b>.</span></figcaption>
+</figure>
+
 <p class="reader-note"><span class="zh">三问不是让你什么都不发——这门课整年都在请你发布作品。它是把"发什么、不发什么"的决定权，从习惯手里交回<b>你的判断</b>手里。三问守住的还有一样东西：<b>追不到真人的页面，才敢写真话</b>——隐私护的不只是你的安全，还有你日志里的诚实。第 3 周建站时你读过这句话，本周它有了完整的理由。</span><span class="en">The three questions are not a ban on sharing — this course spends the whole year asking you to publish work. They move the decision of what travels and what stays out of habit's hands and back into <b>your judgment's</b>. And the three questions guard one more thing: <b>only a page that cannot be traced to the real you dares to tell the truth</b> — privacy protects not just your safety but the honesty of your log. You read that line when your site was born in Week 3; this week it carries its full reason.</span></p>
 
 <h2><span class="zh">用三问巡一遍你的隐私设置</span><span class="en">Sweep your privacy settings with the three questions</span></h2>

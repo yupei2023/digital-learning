@@ -6,12 +6,17 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="单元首页 · B6 我的数字工作台 · Digital Learning 数字化学习" data-en="Module home · B6 My Digital Workspace · Digital Learning">Module home · B6 My Digital Workspace · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 <script src="quiz-data.js"></script>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html" aria-current="page"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w7.html"><span class="zh">第 7 周</span><span class="en">Week 7</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -42,34 +47,45 @@
 
 <h2><span class="zh">你的工作台长什么样</span><span class="en">What the workspace looks like</span></h2>
 <p><span class="zh">四个角，各住一件家什；中央是同一个你——在任何设备上，都找得到自己的东西：</span><span class="en">Four corners, one fixture each; at the centre, the same you — your things findable from any device:</span></p>
-<figure id="workspace-map-figure" class="card" style="margin:1rem 0" role="img" aria-label="工作台四角图：中央是'我的数字工作台——在任何设备上都找得到我的东西'。左上角：云盘 / 同步——文件的家，最新版住云端，兜底是发给自己的邮箱。右上角：日历 / 提醒——时间的家，每周固定时段，提前十分钟响。左下角：笔记——想法的家，抄话带三行来源。右下角：备份——后悔药，每次发布后存一份副本。四角都有箭头指向中央。The workspace map: at the centre, 'My digital workspace — my things findable on any device'. Top left: Cloud drive / sync — the home of files; the latest version lives in the cloud; the fallback is emailing yourself. Top right: Calendar / reminders — the home of time; a fixed weekly slot ringing ten minutes ahead. Bottom left: Notes — the home of ideas; copied words carry their three source lines. Bottom right: Backup — the regret cure; one copy saved after every publish. Arrows from all four corners point to the centre.">
-<svg viewBox="0 0 420 360" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">
-<rect x="4" y="4" width="412" height="352" rx="12" fill="var(--card,#fff)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<rect x="120" y="140" width="180" height="80" rx="10" fill="var(--accent-soft,#e8f1f8)" stroke="var(--line,#e4e1da)" stroke-width="1.5"/>
-<g font-weight="700" fill="var(--ink,#1f2937)" text-anchor="middle"><text class="zh" font-size="15" x="210" y="172">我的数字工作台</text><text class="en" font-size="13.5" x="210" y="172">My digital workspace</text></g>
-<g fill="var(--muted,#5b6472)" text-anchor="middle"><text class="zh" font-size="12.5" x="210" y="196">任何设备上都找得到我的东西</text><text class="en" font-size="12.5" x="210" y="196">findable on any device</text></g>
-<rect x="16" y="16" width="150" height="74" rx="8" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
-<g font-weight="700" fill="#2e7d32"><text class="zh" font-size="13.5" x="26" y="38">☁ 云盘 / 同步</text><text class="en" font-size="12.5" x="26" y="38">☁ Cloud / sync</text></g>
-<g fill="var(--ink,#1f2937)"><text class="zh" font-size="12.5" x="26" y="58">文件的家：最新版住云端</text><text class="en" font-size="12.5" x="26" y="58">the home of files</text></g>
-<g fill="var(--muted,#5b6472)"><text class="zh" font-size="12.5" x="26" y="76">兜底：发给自己的邮箱</text><text class="en" font-size="12.5" x="26" y="76">fallback: email yourself</text></g>
-<rect x="254" y="16" width="150" height="74" rx="8" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
-<g font-weight="700" fill="#2e7d32"><text class="zh" font-size="13.5" x="264" y="38">🗓 日历 / 提醒</text><text class="en" font-size="12.5" x="264" y="38">🗓 Calendar</text></g>
-<g fill="var(--ink,#1f2937)"><text class="zh" font-size="12.5" x="264" y="58">时间的家：每周固定时段</text><text class="en" font-size="12.5" x="264" y="58">the home of time</text></g>
-<g fill="var(--muted,#5b6472)"><text class="zh" font-size="12.5" x="264" y="76">提前十分钟响</text><text class="en" font-size="12.5" x="264" y="76">rings ten minutes ahead</text></g>
-<rect x="16" y="270" width="150" height="74" rx="8" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
-<g font-weight="700" fill="#2e7d32"><text class="zh" font-size="13.5" x="26" y="292">📓 笔记</text><text class="en" font-size="12.5" x="26" y="292">📓 Notes</text></g>
-<g fill="var(--ink,#1f2937)"><text class="zh" font-size="12.5" x="26" y="312">想法的家：固定落点</text><text class="en" font-size="12.5" x="26" y="312">the home of ideas</text></g>
-<g fill="var(--muted,#5b6472)"><text class="zh" font-size="12.5" x="26" y="330">抄话带三行来源</text><text class="en" font-size="12.5" x="26" y="330">copied words keep sources</text></g>
-<rect x="254" y="270" width="150" height="74" rx="8" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
-<g font-weight="700" fill="#2e7d32"><text class="zh" font-size="13.5" x="264" y="292">🗄 备份</text><text class="en" font-size="12.5" x="264" y="292">🗄 Backup</text></g>
-<g fill="var(--ink,#1f2937)"><text class="zh" font-size="12.5" x="264" y="312">后悔药：发布后存一份</text><text class="en" font-size="12.5" x="264" y="312">the regret cure</text></g>
-<g fill="var(--muted,#5b6472)"><text class="zh" font-size="12.5" x="264" y="330">每次发布后照做</text><text class="en" font-size="12.5" x="264" y="330">a copy after every publish</text></g>
-<g stroke="var(--muted,#5b6472)" stroke-width="1.5" fill="none">
-<line x1="120" y1="96" x2="160" y2="140"/><line x1="300" y1="96" x2="260" y2="140"/>
-<line x1="120" y1="264" x2="160" y2="220"/><line x1="300" y1="264" x2="260" y2="220"/>
+<figure id="workspace-map-figure" class="dl-fig">
+<div class="dl-scroll">
+<svg viewBox="0 0 640 430" role="img" aria-labelledby="fig-b6-map-t">
+<title id="fig-b6-map-t">数字工作台的四个角：云盘与同步是文件的家，日历与提醒是时间的家，笔记是想法的家，备份是后悔药；中间是你自己。The four corners of the digital workspace — cloud and sync as the home of files, calendar and reminders as the home of time, notes as the home of ideas, backup as the cure for regret — with you at the centre.</title>
+<rect class="dl-field" x="20" y="20" width="600" height="390" rx="18"/>
+<rect class="dl-node" x="42" y="44" width="230" height="134" rx="10"/>
+<rect class="dl-node" x="368" y="44" width="230" height="134" rx="10"/>
+<rect class="dl-node" x="42" y="252" width="230" height="134" rx="10"/>
+<rect class="dl-node" x="368" y="252" width="230" height="134" rx="10"/>
+<g class="dl-link is-soft"><path d="M296 199 L272 178"/><path d="M344 199 L368 178"/><path d="M296 231 L272 252"/><path d="M344 231 L368 252"/></g>
+<circle class="dl-node is-key" cx="320" cy="215" r="30"/>
+<g class="dl-t dl-b" text-anchor="middle">
+  <text class="zh dl-acc" x="320" y="221">我</text><text class="en dl-acc" x="320" y="221">me</text>
+</g>
+<g class="dl-t-lg">
+  <text class="zh dl-acc" x="58" y="78">云盘 / 同步</text><text class="en dl-long dl-acc" x="58" y="78">Cloud &amp; sync</text>
+  <text class="zh dl-acc" x="384" y="78">日历 / 提醒</text><text class="en dl-long dl-acc" x="384" y="78">Calendar &amp; reminders</text>
+  <text class="zh dl-acc" x="58" y="286">笔记</text><text class="en dl-long dl-acc" x="58" y="286">Notes</text>
+  <text class="zh dl-acc" x="384" y="286">备份</text><text class="en dl-long dl-acc" x="384" y="286">Backup</text>
+</g>
+<g class="dl-t dl-b">
+  <text class="zh" x="58" y="106">文件的家</text><text class="en dl-long" x="58" y="106">the home of files</text>
+  <text class="zh" x="384" y="106">时间的家</text><text class="en dl-long" x="384" y="106">the home of time</text>
+  <text class="zh" x="58" y="314">想法的家</text><text class="en dl-long" x="58" y="314">the home of ideas</text>
+  <text class="zh" x="384" y="314">后悔药</text><text class="en dl-long" x="384" y="314">the cure for regret</text>
+</g>
+<g class="dl-t-sm">
+  <text class="zh dl-muted" x="58" y="134">最新版住在云端</text><text class="en dl-long dl-muted" x="58" y="134">the newest copy lives there</text>
+  <text class="zh dl-muted" x="58" y="156">没有云盘？发给自己的邮箱</text><text class="en dl-long dl-muted" x="58" y="156">no drive? email yourself</text>
+  <text class="zh dl-muted" x="384" y="134">每周一个固定时段</text><text class="en dl-long dl-muted" x="384" y="134">one fixed slot each week</text>
+  <text class="zh dl-muted" x="384" y="156">提醒提前十分钟响</text><text class="en dl-long dl-muted" x="384" y="156">the reminder rings early</text>
+  <text class="zh dl-muted" x="58" y="342">每个想法有唯一的落点</text><text class="en dl-long dl-muted" x="58" y="342">one landing place for each</text>
+  <text class="zh dl-muted" x="58" y="364">抄来的话带着三行来源</text><text class="en dl-long dl-muted" x="58" y="364">copied words keep sources</text>
+  <text class="zh dl-muted" x="384" y="342">每次发布后再存一份</text><text class="en dl-long dl-muted" x="384" y="342">one more copy after publish</text>
+  <text class="zh dl-muted" x="384" y="364">同步不是备份</text><text class="en dl-long dl-muted" x="384" y="364">sync is not backup</text>
 </g>
 </svg>
-<figcaption style="font-size:.9rem;color:var(--muted,#5b6472);margin-top:.5rem"><span class="zh">工作台四角图（本课程自绘，无品牌）。四角不是四个软件——每个角落到哪个工具由你选，微课 1–4 各给出免费、诚实的选项。</span><span class="en">The workspace map (drawn by this course, unbranded). The corners are not four specific apps — which tool serves each corner is your choice, and micro-lessons 1–4 lay out the free, honest options.</span></figcaption>
+</div>
+<figcaption><span class="zh">工作台四角图（本课程自绘，无品牌）。四角不是四个软件——每个角落到哪个工具由你选，微课 1–4 各给出免费、诚实的选项；四条兜底路线一条也不用注册。</span><span class="en">The workspace map (drawn by this course, unbranded). The corners are not four specific apps — which tool serves each corner is your choice, and micro-lessons 1–4 lay out the free, honest options; the fallback route for each needs no sign-up at all.</span></figcaption>
 </figure>
 
 <h2><span class="zh">一周地图</span><span class="en">The week's map</span></h2>

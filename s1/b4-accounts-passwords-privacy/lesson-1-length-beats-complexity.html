@@ -6,11 +6,16 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 1 · B4 账号、密码与隐私 · Digital Learning 数字化学习" data-en="Micro-lesson 1 · B4 Accounts, Passwords & Privacy · Digital Learning">Micro-lesson 1 · B4 Accounts, Passwords & Privacy · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w5.html"><span class="zh">第 5 周</span><span class="en">Week 5</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -25,6 +30,38 @@
 <div class="ratio"><iframe src="https://player.bilibili.com/player.html?bvid=BV1BF411s7GX&high_quality=1&danmaku=0&autoplay=0" scrolling="no" allowfullscreen title="漫话安全 密码安全篇 Passwords, the illustrated security primer"></iframe></div>
 <p class="cap"><span class="zh"><b>漫话安全 · 密码安全篇</b> · 3:05 · B 站 深圳市网络安全协会 · 2022——漫画风格三分钟：弱密码弱在哪里、强密码强在哪里。看完回来，我们把"怎么造一个"落到手上。</span><span class="en"><b>Passwords, the illustrated security primer</b> · 3:05 · Bilibili uploader 深圳市网络安全协会 (Shenzhen Cybersecurity Association) · 2022 — three comic-style minutes on where weak passwords fail and strong ones hold. Then come back and we turn "how to build one" into a hand skill.</span> · <a href="https://www.bilibili.com/video/BV1BF411s7GX" target="_blank" rel="noopener"><span class="zh">在 B 站打开 ↗</span><span class="en">Open on Bilibili ↗</span></a></p>
 </div>
+
+<h2><span class="zh">程序面前，哪一边更重？</span><span class="en">To a program, which side weighs more?</span></h2>
+<figure class="dl-fig">
+<svg viewBox="0 0 640 300" role="img" aria-labelledby="fig-b4-balance-t">
+<title id="fig-b4-balance-t">天平：左盘放「复杂」，右盘放「长度」，秤杆向右倾——对猜密码的程序来说，长度比花哨重得多。A balance with complexity in the left pan and length in the right, the beam tipping right: to a guessing program, length outweighs decoration by far.</title>
+<g class="dl-t-lg" text-anchor="middle">
+  <text class="zh dl-acc" x="320" y="34">同一秒钟，程序更怕哪一边？</text><text class="en dl-acc" x="320" y="34">Which side troubles the program more?</text>
+</g>
+<path class="dl-node is-quiet" d="M320 132 L362 224 H278 Z"/>
+<path class="dl-axis" d="M232 224 H408"/>
+<path class="dl-link is-key" style="stroke-width:5" d="M100 96 L540 152"/>
+<circle class="dl-acc" cx="320" cy="124" r="7"/>
+<g class="dl-link"><path d="M100 96 V130"/><path d="M540 152 V186"/></g>
+<path class="dl-link" d="M52 130 Q100 168 148 130"/>
+<path class="dl-link" d="M492 186 Q540 224 588 186"/>
+<rect class="dl-node is-warn" x="76" y="126" width="48" height="20" rx="5"/>
+<rect class="dl-node is-ok" x="516" y="182" width="48" height="20" rx="5"/>
+<g class="dl-t dl-b" text-anchor="middle">
+  <text class="zh dl-caution" x="100" y="176">复杂</text><text class="en dl-caution" x="100" y="176">Complexity</text>
+  <text class="zh dl-good" x="540" y="232">长度</text><text class="en dl-good" x="540" y="232">Length</text>
+</g>
+<g class="dl-t-sm" text-anchor="middle">
+  <text class="zh dl-muted" x="100" y="198">大写、符号、数字齐了</text><text class="en dl-long dl-muted" x="100" y="198">capitals, symbols, digits</text>
+  <text class="zh dl-muted" x="100" y="218">这些花招它早背熟了</text><text class="en dl-long dl-muted" x="100" y="218">tricks it learned long ago</text>
+  <text class="zh dl-muted" x="100" y="238">十位，几分钟出局</text><text class="en dl-long dl-muted" x="100" y="238">ten long — minutes to crack</text>
+  <text class="zh dl-muted" x="540" y="254">四个不相干的词连起来</text><text class="en dl-long dl-muted" x="540" y="254">four unrelated words</text>
+  <text class="zh dl-muted" x="540" y="274">每多一位，工作量翻几十倍</text><text class="en dl-long dl-muted" x="540" y="274">every character costs more</text>
+  <text class="zh dl-muted" x="540" y="294">二十几位，它试不动</text><text class="en dl-long dl-muted" x="540" y="294">twenty-odd, and it stalls</text>
+</g>
+</svg>
+<figcaption><span class="zh">天平图（本课程自绘）：左盘不是空的——复杂确实有分量，只是这一次不够重。所以规矩是"先求长，再谈花"，不是"不要符号"。</span><span class="en">The balance (drawn by this course): the left pan is not empty — complexity carries real weight, only not enough this time. Hence the rule is "length first, decoration later", not "no symbols".</span></figcaption>
+</figure>
 
 <h2><span class="zh">密码短语：四步造一把长钥匙</span><span class="en">The passphrase: a long key in four steps</span></h2>
 <ol class="steps">

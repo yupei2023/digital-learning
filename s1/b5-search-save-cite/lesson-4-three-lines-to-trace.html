@@ -6,11 +6,16 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 4 · B5 检索、保存与引用 · Digital Learning 数字化学习" data-en="Micro-lesson 4 · B5 Search, Save & Cite · Digital Learning">Micro-lesson 4 · B5 Search, Save & Cite · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w6.html"><span class="zh">第 6 周</span><span class="en">Week 6</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -57,6 +62,47 @@
 <li><span class="zh"><b>什么时候说的？</b>找日期。没有日期的"最新研究"，可能已经十岁了。会过时的话题（健康、软件、数据），日期几乎和内容一样重要。</span><span class="en"><b>When was it said?</b> Find the date. An undated "latest study" may be ten years old. On topics that age — health, software, statistics — the date matters nearly as much as the content.</span></li>
 <li><span class="zh"><b>它引了谁？</b>可靠的页面会交代自己的依据："据某某研究""来源：某机构"，或者页尾一排参考文献——顺着能追到<b>原始出处</b>。什么都不引、只说"专家表示"的页面，第一眼要打个问号。</span><span class="en"><b>What does it cite?</b> A reliable page shows its ground: "according to this study", "source: this institution", references at the foot — threads that lead to the <b>original</b>. A page citing nothing but "experts say" earns a first-glance question mark.</span></li>
 </ol>
+
+<p><span class="zh">三看在页面上具体长什么样？同样三个问题，答案往两边分：</span><span class="en">What do the three glances actually look like on a page? The same three questions, with answers falling to either side:</span></p>
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg viewBox="0 0 640 320" role="img" aria-labelledby="fig-b5-glance-t">
+<title id="fig-b5-glance-t">两栏对照：左栏是第一眼可以信的迹象——有署名的机构或个人、页面写着日期、页尾一排参考文献；右栏是第一眼要打问号的迹象——查不到署名、"最新研究"却没有日期、除了"专家表示"什么都不引。A two-column contrast: on the left the signs that earn first-glance trust — a named institution or person, a date on the page, references at the foot; on the right the signs that earn a question mark — no traceable byline, a "latest study" with no date, nothing cited but "experts say".</title>
+<rect class="dl-node" x="20" y="20" width="290" height="280" rx="10"/>
+<rect class="dl-node" x="330" y="20" width="290" height="280" rx="10"/>
+<path class="dl-node is-ok" d="M20 74 V30 a10 10 0 0 1 10-10 H300 a10 10 0 0 1 10 10 V74 Z"/>
+<path class="dl-node is-warn" d="M330 74 V30 a10 10 0 0 1 10-10 H610 a10 10 0 0 1 10 10 V74 Z"/>
+<g class="dl-t-lg" text-anchor="middle">
+  <text class="zh dl-good" x="165" y="55">第一眼可以信</text><text class="en dl-good" x="165" y="55">Earns a first-glance yes</text>
+  <text class="zh dl-caution" x="475" y="55">第一眼要打问号</text><text class="en dl-caution" x="475" y="55">Earns a question mark</text>
+</g>
+<g class="dl-rule"><path d="M20 136 H310"/><path d="M20 198 H310"/><path d="M20 260 H310"/><path d="M330 136 H620"/><path d="M330 198 H620"/><path d="M330 260 H620"/></g>
+<g class="dl-good"><circle cx="46" cy="102" r="5"/><circle cx="46" cy="164" r="5"/><circle cx="46" cy="226" r="5"/></g>
+<g class="dl-caution"><circle cx="356" cy="102" r="5"/><circle cx="356" cy="164" r="5"/><circle cx="356" cy="226" r="5"/></g>
+<g class="dl-t dl-b">
+  <text class="zh" x="64" y="106">① 署名到机构或个人</text><text class="en dl-long" x="64" y="106">① A byline you can trace</text>
+  <text class="zh" x="64" y="168">② 页面上写着日期</text><text class="en dl-long" x="64" y="168">② The page carries a date</text>
+  <text class="zh" x="64" y="230">③ 页尾一排参考文献</text><text class="en dl-long" x="64" y="230">③ References at the foot</text>
+  <text class="zh" x="374" y="106">① 谁都查不到，未署名</text><text class="en dl-long" x="374" y="106">① Unsigned, untraceable</text>
+  <text class="zh" x="374" y="168">②「最新研究」却没有日期</text><text class="en dl-long" x="374" y="168">② A "latest study", undated</text>
+  <text class="zh" x="374" y="230">③ 只有一句「专家表示」</text><text class="en dl-long" x="374" y="230">③ Nothing but "experts say"</text>
+</g>
+<g class="dl-t-sm">
+  <text class="zh dl-muted" x="64" y="124">背后有一群要负责的人</text><text class="en dl-long dl-muted" x="64" y="124">accountable people behind it</text>
+  <text class="zh dl-muted" x="64" y="186">会过时的话题，日期和内容一样重</text><text class="en dl-long dl-muted" x="64" y="186">on ageing topics, date matters</text>
+  <text class="zh dl-muted" x="64" y="248">顺着它能追到原始出处</text><text class="en dl-long dl-muted" x="64" y="248">a thread back to the original</text>
+  <text class="zh dl-muted" x="374" y="124">出了错也没人负责</text><text class="en dl-long dl-muted" x="374" y="124">nobody answers if it is wrong</text>
+  <text class="zh dl-muted" x="374" y="186">可能已经十岁了</text><text class="en dl-long dl-muted" x="374" y="186">it may already be ten years old</text>
+  <text class="zh dl-muted" x="374" y="248">追不到任何源头</text><text class="en dl-long dl-muted" x="374" y="248">no origin to walk back to</text>
+</g>
+<g class="dl-t-sm" text-anchor="middle">
+  <text class="zh dl-muted" x="165" y="286">先信，不等于永远信</text><text class="en dl-long dl-muted" x="165" y="286">first trust is not forever trust</text>
+  <text class="zh dl-muted" x="475" y="286">存疑不等于假——是要多查一步</text><text class="en dl-long dl-muted" x="475" y="286">doubtful is not false — look further</text>
+</g>
+</svg>
+</div>
+<figcaption><span class="zh">对照图（本课程自绘）：右栏不是黑名单。查不到署名、找不到日期的页面里也有对的内容——只是它把核实的活儿全留给了你，所以第一眼要慢一点。</span><span class="en">The contrast (drawn by this course): the right column is not a blacklist. Unsigned, undated pages carry true things too — they simply leave all the verifying to you, which is why the first glance should slow down.</span></figcaption>
+</figure>
 
 <div class="card">
 <p><span class="zh">第三看正是维基百科这类线上百科"人人可编辑却大体可靠"的秘密——读本第六讲讲过：想编辑内容的人<b>"必须给出权威的引用文献或资料"</b>，而且一篇文章有来自世界各地成百上千双眼睛在读、在查、在改，"越是被更多人阅读的文章，其精准度也就越高"。所以读本给的建议是：线上百科<b>是个不错的起点</b>，但最好同时查阅更多专业来源——起点，不是终点。</span><span class="en">The third glance is exactly the secret of why an anyone-can-edit encyclopedia stays broadly reliable — reader chapter six explains: whoever edits <b>"must supply authoritative citations"</b>, and each article is read, checked and corrected by hundreds of eyes worldwide — "the more an article is read, the more accurate it becomes." Hence the reader's advice: the online encyclopedia <b>makes a fine starting point</b> — best paired with more specialised sources; a start, never a finish.</span></p>
