@@ -6,6 +6,7 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 1 · M1 什么是学习 · Digital Learning 数字化学习" data-en="Micro-lesson 1 · M1 What is Learning? · Digital Learning">Micro-lesson 1 · M1 What is Learning? · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
@@ -32,8 +33,39 @@
 <div class="gate" role="img" aria-label="一扇学习之门，门前站着两个门卫：情绪、动机 A door to learning with two guards in front: emotion and motivation"><div class="guard"><span class="zh">情绪</span><span class="en">Emotion</span></div><div class="door"><span class="zh">学习之门</span><span class="en">The door to learning</span></div><div class="guard"><span class="zh">动机</span><span class="en">Motivation</span></div></div>
 <p class="zh">把守学习大门的有两个门卫：<b>情绪</b>和<b>动机</b>。情绪不对、动机不足，人就“身体在教室，大脑在门外”。我们叫不醒装睡的人，也教不会装作学习的人。所以，下次你觉得“学不进去”，先别怪自己笨，先问：是哪一个门卫在拦我？</p><p class="en">Two gatekeepers guard the door: <b>emotion</b> and <b>motivation</b>. Wrong mood or weak motive, and the body sits in class while the brain waits outside. You cannot wake someone pretending to sleep, and you cannot teach someone pretending to learn. Next time you “can't study”, don't call yourself stupid — ask which gatekeeper is blocking you.</p>
 <h2><span class="zh">知行合一</span><span class="en">Mind and hand</span></h2>
-<div class="loop" role="img" aria-label="四步环形图：读听看 → 思考实践 → 存回大脑成为经验 → 遇到新问题再拿出来用，再回到读听看 A four-step loop: read, listen, watch → think and practise → store as experience → reuse on a new problem, and round again"><div data-arrow="→"><span class="zh">① 读、听、看</span><span class="en">① Read, listen, watch</span></div><div data-arrow="↓"><span class="zh">② 思考、实践</span><span class="en">② Think, practise</span></div><div data-arrow="↑"><span class="zh">④ 遇到新问题再拿出来用（可能改写）</span><span class="en">④ Reuse on a new problem (and maybe rewrite)</span></div><div data-arrow="←"><span class="zh">③ 存回大脑，变成经验</span><span class="en">③ Store as experience</span></div></div>
-<p class="fig-cap"><span class="zh">知行合一是一个环，不是一条单行线。</span><span class="en">Mind and hand form a loop, not a one-way street.</span></p>
+<figure class="dl-fig">
+<svg viewBox="0 0 640 300" role="img" aria-labelledby="fig-l1-loop-t">
+<title id="fig-l1-loop-t">知行合一的四站回路：读、听、看 → 思考、实践 → 存回大脑成为经验 → 遇到新问题再拿出来用，然后回到起点。The mind-and-hand loop in four stations: read, listen, watch → think and practise → store it as experience → reuse it on a new problem, and back to the start.</title>
+<defs><marker id="dlArrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="dl-head" d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<rect class="dl-node is-key" x="54" y="36" width="200" height="76" rx="10"/>
+<rect class="dl-node" x="386" y="36" width="200" height="76" rx="10"/>
+<rect class="dl-node" x="386" y="188" width="200" height="76" rx="10"/>
+<rect class="dl-node" x="54" y="188" width="200" height="76" rx="10"/>
+<g class="dl-link" marker-end="url(#dlArrow)">
+  <path d="M262 74 H372"/><path d="M486 120 V178"/><path d="M378 226 H268"/><path d="M154 180 V122"/>
+</g>
+<g class="dl-t dl-b" text-anchor="middle">
+  <text class="zh" x="154" y="70">① 读、听、看</text><text class="en" x="154" y="70">① Read, listen, watch</text>
+  <text class="zh" x="486" y="70">② 思考、实践</text><text class="en" x="486" y="70">② Think, practise</text>
+  <text class="zh" x="486" y="222">③ 存回大脑</text><text class="en" x="486" y="222">③ Store as experience</text>
+  <text class="zh" x="154" y="222">④ 再拿出来用</text><text class="en" x="154" y="222">④ Use it on a new problem</text>
+</g>
+<g class="dl-t-sm dl-muted" text-anchor="middle">
+  <text class="zh" x="154" y="94">进来的东西（“知”）</text><text class="en dl-long" x="154" y="94">what comes in — the “knowing”</text>
+  <text class="zh" x="486" y="94">手上真做一次（“行”）</text><text class="en dl-long" x="486" y="94">the hand actually does it — the “doing”</text>
+  <text class="zh" x="486" y="246">变成你的经验和阅历</text><text class="en dl-long" x="486" y="246">it becomes your own experience</text>
+  <text class="zh" x="154" y="246">用完了还可能被改写</text><text class="en dl-long" x="154" y="246">and may be rewritten in the using</text>
+</g>
+<g class="dl-t-sm dl-acc dl-b" text-anchor="middle">
+  <text class="zh" x="320" y="140">知行合一</text><text class="en" x="320" y="140"><tspan font-style="italic">mens et manus</tspan></text>
+</g>
+<g class="dl-t-sm dl-caution" text-anchor="middle">
+  <text class="zh" x="320" y="166">多数人停在 ①</text><text class="en dl-long" x="320" y="166">most people stop at ①</text>
+  <text class="zh" x="320" y="186">只有输入没有输出，不叫学习</text><text class="en dl-long" x="320" y="186">input with no output is not learning</text>
+</g>
+</svg>
+<figcaption><span class="zh">回路图：知行合一是一个环，不是一条单行线。停在 ① 的那一段读、听、看，无论多久，都还没有变成你的。</span><span class="en">The loop: mind and hand form a circle, not a one-way street. However long you stay at ① reading, listening and watching, none of it has become yours yet.</span></figcaption>
+</figure>
 <p class="zh">MIT 的校训是 <i>mens et manus</i>——“心智与手”，翻译成中文就是“知行合一”。真正的学习是一个环：读、听、看 → 思考、实践 → 存回大脑，变成经验 → 遇到新问题时再拿出来用，用完了还可能被改写。只有输入没有输出，不叫学习。</p><p class="en">MIT's motto is <i>mens et manus</i> — mind and hand; in Chinese, “knowing and doing as one”. Real learning is a loop: read, listen, watch → think, practise → store as experience → reuse on a new problem, and maybe rewrite. Input without output is not learning.</p>
 <details><summary><span class="zh">（选看）教师 2021 年在课堂上是怎么讲这一课的——八条讲稿要点</span><span class="en">(Optional) How the instructor taught this lesson in 2021 — eight talking points</span></summary>
 <p><span class="zh">这一课我在 2021 年给七、八年级上过。当年讲稿的主线和读本第 02 章一致；上面五个小标题已经是它的浓缩版，这八条是原始提纲，只给想看“老师当年怎么讲”的同学。</span><span class="en">I taught this lesson to grades 7–8 in 2021. Its line matches Reader Ch. 02; the five headings above are already the condensed version. These eight points are the original outline, for anyone curious how the lesson was taught.</span></p>
