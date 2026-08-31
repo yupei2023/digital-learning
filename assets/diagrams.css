@@ -1,0 +1,185 @@
+/* Digital Learning 数字化学习 · diagram pattern system
+   Load AFTER site.css:  <link rel="stylesheet" href="../../assets/diagrams.css">
+   Every diagram is inline SVG — no library, no external file request, no raster.
+   The copy-paste skeletons live in DIAGRAM-PATTERNS.md, beside this file. */
+
+/* ── 1 · tokens ─────────────────────────────────────────────────────────────
+   Diagrams borrow the site palette. Each token falls back to site.css's value,
+   so a diagram pasted into a page that forgot this stylesheet still renders. */
+:root{
+  --dl-ink:var(--ink,#1f2937);
+  --dl-muted:var(--muted,#5b6472);
+  --dl-line:var(--line,#e4e1da);
+  --dl-card:var(--card,#ffffff);
+  --dl-field:var(--bg,#fbfaf7);
+  --dl-accent:var(--accent,#2f6f9f);
+  --dl-accent-soft:var(--accent-soft,#e8f1f8);
+  --dl-ok:var(--ok,#2e7d4f);
+  --dl-ok-soft:var(--ok-soft,#e6f4ec);
+  --dl-warn:var(--warn,#b45309);
+  --dl-warn-soft:var(--warn-soft,#fff4e0);
+  --dl-bad:var(--bad,#b3261e);
+  --dl-bad-soft:var(--bad-soft,#fdecea);
+  --dl-on-accent:#ffffff;
+  --dl-sw:2;                /* default stroke width, in SVG user units */
+  /* label sizes, in SVG user units — every skeleton is 640 units wide */
+  --dl-fs-lg:17px; --dl-fs:14px; --dl-fs-sm:12.5px; --dl-fs-xs:11px;
+}
+
+/* Dark is opt-in, never inferred. The site is light-only today, so an OS set to
+   dark must NOT flip a diagram sitting on a light page. When a dark theme lands,
+   put data-theme="dark" on <html>; data-theme="auto" follows the OS instead.
+   Both routes land on the same token values. */
+:root[data-theme="dark"]{
+  --dl-ink:#e9eef4;
+  --dl-muted:#a5b4c6;
+  --dl-line:#31465c;
+  --dl-card:#152740;
+  --dl-field:#0b1b2d;
+  --dl-accent:#8fbde4;
+  --dl-accent-soft:#1c3350;
+  --dl-ok:#7ec79c;
+  --dl-ok-soft:#16332a;
+  --dl-warn:#e0a95c;
+  --dl-warn-soft:#3a2c15;
+  --dl-bad:#e98a82;
+  --dl-bad-soft:#3a1d1a;
+  --dl-on-accent:#0b1b2d;
+}
+@media (prefers-color-scheme:dark){
+  :root[data-theme="auto"]{
+    --dl-ink:#e9eef4;
+    --dl-muted:#a5b4c6;
+    --dl-line:#31465c;
+    --dl-card:#152740;
+    --dl-field:#0b1b2d;
+    --dl-accent:#8fbde4;
+    --dl-accent-soft:#1c3350;
+    --dl-ok:#7ec79c;
+    --dl-ok-soft:#16332a;
+    --dl-warn:#e0a95c;
+    --dl-warn-soft:#3a2c15;
+    --dl-bad:#e98a82;
+    --dl-bad-soft:#3a1d1a;
+    --dl-on-accent:#0b1b2d;
+  }
+}
+
+/* ── 2 · the figure shell ───────────────────────────────────────────────────
+   <figure class="dl-fig">
+     <svg viewBox="0 0 640 300" role="img" aria-labelledby="fig-NAME-t">
+       <title id="fig-NAME-t">中文说明。English description.</title>
+       …
+     </svg>
+     <figcaption><span class="zh">…</span><span class="en">…</span></figcaption>
+   </figure>
+   role and the bilingual <title> live on the <svg>, and the title id is unique
+   per figure. The older hand-drawn figures in s1/ put role + aria-label on the
+   <figure> instead; either is correct, but never both on one figure — a screen
+   reader would announce the description twice. */
+.dl-fig{
+  margin:1.2rem 0;
+  padding:1rem 1.1rem;
+  background:var(--dl-card);
+  border:1px solid var(--dl-line);
+  border-radius:var(--radius,10px);
+}
+.dl-fig>svg,.dl-fig>.dl-scroll>svg{
+  display:block;
+  width:100%;
+  height:auto;
+  color:var(--dl-ink);
+  font-family:var(--font,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Segoe UI",Roboto,sans-serif);
+}
+.dl-fig figcaption{
+  margin:.65rem 0 0;
+  color:var(--dl-muted);
+  font-size:.85rem;
+  line-height:1.55;
+}
+/* a wide figure that must not be squeezed below legibility */
+.dl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.dl-scroll>svg{min-width:30rem}
+
+/* ── 3 · drawing helpers ────────────────────────────────────────────────────
+   Put these classes on SVG shapes instead of hard-coding fill/stroke, so every
+   diagram follows the theme and one edit re-skins the whole site. */
+.dl-fig .dl-node{fill:var(--dl-card);stroke:var(--dl-line);stroke-width:var(--dl-sw)}
+.dl-fig .dl-node.is-key{fill:var(--dl-accent-soft);stroke:var(--dl-accent)}
+.dl-fig .dl-node.is-ok{fill:var(--dl-ok-soft);stroke:var(--dl-ok)}
+.dl-fig .dl-node.is-warn{fill:var(--dl-warn-soft);stroke:var(--dl-warn)}
+.dl-fig .dl-node.is-bad{fill:var(--dl-bad-soft);stroke:var(--dl-bad)}
+.dl-fig .dl-node.is-draft{fill:none;stroke:var(--dl-line);stroke-dasharray:6 5}
+.dl-fig .dl-node.is-quiet{fill:var(--dl-field);stroke:var(--dl-muted);stroke-width:1.6}
+.dl-fig .dl-field{fill:var(--dl-field);stroke:var(--dl-line);stroke-width:1.5;stroke-dasharray:7 6}
+
+.dl-fig .dl-link{fill:none;stroke:var(--dl-muted);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.dl-fig .dl-link.is-key{stroke:var(--dl-accent)}
+.dl-fig .dl-link.is-soft{stroke:var(--dl-line);stroke-width:2}
+.dl-fig .dl-rule{fill:none;stroke:var(--dl-line);stroke-width:2}
+.dl-fig .dl-axis{fill:none;stroke:var(--dl-ink);stroke-width:2.5;stroke-linecap:round}
+.dl-fig .dl-head{fill:var(--dl-muted)}
+.dl-fig .dl-head.is-key{fill:var(--dl-accent)}
+
+.dl-fig .dl-ink{fill:var(--dl-ink)}
+.dl-fig .dl-muted{fill:var(--dl-muted)}
+.dl-fig .dl-acc{fill:var(--dl-accent)}
+.dl-fig .dl-good{fill:var(--dl-ok)}
+.dl-fig .dl-caution{fill:var(--dl-warn)}
+.dl-fig .dl-alert{fill:var(--dl-bad)}
+.dl-fig .dl-chip{fill:var(--dl-accent)}
+.dl-fig .dl-on-chip{fill:var(--dl-on-accent)}
+.dl-fig .dl-b{font-weight:700}
+
+/* ── 4 · labels, in two languages ───────────────────────────────────────────
+   site.css already hides .zh or .en globally, and that works on SVG <text> and
+   <g> exactly as it does on HTML spans. Size labels with these classes, never
+   with a font-size attribute — an attribute cannot be re-sized for phones. */
+.dl-fig .dl-t-lg{font-size:var(--dl-fs-lg);font-weight:700}
+.dl-fig .dl-t{font-size:var(--dl-fs)}
+.dl-fig .dl-t-sm{font-size:var(--dl-fs-sm)}
+.dl-fig .dl-t-xs{font-size:var(--dl-fs-xs)}
+.dl-fig text{fill:var(--dl-ink)}
+/* English runs about 1.6× the width of the Chinese it translates. Add
+   class="en dl-long" to any English label that will not fit its box, and it
+   drops one size step instead of spilling over the edge. */
+.dl-fig .en.dl-long{font-size:var(--dl-fs-sm)}
+.dl-fig .dl-t-sm .en.dl-long,.dl-fig .en.dl-long.dl-t-sm{font-size:var(--dl-fs-xs)}
+/* Chinese sits slightly higher than Latin on the same baseline; nudge it back. */
+.dl-fig text.zh{dominant-baseline:auto}
+
+/* ── 5 · phones ─────────────────────────────────────────────────────────────
+   A 640-unit figure lands at about 0.55× on a 390 px screen, so 14-unit text
+   would read as 7.7 px. Grow the labels as the drawing shrinks. */
+@media (max-width:600px){
+  :root{--dl-fs-lg:21px; --dl-fs:18px; --dl-fs-sm:16px; --dl-fs-xs:14.5px}
+  .dl-fig{padding:.7rem .6rem;margin:1rem 0}
+  .dl-fig figcaption{font-size:.82rem}
+  .dl-scroll>svg{min-width:32rem}
+}
+
+/* ── 6 · motion ─────────────────────────────────────────────────────────────
+   Nothing moves by default. .dl-anim on a path traces the flow once a second
+   or so; it is switched off entirely when the reader asks for less motion. */
+.dl-fig .dl-anim{stroke-dasharray:9 7;animation:dl-flow 2.6s linear infinite}
+@keyframes dl-flow{to{stroke-dashoffset:-32}}
+@media (prefers-reduced-motion:reduce){
+  .dl-fig *,.dl-fig *::before,.dl-fig *::after{
+    animation:none!important;transition:none!important
+  }
+  .dl-fig .dl-anim{stroke-dasharray:none}
+}
+
+/* ── 7 · high contrast and print ────────────────────────────────────────────*/
+@media (forced-colors:active){
+  .dl-fig .dl-node,.dl-fig .dl-field{fill:Canvas;stroke:CanvasText}
+  .dl-fig text,.dl-fig .dl-ink,.dl-fig .dl-muted,.dl-fig .dl-acc,
+  .dl-fig .dl-good,.dl-fig .dl-caution,.dl-fig .dl-alert,.dl-fig .dl-head{fill:CanvasText}
+  .dl-fig .dl-chip{fill:Highlight}
+  .dl-fig .dl-on-chip{fill:Canvas}
+  .dl-fig .dl-link,.dl-fig .dl-rule,.dl-fig .dl-axis{stroke:CanvasText}
+}
+@media print{
+  .dl-fig{break-inside:avoid;page-break-inside:avoid;border-color:#999}
+  .dl-scroll{overflow:visible}
+}

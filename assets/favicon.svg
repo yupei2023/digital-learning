@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Digital Learning 数字化学习">
+<title>Digital Learning 数字化学习</title>
+<desc>A 16-pixel cut of the Digital Learning mark: two facing pages either side of a spine, one lit line on each. 标识的 16 像素简化版：中缝两侧各一页，每页一道亮起的线。</desc>
+<style>
+svg:root{color:var(--dl-logo-ink,#183b5d)}
+@media (prefers-color-scheme:dark){svg:root{color:var(--dl-logo-ink,#c2d5e7)}}
+</style>
+<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2.8 8.6 Q9.4 6.6 14.6 9.6 L14.6 23.4 Q9.4 26.4 2.8 23 Z" stroke-width="2.4"/>
+  <path d="M29.2 8.6 Q22.6 6.6 17.4 9.6 L17.4 23.4 Q22.6 26.4 29.2 23 Z" stroke-width="2.4"/>
+  <path d="M5.6 15.4 H12" stroke-width="2.3"/>
+  <path d="M20 15.4 H26.4" stroke-width="2.3"/>
+  <path d="M16 9 V24" stroke-width="2.6"/>
+</g>
+</svg>

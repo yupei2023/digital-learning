@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="dl-logo-title dl-logo-desc">
+<title id="dl-logo-title">Digital Learning 数字化学习</title>
+<desc id="dl-logo-desc">An open spread. Read it as a book: two facing pages bowing away from a central spine, the rest of the page block still stacked at the foot, and on each page the inset rectangle a printer calls the type area. Read it as a device: two lit panels either side of a hinge. The inset rectangle is the same shape in both readings. 一个翻开的对开面。当作书看：两页从中缝向外微微鼓起，页脚仍露着层层书口，每页上那个内缩的方框就是排版上的版心。当作设备看：转轴两侧的两块亮起的面板。那个内缩的方框，两种读法里是同一个形状。</desc>
+<style>
+/* Only matches when this file is the document root (used as img or background).
+   Inlined in a page it never matches, so the mark inherits the page's currentColor. */
+svg:root{color:var(--dl-logo-ink,#183b5d)}
+@media (prefers-color-scheme:dark){svg:root{color:var(--dl-logo-ink,#c2d5e7)}}
+</style>
+<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+  <!-- the two facing pages: head and foot bow away from the spine, as pages do -->
+  <path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/>
+  <path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/>
+  <!-- the fore-edge: the rest of the page block, still stacked under each page -->
+  <path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/>
+  <path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/>
+  <!-- the type area of a printed page, and the bezel of a lit panel: one shape -->
+  <rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/>
+  <rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/>
+  <path d="M11.4 27.6 H24.2" stroke-width="1.9"/>
+  <path d="M11.4 32.6 H21" stroke-width="1.9"/>
+  <path d="M39.8 27.6 H52.6" stroke-width="1.9"/>
+  <path d="M39.8 32.6 H49.4" stroke-width="1.9"/>
+  <!-- spine and hinge are one line; the two ticks are stitching, or barrels -->
+  <path d="M32 18 V48" stroke-width="2.6"/>
+  <path d="M29.6 26 H34.4" stroke-width="1.6"/>
+  <path d="M29.6 40 H34.4" stroke-width="1.6"/>
+</g>
+</svg>
