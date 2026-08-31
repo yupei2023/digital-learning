@@ -6,11 +6,16 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 2 · B3 翻译与阅读工具 · Digital Learning 数字化学习" data-en="Micro-lesson 2 · B3 Translation & Reading Tools · Digital Learning">Micro-lesson 2 · B3 Translation & Reading Tools · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w4.html"><span class="zh">第 4 周</span><span class="en">Week 4</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -34,33 +39,38 @@
 <li><span class="zh"><b>对照找不同</b>：原句和回译句并排放，找出走样处——多了什么、丢了什么、哪个词变了味。差异处就写进本周报告的"回译三行"：<b>原句 · 回译句 · 一处差异</b>。</span><span class="en"><b>Compare and spot the difference</b>: original and back-translation side by side — what appeared, what vanished, which word changed flavour. The difference becomes this week's three report lines: <b>original · back-translation · one difference</b>.</span></li>
 </ol>
 
-<figure class="card" style="margin:1rem 0" role="img" aria-label="回译核对示意图：一个环形流程——英文原句经翻译工具变成中文译文，中文译文再经翻译工具译回英文成为回译句，回译句与原句并排对照，差异处标注为「值得怀疑处」。A diagram of the back-translation loop: the English original passes through a translation tool into Chinese, the Chinese passes back through a tool into a back-translated English, and the back-translation is laid beside the original — the difference marked as the spot to distrust.">
-<svg viewBox="0 0 640 400" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">
-<rect x="6" y="6" width="628" height="388" rx="12" fill="var(--card,#fff)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<rect x="40" y="40" width="240" height="66" rx="8" fill="var(--accent-soft,#e8f1f8)" stroke="var(--accent,#2f6f9f)" stroke-width="2"/>
-<g font-size="14" font-weight="700" fill="var(--ink,#1f2937)"><text class="zh" x="160" y="66" text-anchor="middle">① 英文原句</text><text class="en" x="160" y="66" text-anchor="middle">① The original (EN)</text></g>
-<g font-size="11" fill="var(--muted,#5b6472)"><text class="zh" x="160" y="88" text-anchor="middle">课程介绍里的关键句</text><text class="en" x="160" y="88" text-anchor="middle">the key sentence of the intro</text></g>
-<path d="M280 73 H 360" stroke="var(--muted,#5b6472)" stroke-width="2.5" fill="none" marker-end="url(#b3arrow)"/>
-<g font-size="11" fill="var(--muted,#5b6472)"><text class="zh" x="320" y="60" text-anchor="middle">翻译工具</text><text class="en" x="320" y="60" text-anchor="middle">tool</text></g>
-<rect x="360" y="40" width="240" height="66" rx="8" fill="var(--card,#fff)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="14" font-weight="700" fill="var(--ink,#1f2937)"><text class="zh" x="480" y="66" text-anchor="middle">② 中文译文</text><text class="en" x="480" y="66" text-anchor="middle">② The Chinese translation</text></g>
-<g font-size="11" fill="var(--muted,#5b6472)"><text class="zh" x="480" y="88" text-anchor="middle">你平时读到就停的地方</text><text class="en" x="480" y="88" text-anchor="middle">where reading usually stops</text></g>
-<path d="M480 106 V 160" stroke="var(--muted,#5b6472)" stroke-width="2.5" fill="none" marker-end="url(#b3arrow)"/>
-<g font-size="11" fill="var(--muted,#5b6472)"><text class="zh" x="496" y="138">再译回英文（换个工具更好）</text><text class="en" x="496" y="138">back through a tool (a second one is better)</text></g>
-<rect x="360" y="160" width="240" height="66" rx="8" fill="var(--card,#fff)" stroke="var(--accent,#2f6f9f)" stroke-width="2" stroke-dasharray="6 4"/>
-<g font-size="14" font-weight="700" fill="var(--ink,#1f2937)"><text class="zh" x="480" y="186" text-anchor="middle">③ 回译句</text><text class="en" x="480" y="186" text-anchor="middle">③ The back-translation (EN)</text></g>
-<g font-size="11" fill="var(--muted,#5b6472)"><text class="zh" x="480" y="208" text-anchor="middle">机器绕了一圈交回的英文</text><text class="en" x="480" y="208" text-anchor="middle">the English the machine hands back</text></g>
-<path d="M360 193 H 280 Q 160 193 160 150 V 106" stroke="var(--muted,#5b6472)" stroke-width="2.5" fill="none" marker-end="url(#b3arrow)"/>
-<g font-size="11" font-weight="700" fill="var(--accent,#2f6f9f)"><text class="zh" x="238" y="180">④ 与原句并排对照</text><text class="en" x="238" y="180">④ lay beside the original</text></g>
-<rect x="40" y="266" width="560" height="96" rx="8" fill="var(--accent-soft,#e8f1f8)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="13" font-weight="700" fill="#c0392b"><text class="zh" x="60" y="294">两句英文对不上的地方 = 值得怀疑处</text><text class="en" x="60" y="294">Where the two Englishes disagree = the spot to distrust</text></g>
-<g font-size="12" fill="var(--ink,#1f2937)">
-<text class="zh" x="60" y="318">像：多半译对了 · 不像：查词典，或换个工具再译一次</text><text class="en" x="60" y="318">Alike: probably fine · Apart: check a dictionary, or re-run in another tool</text>
-<text class="zh" x="60" y="342">报告三行：原句 · 回译句 · 一处差异</text><text class="en" x="60" y="342">Report lines: original · back-translation · one difference</text>
+<figure class="dl-fig">
+<svg viewBox="0 0 640 400" role="img" aria-labelledby="fig-b3-loop-t">
+<title id="fig-b3-loop-t">回译核对是一个回路：① 英文原句 → ② 中文译文 → ③ 再译回英文 → ④ 与原句并排对照，然后回到起点。对不上的地方就是值得怀疑的地方。The back-translation check is a loop: ① the English original → ② the Chinese translation → ③ back into English → ④ laid side by side with the original, then round to the start again. Where the two disagree is the spot to distrust.</title>
+<defs><marker id="dlArrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="dl-head" d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<rect class="dl-node is-key" x="54" y="36" width="200" height="76" rx="10"/>
+<rect class="dl-node" x="386" y="36" width="200" height="76" rx="10"/>
+<rect class="dl-node" x="386" y="188" width="200" height="76" rx="10"/>
+<rect class="dl-node is-key" x="54" y="188" width="200" height="76" rx="10"/>
+<g class="dl-link" marker-end="url(#dlArrow)">
+  <path d="M262 74 H372"/><path d="M486 120 V178"/><path d="M378 226 H268"/><path d="M154 180 V122"/>
 </g>
-<defs><marker id="b3arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="var(--muted,#5b6472)"/></marker></defs>
+<g class="dl-t dl-b" text-anchor="middle">
+  <text class="zh" x="154" y="70">① 英文原句</text><text class="en" x="154" y="70">① The original</text>
+  <text class="zh" x="486" y="70">② 中文译文</text><text class="en" x="486" y="70">② The translation</text>
+  <text class="zh" x="486" y="222">③ 回译句</text><text class="en" x="486" y="222">③ Back into English</text>
+  <text class="zh" x="154" y="222">④ 并排对照</text><text class="en" x="154" y="222">④ Compare the two</text>
+</g>
+<g class="dl-t-sm" text-anchor="middle">
+  <text class="zh dl-muted" x="154" y="94">你要读懂的那一句</text><text class="en dl-long dl-muted" x="154" y="94">the sentence you must read</text>
+  <text class="zh dl-muted" x="486" y="94">平时读到这里就停了</text><text class="en dl-long dl-muted" x="486" y="94">where reading usually stops</text>
+  <text class="zh dl-muted" x="486" y="246">换一个工具译更好</text><text class="en dl-long dl-muted" x="486" y="246">better in a second tool</text>
+  <text class="zh dl-muted" x="154" y="246">对不上的地方要查</text><text class="en dl-long dl-muted" x="154" y="246">where they disagree, look</text>
+</g>
+<g class="dl-t-sm dl-b" text-anchor="middle">
+  <text class="zh dl-acc" x="320" y="146">一个回路</text><text class="en dl-acc" x="320" y="146">one loop</text>
+  <text class="zh dl-acc" x="320" y="168">响了就再走</text><text class="en dl-long dl-acc" x="320" y="168">rings? go again</text>
+</g>
+<rect class="dl-node is-key" x="24" y="312" width="592" height="72" rx="10"/>
+<g class="dl-t-sm dl-b" text-anchor="middle"><text class="zh" x="320" y="340">对不上的地方 = 值得怀疑处：查词典，或换一个工具再译一次</text><text class="en dl-long" x="320" y="340">Disagree = the spot to distrust — check a dictionary, or try a second tool</text></g>
+<g class="dl-t-sm" text-anchor="middle"><text class="zh dl-muted" x="320" y="366">报告三行：原句 · 回译句 · 一处差异</text><text class="en dl-long dl-muted" x="320" y="366">report three lines: original · back-translation · one difference</text></g>
 </svg>
-<figcaption style="font-size:.9rem;color:var(--muted,#5b6472);margin-top:.5rem"><span class="zh">回译核对一圈（本课程自绘示意，无品牌）：原句 → 译文 → 回译句 → 对照。你不用精通英文，只用会找不同。</span><span class="en">The back-translation loop, sketched for this course (unbranded): original → translation → back-translation → comparison. Mastery not required — spot-the-difference is enough.</span></figcaption>
+<figcaption><span class="zh">上面那张列表是四个步骤，这张图是<b>一个回路</b>——差别在第 ④ 步：对照完，你没有走到终点，你回到了起点。所以同一段话里的第二个关键句、下周的另一篇材料，都可以照这个圈再走一遍。走多少遍，取决于你还剩多少不放心。（本课程自绘。）</span><span class="en">The list above gives you four steps; this drawing gives you <b>one loop</b> — and the difference is step ④: comparing does not land you at an end, it returns you to the start. So the second key sentence in the same passage, or a different text next week, goes round the same circle. How many times you run it depends only on how much doubt is left. (Sketched for this course.)</span></figcaption>
 </figure>
 
 <h2><span class="zh">诚实说明：它是报警器，不是判决书</span><span class="en">Honestly: it is an alarm, not a verdict</span></h2>

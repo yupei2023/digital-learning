@@ -21,14 +21,17 @@ All micro-lesson slots, the follow-along and the task page carry public Bilibili
 | index 情境引入 | 1987 年中国第一封电子邮件的故事（"越过万里长城……"） | 教师校本教材二稿《什么是在线学习》一节（`../校本教材-在线学习/230217 (2稿) ….docx`），史实段落改写，**未使用任何提及前任职学校的句子与旧图** | 教师自有文字 | 站内 |
 | self-check | 学习状态自测 正式题目 12 条（第 2 周基线） | 与 M5 复测页逐字同题（本课程自拟，2026-08-30 定稿 · ShiFu 裁定 A4）；参照 DigComp 式自评量表的做法（能力自陈 · 1–5 · “我能……”），未逐字引用任何现成量表 | — | — |
 | media/handouts | 规范邮件六件套模板 | `media/handouts/email-template.html`（双语网页，可打印；与 M3–M5 讲义同一做法，未另出 PDF） | 本课程自制 | 站内 |
-| lesson-1 · lesson-2 | "写邮件界面"示意图（自绘内联 SVG 线框：双语标签、无品牌、有替代文字） | 页内代码（r2 新增，回应同学测试 V1） | 本课程自制 | 站内 |
+| lesson-1 | "写邮件界面 · 六个部位"示意图（自绘内联 SVG，r3 按站点图示系统重绘：记号类取代写死的字号与颜色，加编号 ①–⑥，390 px 下可读） | 页内代码 | 本课程自制 | 站内 |
+| lesson-2 | "导师的下载文件夹"文件列表（自绘内联 SVG，r3 新增；取代此前与 lesson-1 重复的同一张写邮件界面图） | 页内代码 | 本课程自制 | 站内 |
+| w2 §5 | "三封信"台阶图：测试信 → 基线信 → 计分信（自绘内联 SVG，r3 新增） | 页内代码 | 本课程自制 | 站内 |
+| index 情境引入 | 1987 年中国第一封电子邮件的档案照片 `assets/img/b1-first-email-china-1987.jpg`（492×274，34 KB；已裁去底部烧录的中文说明条，改用页面上的双语图注） | 教师归档材料中的旧扫描件 `../校本教材-在线学习/first Email-1.jpeg`（同一底片另见校本教材二稿）；原始摄影者与版权方不详 | **ShiFu 2026-08-31 逐张批准使用**（编目为 ASK SHIFU 项）；作历史说明之用，页面注明"档案照片，摄于 1987 年北京，摄影者不详" | 站内，无外链 |
 
 嵌入方式：B 站官方外链播放器 `player.bilibili.com/player.html?bvid=…&high_quality=1&danmaku=0&autoplay=0`，关闭弹幕、不自动播放，并附直达链接与时长。所有 BV 号 2026-08-30 经 `api.bilibili.com/x/web-interface/view` 核实存在、公开、单 P。
 Embeds use Bilibili's official external player with danmaku off and no autoplay, plus a direct link and duration. Every BV id was checked against the Bilibili view API on 2026-08-30 (exists, public, single part).
 
 ## 不使用的教师旧材料 Instructor's old materials NOT reused
 - `../教学 Instuction/视频说明-FLA邮箱发邮件.mov`——**前任职学校的邮箱系统演示**（含校名与校内流程），按信息控制规则不复用；操作演示改用公开 B 站教程。
-- `../校本教材-在线学习/first Email-1.jpeg`——旧扫描配图，出处不明，不复用；1987 年第一封邮件只用文字讲述。
+- ~~`../校本教材-在线学习/first Email-1.jpeg`——旧扫描配图，出处不明，不复用。~~ **2026-08-31 改判**：经 ShiFu 逐张批准，本图裁去底部烧录说明条后用于 index 情境引入，页面注明出处不详、作历史说明之用（见上表末行）。同时按照片上烧录的时间修订正文史实：邮件为 **1987 年 9 月 20 日 20 时 55 分**成功发出（9 月 14 日的第一次尝试因协议错误失败），原稿写作 9 月 14 日发出，已更正；标语按通行译法作"越过长城，走向世界"。
 - 校本教材中"在线学习礼仪"一节（Zoom/钉钉直播课堂规范）——面向直播课堂，与本课程纯异步形态不符；只取其"尊重与礼貌"的精神，条目未复用。
 
 ## 未找到 Not found

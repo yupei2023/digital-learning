@@ -6,11 +6,16 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 4 · B3 翻译与阅读工具 · Digital Learning 数字化学习" data-en="Micro-lesson 4 · B3 Translation & Reading Tools · Digital Learning">Micro-lesson 4 · B3 Translation & Reading Tools · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w4.html"><span class="zh">第 4 周</span><span class="en">Week 4</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -35,6 +40,50 @@
 <div class="card">
 <p><span class="zh">三行长的英文句子——从句套从句、几个 not 和 unless 纠缠在一起——工具常常译出一句"每个词都对、合起来不知所云"的中文，最危险的是<b>否定被弄丢或弄反</b>："并非不重要"变成"不重要"，意思正好颠倒。<b>对策</b>有两个：把长句拆成两三个短句分别翻译，逻辑常常就回来了；对压着整段意思的那个长句，做回译核对（微课 2）——逻辑被弄丢时，回译句和原句一对照就现形。</span><span class="en">A three-line English sentence — clauses nested in clauses, a few nots and unlesses tangled together — often yields Chinese where every word is right and the whole means nothing; most dangerous of all, <b>a negation gets dropped or flipped</b>: "not unimportant" becomes "unimportant", the meaning exactly reversed. <b>Two counter-moves</b>: split the long sentence into two or three short ones and translate them separately — the logic usually walks back in; and give the load-bearing sentence the back-translation check (micro-lesson 2) — lost logic shows itself the moment the round trip is compared.</span></p>
 </div>
+
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg viewBox="0 0 640 350" role="img" aria-labelledby="fig-b3-contrast-t">
+<title id="fig-b3-contrast-t">两栏对照：左栏是翻译工具靠得住的地方——说明性的段落、常见词的常见用法、短句、给你一个大意；右栏是它常失手的地方——成语俗语、专有名词、三行长的句子、以及任何要署你名字的文字。A two-column contrast: on the left, where a translation tool holds up — plain explanatory prose, everyday words in everyday uses, short sentences, and getting you the gist; on the right, where it slips — idioms and sayings, proper names, three-line sentences, and anything that will carry your name.</title>
+<rect class="dl-node" x="20" y="20" width="290" height="310" rx="10"/>
+<rect class="dl-node" x="330" y="20" width="290" height="310" rx="10"/>
+<path class="dl-node is-ok" d="M20 74 V30 a10 10 0 0 1 10-10 H300 a10 10 0 0 1 10 10 V74 Z"/>
+<path class="dl-node is-warn" d="M330 74 V30 a10 10 0 0 1 10-10 H610 a10 10 0 0 1 10 10 V74 Z"/>
+<g class="dl-t-lg" text-anchor="middle">
+  <text class="zh dl-good" x="165" y="55">它靠得住的地方</text><text class="en dl-good" x="165" y="55">Where it holds up</text>
+  <text class="zh dl-caution" x="475" y="55">它常失手的地方</text><text class="en dl-caution" x="475" y="55">Where it slips</text>
+</g>
+<g class="dl-rule"><path d="M20 128 H310"/><path d="M20 182 H310"/><path d="M20 236 H310"/><path d="M330 128 H620"/><path d="M330 182 H620"/><path d="M330 236 H620"/></g>
+<g class="dl-good"><circle cx="46" cy="103" r="5"/><circle cx="46" cy="157" r="5"/><circle cx="46" cy="211" r="5"/><circle cx="46" cy="265" r="5"/></g>
+<g class="dl-caution"><circle cx="356" cy="103" r="5"/><circle cx="356" cy="157" r="5"/><circle cx="356" cy="211" r="5"/><circle cx="356" cy="265" r="5"/></g>
+<g class="dl-t dl-b">
+  <text class="zh" x="64" y="102">说明性的段落</text><text class="en" x="64" y="102">Plain explanatory prose</text>
+  <text class="zh" x="64" y="156">常见词的常见用法</text><text class="en" x="64" y="156">Everyday words</text>
+  <text class="zh" x="64" y="210">短句</text><text class="en" x="64" y="210">Short sentences</text>
+  <text class="zh" x="64" y="264">一个大意</text><text class="en" x="64" y="264">Getting you the gist</text>
+  <text class="zh" x="374" y="102">成语与俗语</text><text class="en" x="374" y="102">Idioms and sayings</text>
+  <text class="zh" x="374" y="156">专有名词</text><text class="en" x="374" y="156">Proper names</text>
+  <text class="zh" x="374" y="210">三行长的句子</text><text class="en" x="374" y="210">Three-line sentences</text>
+  <text class="zh" x="374" y="264">要署你名字的文字</text><text class="en" x="374" y="264">Anything you will sign</text>
+</g>
+<g class="dl-t-sm">
+  <text class="zh dl-muted" x="64" y="120">课程介绍、说明书、新闻</text><text class="en dl-long dl-muted" x="64" y="120">course intros, manuals, news</text>
+  <text class="zh dl-muted" x="64" y="174">见过千百万次的说法</text><text class="en dl-long dl-muted" x="64" y="174">phrasings seen a million times</text>
+  <text class="zh dl-muted" x="64" y="228">一句一个意思，不套从句</text><text class="en dl-long dl-muted" x="64" y="228">one idea, no nested clauses</text>
+  <text class="zh dl-muted" x="64" y="282">够你判断要不要细读</text><text class="en dl-long dl-muted" x="64" y="282">enough to judge if it's worth it</text>
+  <text class="zh dl-muted" x="374" y="120">a piece of cake 变成一块蛋糕</text><text class="en dl-long dl-muted" x="374" y="120">"a piece of cake" becomes pastry</text>
+  <text class="zh dl-muted" x="374" y="174">人名、课程名被硬译</text><text class="en dl-long dl-muted" x="374" y="174">names and titles get flattened</text>
+  <text class="zh dl-muted" x="374" y="228">否定被弄丢或弄反</text><text class="en dl-long dl-muted" x="374" y="228">a negation dropped or flipped</text>
+  <text class="zh dl-muted" x="374" y="282">那必须出自你自己的手</text><text class="en dl-long dl-muted" x="374" y="282">that has to come from you</text>
+</g>
+<g class="dl-t-sm" text-anchor="middle">
+  <text class="zh dl-muted" x="165" y="312">这一半，放手用</text><text class="en dl-long dl-muted" x="165" y="312">This half: use it freely</text>
+  <text class="zh dl-muted" x="475" y="312">这一半，回译核对过再信</text><text class="en dl-long dl-muted" x="475" y="312">This half: back-translate first</text>
+</g>
+</svg>
+</div>
+<figcaption><span class="zh">课文只讲了右边那一半。左边这一半同样重要，而且没人告诉过你：<b>翻译工具在说明性的段落上其实相当可靠</b>——本周任务读的课程介绍，正是它最擅长的那类文字。知道它哪里靠得住，你才不会因为怕出错而不敢用；知道它哪里会摔，你才不会全信。</span><span class="en">The lesson above describes only the right-hand half. The left half matters just as much and nobody tells you about it: <b>on plain explanatory prose a translation tool is genuinely reliable</b> — and a course introduction, the very text this week's task asks you to read, is exactly that kind of writing. Knowing where it holds up is what keeps fear from stopping you using it; knowing where it slips is what keeps you from believing all of it.</span></figcaption>
+</figure>
 
 <h2><span class="zh">一条规则（背下来）</span><span class="en">The one rule (memorise it)</span></h2>
 <div class="card task">

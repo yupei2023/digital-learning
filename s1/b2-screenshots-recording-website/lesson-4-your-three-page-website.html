@@ -6,11 +6,16 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 4 · B2 截图录屏与我的网站 · Digital Learning 数字化学习" data-en="Micro-lesson 4 · B2 Screenshots, Recording & My Website · Digital Learning">Micro-lesson 4 · B2 Screenshots, Recording & My Website · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w3.html"><span class="zh">第 3 周</span><span class="en">Week 3</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -28,45 +33,37 @@
 
 <h2><span class="zh">三个房间，各住什么</span><span class="en">Three rooms, and what lives in each</span></h2>
 <p><span class="zh">你的网站是一栋三个房间的小屋。每个房间本周只需“住进第一件东西”——学期里它们会自己长满。</span><span class="en">Your site is a small house of three rooms. Each room needs only its first occupant this week — the semester fills them by itself.</span></p>
-<figure class="card" style="margin:1rem 0" role="img" aria-label="三页网站结构示意图：顶部是「我的网站（英文名或化名）」，下分三页——关于我：我是谁、为什么学这门课；学习日志：每周三行，第一条含第 2 周基线；作品集：本学期作品陆续入住，先放一句占位。底部标注：已发布 · 不被搜索引擎收录 · 链接已登记。A sketch of the three-page site: at top 'My site (English name or pseudonym)', branching to three pages — About me: who I am, why this course; Learning log: three lines weekly, first entry holds the Week-2 baseline; Portfolio: this semester's works move in, one placeholder line for now. The footer notes: published · hidden from search engines · link registered.">
-<svg viewBox="0 0 640 400" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">
-<rect x="6" y="6" width="628" height="388" rx="12" fill="var(--card,#fff)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<rect x="190" y="26" width="260" height="52" rx="10" fill="var(--accent,#2f6f9f)"/>
-<g font-size="16" font-weight="700" fill="#fff"><text class="zh" x="320" y="49" text-anchor="middle">我的网站</text><text class="en" x="320" y="49" text-anchor="middle">My site</text></g>
-<g font-size="11" fill="#fff"><text class="zh" x="320" y="68" text-anchor="middle">（英文名或化名，如 Chenxing）</text><text class="en" x="320" y="68" text-anchor="middle">(English name or pseudonym, e.g. Chenxing)</text></g>
-<line x1="320" y1="78" x2="320" y2="100" stroke="var(--muted,#5b6472)" stroke-width="2"/>
-<line x1="115" y1="100" x2="525" y2="100" stroke="var(--muted,#5b6472)" stroke-width="2"/>
-<line x1="115" y1="100" x2="115" y2="122" stroke="var(--muted,#5b6472)" stroke-width="2"/>
-<line x1="320" y1="100" x2="320" y2="122" stroke="var(--muted,#5b6472)" stroke-width="2"/>
-<line x1="525" y1="100" x2="525" y2="122" stroke="var(--muted,#5b6472)" stroke-width="2"/>
-<rect x="28" y="122" width="174" height="180" rx="10" fill="var(--accent-soft,#e8f1f8)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="15" font-weight="700" fill="var(--ink,#1f2937)"><text class="zh" x="115" y="150" text-anchor="middle">关于我</text><text class="en" x="115" y="150" text-anchor="middle">About me</text></g>
-<g font-size="11" fill="var(--muted,#5b6472)">
-<text class="zh" x="42" y="178">· 我是谁（化名）</text><text class="en" x="42" y="178">· who I am (pseudonym)</text>
-<text class="zh" x="42" y="200">· 我为什么学这门课</text><text class="en" x="42" y="200">· why this course</text>
-<text class="zh" x="42" y="222">· 这学期最想学会的事</text><text class="en" x="42" y="222">· what I most want to learn</text>
-<text class="zh" x="42" y="252">本周写好这三样</text><text class="en" x="42" y="252">all three written this week</text>
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg viewBox="0 0 640 450" role="img" aria-labelledby="fig-b2-sitemap-t">
+<title id="fig-b2-sitemap-t">一张三页网站的结构图：顶上是「我的网站」，一条竖线往下分出三间房——关于我、学习日志、作品集，每间房写着这学期住进什么、本周先住进什么；最下面一条虚线带写着已发布、不被搜索引擎收录、链接已登记。A structure sketch of a three-page site: “My site” at the top, one vertical line branching into three rooms — About me, Learning log, Portfolio — each saying what moves in over the semester and what moves in this week; a dashed strip at the foot reads published, hidden from search, link registered.</title>
+<rect class="dl-node is-key" x="190" y="18" width="260" height="46" rx="10"/>
+<g class="dl-t dl-b" text-anchor="middle"><text class="zh dl-acc" x="320" y="40">我的网站</text><text class="en dl-acc" x="320" y="40">My site</text></g>
+<g class="dl-t-xs" text-anchor="middle"><text class="zh dl-muted" x="320" y="57">英文名或化名，如 Chenxing</text><text class="en dl-muted" x="320" y="57">English name or pseudonym, e.g. Chenxing</text></g>
+<g class="dl-link is-soft"><path d="M320 64 V80 H60 V338"/><path d="M60 138 H90"/><path d="M60 238 H90"/><path d="M60 338 H90"/></g>
+<rect class="dl-node" x="90" y="94" width="520" height="88" rx="10"/>
+<rect class="dl-node" x="90" y="194" width="520" height="88" rx="10"/>
+<rect class="dl-node" x="90" y="294" width="520" height="88" rx="10"/>
+<g class="dl-t-lg">
+  <text class="zh" x="110" y="124">关于我</text><text class="en" x="110" y="124">About me</text>
+  <text class="zh" x="110" y="224">学习日志</text><text class="en" x="110" y="224">Learning log</text>
+  <text class="zh" x="110" y="324">作品集</text><text class="en" x="110" y="324">Portfolio</text>
 </g>
-<rect x="233" y="122" width="174" height="180" rx="10" fill="var(--accent-soft,#e8f1f8)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="15" font-weight="700" fill="var(--ink,#1f2937)"><text class="zh" x="320" y="150" text-anchor="middle">学习日志</text><text class="en" x="320" y="150" text-anchor="middle">Learning log</text></g>
-<g font-size="11" fill="var(--muted,#5b6472)">
-<text class="zh" x="247" y="178">· 每周三行，最新在上</text><text class="en" x="247" y="178">· three lines weekly, newest first</text>
-<text class="zh" x="247" y="200">· 第一条：第 2 周三行日志</text><text class="en" x="247" y="200">· first entry: the Week-2 log</text>
-<text class="zh" x="247" y="222">　+ “第 2 周基线”逐项结果</text><text class="en" x="247" y="222">　+ the Week-2 baseline results</text>
-<text class="zh" x="247" y="252">本周写下第一条</text><text class="en" x="247" y="252">the first entry lands this week</text>
+<g class="dl-t-sm">
+  <text class="zh dl-muted" x="110" y="148">我是谁（化名）· 为什么学这门课 · 最想学会的事</text><text class="en dl-long dl-muted" x="110" y="148">who I am · why this course · what I most want to learn</text>
+  <text class="zh dl-muted" x="110" y="248">每周三行，最新的在最上面</text><text class="en dl-long dl-muted" x="110" y="248">three lines a week, newest on top</text>
+  <text class="zh dl-muted" x="110" y="348">本学期的作品陆续搬进来，第 15–16 周整理成「作品集 v1」</text><text class="en dl-long dl-muted" x="110" y="348">works move in all semester; Weeks 15–16 curate Portfolio v1 here</text>
 </g>
-<rect x="438" y="122" width="174" height="180" rx="10" fill="var(--accent-soft,#e8f1f8)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="15" font-weight="700" fill="var(--ink,#1f2937)"><text class="zh" x="525" y="150" text-anchor="middle">作品集</text><text class="en" x="525" y="150" text-anchor="middle">Portfolio</text></g>
-<g font-size="11" fill="var(--muted,#5b6472)">
-<text class="zh" x="452" y="178">· 本学期作品陆续入住</text><text class="en" x="452" y="178">· works move in all semester</text>
-<text class="zh" x="452" y="200">· 第 15–16 周在这里</text><text class="en" x="452" y="200">· Weeks 15–16 curate the</text>
-<text class="zh" x="452" y="222">　整理出“作品集 v1”</text><text class="en" x="452" y="222">　Portfolio v1 right here</text>
-<text class="zh" x="452" y="252">本周先放一句占位</text><text class="en" x="452" y="252">one placeholder line for now</text>
+<g class="dl-t-sm">
+  <text class="zh dl-acc" x="110" y="170">本周：三样都写好</text><text class="en dl-long dl-acc" x="110" y="170">this week: all three written</text>
+  <text class="zh dl-acc" x="110" y="270">本周：写下第一条，并抄进第 2 周基线的逐项结果</text><text class="en dl-long dl-acc" x="110" y="270">this week: the first entry, plus the Week-2 baseline results</text>
+  <text class="zh dl-acc" x="110" y="370">本周：先放一句占位就好</text><text class="en dl-long dl-acc" x="110" y="370">this week: one placeholder line is enough</text>
 </g>
-<rect x="28" y="322" width="584" height="48" rx="10" fill="none" stroke="var(--muted,#5b6472)" stroke-width="2" stroke-dasharray="6 5"/>
-<g font-size="12" font-weight="700" fill="var(--ink,#1f2937)"><text class="zh" x="320" y="350" text-anchor="middle">已发布 ✓ · 不被搜索引擎收录 ✓ · 链接已登记 ✓</text><text class="en" x="320" y="350" text-anchor="middle">published ✓ · hidden from search ✓ · link registered ✓</text></g>
+<rect class="dl-field" x="60" y="396" width="550" height="40" rx="10"/>
+<g class="dl-t-sm dl-b" text-anchor="middle"><text class="zh dl-good" x="335" y="421">已发布 ✓ · 不被搜索引擎收录 ✓ · 链接已登记 ✓</text><text class="en dl-long dl-good" x="335" y="421">published ✓ · hidden from search ✓ · link registered ✓</text></g>
 </svg>
-<figcaption style="font-size:.9rem;color:var(--muted,#5b6472);margin-top:.5rem"><span class="zh">三页小屋的平面图（本课程自绘示意，无品牌）。多数模板自带页面导航；把页面改名成这三个即可。</span><span class="en">The floor plan of the three-room house, sketched for this course (unbranded). Most templates ship with page navigation — renaming the pages to these three is enough.</span></figcaption>
+</div>
+<figcaption><span class="zh">三个房间的平面图（本课程自绘，不代表任何一家建站平台）。灰色一行是这三间房整个学期会长成的样子，蓝色一行是<b>本周</b>只需要住进去的第一件东西——一栋房子不必一周盖满。</span><span class="en">The floor plan of the three rooms (sketched for this course; it is not any particular builder). The grey line is what each room grows into over the semester; the blue line is the single first occupant each room needs <b>this week</b> — a house does not have to be furnished in one week.</span></figcaption>
 </figure>
 
 <h2><span class="zh">建站的五个通用动作</span><span class="en">The five universal builder moves</span></h2>
@@ -78,6 +75,41 @@
 <li><span class="zh"><b>复制你的链接</b>：发布后平台会给你一个网址——复制它，登记到登记表，也发进自己的邮箱存一份。</span><span class="en"><b>Copy your link</b>: publishing hands you an address — copy it, register it on the tracking sheet, and email yourself a spare.</span></li>
 <li><span class="zh"><b>设为不被搜索引擎收录</b>：在网站设置里找到“搜索引擎”一项（英文界面上常叫 SEO——它只是“搜索引擎”相关设置的英文名，认准带“搜索”两个字的选项就行），关掉“允许收录”。找不到就搜平台帮助里的“隐藏于搜索引擎”，或截图问导师。</span><span class="en"><b>Set no-index</b>: in the site settings find the search-engine setting (often labelled SEO — just the English shorthand for search-engine options; look for the word “search”) and turn indexing off. Can't find it? Search the builder's help for “hide from search engines” — or screenshot and ask your mentor.</span></li>
 </ol>
+
+
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg viewBox="0 0 640 340" role="img" aria-labelledby="fig-b2-moves-t">
+<title id="fig-b2-moves-t">五级上升的台阶：选模板、改文字与图片、发布、复制链接、设为不被搜索引擎收录。一条弧线从第三级弯回第二级，表示改和发布这两级每周都要再走一遍。Five rising steps: pick a template, edit the text and images, publish, copy your link, hide it from search engines. A curved arrow bends from the third step back to the second, because editing and publishing are the two steps you walk again every week.</title>
+<defs><marker id="dlArrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="dl-head is-key" d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<path class="dl-link is-soft" d="M20 328 V270 H52 V212 H84 V154 H116 V96 H148 V38"/>
+<rect class="dl-node" x="20" y="270" width="420" height="44" rx="8"/>
+<rect class="dl-node" x="52" y="212" width="420" height="44" rx="8"/>
+<rect class="dl-node" x="84" y="154" width="420" height="44" rx="8"/>
+<rect class="dl-node" x="116" y="96" width="420" height="44" rx="8"/>
+<rect class="dl-node is-key" x="148" y="38" width="420" height="44" rx="8"/>
+<path class="dl-link is-key" marker-end="url(#dlArrow)" d="M512 176 C 568 176 568 234 492 234"/>
+<g class="dl-chip"><circle cx="46" cy="292" r="13"/><circle cx="78" cy="234" r="13"/><circle cx="110" cy="176" r="13"/><circle cx="142" cy="118" r="13"/><circle cx="174" cy="60" r="13"/></g>
+<g class="dl-t-sm dl-b" text-anchor="middle"><text x="46" y="297">1</text><text x="78" y="239">2</text><text x="110" y="181">3</text><text x="142" y="123">4</text><text x="174" y="65">5</text></g>
+<g class="dl-t dl-b">
+  <text class="zh" x="70" y="290">选模板</text><text class="en" x="70" y="290">Pick a template</text>
+  <text class="zh" x="102" y="232">改文字与图片</text><text class="en" x="102" y="232">Edit the text and images</text>
+  <text class="zh" x="134" y="174">发布</text><text class="en" x="134" y="174">Publish</text>
+  <text class="zh" x="166" y="116">复制链接</text><text class="en" x="166" y="116">Copy your link</text>
+  <text class="zh" x="198" y="58">设为不被搜索引擎收录</text><text class="en" x="198" y="58">Hide it from search</text>
+</g>
+<g class="dl-t-sm">
+  <text class="zh dl-muted" x="70" y="307">挑一个简洁的当骨架</text><text class="en dl-long dl-muted" x="70" y="307">a clean one, as the skeleton</text>
+  <text class="zh dl-muted" x="102" y="249">点到哪句改哪句，像编辑文档</text><text class="en dl-long dl-muted" x="102" y="249">click a line, retype it, like a document</text>
+  <text class="zh dl-muted" x="134" y="191">不点这一下，改动只有你看得见</text><text class="en dl-long dl-muted" x="134" y="191">until you press it, only you can see the change</text>
+  <text class="zh dl-muted" x="166" y="133">登记给导师，再发一份到自己邮箱</text><text class="en dl-long dl-muted" x="166" y="133">register it, and email yourself a spare</text>
+  <text class="zh dl-muted" x="198" y="75">只有拿到链接的人能看</text><text class="en dl-long dl-muted" x="198" y="75">only people with the link can see it</text>
+</g>
+<g class="dl-t-sm" text-anchor="end"><text class="zh dl-acc" x="620" y="328">② 和 ③ 每周都要再走一遍</text><text class="en dl-long dl-acc" x="620" y="328">steps ② and ③ get walked again every week</text></g>
+</svg>
+</div>
+<figcaption><span class="zh">五个动作里，<b>只有 ② 和 ③ 会一直重复</b>：① ④ ⑤ 这学期各做一次就完了，而「改一改 → 再发布一次」是你到第 16 周还在走的那个小圈。忘了第二次发布，是新手最常遇到的一件怪事：编辑器里改好了，网址上却还是旧的。</span><span class="en">Of the five moves, <b>only ② and ③ ever repeat</b>: ①, ④ and ⑤ are done once for the semester, while “edit a little → publish again” is the small circle you are still walking in Week 16. Forgetting that second publish is the commonest beginner's mystery: the editor shows the change, the web address still shows the old page.</span></figcaption>
+</figure>
 
 <h2><span class="zh">隐私四条（上墙的规矩）</span><span class="en">The four privacy rules (posted on the wall)</span></h2>
 <div class="card warn">

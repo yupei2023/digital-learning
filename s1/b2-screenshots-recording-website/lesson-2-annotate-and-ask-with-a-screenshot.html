@@ -6,11 +6,16 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="微课 2 · B2 截图录屏与我的网站 · Digital Learning 数字化学习" data-en="Micro-lesson 2 · B2 Screenshots, Recording & My Website · Digital Learning">Micro-lesson 2 · B2 Screenshots, Recording & My Website · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
 </head>
 <body>
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site"><div class="wrap">
-  <a class="brand" href="../../assets/../index.html">Digital Learning 数字化学习</a>
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
   <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w3.html"><span class="zh">第 3 周</span><span class="en">Week 3</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -41,35 +46,38 @@
 <li><span class="zh"><b>我做了什么</b>：“我点了右上角的'发布'按钮。”</span><span class="en"><b>What I did</b>: “I pressed the Publish button, top right.”</span></li>
 <li><span class="zh"><b>出现了什么</b>：“出来截图里这个提示，我没看懂——红框处。”</span><span class="en"><b>What happened</b>: “This message in the screenshot appeared and I can't read it — see the red box.”</span></li>
 </ol>
-<figure class="card" style="margin:1rem 0" role="img" aria-label="带截图提问的示意图：一封求助邮件，主题为「请教一个建站问题 · 晨星（S1-07）」，正文三句话（我想做什么 · 我做了什么 · 出现了什么），下方附一张截图，截图上有一个红框圈住出错的提示、一个色块盖住个人信息。A sketch of asking with a screenshot: a help email titled 'a site question · Chenxing (S1-07)', a three-sentence body (what I tried · what I did · what happened), and an attached screenshot with a red box around the error message and a solid block masking personal details.">
-<svg viewBox="0 0 640 430" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">
-<rect x="6" y="6" width="628" height="418" rx="12" fill="var(--card,#fff)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="14" font-weight="700" fill="var(--accent,#2f6f9f)"><text class="zh" x="24" y="38">主题</text><text class="en" x="24" y="38">Subject</text></g>
-<g font-size="14" fill="var(--ink,#1f2937)"><text class="zh" x="90" y="38">请教一个建站问题 · 晨星（S1-07）</text><text class="en" x="90" y="38">a site question · Chenxing (S1-07)</text></g>
-<line x1="24" y1="50" x2="616" y2="50" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="13" fill="var(--ink,#1f2937)">
-<text class="zh" x="24" y="78">① 我想做什么：想发布“学习日志”页。</text><text class="en" x="24" y="78">① What I tried: publishing my Learning-log page.</text>
-<text class="zh" x="24" y="102">② 我做了什么：点了右上角的“发布”。</text><text class="en" x="24" y="102">② What I did: pressed Publish, top right.</text>
-<text class="zh" x="24" y="126">③ 出现了什么：红框里的提示，我没看懂。</text><text class="en" x="24" y="126">③ What happened: the message in the red box.</text>
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg viewBox="0 0 640 440" role="img" aria-labelledby="fig-b2-ask-t">
+<title id="fig-b2-ask-t">一封带截图的求助邮件：主题写「请教一个建站问题 · 晨星（S1-07）」，正文三句话说清我想做什么、我做了什么、出现了什么；下面附着一张截图，截图上一个红框圈住出错提示，一个灰块盖住个人信息。A help email with a screenshot: the subject reads “a site question · Chenxing (S1-07)”, the body is three sentences saying what I tried, what I did and what happened; below it an attached screenshot carries a red box around the error message and a grey block over the private details.</title>
+<rect class="dl-node" x="8" y="8" width="624" height="424" rx="12"/>
+<g class="dl-t dl-b"><text class="zh dl-acc" x="26" y="40">主题</text><text class="en dl-acc" x="26" y="40">Subject</text></g>
+<g class="dl-t"><text class="zh" x="110" y="40">请教一个建站问题 · 晨星（S1-07）</text><text class="en" x="110" y="40">a site question · Chenxing (S1-07)</text></g>
+<g class="dl-rule"><path d="M26 52 H614"/></g>
+<g class="dl-t-sm">
+  <text class="zh" x="26" y="80">① 我想做什么：想发布「学习日志」页。</text><text class="en dl-long" x="26" y="80">① What I tried: publishing my Learning-log page.</text>
+  <text class="zh" x="26" y="106">② 我做了什么：点了右上角的「发布」。</text><text class="en dl-long" x="26" y="106">② What I did: pressed Publish, top right.</text>
+  <text class="zh" x="26" y="132">③ 出现了什么：红框里的提示，我没看懂。</text><text class="en dl-long" x="26" y="132">③ What happened: the message in the red box.</text>
 </g>
-<rect x="24" y="146" width="592" height="230" rx="8" fill="var(--accent-soft,#e8f1f8)" stroke="var(--line,#e4e1da)" stroke-width="2"/>
-<g font-size="12" fill="var(--muted,#5b6472)"><text class="zh" x="38" y="170">附件：截图（已标注）</text><text class="en" x="38" y="170">Attached: the screenshot, annotated</text></g>
-<rect x="38" y="182" width="564" height="180" rx="6" fill="var(--card,#fff)" stroke="var(--line,#e4e1da)"/>
-<line x1="38" y1="212" x2="602" y2="212" stroke="var(--line,#e4e1da)"/>
-<circle cx="56" cy="197" r="5" fill="var(--muted,#5b6472)"/>
-<rect x="72" y="192" width="120" height="10" rx="5" fill="var(--line,#e4e1da)"/>
-<rect x="470" y="190" width="110" height="14" rx="7" fill="var(--muted,#5b6472)"/>
-<g font-size="10" fill="var(--card,#fff)"><text class="zh" x="525" y="200" text-anchor="middle">发布</text><text class="en" x="525" y="200" text-anchor="middle">Publish</text></g>
-<rect x="60" y="238" width="240" height="12" rx="6" fill="var(--line,#e4e1da)"/>
-<rect x="60" y="262" width="300" height="12" rx="6" fill="var(--line,#e4e1da)"/>
-<rect x="360" y="236" width="220" height="70" rx="6" fill="none" stroke="#c0392b" stroke-width="3"/>
-<g font-size="11" fill="var(--muted,#5b6472)"><text class="zh" x="374" y="262">（出错提示出现在这里）</text><text class="en" x="374" y="262">(the error message sits here)</text></g>
-<g font-size="11" font-weight="700" fill="#c0392b"><text class="zh" x="374" y="282">红框：问题在这儿</text><text class="en" x="374" y="282">Red box: the trouble is here</text></g>
-<rect x="60" y="300" width="180" height="28" rx="4" fill="var(--muted,#5b6472)"/>
-<g font-size="11" font-weight="700" fill="var(--card,#fff)"><text class="zh" x="150" y="318" text-anchor="middle">打码：个人信息盖住</text><text class="en" x="150" y="318" text-anchor="middle">Masked: personal details</text></g>
-<g font-size="12" fill="var(--muted,#5b6472)"><text class="zh" x="24" y="404">三句话说来龙去脉 · 红框指重点 · 打码藏隐私——导师一封回信就能解决。</text><text class="en" x="24" y="404">Three sentences for the story, a red box for the spot, a mask for the private — solvable in one reply.</text></g>
+<rect class="dl-node is-key" x="26" y="150" width="588" height="248" rx="8"/>
+<g class="dl-t-xs"><text class="zh dl-muted" x="42" y="174">附件：截图（已标注）</text><text class="en dl-muted" x="42" y="174">Attached: the screenshot, annotated</text></g>
+<rect class="dl-node" x="42" y="186" width="556" height="200" rx="6"/>
+<g class="dl-rule"><path d="M42 216 H598"/></g>
+<circle class="dl-muted" cx="60" cy="201" r="5"/>
+<rect class="dl-node is-quiet" x="76" y="195" width="130" height="12" rx="6"/>
+<rect class="dl-node is-key" x="452" y="192" width="124" height="20" rx="8"/>
+<g class="dl-t-xs dl-b" text-anchor="middle"><text class="zh dl-acc" x="514" y="206">发布</text><text class="en dl-acc" x="514" y="206">Publish</text></g>
+<rect class="dl-node is-quiet" x="64" y="244" width="230" height="12" rx="6"/>
+<rect class="dl-node is-quiet" x="64" y="268" width="290" height="12" rx="6"/>
+<rect class="dl-node is-bad" x="360" y="240" width="228" height="80" rx="6"/>
+<g class="dl-t-xs"><text class="zh dl-muted" x="374" y="266">（出错提示出现在这里）</text><text class="en dl-muted" x="374" y="266">(the error message sits here)</text></g>
+<g class="dl-t-sm dl-b"><text class="zh dl-alert" x="374" y="292">红框：问题在这儿</text><text class="en dl-long dl-alert" x="374" y="292">Red box: the trouble is here</text></g>
+<rect class="dl-node is-quiet" x="64" y="330" width="230" height="30" rx="4"/>
+<g class="dl-t-xs dl-b" text-anchor="middle"><text class="zh dl-muted" x="179" y="350">打码：个人信息盖住</text><text class="en dl-muted" x="179" y="350">Masked: personal details</text></g>
+<g class="dl-t-sm"><text class="zh dl-muted" x="26" y="422">三句话 · 红框指重点 · 打码藏隐私——一封回信就能解决。</text><text class="en dl-long dl-muted" x="26" y="422">Three sentences, a red box, a mask — solvable in one reply.</text></g>
 </svg>
-<figcaption style="font-size:.9rem;color:var(--muted,#5b6472);margin-top:.5rem"><span class="zh">带截图提问的三件套（本课程自绘示意，无品牌）：三句话 + 红框 + 打码。主题仍用上周的公式“事由 · 我是谁”。</span><span class="en">The ask-with-a-screenshot kit, sketched for this course (unbranded): three sentences + a red box + a mask. The subject line still follows last week's formula, matter · who.</span></figcaption>
+</div>
+<figcaption><span class="zh">带截图提问的三件套（本课程自绘，不代表任何一家建站平台）：三句话 + 红框 + 打码。<b>红框和灰块是你加上去的</b>——原始截图上没有它们，也正因为如此，导师一眼就知道该看哪里、哪里不该看。主题仍用第 2 周的公式「事由 · 我是谁」。</span><span class="en">The ask-with-a-screenshot kit, sketched for this course (it is not any particular builder): three sentences + a red box + a mask. <b>The box and the grey block are things you add</b> — the raw screenshot has neither, and that is exactly why your mentor knows at a glance where to look and where not to. The subject still follows Week 2's formula, matter · who.</span></figcaption>
 </figure>
 <div class="card note"><b><span class="zh">为什么导师喜欢这样的求助</span><span class="en">Why mentors love this kind of ask</span></b><br><span class="zh">“我打不开”有一百种可能，导师要来回问三封邮件才摸到现场；一张标注好的截图把现场直接搬了过去，多数问题一封回信就解决。帮别人省力，就是帮自己提速——这也是 24–48 小时回复节奏下最划算的做法。</span><span class="en">“It doesn't work” has a hundred possible meanings, and pinning one down costs three rounds of email; an annotated screenshot carries the scene itself across, and most problems die in a single reply. Saving the helper's effort is how you speed up your own answer — the smartest play under the 24–48-hour rhythm.</span></div>
 <div class="next"><a href="lesson-1-screenshots-on-computer-and-phone.html"><span class="zh">← 微课 1</span><span class="en">← Micro-lesson 1</span></a><a href="lesson-3-screen-recording.html"><span class="zh">微课 3 录屏 →</span><span class="en">Micro-lesson 3, screen recording →</span></a></div>
