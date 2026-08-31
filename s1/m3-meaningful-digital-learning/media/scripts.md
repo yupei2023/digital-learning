@@ -80,3 +80,18 @@ SMART 是五个问题。S，清晰——到底要完成什么？哪门课的哪�
 然后，只改一处。改得多，下周就不知道是哪一处起了作用。时间不对——换时间。目标太大——缩小到子集。一步太大——拆成两个 30 分钟。没有开关——接在一件本来就会做的事后面。
 理由怎么写？"我会更努力"不算——它没指向这一周发生的任何一件事。"因为周三那次被作业挤掉了，所以我改到周六早上"——一个理由里一定有一件具体的事。
 最后，不用跟别人比。你只需要跟上周的自己比：这周的表，比上周更像你真实的一周了吗？一步一个脚印，就够了。
+
+---
+
+## 2026-08-31 补入的选看视频 Optional clips added 2026-08-31
+
+全部标为**选看**，不计入该周 120 分钟必做时间——各周预算已排满，改动预算是教学决定，不由本轮代做。All are marked **optional** and stay outside the week's 120 required minutes: the budgets are already full, and moving them is a teaching decision.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| index.html §选看 | 【TED-Ed】拖延症为何难以解决？ Why you procrastinate even when it feels bad（5:26，中英字幕） | B 站 UP 主 C语言____（TED-Ed 转载，2022） | https://www.bilibili.com/video/BV1pv4y1d7ZJ · 嵌入 `player.bilibili.com/player.html?bvid=BV1pv4y1d7ZJ&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| reading.html §选看 | 费曼学习法：讲得出来才算学会 The Feynman technique（4:09，中文配音） | B 站 UP 主 Sprouts中文（2023） | https://www.bilibili.com/video/BV11d4y1H7NA · 嵌入 `player.bilibili.com/player.html?bvid=BV11d4y1H7NA&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| activity-smart-or-not §选看 | 什么是 S.M.A.R.T. 目标设定 What S.M.A.R.T. goal-setting is（2:20，中英字幕） | B 站 UP 主 知识共享者（2023） | https://www.bilibili.com/video/BV1yH4y1C7j2 · 嵌入 `player.bilibili.com/player.html?bvid=BV1yH4y1C7j2&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| task-1-my-plan §选看 | 【TED】只需 20 小时，你就能学会任何事情 The first 20 hours（3:02，中英双字幕） | B 站 UP 主 彼得潘在摸鱼（TED 转载，2021） | https://www.bilibili.com/video/BV11y4y1272t · 嵌入 `player.bilibili.com/player.html?bvid=BV11y4y1272t&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+
+**待补 To come（2026-08-31）** — `task-2-one-week-review.html` 留有 `［placeholder］`：中文检索里“复盘”几乎被公考与股市内容占满，没有适合中学生的学习复盘片源。

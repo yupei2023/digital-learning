@@ -55,3 +55,13 @@ Embeds use Bilibili's official external player with danmaku off and no autoplay,
 
 ### 微课 4 · 三行来源卡与一眼三看
 开场（30 秒）：同一网址三个月前后的页面对比（存档截图，说明网页会变）。讲解（2.5 分钟）：三行卡逐行填一张（对着虚构页面）；一眼三看各配一例。收尾（1.5 分钟）：读本第六讲两个例子口播（线上百科的引用要求；"一颗赛艇"投票）；"先信不等于永远信，第二学期见"。
+
+---
+
+## 2026-08-31 补入的选看视频 Optional clips added 2026-08-31
+
+全部标为**选看**，不计入该周 120 分钟必做时间——各周预算已排满，改动预算是教学决定，不由本轮代做。All are marked **optional** and stay outside the week's 120 required minutes: the budgets are already full, and moving them is a teaching decision.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| w6.html §选看 | 检索能力，是一种拉开差距的能力 Finding things is a skill that compounds（1:30） | B 站 UP 主 小五只会一点点（原创，2023） | https://www.bilibili.com/video/BV1FG411S7RY · 嵌入 `player.bilibili.com/player.html?bvid=BV1FG411S7RY&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |

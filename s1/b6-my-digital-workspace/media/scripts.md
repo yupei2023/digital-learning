@@ -59,3 +59,13 @@ Embeds use Bilibili's official external player with danmaku off and no autoplay,
 
 ### 微课 5 · 一对一视频通话礼仪
 开场（30 秒）：两段模拟对比——手忙脚乱版（找耳机、忘静音、背景一团糟）vs 从容版。讲解（3 分钟）："提前五分钟"四件事真机走一遍（设备检测入口、选位与背景、材料在手、着装一句话）；通话中五条规矩各配半句示例（进门先静音 / 问好直接说事 / 听完再接 / 卡顿照直说 / 不录制对方）。收尾（1 分钟）：得体的补救也是礼仪；预约方式见开课信。
+
+---
+
+## 2026-08-31 补入的选看视频 Optional clips added 2026-08-31
+
+全部标为**选看**，不计入该周 120 分钟必做时间——各周预算已排满，改动预算是教学决定，不由本轮代做。All are marked **optional** and stay outside the week's 120 required minutes: the budgets are already full, and moving them is a teaching decision.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| w7.html §选看 | 【效率】如何给文件夹分类和命名 Naming and foldering（5:21） | B 站 UP 主 像素队长（原创，2021） | https://www.bilibili.com/video/BV1NX4y1T7dt · 嵌入 `player.bilibili.com/player.html?bvid=BV1NX4y1T7dt&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |

@@ -5,7 +5,7 @@
    the moment an item is inserted anywhere but the end: the learner comes back to a
    self-review that appears filled in, wrongly, with no error to warn them. So a
    checkbox with no id simply does not save, and says so in the console — a release
-   check (tools/check-checklist-ids.py) fails the build before that ever ships.
+   check (tools/check-release.py) fails the build before that ever ships.
 
    The key namespace is versioned. Bump VERSION whenever a checklist's items change
    meaning, so old state expires instead of restoring ticks that belonged to

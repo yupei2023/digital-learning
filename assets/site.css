@@ -8,7 +8,7 @@
 :root{--ink:#1f2937;--muted:#5b6472;--bg:#fbfaf7;--card:#ffffff;--line:#e4e1da;--accent:#2f6f9f;--accent-soft:#e8f1f8;--ok:#2e7d4f;--ok-soft:#e6f4ec;--warn:#b45309;--warn-soft:#fff4e0;--bad:#b3261e;--bad-soft:#fdecea;--home-ink:#142338;--home-muted:#58687a;--home-paper:#f4f7fa;--home-deep:#e8eef4;--home-blue:#426b92;--home-navy:#183b5d;--home-night:#0b1b2d;--home-pale:#c2d5e7;--home-line:rgba(20,35,56,.17);--radius:10px;--font:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Segoe UI",Roboto,sans-serif}
 *{box-sizing:border-box}
 html{font-size:17px;-webkit-text-size-adjust:100%}
-body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7;overflow-wrap:break-word}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #f5b400;outline-offset:2px}
 .skip{position:absolute;left:-999px;top:0;background:#fff;padding:.5rem 1rem;z-index:99}
@@ -99,6 +99,9 @@ summary{cursor:pointer;font-weight:600}
 .next{display:flex;justify-content:space-between;gap:1rem;margin-top:2.5rem;flex-wrap:wrap}
 .next a{text-decoration:none;border:1px solid var(--line);background:#fff;padding:.6rem 1rem;border-radius:8px}
 @media(max-width:600px){html{font-size:16px}h1{font-size:1.55rem}}
+/* On a 320px phone a long English .tag is wider than the screen. Now that nothing
+   clips horizontal overflow, let the pill wrap rather than push the page sideways. */
+@media(max-width:360px){.tag{white-space:normal}}
 @media print{header.site,footer.site,.next,button{display:none}main{max-width:none}}
 /* embedded video (16:9) and slide gallery */
 .ratio{position:relative;padding-top:56.25%;background:#000;border-radius:8px;overflow:hidden}

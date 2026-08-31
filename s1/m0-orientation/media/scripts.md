@@ -54,3 +54,22 @@ Searched Bilibili on six keyword sets, verified each hit via the API, and filter
 English captions: see the text version on w1.html (section 3, "Course intro · text version"); keep the two in sync.
 
 若日后录制并上传：`player.bilibili.com/player.html?bvid=…&high_quality=1&danmaku=0&autoplay=0` 嵌入 w1.html 的 `.video` 区块；`.srt` 字幕存入 `captions/`。
+
+---
+
+## 2026-08-31 补入的选看视频 Optional clips added 2026-08-31
+
+全部标为**选看**，不计入该周 120 分钟必做时间——各周预算已排满，改动预算是教学决定，不由本轮代做。All are marked **optional** and stay outside the week's 120 required minutes: the budgets are already full, and moving them is a teaching decision.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| index.html §选看 | 【TED-Ed】如何更有效地进行时间管理 How to manage your time more effectively（5:11，中英字幕） | B 站 UP 主 小猫咪字幕组（TED-Ed 转载，2019） | https://www.bilibili.com/video/BV1UJ41117Nt · 嵌入 `player.bilibili.com/player.html?bvid=BV1UJ41117Nt&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| reading.html §选看 | 终身学习为什么重要 Why lifelong learning matters（2:02，《经济学人》选读，中英字幕） | B 站 UP 主 森哥教英语（2018） | https://www.bilibili.com/video/BV1XW411K73t · 嵌入 `player.bilibili.com/player.html?bvid=BV1XW411K73t&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| lesson-3 §选看 | 【TED-Ed】如何有效学习的 3 个建议 3 tips on how to study effectively（4:49，中英字幕） | B 站 UP 主 莫莉的TED演讲精选（TED-Ed 转载，2023） | https://www.bilibili.com/video/BV1L34y1g7WM · 嵌入 `player.bilibili.com/player.html?bvid=BV1L34y1g7WM&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| task-1 §选看 | 成功的关键不是智商，而是毅力 Grit（Angela Duckworth，6:05，中英字幕） | B 站 UP 主 旧旧的鼠标垫（TED 转载，2019） | https://www.bilibili.com/video/BV1mt411L7cJ · 嵌入 `player.bilibili.com/player.html?bvid=BV1mt411L7cJ&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+
+**待补 To come（2026-08-31 检索后仍空缺）** — 四页留有 `［placeholder］` 视频位：
+- `lesson-1-meet-the-instructor.html`：需教师本人出镜的自我介绍（≤ 5 分钟）。第三方视频替代不了这一页；本文件已记有 2021 年自录绪论视频 `[Chinese]-Introduction-to-Online-Learning.mov` 可剪用，是否剪用由 ShiFu 决定。
+- `lesson-2-about-ai.html`：选片牵涉信息披露规则（第一学期不放 AI 主题拓展材料），交 ShiFu 定夺，本轮不代选。
+- `lesson-4-get-set-up.html`：候选片源要么演示本课程不用的平台，要么与 B1、B4 重复；待平台确定后再补。
+- `activity-how-this-course-works.html`：检索结果多为应试与“逆袭”口吻（「卷王」「暴涨」「逆袭」），与本课程“不谈分数、不设迟交处罚”的立场冲突，宁缺。
