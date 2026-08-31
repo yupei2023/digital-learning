@@ -10,6 +10,8 @@ Built in full (r1) in the unattended pipeline and committed locally, not pushed.
 
 **本单元的特别之处 What makes B3 different**：这是全课程唯一一个**在 🚫 独立周里要求使用工具**的单元——页面反复把界线说透：翻译工具不属于生成式 AI（教纲原句上墙），使用执照是年计划 §3a 那条规则「翻译工具帮你读，不替你写；关键句子回译核对；不粘贴个人信息」。任务读的是**真材实料**：外部课程菜单里语言含英文的九门课的介绍页——为第 6 周试学（B5 线）、第 7 周选课提前踩点；外部链接全部"待实测"，页面给了两级兜底（换一门 → 菜单页英文模式），并把"打不开"本身变成导师收集实测数据的回路。核心方法是**回译核对**（译文 → 回译 → 对照），配一张自绘回译环 SVG，并诚实注明它是"报警器不是判决书"。The only module that REQUIRES a tool inside an 🚫 Independent week — the pages repeatedly draw the line: translation tools are not generative AI (syllabus verbatim on the wall), licensed by the Year Plan §3a rule. The task reads the real thing: English course intros from the external menu, seeding Week 6 sampling and Week 7 choice; all external links are "to verify", with a two-level fallback and mentors harvesting "wouldn't open" reports as first-hand access-test data. The core method is the back-translation check, with a drawn loop SVG and an honest "alarm, not verdict" caveat.
 
+状态 2026-08-30 · **r2 —— 按 _tongxue 首测与 _jonassen 评估修订**（L1–L7 · V1–V2 · W1–W3 · J1–J6 逐条处理，见 `feedback/s1-b3-translation-reading-tools_xiaobai-response_2026-08-30.md`）：量规 ① 行加"诚实对照记录同样满分"通道；删"链接迟登记"扣分项；AI 界线画到「AI 润色 / AI 写作」按钮上；§0 与跟做加"译对了也算发现"分支并新增更难的加试句；反思第 1 行改为亲口回答核心问题；兜底路线改"连读 2–3 门英文介绍合成一段"；报告落点改作品集页；want-more 补"表态句自写英文"练习。新增代决定 24–31（下）。r2: revised from the student test and the curriculum review; new decisions 24–31 below.
+
 单元目标（= 量规评分行）Module objectives (= rubric rows)：
 ① 用翻译工具读完一段真实的英文课程介绍，并在自己的网站上发布"读后小报告"：一张截图（工具使用中，原文与译文同框，个人信息已打码）+ 三句话指出译文译错或走样之处 + 一句"这门课我想不想试，为什么"；链接登记到登记表（公开学习者：链接存进自己的邮箱）；
 ② 对介绍里的一个关键句完成"回译核对"，报告里写三行证据：原句 · 回译句 · 一处差异（没发现明显差异的，写明对照过程同样算完成）；
@@ -52,6 +54,17 @@ English parallel: ① Read a real English course intro with a tool and publish t
 21. **向后伏笔**：B4（"不粘贴个人信息"= 下周主题预告，微课 1、微课 4、FAQ、日志第 3 行四处埋线）、B5/W6（任务 = 试学踩点，任务页与 want-more 明写）、W7（选课）、W11–14（每周一小时外部课程用同一套"读—核—报"动作，讲义与导师结束语明写）。
 22. **公开学习者口径**：链接不登记，发进自己邮箱（主题"我的读后小报告 · 化名"），量规自评记入日志；任务页 FAQ 给了"给家里人讲一处走样"的选做建议（沿 B2 决定 27 家人参观的思路，讲得清 = 学得会）。
 23. **命名**：文件夹 `b3-translation-reading-tools`；页面 lesson-1-your-translation-toolbox / lesson-2-back-translation-check / lesson-3-words-vs-passages / lesson-4-two-limits-one-rule / activity-translation-kit / task-1-read-a-course-intro；讲义 translation-check-card。
+
+r2 新增（2026-08-30，落实 _tongxue / _jonassen 两份报告）：
+
+24. **量规 ① 行加"诚实对照"通道**（L1/J2，两报告共同的 P1）：达标格明写——三句话可部分或全部换成诚实的对照记录（写明用了哪两个工具、怎样对照过、最接近可疑的一两处），同样满分 3 分。通道宽度取 _jonassen 提议的折中（部分或全部可换 + 仍指出最接近可疑处）；w4 FAQ、任务页公式卡、讲义、导师评分表、句式库六处同口径。**最终措辞归 ShiFu**。
+25. **删 ① 行"或链接迟登记"扣分项**（J1）：年计划"无迟交政策"为准，页面"晚发布不扣分"成为唯一口径；0 分格补"补登记、修好后随时补评"（沿 ② 行既有口径）；评分表"备注记'迟交'"改为"备注记登记日期"。**评分政策归 ShiFu**。
+26. **AI 界线画到按钮上**（J3）：微课 1 工具表下、微课 4"为什么不算生成式 AI"卡、讲义速查各一句——「页面上的 AI 润色 / AI 写作按钮属于生成式 AI，本周不用；翻译按钮本身不是」。操作性措辞，不提任何后续学期安排。**AI 口径归 ShiFu**。
+27. **"译对了也算发现"分支 + 更难加试句**（L2/J4）：§0 与跟做第一、二幕各加诚实分支（译对 = 亲眼确认，也是核对）；§0 新增一句课程自写、无人引用过的嵌套长句（unless + 双重否定）作加试，保证至少一处可见走样的概率；"开课前真跑百度/有道实测陷阱句"已记入 `mentor/welcome-letter-spec.md` 新增的"开课前实测清单"。**教学内容与实测批次归 ShiFu**。
+28. **反思第 1 行改答核心问题**（J5）："翻译工具帮我到了哪里？从哪里开始必须靠我自己？"——感觉句并入可选半句。**反思提示归 ShiFu**。
+29. **兜底路线加厚**（J6）：w4 FAQ 与任务硬性要求均改"连读菜单内 2–3 门课的英文介绍合成一段（凑足 3–6 句）"，顺手完成第 6 周"浏览至少三门课"的踩点。
+30. **报告落点改作品集页**（W1；修订本页决定 14）：与 B2"三个房间"分工一致——作品住作品集（新条目或新建一页都行），日志页照常一周一条三行日志，登记链接指报告。任务步骤 5、硬性要求、w4 §7、自评 c9、评分表五处同改。
+31. **小修集**：want-more"做"新增"把表态那句自己写成英文"（L3，令自测第 3 题的指向为真）；"读"注明三门中国大学MOOC纯中文课的英文练习场位置（L7）；三句话公式单拎成底色卡（V1）；任务步骤 3 加"关键句单独粘贴再回译"半句（W2）。**V2（时间表五列手机上要横滑）本轮未改**：五列时间表是 B1–B6 共用模板，动结构属全站设计——是否"合计并进表头"请 ShiFu 定。另：_jonassen 问题 2（B3 表态句与 W7 选课的关系、B6 是否回访）为教学决定，待 ShiFu，B6 建设前定即可。
 
 ---
 
