@@ -1,5 +1,24 @@
 # 图示模式目录 · Diagram pattern catalogue
 
+> ## ⚠️ 先读这一条 Read this first — 颜色类要写在 `<text>` 上，不能写在 `<g>` 上
+>
+> `diagrams.css` 里的 `.dl-fig text{fill:…}` 选择器（特异度 0,1,1）**直接命中 `<text>`**，
+> 会压过任何写在外层 `<g>` 上、靠继承生效的颜色类。症状很隐蔽：所有标签都渲染成墨黑色，
+> 控制台不报错，只有真正渲染出来量一遍 computed fill 才看得出来。
+> 2026-08-31 B4 的威胁地图上 36 个标签全部中招。
+>
+> **规则**：`dl-muted` `dl-acc` `dl-good` `dl-caution` `dl-on-chip` 这类 **fill 类必须写在 `<text>` 元素本身上**。
+> 字号与字重类（`dl-t-sm` 等）写在 `<g>` 上没问题，它们是正常继承的。
+>
+> The `.dl-fig text{fill:…}` rule matches `<text>` directly and beats any colour class that a
+> wrapping `<g>` passes down by inheritance. It fails silently — every label renders ink-dark,
+> nothing errors, and only measuring the computed fill in a real render reveals it.
+> **Put every fill class on the `<text>` element itself.** Size and weight classes on a `<g>` are fine.
+>
+> 下面的骨架里凡是把 fill 类写在 `<g>` 上的，都带着这个坑，照抄前请先搬到 `<text>` 上。
+> Several skeletons below still carry the bug — move the fill class onto the `<text>` before you paste.
+
+
 Seven shapes for turning an abstract idea or a tangle of steps into one picture a
 solo learner can read in a few seconds. Every one is hand-authored inline SVG:
 no library, no external file request, no raster, nothing to load.
