@@ -3,6 +3,9 @@
 第一学期 W6 · 5 分 · 🚫 **独立**（本单元不使用生成式 AI；结果页的"智能摘要"不算来源；搜索框也是输入框——个人信息不进）· ≤ 120 分钟（年计划 v2.1 §3b 数字基本功行：微课 25 · 跟做 + 任务 75 · 日志 20；本周块内拆分为跟做 10 + 任务 65，见下"时间预算"）
 Semester 1, W6 · 5 pts · 🚫 **Independent** (no generative AI; a results-page "smart summary" is no source; the search box is an input box — no personal information enters it) · ≤ 120 min (Year Plan v2.1 §3b Digital Basics row: micro-lessons 25 · follow-along + task 75 · log 20; this week the block splits 10 + 65, see Time budget below)
 
+状态 Status 2026-08-30：**r2 —— 按 _tongxue 试学报告（0 P1 · 4 P2 · 3 P3 + 算术审计）与 _jonassen 课程评审（J1–J5）修订，重建复检通过。** 逐条处理见 `feedback/s1-b5-search-save-cite_xiaobai-response_2026-08-30.md`；新代决定 23–30 见"替 ShiFu 决定的事项"末；跨模块改动仅 M2 任务页与量规各一句（决定 24）。年计划 §3b 的一处自相矛盾**不代改**，留给 ShiFu（见文末"待 ShiFu"）。
+R2: revised per _tongxue's student test and _jonassen's curriculum review, rebuilt and re-checked. Item-by-item response in `feedback/`; new decisions 23–30 below; the only cross-module change is one sentence each in M2's task page and rubric (decision 24). A Year-Plan §3b discrepancy is recorded for ShiFu, not edited.
+
 状态 Status 2026-08-30：**r1 —— 无人值守流水线整单元建成，本地提交，未推送。** 原本"待 ShiFu 批准"的每一项都按推荐选项落实，逐条列在下方"替 ShiFu 决定的事项"，请 ShiFu 过目。学生页面无任何裸 `[placeholder]`；外部课程链接沿菜单页"待实测"口径，视频的大陆播放待 ShiFu 实测。本次提交同时把 B4 第 5 周页尾链接改为直链本单元（了结 B4 README 决定 23 的"即将上线"口径），并在课程首页加了 B5 一行。
 Built in full (r1) in the unattended pipeline and committed locally, not pushed. Every would-be "pending ShiFu" item took the recommended option; each is listed under "Decisions made on ShiFu's behalf" below. No raw `[placeholder]` on any student page; external-course links keep the menu's "to verify" treatment; mainland playback of the videos awaits ShiFu's live test. This commit also flips B4's Week-5 footer link to point here and adds the B5 line on the course home.
 
@@ -12,12 +15,12 @@ Built in full (r1) in the unattended pipeline and committed locally, not pushed.
 
 单元目标（= 量规评分行）Module objectives (= rubric rows)：
 ① 用本周的搜索技巧，为一个自选的真实问题（来自功课或自己的好奇心）找到三个来源，每个用"三行来源卡"记录——标题 · 作者或机构 · 网址 + 访问日期——并各写一句"第一眼可信或存疑，因为——"；"检索报告"发布到作品集页并登记链接（公开学习者：链接存进自己的邮箱）；
-② 浏览外部课程菜单至少三门课的介绍页，挑两门各试学约 20 分钟，报告里每门写两行"试学小记"（课名 + 一句亲身的发现或感受）——第 7 周"我的外部课程"选择页的备料；
+② 浏览外部课程菜单至少三门课的介绍页，挑两门各试学约 20 分钟，报告里每门写两行"试学小记"（课名 + 一句亲身的发现或感受），两则小记后写一句对比（此刻哪一门更让我想回去？为什么——下周可以反悔）——第 7 周"我的外部课程"选择页的备料；
 ③（不计分 · 完成 ✓）"搜索三连"跟做：同一个问题三种问法（直接问 → 加引号或换词 → 再收紧一步），最有用的一条存进新建收藏夹文件夹并配三行来源。
 
 另有不进量规的知识点（限定词的支持差异、收藏三步、网页会变所以记日期、一眼三看细节），由不计分的自测题显式承接——页面注明"自测题帮你检查，不计分"（沿 B1 r2 口径）。
 
-English parallel: ① three sources for a real question of your own, each on a three-line card with a reasoned first-glance sentence, published as the search report and registered; ② the menu browsed (≥3 intros) and two courses sampled ~20 min each, two lines of sampling notes per course; ③ (ungraded ✓) the three-searches follow-along with one save.
+English parallel: ① three sources for a real question of your own, each on a three-line card with a reasoned first-glance sentence, published as the search report and registered; ② the menu browsed (≥3 intros) and two courses sampled ~20 min each, two lines of sampling notes per course plus one comparing sentence (revocable next week); ③ (ungraded ✓) the three-searches follow-along with one save.
 
 目标来源 Where these come from：年计划 v2.1 §2 W6 行（搜索技巧、收藏与笔记、记录来源；任务：为一个自选问题找到三个来源并按规则记录；外部课程列：浏览菜单、各试学 20 分钟）+ §3a 单元目标 ⑥ + 教纲 v7 W6 行（核心问题与任务原文）+ 外部课程学习线 v2 触点 1（"B5 这周，浏览至少三门课的介绍页，挑两门各试学 20 分钟"）与 §5 落点表（"B5 页：'想学更多？'栏之上加外部课程菜单入口与试学任务"——已照办：菜单入口在 §1/§5/任务步骤，均在 want-more 之前）+ **B1 README"给 B2–B6 构建者的模板说明"**：动作可逆 → 任务式开场（B5 搜索被点名属此类）；照抄"访客的眼睛""得体补救也是内容""向后一周伏笔"；不复制仪式性第二作品与半分档。
 
@@ -30,7 +33,7 @@ English parallel: ① three sources for a real question of your own, each on a t
 流水线规则：每个待批准项取推荐选项。每一条都可以推翻；推翻后改 `tools/b5/` 里的片段并重跑 `python3 tools/build_b5.py` 即可。
 
 1. **三条目标与 3 + 2 分值**：见上。若 ShiFu 认为试学不该计分（外部课程线原文只说"试学"，未提计分），可改 ① 5 分、② 并入完成行——需改量规、任务页、w6、评分表四处片段。
-2. **75 分钟块的拆分 = 跟做 10 + 任务 65**：年计划 §3b 把跟做 25 + 任务 50 记作同一块；本周任务装着 40 分钟试学（两门 × 20，外部课程线原文），故跟做瘦身、任务加长，总块不变。页面（单元首页"预计用时"、w6 时间表注）把这笔账向学生明说。任务列细账：定问题 2 + 搜索挑来源 7 + 三卡与判断 8 + 浏览介绍页 4 + 试学 40 + 小记发布登记 4 = 65。检索部分因此刻意轻量——三张卡不是文章；"诚实的估计"注明试学最易超时与"20 分钟到就停"的口径。
+2. **75 分钟块的拆分 = 跟做 10 + 任务 65**：年计划 §3b 把跟做 25 + 任务 50 记作同一块；本周任务装着 40 分钟试学（两门 × 20，外部课程线原文），故跟做瘦身、任务加长，总块不变。页面（单元首页"预计用时"、w6 时间表注）把这笔账向学生明说。任务列细账（r2）：定问题 1（§0 已替它试搜）+ 搜索挑来源 7 + 三卡与判断 8 + 浏览介绍页 4 + 试学 40 + 小记与一句对比、发布登记 5 = 65；跟做块细账（r2）：§0 先搜一次 1 + 看一段热身 1 + 三连 6 + 存一条 2 = 10——§0 与 1:11 热身视频的分钟自此有账（决定 25）。检索部分因此刻意轻量——三张卡不是文章；"诚实的估计"注明试学最易超时与"20 分钟到就停"的口径。
 3. **三行来源卡定稿 = 标题 · 作者或机构 · 网址 + 访问日期**（指令原文的三行规则），页面反复定位为**习惯而非论文格式**；向后接口写明：第 10 周（M2 立场短文）与第二学期资源评鉴报告"直接要用这三行"。访问日期的理由用读本第六讲"随时生长，实时更新"讲透（自测第 4 题同源）。**定稿措辞归 ShiFu。**
 4. **"一眼三看"定稿 = 谁在说 · 什么时候说的 · 它引了谁**，配套口径"先信不等于永远信""流传广、点赞多、投票高都不在三看之内"。轻触即止：横向阅读、追踪源头、识别合成图文均明写"第二学期'信息与媒介可信度'有一整个单元"——不剧透方法本身。**判断力教学口径归 ShiFu。**
 5. **三条诚实通道进量规**（沿 B3/B4 口径）：(a) 查不到署名，如实写"未署名"= 卡三行齐全，页面并点破"未署名本身就是可信度信息"；(b) 试学的课打不开 → 换一门 / 菜单英文介绍兜底（B3 老路），如实注明同样满分；(c) 三个来源互相矛盾 → 照实记录被定性为"最有价值的发现"，导师句式库有专句。**最终措辞归 ShiFu。**
@@ -38,7 +41,7 @@ English parallel: ① three sources for a real question of your own, each on a t
 7. **"搜索框也是输入框"**：B4 三问与 B3"不粘贴个人信息"的自然延伸——真名、学校、住址不当关键词；任务加一条安全线"别选会暴露隐私的问题"。
 8. **可逆动作 → 任务式开场**：w6 §0"先搜一次（1 分钟）"，观察三点（广告角标 / 来源名 / 矛盾），理由言明（"搜错了重搜，一分钱不花"），并与 B1（不可逆先彩排）形成对照——B1 模板说明的执行。
 9. **试学不强制注册**：介绍页、大纲、预览视频等公开内容足够 20 分钟；要注册的路径 = 先告家长（外部课程线原文"需要注册的平台，先告诉家长"）+ B4 手艺（邮箱注册、强密码、选填留空）+ 菜单"注册 · 手机号"列。"未注册，看的是公开部分"如实注明照样达标。
-10. **试学小记 = 每门两行**（课名 + 一句亲身发现或感受），定位为"给一周后的你留的便条"；"诚实比热情有用"（劝退的发现同样值钱）写进任务教学卡与评分表。B6 建设者接口：选择页直接引用小记。
+10. **试学小记 = 每门两行**（课名 + 一句亲身发现或感受），定位为"给一周后的你留的便条"；"诚实比热情有用"（劝退的发现同样值钱）写进任务教学卡与评分表。B6 建设者接口：选择页直接引用小记与那句两门对比（r2 · 决定 23）。
 11. **限定词的诚实口径**：引号 / site: / filetype: / 时间筛选四根"绳子"，页面明写"快捷键不是魔法"——无国家标准、各引擎支持不一（filetype: 百度时好时坏，兜底 = 把 pdf 当普通关键词）；判断灵不灵的方法（结果变少变准）教给学生。刻意不列减号排除与 OR 语法——四根绳子已够本周用量，贪多必乱。
 12. **视频与分钟**：五段计入相应分钟（微课 2:33 / 5:21 只计前 3 分钟 / 2:22 / 3:40 + 跟做 1:11）；首页搜索全景（11:05）与任务页信息真伪（5:13）选看不计。共 11 个 B 站条目，全部经 view API 核实（2026-08-30，code 0、公开、单 P）；其中 4 个无简介，内容**待 ShiFu 抽查**（scripts.md 已标）。**刻意规避**：EndNote/Zotero 论文工具、多 P 长课搬运、SEO/养号向、需关注公众号领资源、Telegram 资源群、AI 搜索工具（S1 披露控制）。
 13. **"未找到"记录**：B 站没有平台通用、面向中学生的"记录来源"专讲（均为大学论文场景）——三行卡靠微课 3/4 文字版 + 自绘 SVG + 讲义；四段自录脚本已备（沿 B1/B4"未找到"模式）。大学论文向的"什么是引用"视频放 want-more 并注明"本课程不要求"。
@@ -51,6 +54,17 @@ English parallel: ① three sources for a real question of your own, each on a t
 20. **页尾链接口径**：w6 页尾按惯例写"回到课程首页（B6 · 第 7 周即将上线）"；B4 w5 页尾同步改为直链本单元 w6（源片段 `tools/b4/w5.html` 已改、B4 重新生成，git 确认仅 w5.html 有差异）。课程首页在 B4 行后加 B5 一行——本次提交仅有的两处模块外改动。
 21. **向后伏笔**：B6（日志第 3 行与导师结束语都指向"试学过的两门里想继续哪门"；w6/index 明写"第 7 周正式写下选择——'我的外部课程'页"）；M10（深查证，见决定 4）；M2 与 S2 M7（三行卡回归，见决定 3）。向前回收：B4 日志种子转正、B2"收藏夹会乱"兑现、B3 翻译手艺与介绍页踩点（含兜底路线的"已浏览"折算——任务第 4 步明写）、B1 命名规则再扩展。
 22. **缓冲周 FAQ 照常保留**（国庆缓冲通常在 W3–W5 间，但年年落位不同，w6 仍留"赶上长假"条，只指日历页）；导师边界新增"不当标准答案库、不替学生裁判该信谁"。
+
+### r2 新增（决定 23–30 · 2026-08-30 · 逐条对应见 feedback 响应文件）
+
+23. **一句两门对比进 ② 行达标档**（_jonassen J1）：小记后加"两门相比，此刻哪一门更让我想回去？为什么（下周可以反悔）"。评它**在场且亲身**，不评选得对不对——与"不评你最后信了谁"同一口径；缺这句 = ② 行发展中（1 分），补一句随时补评。量规 ② 行、目标 ②（README/index/w6 同句）、任务页（要求 · 步骤 6 · 教学卡 · 评分摘要）、w6（任务卡 · 自评 c9 · 日志提示 3）、导师两件套全部同步。**动了量规——最终去留与措辞归 ShiFu（评审问题 1）。**
+24. **M2 接三行卡**（J2 · 跨模块）：M2 无生成器，直接改 `s1/m2-what-is-digital-learning/task-1-position-piece.html`（"理由从哪来"硬性要求条）与 `rubric.html`（② 行达标格）各加一句——站外网页做理由的**鼓励**附第 6 周的三行来源卡；问话与亲历照旧不需卡。只鼓励、不加新门槛，M2 分值与等级未动；git diff 核实仅这两处。B5 对第 10 周的两处承诺自此兑现。**归 ShiFu 过目（评审问题 2 选了"回流 M2"一路）。**
+25. **分钟账 r2**（_tongxue W1 + J1 的 1 分钟）：见决定 2 的 r2 细账。§0 的 1 分钟与跟做热身视频的 1 分钟自此在 w6 时间表内有自己的行；对比句的 1 分钟由"定问题"匀出（§0 已替它试搜过）；每搜 2 分钟。印出的每个数字都可逐项复算，总 120 不变。
+26. **大陆可达性引导**（_tongxue L2）：任务步骤 4、5 与 w6"打不开"FAQ 写明——拿不准先从中文平台点起：第 6 门（微软，简体中文，部分内容免账号）与第 5、10、11 门（中国大学MOOC，介绍页免注册可看）；国际平台打不开不是学生的错。不改菜单页排序（归菜单模块）。**菜单页要不要加"大陆易达"小标记，留 ShiFu；开课前连通实测后此引导应再校准。**
+27. **"只有手机的晚上"FAQ**（W2）：§0、搜索、逛介绍页手机浏览器可做；平台推 App 属常态，能网页就网页，本课程不要求装任何 App（沿第 5 周三问）；写卡与发布建议回电脑，攒周末一次做完也来得及。
+28. **讲义直链 + 硬性要求瘦身**（V1、V2）：任务步骤 3 直链 `media/handouts/source-record-card.html`（want-more 原链接保留）；七条硬性要求压成一条一行，细节留在步骤与 FAQ（书/视频卡写法两条 FAQ 原已在）。
+29. **"摘要找不到来源入口"有了答案**（L1）：任务页新增 FAQ——找摘要旁/底部的小字角标或链接图标；找不到就滚过摘要、从普通结果列表里挑；只在摘要里存在、结果里追不到的说法 = 没有可追的来源，这个发现本身写进"第一眼"句。自测第 3 题解释同步补半句。
+30. **小修集**：自测第 5 题选项"三看全过/全不过"改"都答得上/一项都答不上"（J5 去闸门化，纯措辞）；微课 2 时间筛选行补手机"筛选"入口半句（W3）；英文侧直白化数处（L3：no marrying → don't settle、whom next week's choice favours → which course you would pick 等）；"想注册但家长今晚不在"→ 当晚只看公开部分、注册改天（答 _tongxue 问题 3）；公开学习者的"打不开"指回菜单页"待实测"说明的邮件回路（答问题 2）；"浏览三门介绍页不留计分痕迹"确认为有意的信任设计、不加要求（答问题 1）。
 
 ## 一周地图 The week's map
 
@@ -97,7 +111,7 @@ English parallel: ① three sources for a real question of your own, each on a t
 
 | 微课 25 | 跟做 10 | 任务 65 | 反思/日志 20 |
 |---|---|---|---|
-| 想好词 6 · 收紧渔网 7 · 存住它 6 · 三行卡与三看 6 | 搜索三连 8 · 存一条 2 | 定问题 2 · 搜索挑来源 7 · 三卡与判断 8 · 浏览介绍页 4 · 试学两门 40 · 小记发布登记 4 | 自测题（第 6 节）5 · 三行日志 15 |
+| 想好词 6 · 收紧渔网 7 · 存住它 6 · 三行卡与三看 6 | §0 先搜一次 1 · 看一段 1 · 搜索三连 6 · 存一条 2 | 定问题 1 · 搜索挑来源 7 · 三卡与判断 8 · 浏览介绍页 4 · 试学两门 40 · 小记 + 一句对比 + 发布登记 5 | 自测题（第 6 节）5 · 三行日志 15 |
 
 25 + 10 + 65 + 20 = 120。诚实的估计：试学最易超时（页面明说"20 分钟一到就停，正式学第 11 周才开始"）；检索部分刻意轻量的理由向学生言明。选做不计入：首页全景（11:05）、任务页信息真伪（5:13）、want-more 全部。
 
@@ -116,8 +130,14 @@ English parallel: ① three sources for a real question of your own, each on a t
 | 非 B 站外链 | 模块内 0 条新增（站内跨页链接——外部课程菜单、日历页、量规锚点、讲义直链——均解析；外部课程本身的"待实测"归菜单页统一管理）|
 | 模块外改动核对 | git status 确认仅 `index.html`（B5 一行）与 `s1/b4-accounts-passwords-privacy/w5.html`（页尾直链）有差异 |
 
+### r2 复检（2026-08-30）
+`parity_check` 12 文件 0 issues；`site_checks` 14/14 PASS（12 页 B5 + M2 任务页与量规：链接锚点 · S1 禁用词 · 页脚（无 "free"）· 分钟合计 = 120 · 无头 Chrome 双语 console · 390px 双语无溢出）；`quiz-data.js` node --check 通过；git 确认仅 8 个 B5 文件与 M2 两页有差异——课程首页、共享 assets、其余模块未动。
+
 ## 待 ShiFu 实测 / 过目 For ShiFu
 - 上方"替 ShiFu 决定的事项"22 条，尤其第 1–2（试学计分与 75 分钟块拆分——本单元最核心的结构决定）、第 4（一眼三看措辞）、第 6（"智能摘要不算来源"的政策口径）、第 15（读本第六讲节选的课程自译英文）。
+- **r2 新增待过目**：决定 23（对比句进量规 ② 行——评估哲学的选择）、24（M2 接三行卡，跨模块两句）、26（可达性引导点名课号，开课实测后校准）。
+- **年计划 §3b 一处待改（J3 · _xiaobai 不动 ShiFu 的计划文档）**：§3b 数字基本功行的外部课程列写"—（B6 试学计入'做'）"，与 §2 W6 行、教纲 v7 W6 行、外部课程线 v2 触点 1（试学均在 B5/W6）矛盾；B5 已按 §2 执行。建议把 §3b 该单元格改为"B5 试学 40 分入任务"。
+- 外部课程菜单页是否加"大陆易达"小标记（_tongxue L2 的配套建议），归菜单模块，留 ShiFu。
 - 11 个 B 站视频的大陆播放实测；4 段无简介视频（BV1bM4y1s7qU / BV1Np4y1v7hq / BV1sa411i7PB / BV1rgxyzyE9C）的内容抽查。
 - 外部课程菜单十二门的连通实测（菜单页既有"待实测"批次；本周学生的"打不开"记录会经导师周日汇总回流）。
 

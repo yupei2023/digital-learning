@@ -47,8 +47,8 @@ window.DL_QUIZ=[
   ],
   "a": 2,
   "why": [
-   "来源要能被别人（和三个月后的你）沿着卡片重新找到。摘要是机器拼出来的转述，明天可能就变了，也没人署名负责。正确动作：把摘要当路标，点进真实的页面，看清是谁写的、什么时候写的，来源卡记那个页面。",
-   "A source must be re-findable by someone else (and by the you of three months hence) following the card. A machine-stitched summary may read differently tomorrow, and nobody signs it. The right move: treat the summary as a signpost, open the real page behind it, see who wrote it and when, and record that page."
+   "来源要能被别人（和三个月后的你）沿着卡片重新找到。摘要是机器拼出来的转述，明天可能就变了，也没人署名负责。正确动作：把摘要当路标，点进真实的页面，看清是谁写的、什么时候写的，来源卡记那个页面。找不到摘要的来源入口？往下滚，从普通结果列表里挑真实页面就是。",
+   "A source must be re-findable by someone else (and by the you of three months hence) following the card. A machine-stitched summary may read differently tomorrow, and nobody signs it. The right move: treat the summary as a signpost, open the real page behind it, see who wrote it and when, and record that page. No visible way from the summary to its source? Scroll past it and pick a real page from the ordinary result list."
   ]
  },
  {
@@ -75,7 +75,7 @@ window.DL_QUIZ=[
   ],
   "options": [
    ["B——转帖流传广，说明大家都认可","B — widely reposted means widely endorsed"],
-   ["A——机构署名、有日期、能追到依据，三看全过；B 三看全不过","A — named institution, dated, traceable basis: all three glances pass; B fails all three"],
+   ["A——机构署名、有日期、能追到依据，三看都答得上；B 三看一项都答不上","A — named institution, dated, traceable basis: all three glances find answers; B answers none of them"],
    ["都不信，网上的都不可信","Neither — nothing online can be trusted"],
    ["都信，反正说的一样","Both — they say the same thing anyway"]
   ],
