@@ -1,7 +1,10 @@
-# B2 截图录屏与我的网站 Screenshots, Recording & My Website
+# B2 我的网站与录屏 My Website & Screen Recording
 
-第一学期 W3 · 5 分 · 🚫 **独立**（本单元全程不使用 AI；任务是一面镜子——评投入与格式规范，不评文笔与审美）· ≤ 120 分钟（年计划 v2.1 §3b 数字基本功行：微课 25 · 跟做 25 + 任务 50 · 日志 20）
+第一学期 W3 · 5 分 · 🚫 **独立**（本单元全程不使用 AI；任务是一面镜子——评投入与格式规范，不评文笔与审美）· ≤ 120 分钟（r5 起：微课 22 · 跟做 20 · 任务 58 · 日志 20 = 120；年计划 §3b 原写"微课 25 · 跟做 25 + 任务 50 · 日志 20"，见「与年计划不符之处」）
 Semester 1, W3 · 5 pts · 🚫 **Independent** (no AI anywhere; a mirror — scored on engagement and correctness of form, not on prose or looks) · ≤ 120 min (Year Plan v2.1 §3b Digital Basics row: micro-lessons 25 · follow-along 25 + task 50 · log 20)
+
+状态 Status 2026-08-31（r5 · ShiFu 指令「把截图、录屏内容移到第 2 周作为附件练习，把时间留给建站」）：**截图与标注已整体迁往 B1（第 2 周）**，在那里成为邮件附件的练习；**录屏留在本单元**（理由见决定 34）。本单元因此腾出 26 分钟，全部还给建站。四段微课变三段：微课 1「我的网站三页」（原微课 4 的三个房间 + 隐私四条）、微课 2「建站五个动作，与新手七个坑」（原微课 4 的五个动作 + 从 `wix-guide.html` 提升上来的、与平台无关的七个坑）、微课 3「录屏」（原微课 3，重新指向"给你刚建好的网站录一段导览"）。跟做由「留证据工具包」换成「开工前：先写字，再建站」（三页文字草稿 12 分钟 + 八张"这句话能放上网吗"分箱卡 8 分钟 = 20 分钟）。任务由 50 分钟增至 58 分钟，新增"改一改再发布一次"（4 分钟）与"录一段约 30 秒的网站导览"（6 分钟）两步。单元名改为 **B2 我的网站与录屏 My Website & Screen Recording**（文件夹名未动，见「待 ShiFu 定夺」）。**全周仍是 120 分钟**：微课 22 + 跟做 20 + 任务 58 + 反思与日志 20 = 120（`site_checks.py` 中英两版均 items=120 / printed=120）。**建站本身的时间由 56 分钟增至 84 分钟（+28）。**
+r5: screenshots and annotation moved to B1/Week 2; screen recording stays here (decision 34). The 26 freed minutes all went back into building. Three micro-lessons now — the three rooms plus the privacy rules; the five moves plus the seven pits (promoted, platform-neutral, out of the Wix manual); and screen recording, re-pointed at the site you have just built. The follow-along is now a words-first drafting activity plus eight publish-or-fix cards. The task grows 50 → 58 with a second-publish step and a ~30-second recorded site tour. Still exactly 120 minutes; time spent on the website itself rises from 56 to 84.
 
 状态 Status 2026-08-30：**r1 —— 无人值守流水线整单元建成，本地提交，未推送。** 原本"待 ShiFu 批准"的每一项都按推荐选项落实，逐条列在下方"替 ShiFu 决定的事项"，请 ShiFu 过目。标 `[placeholder]` 的是真正未知的事实（建站平台与注册说明、登记表网址、开课信）；视频的大陆播放待 ShiFu 实测。本次提交同时把 B1 第 2 周页尾链接改为直链本单元（了结 B1 README 决定 23），并在课程首页加了 B2 一行。
 Built in full (r1) in the unattended pipeline and committed locally, not pushed. Every would-be "pending ShiFu" item took the recommended option; each is listed under "Decisions made on ShiFu's behalf" below. `[placeholder]` marks genuinely unknown facts (the builder platform, the tracking-sheet address, the welcome letter); mainland playback of the videos awaits ShiFu's test. This commit also flips B1's Week-2 footer link to point here (closing B1 README decision 23) and adds the B2 line on the course home.
@@ -21,9 +24,9 @@ Status r4: a new reference page `wix-guide.html` (a step-by-step Wix build guide
 单元目标（= 量规评分行）Module objectives (= rubric rows)：
 ① 用课程指定的建站平台建成并发布三页个人网站（关于我 · 学习日志 · 作品集）：完成"选模板 → 改文字与图片 → 发布 → 复制链接 → 设为不被搜索引擎收录"五个动作，并把链接登记到导师的登记表（公开学习者：把链接存进自己的邮箱）；
 ② 在"学习日志"页写下第一条日志：把第 2 周写在草稿里的三行日志搬上来，把"我的第 2 周基线"的逐项结果抄进来（双保险），再写本周的三行日志；
-③（不计分 · 完成 ✓）练成本周的"留证据"基本功：在电脑和手机上各截一张图，给其中一张加标注并配一句说得清楚的问题，录一段约 30 秒的录屏；网站发布后给三页各存一张截图作备份。
+③（不计分 · 完成 ✓）给发布后的网站留下证据：三页各存一张截图作备份（第 2 周的手艺），并录一段约 30 秒的网站导览——从首页走到三个房间。成果留在学习者自己的设备上，导师不检查、不收取。
 
-另有不进量规的知识点（怎样提一个带截图的问题、截图与录屏里的隐私打码、"不被搜索引擎收录"的含义），由不计分的自测题显式承接——页面注明"自测题帮你检查，不计分"（沿用 B1 r2 · 评估 J2 的口径）。
+另有不进量规的知识点（新手最常掉的七个坑、"不被搜索引擎收录"的含义、什么时候录屏比截图好用），由不计分的自测题显式承接——页面注明"自测题帮你检查，不计分"（沿用 B1 r2 · 评估 J2 的口径）。
 
 English parallel: ① Build and publish the three-page site on the course's builder (About me · Learning log · Portfolio) — the five moves, link registered (open learners: filed in their own inbox); ② Write the first log entry: the Week-2 three lines moved in, the per-item Week-2 baseline copied in (the second safety net), this week's three lines added; ③ (ungraded ✓) the evidence kit: a screenshot on each device, one annotated with a clear one-line question, ~30 seconds of screen recording, and a backup screenshot of each published page.
 
@@ -176,3 +179,35 @@ English parallel: ① Build and publish the three-page site on the course's buil
 | M0 lesson-4（第 3 周注册建站平台的预告、告知家长约定） | `course-site/s1/m0-orientation/` | 衔接：注册前告知家长、开课信占位口径 |
 | 教材旧截图配图（`Screen Shot 2021-04-07….png` 等） | `../校本教材-在线学习/` | **未复用**（旧界面、出处混杂）；本单元的图全部自绘 SVG |
 | 未找到 | B 站无"平台无关建站五步"与"中学生带截图提问"专讲 | 靠文字版 + 两张自绘 SVG + 跟做；脚本备自录 |
+
+---
+
+## r5 新增决定 New decisions (2026-08-31)
+
+34. **录屏的去留——判断与理由（B1 与 B2 同一条，两个 README 各存一份）**。ShiFu 的指令是"把截图、录屏内容移到第 2 周作为附件练习"。**截图与标注照办了；录屏没有跟过来，留在第 3 周。** 三条理由：
+    - **录屏当不了本周的附件。** 第 2 周教的正是"把一个又小又说得清的文件寄出去"：一张截图几百 KB，秒收秒开；半分钟的录屏几十兆，很多邮箱直接退回。在同一周里既教"附件要轻"又让学习者做一个重附件，是自相矛盾的。
+    - **第 2 周没有任何东西值得录。** 录屏的用处是留住"会动的问题"或"一段过程"；第 2 周唯一的成品是一封静止的信。第 3 周不一样——网站刚建好，从首页走到三个房间，本身就是一段值得录的过程。
+    - **下游没有断链。** B6（第 7 周）的任务要录一段约 1 分钟的工作台屏幕导览，量规行里写着"用第 3 周的录屏手艺"；M1（第 8–9 周）任务 1 允许用录屏交学习故事，页面写着"第 3 周 B2 教过"。录屏留在第 3 周，这两处引用一字不用改；若把它挪到 B6，反而要重建 B6 的分钟预算，并让 M1 在没学过的技能上落空。
+    另有一个次要好处：第 3 周现在有了一个真实的录屏对象（自己的网站），30 秒导览正好是 B6 那 1 分钟工作台导览的等比例热身，两周之间形成一条明确的技能上行线。
+    **代价，说清楚**：第 3 周因此没有把 B2 原先 18 分钟的录屏时间全额还给建站——录屏保留 12 分钟（微课 6 + 任务里的导览 6），建站净增 28 分钟而非 44 分钟。如果 ShiFu 更想要那多出来的 12 分钟，第二条路是把录屏整体移进 B6，代价是重排 B6 的 120 分钟并同步改 B6 与 M1 的引用——**这是教学决定，等 ShiFu 定夺。**
+
+35. **B1 原微课 3 与微课 4 合并**（收件人/抄送/全部回复 + 发出去之后 → 微课 5「收件人、抄送与发出去之后」）。理由：年计划 §3a 写明每周 3–5 段微课；截图与标注迁入后若各自独立成课，B1 会有 6 段。挑这两段合并，是因为 README 决定 20 已经把它们的知识点移出量规——它们是本单元唯一两段"不计分的知识课"，合并不影响任何评分行。两段原文全部保留，只加了一句合并后的导语；页面文件 `lesson-3-to-cc-and-reply-all.html`、`lesson-4-after-you-hit-send.html` 已删除。**这是教学决定，请 ShiFu 过目**；若 ShiFu 宁可保留六段独立微课，改回只需拆分 `tools/b1/lesson-5-to-cc-and-after-you-send.html` 并在 `build_b1.py` 的 PAGES 里加回两行。
+
+36. **附件由"一页自我介绍卡"改为"学习者自己截的一张图"**（作废决定 4）。原来的自我介绍卡是为了给这一周造一个附件而发明的；现在附件是学习者真的做出来的东西。正文三小段仍然承担自我介绍本身，截图给其中一段一个**看得见的证据**。页面给了三个现成方向（每周两个固定学习时段 / 正在学的东西 / 课程首页在收藏夹里的样子），也允许自选。文件命名规则、"导师的下载文件夹"图、分箱卡与自测题全部沿用，只把扩展名从 `.pdf` 换成 `.png`，并把"新建文档1.docx"这个反例换成更贴切的"截屏2026-09-08 20.13.45.png"。
+
+37. **B2 的七个坑从参考手册提升进微课**（回应 ShiFu"把时间留给建站"）。`wix-guide.html` 仍在，仍不计入分钟，仍是唯一出现平台名的页面；但七个坑本身与平台无关，而且正是最耗学习者时间的东西，埋在一份 58 KB 的手册里多数人不会读到。现在微课 2 讲平台无关的七个坑，手册那一节改成"在这一家平台上各按哪里"，两边互相链接。决定 31（平台名只出现在手册里）未被破坏。
+
+38. **生成器现在自己产出 `meta description` 与 `data-module-progress` 的总数。** 这两样此前是在生成后的 HTML 上手工加的，`build_b1.py` / `build_b2.py` 并不知道它们——本轮重跑生成器时它们被静默清掉了（已修复）。两个脚本里新增 `DESC` / `PROGRESS` 两张表和 `add_meta()`，重跑不会再丢。**`build_b3.py`–`build_b6.py`、`build_m3.py`–`build_m5.py` 仍是旧版**：谁重跑它们，谁就会静默删掉那些模块的 meta description 与进度条总数。本轮对 B3–B6、M3 的跨模块改字因此直接改在生成页上（片段也同步改了），并未重跑那些生成器。**建议 ShiFu 让人把同样的两张表补进其余生成器**——这是工程债，不是教学决定。
+
+## 与年计划不符之处（不改计划，交 ShiFu 更新）Lines in the Year Plan that now disagree
+
+`Year Plan 全年两学期计划_260829.md` v2.1（**未编辑，以下仅为清单**）：
+
+| 行 | 现文 | 现状 |
+|---|---|---|
+| 第 48 行 · §2 W2 行 | "主题、称呼、正文、署名、抄送、全部回复；附件与文件名。任务：按规范给导师发一封带附件的自我介绍邮件" | 还应包含"电脑与手机截图、标注与打码、带截图提问"；附件已改为学习者自己截的一张图 |
+| 第 49 行 · §2 W3 行 | "电脑与手机截图、标注、录屏；'怎样提一个带截图的问题'；……" | 截图、标注、带截图提问已移到 W2；W3 保留录屏与建站 |
+| 第 76 行 · §3a 单元目标 ② | "在电脑和手机上截图、标注、录屏，并用它们提出清楚的问题" | 内容未变，但现在分属两周（截图与标注 B1，录屏 B2）；若要精确，可写成"② 截图、标注并用它们提出清楚的问题（B1）；录屏（B2）" |
+| 第 78 行 · §3a 每周页面结构 | "3–5 段微课（每段 ≤ 5 分钟）" | B1 现为 5 段（在上限内，但每段 5–8 分钟，早已超过"≤ 5 分钟"——B1 从 r1 起就是 6–7 分钟一段）；B2 现为 3 段 |
+| 第 93 行 · §3b 时间预算表"数字基本功 W2–7" | "微课 25 / 跟做 25 + 任务 50 / 日志 20" | B1 现为 32 / 27 / 41 / 20，B2 现为 22 / 20 / 58 / 20；两周合计仍各为 120。若 ShiFu 希望预算表继续逐格生效，可把该行改为"每周合计 ≤ 120，四栏由各单元自定" |
+| 第 207 行 · §7 | "B2 教学内容随之简化：所见即所得建站只需教三件事……" | 仍然成立；B2 现在把这三件事拆成"五个动作 + 七个坑"两段微课讲得更细 |

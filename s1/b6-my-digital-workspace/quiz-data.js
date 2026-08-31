@@ -98,8 +98,8 @@ window.DL_QUIZ=[
   ],
   "a": 1,
   "why": [
-   "答疑不是面试，不需要开场白——问好之后直接说问题就是最好的开场，而一张标注好的截图（第 3 周的手艺）顶得上半分钟的描述。真正要紧的是另外三件：设备提前试过、环境安静、材料在手边——微课 5 的\"提前五分钟\"清单说的正是它们。",
-   "A help call is not an interview and needs no speech — a greeting and then straight to the question is the best opening there is, and one annotated screenshot (Week 3's craft) outtalks half a minute of description. What matters are the other three: gear tested ahead, surroundings quiet, materials at hand — exactly micro-lesson 5's five-minutes-early list."
+   "答疑不是面试，不需要开场白——问好之后直接说问题就是最好的开场，而一张标注好的截图（第 2 周的手艺）顶得上半分钟的描述。真正要紧的是另外三件：设备提前试过、环境安静、材料在手边——微课 5 的\"提前五分钟\"清单说的正是它们。",
+   "A help call is not an interview and needs no speech — a greeting and then straight to the question is the best opening there is, and one annotated screenshot (Week 2's craft) outtalks half a minute of description. What matters are the other three: gear tested ahead, surroundings quiet, materials at hand — exactly micro-lesson 5's five-minutes-early list."
   ]
  }
 ];

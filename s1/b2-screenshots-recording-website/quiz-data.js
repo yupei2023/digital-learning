@@ -2,40 +2,6 @@
 window.DL_QUIZ=[
  {
   "q": [
-   "小舟建站时点「发布」没反应，想邮件求助。哪种求助最可能一封回信就解决？",
-   "Xiao Zhou presses Publish, nothing happens, and wants to email for help. Which ask is most likely solved in one reply?"
-  ],
-  "options": [
-   ["「老师，网站坏了！」","“My website is broken!”"],
-   ["「发布不了，怎么办啊」","“It won't publish, what do I do”"],
-   ["三句话（想做什么 · 做了什么 · 出现了什么）+ 一张圈出提示框的截图","Three sentences (tried · did · happened) + a screenshot with the message boxed"],
-   ["把整个建站过程录成十分钟视频发过去","A ten-minute video of the whole building session"]
-  ],
-  "a": 2,
-  "why": [
-   "带截图的三句话把「现场」直接搬给导师：不用来回追问，多数问题一封回信解决。十分钟录像让帮忙的人自己找问题，反而更慢。",
-   "Three sentences plus an annotated screenshot carry the scene itself across: no back-and-forth, and most problems die in one reply. A ten-minute video makes the helper hunt for the problem — slower, not faster."
-  ]
- },
- {
-  "q": [
-   "要发给导师的截图角落里有你的真实姓名。最好的做法是？",
-   "The screenshot you are about to send shows your real name in a corner. Best move?"
-  ],
-  "options": [
-   ["发送前用马赛克或色块把姓名盖住（或裁掉那一块）","Mask the name with mosaic or a solid block before sending (or crop that region away)"],
-   ["直接发——反正只有导师看到","Send as is — only the mentor will see it"],
-   ["不发截图了，改用文字慢慢描述","Skip the screenshot and describe everything in words"],
-   ["把手机拿远一点重拍一张照片","Photograph the screen from farther away instead"]
-  ],
-  "a": 0,
-  "why": [
-   "「先处理再发送」是截图的固定动作：打码或裁剪几秒钟就好，证据照样清楚。放弃截图回到纯文字，等于扔掉了最有用的信息。",
-   "Treat before it travels — the standing rule for screenshots: a few seconds of masking or cropping, and the evidence stays intact. Retreating to words alone throws away the most useful information."
-  ]
- },
- {
-  "q": [
    "哪种情况用录屏比截图更合适？",
    "In which case does a recording beat a screenshot?"
   ],
@@ -49,6 +15,23 @@ window.DL_QUIZ=[
   "why": [
    "判断句只有一个：画面停着能不能说清？前三样都是静止的，截图又轻又好标注；只有「会动的问题」才轮到录屏出场。",
    "One test decides: does a still frame tell the story? The first three are static — a screenshot is lighter and easier to annotate; only a problem that moves calls for the recorder."
+  ]
+ },
+ {
+  "q": [
+   "小森在编辑器里把「关于我」改好了，可是用手机打开自己的网址，看到的还是模板的假字。最可能是哪里出了问题？",
+   "Xiao Sen fixed About-me in the editor, but opening his own address on a phone still shows the template's dummy text. What most likely happened?"
+  ],
+  "options": [
+   ["改完之后没有再点一次「发布」","Publish was not pressed again after the edit"],
+   ["网站坏了，得重新建一个","The site is broken and must be rebuilt"],
+   ["手机看到的永远是旧版本","Phones always show the older version"],
+   ["改动要等 24 小时才生效","Changes take 24 hours to take effect"]
+  ],
+  "a": 0,
+  "why": [
+   "编辑器里是草稿，网址上是你<b>上一次发布</b>的那一版。每改一轮就要再发布一次——这是所见即所得建站第一大坑，也正是五个动作里「② 和 ③ 每周都要再走一遍」的意思。",
+   "The editor holds a draft; the address holds whatever you <b>last published</b>. Every round of edits needs another Publish — the commonest trap on any such builder, and exactly what “steps ② and ③ get walked again every week” means."
   ]
  },
  {
@@ -83,6 +66,23 @@ window.DL_QUIZ=[
   "why": [
    "隐私四条：英文名或化名 ✓；正脸照片 ✗；学校全名 ✗；别人的信息（合影里就有别人）✗。化名加真实的想法，恰好是「关于我」该有的样子。",
    "The four rules: pseudonym ✓; face photos ✗; full school name ✗; other people's information (a friend in the photo counts) ✗. A pseudonym plus an honest thought is exactly what About-me should hold."
+  ]
+ },
+ {
+  "q": [
+   "网站发布后，该把哪一个网址登记给导师？",
+   "After publishing, which address gets registered with your mentor?"
+  ],
+  "options": [
+   ["浏览器收藏夹里随便哪一条","Whichever bookmark is handy"],
+   ["编辑器地址栏里那一长串（带 editor 或 manage 字样）","The long one in the editor's address bar (with editor or manage in it)"],
+   ["建站平台官网的首页地址","The builder company's own home page"],
+   ["发布后从「查看网站」取到的那个短网址——先用手机或无痕窗口试过能打开","The short one fetched through “View site” — after testing that it opens on a phone or in a private window"]
+  ],
+  "a": 3,
+  "why": [
+   "编辑器网址只有登录了的你打得开，导师点进去只会看到「请登录」。登记之前用手机或无痕窗口试一次，是最省事的一道保险——那正是访客看到的样子。",
+   "The editor's address opens only for the signed-in you; your mentor would land on a sign-in page. Testing it once on a phone or in a private window before registering is the cheapest insurance there is — that view is exactly the visitor's."
   ]
  },
  {

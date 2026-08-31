@@ -39,7 +39,7 @@ Companion files: `assets/diagrams.css` (the machinery), `assets/DIAGRAM-PATTERNS
    | 内部／外部动机对照 | `s1/m1-what-is-learning/reading.html` | `fig-ch04-motiv-t` | the entire 外部动机 column — the comparison itself |
    | 七扇门 | `s1/m1-what-is-learning/reading.html` | `fig-ch04-doors-t` | two of the seven doors |
    | 导师的下载文件夹 | `s1/b1-email-attachments/lesson-2-attachments-and-filenames.html` | `fig-b1-downloads-t` | the ? / ✓ column — the point of the picture |
-   | 五级台阶 | `s1/b2-screenshots-recording-website/lesson-4-your-three-page-website.html` | `fig-b2-moves-t` | the ③→② return arrow — the point of the picture |
+   | 五级台阶 | `s1/b2-screenshots-recording-website/lesson-2-five-moves-and-seven-pits.html` | `fig-b2-moves-t` | the ③→② return arrow — the point of the picture |
    | 时间带 | `s1/b6-my-digital-workspace/w7.html` | `fig-b6-time-t` | Weeks 13–16 and the Week-15 marker |
 
    > **Do not change or remove those ten `aria-labelledby` values, and do not

@@ -1,4 +1,4 @@
-/* B1 self-quiz · ungraded · 6 items. Each text is [zh, en]; quiz.js shows the active language. */
+/* B1 self-quiz · ungraded · 8 items. Each text is [zh, en]; quiz.js shows the active language. */
 window.DL_QUIZ=[
  {
   "q": [
@@ -32,6 +32,40 @@ window.DL_QUIZ=[
   "why": [
    "发送前发现，就还来得及做对：补上附件、完整重读、一次发好。这正是“正文里提到附件”这句话的第二个用处——它替你拦下了事故。",
    "Caught before Send, it can still be done right: attach, re-read, send once. That is the attachment line's second job — it just intercepted the accident for you."
+  ]
+ },
+ {
+  "q": [
+   "小舟给邮件加附件时弹出一个看不懂的提示，想邮件问导师。哪种问法最可能一封回信就解决？",
+   "Xiao Zhou hits a message he can't read while attaching a file, and wants to email his mentor. Which ask is most likely solved in one reply?"
+  ],
+  "options": [
+   ["「老师，邮箱坏了！」","“My mail is broken!”"],
+   ["「附件加不上，怎么办啊」","“The attachment won't go on, what do I do”"],
+   ["三句话（想做什么 · 做了什么 · 出现了什么）+ 一张圈出提示框的截图","Three sentences (tried · did · happened) + a screenshot with the message boxed"],
+   ["把整个操作过程录成十分钟视频发过去","A ten-minute video of the whole session"]
+  ],
+  "a": 2,
+  "why": [
+   "带截图的三句话把“现场”直接搬给导师：不用来回追问，多数问题一封回信解决。十分钟录像让帮忙的人自己找问题，反而更慢——而且几十兆的附件，邮箱常常直接退回。",
+   "Three sentences plus an annotated screenshot carry the scene itself across: no back-and-forth, and most problems die in one reply. A ten-minute video makes the helper hunt for the problem — slower, not faster — and at tens of megabytes many mail services simply bounce it."
+  ]
+ },
+ {
+  "q": [
+   "要当附件发出去的截图角落里有你的真实姓名。最好的做法是？",
+   "The screenshot you are about to attach shows your real name in a corner. Best move?"
+  ],
+  "options": [
+   ["直接发——反正只有导师看到","Send as is — only the mentor will see it"],
+   ["把手机拿远一点重拍一张照片","Photograph the screen from farther away instead"],
+   ["不发截图了，改用文字慢慢描述","Skip the screenshot and describe everything in words"],
+   ["发送前用马赛克或色块把姓名盖住（或裁掉那一块）","Mask the name with mosaic or a solid block before sending (or crop that region away)"]
+  ],
+  "a": 3,
+  "why": [
+   "“先处理再发送”是截图的固定动作：打码或裁剪几秒钟就好，证据照样清楚。放弃截图回到纯文字，等于扔掉了最有用的信息。",
+   "Treat before it travels — the standing rule for screenshots: a few seconds of masking or cropping, and the evidence stays intact. Retreating to words alone throws away the most useful information."
   ]
  },
  {
