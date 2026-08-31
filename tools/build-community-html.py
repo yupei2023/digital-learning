@@ -340,17 +340,9 @@ BRAND_SVG = ('<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" foc
  '<path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/>'
  '<path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>')
 
-DOC_STYLE = """<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
-header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
-header.site .brand-mark{width:1.75em;height:1.75em;flex:none}
-/* long document: a contents list, and downloads beside it */
-.doc-toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.2rem;margin:1.2rem 0}
-.doc-toc h2{margin:0 0 .5rem;padding:0;border:0;font-size:1.05rem}
-.doc-toc ol{margin:0;padding-left:1.3rem;font-size:.95rem}
-.doc-toc li{margin:.2rem 0}
-.doc-downloads{display:flex;flex-wrap:wrap;gap:.6rem;margin:.8rem 0 0}
-.doc-downloads a{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:8px;padding:.4rem .8rem;font-size:.92rem;text-decoration:none}
-</style>"""
+# The header mark and the long-document rules now live in assets/site.css; nothing
+# on these pages is one-off enough to need an inline <style>.
+DOC_STYLE = ''
 
 def page(title_zh, title_en, kicker_zh, kicker_en, toc, body, downloads, desc):
     toc_html = ''

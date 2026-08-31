@@ -19,6 +19,10 @@ header.site .brand{font-weight:700;text-decoration:none;color:var(--ink)}
 header.site nav{display:flex;flex-wrap:wrap;align-items:baseline}
 header.site nav a{margin-right:1rem;text-decoration:none;white-space:nowrap}
 header.site nav a[aria-current="page"]{font-weight:700;border-bottom:2px solid var(--accent)}
+/* header mark · assets/logo.svg inlined in each page so it inherits currentColor —
+   see tools/HEADER-LOGO.md. The two rules below were repeated in all 167 pages. */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}
 main{max-width:52rem;margin:0 auto;padding:1.5rem 1rem 4rem}
 h1{font-size:1.9rem;line-height:1.3;margin:.5rem 0 .3rem}
 h2{font-size:1.4rem;margin:2.2rem 0 .6rem;padding-top:.4rem;border-top:1px solid var(--line)}
@@ -183,3 +187,11 @@ html[data-lang="zh"] .home-community-intro h2{font-size:clamp(1.9rem,3.2vw,2.9re
  html{scroll-behavior:auto}
  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
+
+/* long documents (resources/*.html): a contents list and the downloads beside it */
+.doc-toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.2rem;margin:1.2rem 0}
+.doc-toc h2{margin:0 0 .5rem;padding:0;border:0;font-size:1.05rem}
+.doc-toc ol{margin:0;padding-left:1.3rem;font-size:.95rem}
+.doc-toc li{margin:.2rem 0}
+.doc-downloads{display:flex;flex-wrap:wrap;gap:.6rem;margin:.8rem 0 0}
+.doc-downloads a{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:8px;padding:.4rem .8rem;font-size:.92rem;text-decoration:none}
