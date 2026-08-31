@@ -27,6 +27,9 @@ All lesson slots, the follow-along and the module home carry public Bilibili cli
 | lesson-2 | "带截图提问"三件套示意图（自绘内联 SVG：三句话 + 红框 + 打码；r3 按站点图示系统重绘：记号类取代写死的字号与颜色，390 px 下可读） | 页内代码 | 本课程自制 | 站内 |
 | lesson-4 | 三页网站平面图（自绘内联 SVG：关于我 / 学习日志 / 作品集 + 发布·不收录·登记三勾；r3 按站点图示系统重绘为竖排三行，每行分"整学期"与"本周"两句） | 页内代码 | 本课程自制 | 站内 |
 | lesson-4 | 建站五个动作的台阶图（自绘内联 SVG，r3 新增：选模板 → 改 → 发布 → 复制链接 → 不被收录，另有一条弧线从"发布"弯回"改"，说明只有这两级每周重复） | 页内代码 | 本课程自制 | 站内 |
+| wix-guide（选看） | 如何使用 Wix 轻松制作个人站点+作品集？（14:08，2024，5590 播放） | B 站 BV1KsUsYCER6 · UP 主 HOW向阳学习 | 官方外链播放器嵌入 + 直达链接 | BV 号经 B 站 view API 核实（2026-08-31，code 0、公开、单 P）；大陆播放**待实测**；简介只有一行标题，内容**待 ShiFu 抽查**；页面已注明“界面每年小变，以文字为准”，且视频里的自有域名 / 付费升级段落课程用不到 |
+| wix-guide | 编辑器线框图（自绘内联 SVG：顶栏 ①保存 ②手机视图 ③发布，左侧 ④页面与菜单，中间 ⑤画布，底部一条不收录开关的提示带；`class="dl-fit"`，390 px 整幅显示不裁切） | 页内代码 | 本课程自制（**不使用任何平台的界面截图**——第三方 UI 截图在公开课程页上有权利问题，且教师无法自行抓取） | 站内 |
+| wix-guide | 两个网址的对照图（自绘内联 SVG：左栏编辑器网址、右栏网站网址，底部“用手机或无痕窗口验证”一带；`class="dl-fit"`） | 页内代码 | 本课程自制 | 站内 |
 | media/handouts | 建站发布检查单 | `media/handouts/site-launch-checklist.html`（双语网页，可打印；与 B1 讲义同一做法） | 本课程自制 | 站内 |
 
 嵌入方式：B 站官方外链播放器 `player.bilibili.com/player.html?bvid=…&high_quality=1&danmaku=0&autoplay=0`，关闭弹幕、不自动播放，并附直达链接与时长。所有 BV 号 2026-08-30 经 `api.bilibili.com/x/web-interface/view`（浏览器 UA + Referer）核实存在、公开、单 P。
@@ -54,3 +57,21 @@ Embeds use Bilibili's official external player with danmaku off and no autoplay,
 
 ### 微课 4 · 我的网站三页
 开场（30 秒）：多年前教师让学生建站的故事 + "你的学习会留在哪里"。网页与网站（30 秒）。三个房间各放什么（1.5 分钟，配平面图）。五个通用动作（1.5 分钟）：选模板 → 改文字与图片 → 发布 → 复制链接 → 设不收录。隐私四条上墙（1 分钟）。结尾（30 秒）：别人交作业进抽屉，你交进自己的房子。
+
+## Wix 分步手册的事实来源（2026-08-31）Where the Wix guide's facts come from
+
+`wix-guide.html` 的每一步都取自 **Wix 官方帮助中心**（support.wix.com，2026-08-31 核对），不来自任何第三方教程，也不含任何平台界面截图。核对到的条目：
+
+- 注册：邮箱 / Google / Apple / Facebook 四选一，**无手机号栏**（Signing Up for a Free Wix Account）
+- 免费版：`siteprefix.wixsite.com/siteaddress` 免费网址、500 MB 存储、1 GB 流量、**建站后不能换模板**（Building a Website for Free）；免费站带平台横幅广告，只有付费才能去掉（Removing the Wix Banner Ad and Favicon）
+- 加页面：编辑器左侧 **Pages & Menu → + Blank Page**（或悬停版式 → Add Page）→ 输入页名 → Done（Wix Editor: Adding a Page to Your Site）
+- 发布：右上角 **Publish** → View Site → Done；**“Clicking Save won't make your changes live”**（Wix Editor: Publishing Your Site）
+- 不收录（整站）：Dashboard → **SEO & GEO** → Tools and settings → **SEO Settings** → 关 **“Let search engines index your site”** → **Hide Site**；已被收录的需要一段时间才消失（Managing Search Engine Indexing for Your Site）
+- 不收录（单页）：编辑器 **Pages & Menu → ⋯ More Actions → SEO basics** → 关 **“Let search engines index this page”**（Preventing Search Engines from Indexing Your Page）
+- 网址在哪：发布弹窗 / Dashboard → Site Actions → View Site / Settings → Site Basics → **Site Address**（Changing Your Free Wix URL）
+- 改密码与两步验证：**Account Settings**（manage.wix.com/account/account-settings）→ Edit Password；同页 **2-Step Verification**，四种方式含**邮箱**（Using 2-Step Verification for Your Wix Account）
+- 界面语言：Account Settings → **Account language**，支持中文，改后编辑器同步（Changing the Language of Your Account and Editor）
+- 手机上编辑：Wix 明写 **“This feature is not yet available for all users.”**，且 Wix App 不能编辑 Wix Editor 建的站（Wix Editor: Editing Your Site on Your Mobile Device）
+- 编辑器版本：**Wix Harmony**（2026 年 1 月发布）与经典 Wix Editor **并行**，目前仅英文、需专门入口创建，**不是新用户默认**（About the New Wix Harmony Editor）——手册第「还没证实的三件事」第 3 条据此写成
+
+**无法核实、页面已如实标注的**：① 大陆网络可达性（教师开课前实测）；② 注册页当天是否仍无手机号栏；③ Weebly 的不收录菜单路径（来自公开社区帖，非 Weebly 官方文档，页面标「待实测确认」）。

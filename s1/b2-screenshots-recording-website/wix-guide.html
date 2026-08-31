@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
+<title data-zh="建站手册 · B2 截图录屏与我的网站 · Digital Learning 数字化学习" data-en="Build guide · B2 Screenshots, Recording & My Website · Digital Learning">Build guide · B2 Screenshots, Recording & My Website · Digital Learning</title>
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
+header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
+header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
+</head>
+<body>
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../../assets/../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
+  <nav aria-label="Module 本单元"><a href="index.html"><span class="zh">单元首页</span><span class="en">Module</span></a><a href="w3.html"><span class="zh">第 3 周</span><span class="en">Week 3</span></a><a href="rubric.html"><span class="zh">量规</span><span class="en">Rubric</span></a><a href="quiz.html"><span class="zh">自测</span><span class="en">Quiz</span></a></nav>
+  <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
+</div></header>
+<main id="main">
+
+<p class="kicker"><span class="zh">B2 · 参考手册 · <b>不计入本周 120 分钟</b> · 平台待开课前实测确认</span><span class="en">B2 · Reference manual · <b>outside the week's 120 minutes</b> · platform confirmed by a pre-launch test</span></p>
+<h1><span class="zh">从零建一个 Wix 网站 · 分步手册</span><span class="en">Building a Wix site from scratch · a step-by-step manual</span></h1>
+<div class="meta"><span class="tag"><span class="zh">参考页，不是一课</span><span class="en">A manual, not a lesson</span></span><span class="tag time"><span class="zh">不计入本周分钟</span><span class="en">not counted in this week's minutes</span></span><span class="tag"><span class="zh">建站请用电脑</span><span class="en">build on a computer</span></span><span class="tag"><span class="zh">免费版够用</span><span class="en">the free plan is enough</span></span></div>
+
+<div class="card note">
+<b><span class="zh">这一页怎么用</span><span class="en">How to use this page</span></b><br>
+<p><span class="zh"><b>先说清一件事：</b>Wix 是本课程<b>首选</b>的建站平台，开课前教师会实测确认（能不能顺畅打开、注册是不是只要邮箱、有没有“不被搜索引擎收录”的开关）。实测通过，开课信与课程说明的<a href="../m0-orientation/lesson-3-course-guide.html#builder">「你的建站平台」框</a>就写 Wix，这一页从头到尾都作数；万一没通过，课程改用备选平台，<b>只有本页最后一节需要换</b>——前面的“为什么”一句都不用改。</span><span class="en"><b>One thing first:</b> Wix is this course's <b>first choice</b> of builder, and the instructor tests it before launch (does it open smoothly, is sign-up really email-only, is there a hide-from-search switch). If it passes, the welcome letter and the course guide's <a href="../m0-orientation/lesson-3-course-guide.html#builder">“Your site builder” box</a> will name Wix and this page holds end to end; if it does not, the course moves to the fallback platform and <b>only this page's last section changes</b> — not one sentence of the “why” above it.</span></p>
+<p><span class="zh">这不是一课，是一本<b>说明书</b>：手放在键盘上的时候翻开它，做到哪一步看哪一步。<b>它不占本周的 120 分钟</b>——微课 25 分钟讲“为什么”，跟做 25 分钟加任务 50 分钟才是“动手”的时间，这一页只是你动手时摊在旁边的那张纸。读它不算学习时间，用它才算。</span><span class="en">This is not a lesson, it is a <b>manual</b>: open it with your hands already on the keyboard and read only the step you are on. <b>It takes none of the week's 120 minutes</b> — the 25 minutes of micro-lessons carry the why, the 25-minute follow-along and the 50-minute task are the doing; this page is just the sheet lying open beside you while you do it. Reading it is not study time; using it is.</span></p>
+<p><span class="zh">要<b>记住</b>的东西在<a href="lesson-4-your-three-page-website.html#moves-figure">微课 4 的五个动作</a>里：选模板 → 改文字与图片 → 发布 → 复制链接 → 设为不被搜索引擎收录。那五个动作换到任何一家建站平台都成立，值得记；这一页只是把它们翻译成 Wix 上的按钮名——按钮名会变，动作不会。</span><span class="en">What is worth <b>remembering</b> lives in <a href="lesson-4-your-three-page-website.html#moves-figure">micro-lesson 4's five moves</a>: pick a template → edit text and images → publish → copy your link → set it hidden from search engines. Those five hold on any builder, so they are the part to keep; this page only translates them into Wix's button names — and button names change while the moves do not.</span></p>
+</div>
+
+<h2><span class="zh">看一段（选看 · 不计入本周分钟）</span><span class="en">Watch (optional · outside this week's minutes)</span></h2>
+<div class="video">
+<div class="ratio"><iframe src="https://player.bilibili.com/player.html?bvid=BV1KsUsYCER6&high_quality=1&danmaku=0&autoplay=0" scrolling="no" allowfullscreen title="如何使用 Wix 轻松制作个人站点+作品集 Building a personal site and portfolio with Wix"></iframe></div>
+<p class="cap"><span class="zh"><b>如何使用 Wix 轻松制作个人站点+作品集？</b> · 14:08 · B 站 UP 主 HOW向阳学习 · 2024——从注册到发布走一遍全程，做的正是“个人站点 + 作品集”，和你这周要建的三个房间几乎重合。<b>看的时候记住两件事</b>：界面按钮的位置每年都在小变，屏幕上和视频里对不上时以本页文字为准；视频里绑定自有域名、升级付费的部分本课程一概用不到。</span><span class="en"><b>Building a personal site and portfolio with Wix</b> · 14:08 · Bilibili uploader HOW向阳学习 · 2024 — sign-up to publish in one pass, and the thing being built is a personal site with a portfolio, almost exactly this week's three rooms. <b>Two things to hold while watching</b>: buttons shift position a little every year, so when the screen and the video disagree, trust the text on this page; and everything about custom domains and paid upgrades is outside this course.</span> · <a href="https://www.bilibili.com/video/BV1KsUsYCER6" target="_blank" rel="noopener"><span class="zh">在 B 站打开 ↗</span><span class="en">Open on Bilibili ↗</span></a></p>
+</div>
+
+<h2 id="before"><span class="zh">开工前，摆好四样东西</span><span class="en">Before you start, lay out four things</span></h2>
+<ol>
+<li><span class="zh"><b>一台电脑</b>。诚实地说：Wix 的编辑器是为大屏幕和鼠标做的，<b>从零建站请用电脑</b>——挑模板、加页面、改设置这些事在手机上很难做。建好以后，手机上可以做一些轻量修改（改文字、换图片、再发布一次），但这项功能 Wix 自己写明“尚未对所有用户开放”，你的账号有没有要试了才知道。只有手机怎么办？见本页最后一节的<a href="#phone">“只有手机”</a>。</span><span class="en"><b>A computer.</b> Honestly: the Wix editor is built for a large screen and a mouse, so <b>build from scratch on a computer</b> — choosing a template, adding pages and changing settings are all hard work on a phone. Once the site exists, light edits from a phone are possible (retype text, swap an image, publish again), but Wix's own help says that feature “is not yet available for all users”, so whether your account has it is something only trying will tell. Phone only? See <a href="#phone">“Phone only”</a> at the foot of this page.</span></li>
+<li><span class="zh"><b>第 1 周准备好的邮箱</b>，以及你能想起来的密码。</span><span class="en"><b>The email address you set up in Week 1</b>, and a password you can actually recall.</span></li>
+<li><span class="zh"><b>你的化名</b>——和第 2 周邮件里用的那一个一模一样，全课程一致。</span><span class="en"><b>Your pseudonym</b> — the very one from the Week-2 email, kept consistent all course.</span></li>
+<li><span class="zh"><b>三页的内容先想好</b>（在纸上或备忘录里都行）：关于我三小段、第一条日志的三样、作品集的一句占位。<b>先想内容再开编辑器</b>，能省下一半时间——对着空白页现编，是最耗人的建站方式。</span><span class="en"><b>The words for the three pages, thought out first</b> (paper or a notes app both serve): the three short parts of About me, the three parts of the first log entry, one placeholder line for Portfolio. <b>Words before editor</b> saves you half the time — inventing text while staring at a blank canvas is the most exhausting way to build a site.</span></li>
+</ol>
+<p><span class="zh">还有一件不属于电脑的事：<b>注册前和家里人说一声</b>（第 1 周第 4 步约定过）。</span><span class="en">And one thing that is not about equipment: <b>tell your family before you register</b> (as agreed in Week 1, Step 4).</span></p>
+
+<h2 id="shape"><span class="zh">编辑器长什么样</span><span class="en">What the editor looks like</span></h2>
+<p><span class="zh">下面这张图不是 Wix 的截图，是它的<b>形状</b>——一张线框草图，画的是“哪一块大致在哪里”。真实界面的配色、图标、字体都和它不同，位置也会随版本小幅移动；认得出这几块，你打开编辑器时就不会发懵。</span><span class="en">The sketch below is not a screenshot of Wix — it is its <b>shape</b>, a wireframe of roughly what sits where. The real interface differs in colour, icons and type, and the pieces shift a little between versions; recognising the blocks is what keeps the first sight of the editor from being a blur.</span></p>
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg class="dl-fit" viewBox="0 0 640 450" role="img" aria-labelledby="fig-b2-editor-t">
+<title id="fig-b2-editor-t">建站编辑器的线框草图：顶栏右边依次是①保存、②手机视图、③发布三个按钮；左边一条竖直面板是「页面与菜单」，里面列着关于我、学习日志、作品集和「加一页」；中间一大块是画布，点哪句改哪句；底下一条虚线带写着「不被搜索引擎收录的开关：整站在网站后台的 SEO 设置里，单页在左侧页面面板里」。A wireframe of a site editor: along the top bar, from left to right, the Save, mobile-view and Publish buttons; down the left a Pages and Menu panel listing About me, Learning log, Portfolio and Add a page; the large centre block is the canvas, where clicking a line lets you retype it; a dashed strip at the foot reads: the hide-from-search switch lives in the site dashboard's SEO settings for the whole site, and in the left-hand pages panel for a single page.</title>
+<rect class="dl-node" x="16" y="14" width="608" height="372" rx="12"/>
+<path class="dl-node is-key" d="M16 76 V26 a12 12 0 0 1 12-12 H612 a12 12 0 0 1 12 12 V76 Z"/>
+<g class="dl-t dl-b"><text class="zh dl-acc" x="36" y="52">我的网站</text><text class="en dl-acc" x="36" y="52">My site</text></g>
+<g class="dl-chip"><circle cx="392" cy="34" r="13"/><circle cx="470" cy="34" r="13"/><circle cx="548" cy="34" r="13"/></g>
+<g class="dl-t-sm dl-b" text-anchor="middle"><text class="dl-on-chip" x="392" y="39">1</text><text class="dl-on-chip" x="470" y="39">2</text><text class="dl-on-chip" x="548" y="39">3</text></g>
+<g class="dl-t-xs dl-b" text-anchor="middle">
+  <text class="zh dl-acc" x="392" y="64">保存</text><text class="en dl-acc" x="392" y="64">Save</text>
+  <text class="zh dl-acc" x="470" y="64">手机视图</text><text class="en dl-acc" x="470" y="64">Mobile</text>
+  <text class="zh dl-good" x="548" y="64">发布</text><text class="en dl-good" x="548" y="64">Publish</text>
+</g>
+<rect class="dl-node" x="32" y="92" width="164" height="278" rx="8"/>
+<circle class="dl-chip" cx="56" cy="116" r="13"/>
+<g class="dl-t-sm dl-b" text-anchor="middle"><text class="dl-on-chip" x="56" y="121">4</text></g>
+<g class="dl-t-sm dl-b"><text class="zh dl-acc" x="78" y="121">页面与菜单</text><text class="en dl-long dl-acc" x="78" y="121">Pages &amp; Menu</text></g>
+<g class="dl-rule"><path d="M48 138 H180"/></g>
+<g class="dl-t-xs">
+  <text class="zh" x="52" y="164">关于我</text><text class="en" x="52" y="164">About me</text>
+  <text class="zh" x="52" y="192">学习日志</text><text class="en" x="52" y="192">Learning log</text>
+  <text class="zh" x="52" y="220">作品集</text><text class="en" x="52" y="220">Portfolio</text>
+  <text class="zh dl-muted" x="52" y="252">＋ 加一页</text><text class="en dl-muted" x="52" y="252">＋ Add a page</text>
+  <text class="zh dl-muted" x="52" y="280">⋯ 删掉用不上的页</text><text class="en dl-long dl-muted" x="52" y="280">⋯ delete the pages you don't want</text>
+  <text class="zh dl-muted" x="52" y="308">⋯ 单页的收录开关</text><text class="en dl-long dl-muted" x="52" y="308">⋯ one page's search switch</text>
+</g>
+<rect class="dl-node is-draft" x="210" y="92" width="398" height="278" rx="8"/>
+<circle class="dl-chip" cx="234" cy="116" r="13"/>
+<g class="dl-t-sm dl-b" text-anchor="middle"><text class="dl-on-chip" x="234" y="121">5</text></g>
+<g class="dl-t-sm dl-b"><text class="zh dl-acc" x="256" y="121">画布</text><text class="en dl-acc" x="256" y="121">The canvas</text></g>
+<g class="dl-t-xs"><text class="zh dl-muted" x="330" y="121">你看到什么，访客就看到什么</text><text class="en dl-long dl-muted" x="340" y="121">what you see is what a visitor sees</text></g>
+<g class="dl-rule"><path d="M234 152 H420"/><path d="M234 196 H584"/><path d="M234 224 H584"/><path d="M234 252 H520"/></g>
+<rect class="dl-node is-quiet" x="234" y="278" width="150" height="72" rx="6"/>
+<g class="dl-t-xs" text-anchor="middle"><text class="zh dl-muted" x="309" y="318">图片</text><text class="en dl-muted" x="309" y="318">an image</text></g>
+<g class="dl-t-xs"><text class="zh dl-acc" x="404" y="314">点哪句改哪句</text><text class="en dl-long dl-acc" x="404" y="314">click a line, retype it</text></g>
+<rect class="dl-field" x="16" y="398" width="608" height="40" rx="10"/>
+<g class="dl-t-xs" text-anchor="middle"><text class="zh dl-caution" x="320" y="423">「不被搜索引擎收录」的开关：整站在网站后台的 SEO 设置里，单页在左边④的面板里</text><text class="en dl-long dl-caution" x="320" y="423">the hide-from-search switch: whole site in the dashboard's SEO settings, one page in panel ④ at the left</text></g>
+</svg>
+</div>
+<figcaption><span class="zh">编辑器的线框（本课程自绘，不是任何一家平台的界面图）。三个按钮的位置值得先认熟：<b>③ 发布</b>在最右上角——本周你至少要点它两次；<b>② 手机视图</b>紧挨着它，是你唯一能提前看到“手机上长什么样”的地方；<b>① 保存</b>最容易骗人，它只保存草稿，不改变访客看到的东西。</span><span class="en">A wireframe of the editor (drawn for this course; it is no platform's actual interface). Three buttons are worth learning by position: <b>③ Publish</b> at the far top right — you will press it at least twice this week; <b>② Mobile view</b> right beside it, the only place you can see in advance what a phone will show; and <b>① Save</b>, the deceiver, which stores a draft and changes nothing a visitor sees.</span></figcaption>
+</figure>
+
+<h2 id="signup"><span class="zh">第 1 步 · 注册（只要邮箱）</span><span class="en">Step 1 · Sign up (email only)</span></h2>
+<ol class="steps">
+<li><span class="zh">打开 <span data-neutral>wix.com</span>，点<b>注册 Sign Up</b>。</span><span class="en">Open <span data-neutral>wix.com</span> and click <b>Sign Up</b>.</span></li>
+<li><span class="zh">用<b>邮箱 + 自设密码</b>注册。页面上还会给出“用 Google / Apple / Facebook 账号继续”的按钮——<b>本课程一律用邮箱</b>：那三个在大陆不一定用得了，而且会把你的建站账号绑在另一个账号上。密码至少 6 位（本课程建议 12 位以上），可以用大小写字母、数字和 <span data-neutral>_ - ! @ # $ % ^ &amp; *</span>，但<b>不能含英文句点</b>。</span><span class="en">Register with an <b>email address and a password you choose</b>. The page also offers “continue with Google / Apple / Facebook” — <b>this course uses email, always</b>: those three may not work from where you are, and they tie your builder account to another account. The password needs at least 6 characters (this course suggests 12 or more), may use letters, digits and <span data-neutral>_ - ! @ # $ % ^ &amp; *</span>, and <b>may not contain a full stop</b>.</span></li>
+<li><span class="zh"><b>不需要手机号，不需要银行卡。</b> 按 Wix 自己的帮助文档，注册就是这三步，没有手机号那一栏。<b>万一屏幕上真的要手机号或要钱</b>：停下来，截图，配三句话（我想做什么 · 我做了什么 · 出现了什么）邮件问导师——这正是本周微课 2 教的求助姿势。</span><span class="en"><b>No phone number, no bank card.</b> By Wix's own help pages, signing up is those three steps with no phone field anywhere. <b>If your screen really does ask for a phone number or for money</b>: stop, screenshot it, and email your mentor with the three sentences (what I wanted to do · what I did · what appeared) — exactly the way of asking micro-lesson 2 teaches.</span></li>
+<li><span class="zh"><b>把界面改成中文</b>（强烈建议，能省很多猜按钮的力气）：右上角头像 → <b>账号设置 Account Settings</b> → <b>账号语言 Account language</b> → 选中文。改完之后，后台和编辑器都会跟着变成中文。本页保留英文按钮名，是因为你可能在英文界面里，也可能在别人的电脑上——两边名字都给你。</span><span class="en"><b>Switch the interface to Chinese</b> (strongly suggested — it removes a great deal of button-guessing): avatar at the top right → <b>Account Settings</b> → <b>Account language</b> → pick Chinese. The dashboard and the editor both follow. This page keeps the English names as well, because you may be in the English interface, or on someone else's computer — so you get both.</span></li>
+</ol>
+
+<h2 id="template"><span class="zh">第 2 步 · 建站并挑一个模板</span><span class="en">Step 2 · Create the site and pick a template</span></h2>
+<ol class="steps">
+<li><span class="zh">登录后进入你的工作台，点<b>创建新网站 Create New Site</b>。</span><span class="en">Once logged in you land in your workspace; click <b>Create New Site</b>.</span></li>
+<li><span class="zh">平台会问你几个问题（做什么用的网站、叫什么名字），然后多半会热情地推荐“<b>让 AI 帮你生成一个网站</b>”。<b>本周不要用它</b>——第 3 周是 🚫 独立单元，网站上的每一句话都必须是你写的。选“<b>从模板开始 Choose a template</b>”那条路。</span><span class="en">It asks a few questions (what the site is for, what to call it) and will then enthusiastically offer to <b>generate a site for you</b>. <b>Not this week</b> — Week 3 is a 🚫 Independent module, and every sentence on the site has to be yours. Take the <b>Choose a template</b> path instead.</span></li>
+<li><span class="zh">在模板库里，往<b>个人 Personal</b>、<b>作品集与简历 Portfolio &amp; CV</b>、<b>博客 Blog</b> 这几类里找，挑一个<b>简洁</b>的：白底、字大、图少。鼠标停在模板上 → 点<b>编辑 Edit</b>，编辑器就开了。</span><span class="en">In the gallery, look under <b>Personal</b>, <b>Portfolio &amp; CV</b> or <b>Blog</b>, and choose a <b>plain</b> one: white ground, large type, few images. Hover the template → click <b>Edit</b>, and the editor opens.</span></li>
+<li><span class="zh"><b>给自己定个 5 分钟闹钟。</b> 模板只是骨架，文字和图片随时能换。但有一条 Wix 的硬规则要知道：<b>网站一旦建好，模板就换不了了</b>——想换只能另建一个新站（免费版可以建很多个，不花钱）。所以挑模板的标准不是“完美”，是“<b>简洁、我看得懂它哪块是哪块</b>”。</span><span class="en"><b>Set yourself a five-minute timer.</b> A template is only the skeleton; text and images change any time. But one hard Wix rule is worth knowing: <b>once the site is created, the template cannot be swapped</b> — changing it means building a second site instead (the free plan allows many, at no cost). So the standard for choosing is not “perfect” but “<b>plain, and I can tell which block is which</b>”.</span></li>
+</ol>
+
+<h2 id="pages"><span class="zh">第 3 步 · 三个房间（加页、改名、删多余的页）</span><span class="en">Step 3 · The three rooms (add, rename, delete the spares)</span></h2>
+<ol class="steps">
+<li><span class="zh">点编辑器<b>左边</b>的<b>页面与菜单 Pages &amp; Menu</b>（图上的 ④）。你会看到模板自带的一串页面。</span><span class="en">Click <b>Pages &amp; Menu</b> down the <b>left</b> side of the editor (④ in the sketch). The template's own list of pages appears.</span></li>
+<li><span class="zh">加一页：点面板左上角的<b>＋ 空白页 + Blank Page</b>（也可以把鼠标停在某个现成版式上点<b>添加页面 Add Page</b>），<b>输入页名</b>，点<b>完成 Done</b>。新加的页会自动出现在网站的导航菜单里。</span><span class="en">Add one: click <b>+ Blank Page</b> at the panel's top left (or hover a ready-made layout and click <b>Add Page</b>), <b>type the page name</b>, and click <b>Done</b>. A new page joins the site's navigation menu by itself.</span></li>
+<li><span class="zh">把三个房间凑齐，页名清清楚楚：<b>关于我 About me</b> · <b>学习日志 Learning log</b> · <b>作品集 Portfolio</b>。中文名英文名都行，认得出就好。</span><span class="en">Assemble the three rooms with unmistakable names: <b>About me</b> · <b>Learning log</b> · <b>Portfolio</b>. Chinese or English, whichever — recognisable is what counts.</span></li>
+<li><span class="zh">模板自带一堆用不上的页（“服务”“价目表”“预约”……）：在同一个面板里，点那一页右边的<b>更多操作 ⋯ More Actions</b> → <b>删除 Delete</b>（或先<b>隐藏 Hide</b>，拿不准的时候更稳妥）。模板是毛坯房，多余的隔断拆掉不心疼。</span><span class="en">Templates arrive with pages you will never use (“Services”, “Pricing”, “Book Online”…): in the same panel, click <b>More Actions ⋯</b> beside the page → <b>Delete</b> (or <b>Hide</b> first, the safer move when you are unsure). A template is an unfinished house; spare partitions come down guilt-free.</span></li>
+</ol>
+
+<h2 id="edit"><span class="zh">第 4 步 · 改文字与图片</span><span class="en">Step 4 · Edit the text and the images</span></h2>
+<ul>
+<li><span class="zh"><b>文字</b>：在画布上<b>双击</b>那句话，光标就进去了，像改文档一样改。模板里的假字（一段读不通的英文，或“在这里写下你的标题”）<b>必须全部换掉</b>——留一句在页面上，访客第一眼就看到你没做完。</span><span class="en"><b>Text</b>: <b>double-click</b> the line on the canvas and the cursor drops in; edit it as you would a document. The template's dummy words (a paragraph of nonsense Latin, or “Write your title here”) <b>all have to go</b> — one left standing tells a visitor at a glance that the work is unfinished.</span></li>
+<li><span class="zh"><b>图片</b>：双击图片 → <b>更换图片 Change Image</b> → 上传你自己的。隐私第 2 条在这里落地：<b>不放正脸照片</b>，画一个、拍风景、用喜欢的图案都行。</span><span class="en"><b>Images</b>: double-click the image → <b>Change Image</b> → upload your own. This is where privacy rule 2 lands: <b>no face photos</b> — a drawing, a landscape, a pattern you like all serve.</span></li>
+<li><span class="zh"><b>图片先缩小再上传</b>。免费版给你 500 MB 存储、1 GB 流量；手机拍的原图一张常有 3–8 MB，几张就把网站拖慢了（尤其是同学用手机流量打开的时候）。做法：先把图<b>截个屏</b>再用截图，或在手机相册里选“导出小尺寸 / 中等”。这也是本周截图技能的一个正经用处。</span><span class="en"><b>Shrink images before uploading.</b> The free plan gives 500 MB of storage and 1 GB of bandwidth; one photo straight off a phone is often 3–8 MB, and a handful of those make the site crawl (most of all for a visitor on mobile data). The fix: <b>screenshot the photo</b> and upload the screenshot, or export it at a small or medium size from the phone's gallery. It is a genuine use for this week's screenshot skill.</span></li>
+<li><span class="zh"><b>「保存」不是「发布」。</b> 编辑器里的<b>保存 Save</b>只是把草稿存起来；Wix 的帮助文档写得很直白：保存不会让改动上线。这一条是下一步的全部内容。</span><span class="en"><b>Save is not Publish.</b> <b>Save</b> in the editor only stores the draft; Wix's own help says it plainly — saving does not make changes live. That sentence is the whole of the next step.</span></li>
+</ul>
+
+<h2 id="publish"><span class="zh">第 5 步 · 发布，然后再看一眼手机</span><span class="en">Step 5 · Publish, then look again on a phone</span></h2>
+<ol class="steps">
+<li><span class="zh">点编辑器<b>右上角</b>的<b>发布 Publish</b>（图上的 ③）。网站从“只有你能看的草稿”变成“有网址的真网站”。</span><span class="en">Click <b>Publish</b> at the editor's <b>top right</b> (③ in the sketch). The site turns from a draft only you could see into a real site with an address.</span></li>
+<li><span class="zh">弹出的小窗里点<b>查看网站 View Site</b> 亲眼看一遍，再点<b>完成 Done</b> 回到编辑器。<b>这个弹窗里就有你的网址——先别关，第 6 步要用。</b></span><span class="en">In the little window that appears, click <b>View Site</b> and look at it with your own eyes, then <b>Done</b> to return to the editor. <b>Your web address is in that window — don't dismiss it yet; Step 6 needs it.</b></span></li>
+<li><span class="zh"><b>切到手机视图看一遍</b>：编辑器顶部靠右的手机图标（图上的 ②），或按 <span data-neutral>Ctrl + J</span>（Mac 上 <span data-neutral>Cmd + J</span>）。桌面上排得整整齐齐的页面，到了窄屏上常常字压字、图出框——<b>而你的同学和家人多半是用手机打开你的链接的</b>。在手机视图里把挤到一起的东西挪开，然后<b>再点一次发布</b>。</span><span class="en"><b>Switch to mobile view and look</b>: the phone icon near the top right (② in the sketch), or press <span data-neutral>Ctrl + J</span> (<span data-neutral>Cmd + J</span> on a Mac). A page that lines up beautifully on a desktop often overlaps and spills on a narrow screen — <b>and a phone is how your classmates and family will almost certainly open your link</b>. Pull the crowded pieces apart in mobile view, then <b>press Publish again</b>.</span></li>
+<li><span class="zh">记住这个小圈：<b>改一改 → 再点一次发布</b>。它就是<a href="lesson-4-your-three-page-website.html#moves-figure">五级台阶图</a>上从 ③ 弯回 ② 的那根箭头，你到第 16 周还在走它。</span><span class="en">Remember the small circle: <b>edit a little → press Publish again</b>. It is the arrow curving from ③ back to ② on the <a href="lesson-4-your-three-page-website.html#moves-figure">five-move ladder</a>, and you will still be walking it in Week 16.</span></li>
+</ol>
+
+<h2 id="link"><span class="zh">第 6 步 · 复制“对的”那个网址</span><span class="en">Step 6 · Copy the <em>right</em> address</span></h2>
+<p><span class="zh">这一步每年都有人栽跟头：登记上去的是<b>编辑器的网址</b>，导师一点开只看到“请登录”。你手里其实有两个网址，长得很不一样：</span><span class="en">This is the step people trip on every year: the address registered turns out to be <b>the editor's</b>, and the mentor who clicks it sees only a login wall. You are in fact holding two addresses, and they do not look alike:</span></p>
+<figure class="dl-fig">
+<div class="dl-scroll">
+<svg class="dl-fit" viewBox="0 0 640 320" role="img" aria-labelledby="fig-b2-twourls-t">
+<title id="fig-b2-twourls-t">两栏对照：左栏是编辑器的网址，里面带 editor 或 manage 字样，很长，要登录才打得开，别人点开只看到「请登录」，这一个不要登记；右栏是网站的网址，形如「账号名点 wixsite 点 com 斜杠网站名」，很短，谁拿到谁能打开，这一个才登记。底下一行是验证法：用手机或无痕窗口打开它。A two-column contrast: on the left the editor's address, containing the words editor or manage, long, needing a login, showing a stranger only a sign-in screen — never the one to register; on the right the site's address, of the form account-name dot wixsite dot com slash site-name, short, opening for anyone who holds it — the one to register. A line beneath gives the test: open it on a phone or in a private window.</title>
+<rect class="dl-node" x="20" y="20" width="290" height="230" rx="10"/>
+<rect class="dl-node" x="330" y="20" width="290" height="230" rx="10"/>
+<path class="dl-node is-warn" d="M20 74 V30 a10 10 0 0 1 10-10 H300 a10 10 0 0 1 10 10 V74 Z"/>
+<path class="dl-node is-ok" d="M330 74 V30 a10 10 0 0 1 10-10 H610 a10 10 0 0 1 10 10 V74 Z"/>
+<g class="dl-t dl-b" text-anchor="middle">
+  <text class="zh dl-caution" x="165" y="55">编辑器的网址</text><text class="en dl-caution" x="165" y="55">The editor's address</text>
+  <text class="zh dl-good" x="475" y="55">网站的网址</text><text class="en dl-good" x="475" y="55">The site's address</text>
+</g>
+<rect class="dl-node is-quiet" x="38" y="92" width="254" height="34" rx="17"/>
+<rect class="dl-node is-quiet" x="348" y="92" width="254" height="34" rx="17"/>
+<g class="dl-t-xs" text-anchor="middle">
+  <text class="zh" x="165" y="114">editor.wix.com/html/editor/…</text><text class="en" x="165" y="114">editor.wix.com/html/editor/…</text>
+  <text class="zh" x="475" y="114">晨星.wixsite.com/my-site</text><text class="en" x="475" y="114">chenxing.wixsite.com/my-site</text>
+</g>
+<g class="dl-caution"><circle cx="46" cy="152" r="5"/><circle cx="46" cy="186" r="5"/><circle cx="46" cy="220" r="5"/></g>
+<g class="dl-good"><circle cx="356" cy="152" r="5"/><circle cx="356" cy="186" r="5"/><circle cx="356" cy="220" r="5"/></g>
+<g class="dl-t-xs">
+  <text class="zh" x="64" y="156">很长，带 editor 或 manage</text><text class="en dl-long" x="64" y="156">long, and carries editor or manage</text>
+  <text class="zh" x="64" y="190">要你的密码才打得开</text><text class="en dl-long" x="64" y="190">it opens only with your password</text>
+  <text class="zh" x="64" y="224">别人点开：请登录</text><text class="en dl-long" x="64" y="224">a stranger clicking it: please sign in</text>
+  <text class="zh" x="374" y="156">很短，带 wixsite.com</text><text class="en dl-long" x="374" y="156">short, and carries wixsite.com</text>
+  <text class="zh" x="374" y="190">谁拿到谁能打开</text><text class="en dl-long" x="374" y="190">anyone holding it can open it</text>
+  <text class="zh" x="374" y="224">这一个才登记</text><text class="en dl-long" x="374" y="224">this is the one you register</text>
+</g>
+<rect class="dl-field" x="20" y="266" width="600" height="40" rx="10"/>
+<g class="dl-t-sm dl-b" text-anchor="middle"><text class="zh dl-acc" x="320" y="291">验证法：用手机、或用浏览器的无痕窗口打开它——打不开，就是拿错了</text><text class="en dl-long dl-acc" x="320" y="291">The test: open it on a phone or a private window — if it won't open, it's the wrong one</text></g>
+</svg>
+</div>
+<figcaption><span class="zh">两个网址的差别。免费版给你的网站网址形如「账号名<span data-neutral>.wixsite.com/</span>网站名」——短、公开、谁拿到谁能看。至于它<b>不是</b>你自己的域名（比如 <span data-neutral>chenxing.com</span>）：那要花钱，本课程不需要，也不影响任何一分。</span><span class="en">The difference between the two. The free plan's site address takes the form “account-name<span data-neutral>.wixsite.com/</span>site-name” — short, public, open to whoever holds it. That it is <b>not</b> a domain of your own (<span data-neutral>chenxing.com</span>, say) is fine: that costs money, this course does not need it, and it affects not one point.</span></figcaption>
+</figure>
+<p><span class="zh"><b>到哪里拿这个网址</b>，三条路都行：① 刚才发布后那个小窗里；② 网站后台顶部的<b>网站操作 Site Actions</b> → <b>查看网站 View Site</b>，然后复制浏览器地址栏里的那一串；③ 后台左边<b>设置 Settings</b> → <b>网站基本信息 Site Basics</b> → <b>网站地址 Site Address</b>。拿到之后：<b>登记到登记表</b>（网址开课前公布），再<b>发一份进自己的邮箱</b>（主题“我的网站 · 化名”）——两个地方存，丢不了。</span><span class="en"><b>Where to fetch it</b>, any of three ways: ① from the little window that appeared after publishing; ② the dashboard's <b>Site Actions</b> at the top → <b>View Site</b>, then copy what the browser's address bar shows; ③ <b>Settings</b> in the dashboard's left column → <b>Site Basics</b> → <b>Site Address</b>. Once you hold it: <b>register it on the tracking sheet</b> (address announced before launch) and <b>email a copy to yourself</b> (subject “my website · pseudonym”) — kept in two places, it cannot be lost.</span></p>
+
+<h2 id="noindex"><span class="zh">第 7 步 · 设为不被搜索引擎收录（这一步不能漏）</span><span class="en">Step 7 · Hide it from search engines (the step you cannot skip)</span></h2>
+<p><span class="zh">这是本课程的隐私底线，也是量规第 ① 行要看的一项。<b>整站</b>和<b>单页</b>各有一个开关，位置不同——建议两个都拨，一个漏了另一个兜着。</span><span class="en">This is the course's privacy floor, and one of the things rubric row ① checks. There is a switch for the <b>whole site</b> and another for a <b>single page</b>, in different places — throwing both is the suggestion, so that a miss on one is caught by the other.</span></p>
+<div class="card warn">
+<p><span class="zh"><b>整站（主要的那个开关）</b>：进<b>网站后台 Dashboard</b>（不是编辑器）→ 左边找 <b>SEO</b> 那一项（Wix 现在写作 <span data-neutral>SEO &amp; GEO</span>；<b>SEO 只是“搜索引擎相关设置”的英文缩写</b>，认准带“搜索 / search”的字样就行）→ 往下拉到<b>工具与设置 Tools and settings</b> → 点 <b>SEO 设置 SEO Settings</b> → 关掉<b>“允许搜索引擎收录本网站 Let search engines index your site”</b>那个开关 → 点<b>隐藏网站 Hide Site</b> 确认。</span><span class="en"><b>The whole site (the switch that matters most)</b>: go to the <b>Dashboard</b> (not the editor) → find <b>SEO</b> in the left column (Wix currently labels it <span data-neutral>SEO &amp; GEO</span>; <b>SEO is only the English shorthand for search-engine settings</b>, so look for the word “search”) → scroll to <b>Tools and settings</b> → click <b>SEO Settings</b> → turn off <b>“Let search engines index your site”</b> → click <b>Hide Site</b> to confirm.</span></p>
+<p><span class="zh"><b>单页（一页一页地保险）</b>：回<b>编辑器</b> → 左边<b>页面与菜单 Pages &amp; Menu</b> → 点某一页右边的<b>更多操作 ⋯ More Actions</b> → <b>SEO 基础设置 SEO basics</b> → 关掉<b>“允许搜索引擎收录本页 Let search engines index this page”</b>。三页各做一次。</span><span class="en"><b>Page by page (belt as well as braces)</b>: back in the <b>editor</b> → <b>Pages &amp; Menu</b> at the left → <b>More Actions ⋯</b> beside a page → <b>SEO basics</b> → turn off <b>“Let search engines index this page”</b>. Once for each of the three pages.</span></p>
+<p style="margin-bottom:0"><span class="zh"><b>它到底挡住了谁？</b> 挡住的是搜索引擎——别人搜你的化名、搜你的句子，搜不出这个网站。<b>不挡拿到链接的人</b>：你、导师、你想给他们看的家里人，照样一点就开。还有一句 Wix 帮助里的实话：如果网站已经被搜索引擎收录过，关掉开关后<b>要等一段时间</b>才会从搜索结果里消失——所以这一步要在发布后<b>尽快</b>做，别拖到下周。拨完开关，别忘了<b>再发布一次</b>。</span><span class="en"><b>Who exactly does it stop?</b> Search engines — nobody searching your pseudonym or a sentence of yours will turn up this site. <b>It does not stop people holding the link</b>: you, your mentor, the family you choose to show it to all open it with one click. And one honest line from Wix's own help: if the site has already been indexed, turning the switch off means <b>waiting a while</b> before it drops out of search results — so do this step <b>soon</b> after publishing, not next week. Once the switch is thrown, remember to <b>publish again</b>.</span></p>
+</div>
+
+<h2 id="backup"><span class="zh">第 8 步 · 备份截图（用本周刚学的手艺）</span><span class="en">Step 8 · Backup screenshots (with the skill you just learned)</span></h2>
+<p><span class="zh">发布完成后，用手机或无痕窗口以<b>访客身份</b>把三页各打开一次，各截一张图，存进一个叫“我的网站备份”的相簿或文件夹。文件名照<a href="../b1-email-attachments/lesson-2-attachments-and-filenames.html">第 2 周的命名规则</a>（课程 - 周次 - 内容 - 化名）来，例如：</span><span class="en">Once published, open all three pages <b>as a visitor</b> — phone or private window — capture each one, and keep the images in an album or folder called “site backups”. Name the files by <a href="../b1-email-attachments/lesson-2-attachments-and-filenames.html">Week 2's naming rule</a> (course - week - what - pseudonym), for example:</span></p>
+<div class="card"><p><span class="zh"><b>数字化学习-W3-网站关于我-晨星.png</b>　·　<b>数字化学习-W3-网站学习日志-晨星.png</b>　·　<b>数字化学习-W3-网站作品集-晨星.png</b>（英文写法同样可以：<span data-neutral>DL-W3-site-about-Chenxing.png</span>）。以后每次大改并发布之后，都补一轮——第 7 周（B6）会把这个习惯升级成完整的备份体系。</span><span class="en"><b>DL-W3-site-about-Chenxing.png</b>　·　<b>DL-W3-site-log-Chenxing.png</b>　·　<b>DL-W3-site-portfolio-Chenxing.png</b> (the Chinese form works equally well: <span data-neutral>数字化学习-W3-网站关于我-晨星.png</span>). Repeat the round after every big edit-and-publish — in Week 7 (B6) this habit grows into a full backup system.</span></p></div>
+
+<h2 id="security"><span class="zh">账号安全：改密码与两步验证（第 5 周 B4 会用到）</span><span class="en">Account security: password and two-step verification (Week 5, B4, uses this)</span></h2>
+<p><span class="zh">本周不必做，先知道位置就好；第 5 周（B4 账号、密码与隐私）会请你回到这里真动手。两件事都在<b>同一个页面</b>上：右上角头像 → <b>账号设置 Account Settings</b>。</span><span class="en">Nothing to do this week — knowing where they live is enough; Week 5 (B4, Accounts, passwords and privacy) will send you back here to actually do it. Both live on the <b>same page</b>: avatar at the top right → <b>Account Settings</b>.</span></p>
+<ul>
+<li><b><span class="zh">改密码</span><span class="en">Change the password</span></b><br><span class="zh"><b>在哪里：</b>账号设置页 → <b>修改密码 Edit Password</b> → 输旧密码、输两遍新密码 → 保存。 <b>要留意的：</b>至少 6 位（本课程建议 12 位以上）；不能含英文句点。页面会劝你留一个“找回密码用的手机号”——<b>本课程不要求，可以不填</b>。</span><span class="en"><b>Where:</b> Account Settings → <b>Edit Password</b> → old password, new password twice → Save. <b>Worth knowing:</b> at least 6 characters (this course suggests 12+); no full stop allowed. The page will suggest adding a recovery phone number — <b>this course does not require it; leaving it empty is fine</b>.</span></li>
+<li><b><span class="zh">两步验证（第二道门）</span><span class="en">Two-step verification (the second door)</span></b><br><span class="zh"><b>在哪里：</b>同一页往下拉到<b>两步验证 2-Step Verification</b>，点<b>启用 Enable</b>。 <b>要留意的：</b>Wix 给四种方式——官方手机 App、验证器 App、短信、<b>邮箱</b>。<b>本课程推荐邮箱或验证器 App</b>，都不用交出手机号。选邮箱的前提：账号设置页上你的邮箱已显示“已验证”。</span><span class="en"><b>Where:</b> scroll down the same page to <b>2-Step Verification</b> and click <b>Enable</b>. <b>Worth knowing:</b> Wix offers four routes — its own app, an authenticator app, SMS, and <b>email</b>. <b>This course suggests email or an authenticator app</b>; neither hands over a phone number. Email requires that your address already shows as confirmed on the Account Settings page.</span></li>
+</ul>
+
+<h2 id="traps"><span class="zh">新手最常掉的七个坑</span><span class="en">The seven pits beginners fall into</span></h2>
+<ul>
+<li><b><span class="zh">明明改好了，网址上还是旧的</span><span class="en">I edited it, the address still shows the old page</span></b><br><span class="zh"><b>为什么：</b>只点了“保存”，没再点“发布”。编辑器里是草稿，网址上是你上一次发布的那一版。 <b>怎么办：</b>回编辑器点<b>发布</b>。这是所见即所得建站第一大坑，掉进去一次就记住了。</span><span class="en"><b>Why:</b> Save was pressed, Publish was not. The editor holds a draft; the address holds whatever you last published. <b>What to do:</b> Go back and press <b>Publish</b>. The commonest trap on any such builder — one fall teaches it for good.</span></li>
+<li><b><span class="zh">导师说链接点开是“请登录”</span><span class="en">My mentor says the link shows a sign-in page</span></b><br><span class="zh"><b>为什么：</b>登记的是编辑器网址（带 <span data-neutral>editor</span> 或 <span data-neutral>manage</span>），不是网站网址。 <b>怎么办：</b>按<a href="#link">第 6 步</a>重新取一次，先用无痕窗口验证，再登记。</span><span class="en"><b>Why:</b> The editor's address (with <span data-neutral>editor</span> or <span data-neutral>manage</span> in it) got registered instead of the site's. <b>What to do:</b> Fetch it again by <a href="#link">Step 6</a>, verify it in a private window, then register.</span></li>
+<li><b><span class="zh">页面上还有一段读不通的英文</span><span class="en">A paragraph of nonsense English is still on the page</span></b><br><span class="zh"><b>为什么：</b>模板自带的假字没删干净——它长得像正文，很容易看漏。 <b>怎么办：</b>用访客身份把三页从头读到尾一遍，只找“不是我写的句子”。</span><span class="en"><b>Why:</b> Template dummy text that was never cleared; it looks like body text, so the eye slides over it. <b>What to do:</b> Read all three pages end to end as a visitor, hunting only for sentences you did not write.</span></li>
+<li><b><span class="zh">菜单里有“价目表”“预约”这类页</span><span class="en">The menu has pages like “Pricing” or “Book Online”</span></b><br><span class="zh"><b>为什么：</b>模板自带的页面还在。 <b>怎么办：</b>左侧<b>页面与菜单</b> → ⋯ → <b>删除</b>或<b>隐藏</b>（见<a href="#pages">第 3 步</a>）。</span><span class="en"><b>Why:</b> The template's own pages are still there. <b>What to do:</b> <b>Pages &amp; Menu</b> → ⋯ → <b>Delete</b> or <b>Hide</b> (see <a href="#pages">Step 3</a>).</span></li>
+<li><b><span class="zh">手机上字压字、图跑出屏幕</span><span class="en">On a phone the text overlaps and images run off-screen</span></b><br><span class="zh"><b>为什么：</b>只在电脑上检查过。手机版是另一套排布，不会自己排整齐。 <b>怎么办：</b>编辑器里切到<b>手机视图</b>调好，<b>再发布一次</b>（见<a href="#publish">第 5 步</a>）。</span><span class="en"><b>Why:</b> It was only ever checked on a desktop. The phone layout is a second arrangement and does not tidy itself. <b>What to do:</b> Fix it in <b>mobile view</b> and <b>publish again</b> (see <a href="#publish">Step 5</a>).</span></li>
+<li><b><span class="zh">网站打开很慢，或提示存储快满了</span><span class="en">The site loads slowly, or storage is nearly full</span></b><br><span class="zh"><b>为什么：</b>上传了手机原图。免费版只有 500 MB 存储、1 GB 流量。 <b>怎么办：</b>删掉大图，换成截图或小尺寸导出的版本（见<a href="#edit">第 4 步</a>）。</span><span class="en"><b>Why:</b> Full-size phone photos were uploaded. The free plan has 500 MB of storage and 1 GB of bandwidth. <b>What to do:</b> Remove the large images and upload screenshots or small-size exports instead (see <a href="#edit">Step 4</a>).</span></li>
+<li><b><span class="zh">到处弹窗劝我升级付费</span><span class="en">Upgrade pop-ups keep appearing</span></b><br><span class="zh"><b>为什么：</b>免费版的常态。本课程全程只用免费版。 <b>怎么办：</b>一律点掉。<b>关不掉、或找不到免费发布的路</b>：截图 + 三句话，邮件导师。</span><span class="en"><b>Why:</b> Normal life on a free plan. This course stays on the free plan throughout. <b>What to do:</b> Dismiss them all. <b>If one won't close, or the free path to publishing hides itself</b>: screenshot + three sentences, email your mentor.</span></li>
+</ul>
+
+<h2 id="free"><span class="zh">免费版会给你什么，不会给你什么（说在前面）</span><span class="en">What the free plan does and does not give you (said in advance)</span></h2>
+<ul>
+<li><span class="zh"><b>网址</b>是“账号名<span data-neutral>.wixsite.com/</span>网站名”这种形式，不是你自己的域名。本课程<b>不需要</b>自有域名——那要花钱，而且免费网址一样打得开、一样能登记。</span><span class="en"><b>The address</b> takes the form “account-name<span data-neutral>.wixsite.com/</span>site-name”, not a domain of your own. This course <b>does not need</b> one: a custom domain costs money, and the free address opens and registers just as well.</span></li>
+<li><span class="zh"><b>页面上会有平台自己的广告条</b>，免费版去不掉（要去掉得付费升级）。<b>这不扣分</b>，本课程也不要求你去掉它——它是你没花一分钱的证明。</span><span class="en"><b>The platform puts its own banner ad on your pages</b>, and the free plan cannot remove it (only a paid upgrade can). <b>It costs you no points</b>, and this course does not ask you to remove it — it is the receipt for having spent nothing.</span></li>
+<li><span class="zh"><b>500 MB 存储、1 GB 流量</b>：三页文字加几张缩小过的图，远远用不完。</span><span class="en"><b>500 MB of storage and 1 GB of bandwidth</b>: three pages of text and a few shrunken images come nowhere near it.</span></li>
+<li><span class="zh"><b>模板建站后不能换</b>（想换只能另建一个新站——免费版可以建很多个，不花钱）。</span><span class="en"><b>The template cannot be changed after the site is created</b> (changing it means building another site — the free plan allows many, at no cost).</span></li>
+<li><span class="zh"><b>“不被搜索引擎收录”的开关免费版就有</b>——这是本课程挑平台的硬条件之一。</span><span class="en"><b>The hide-from-search switch is available on the free plan</b> — one of this course's hard conditions when picking a platform.</span></li>
+</ul>
+
+<h2 id="toverify"><span class="zh">还没证实的三件事（开课前公布）</span><span class="en">Three things not yet confirmed (announced before launch)</span></h2>
+<div class="card note">
+<p><span class="zh">这一页的操作步骤来自平台官方的帮助文档（2026 年 8 月核对）。但有三件事<b>只有在你所在的网络里真跑一遍才知道</b>，教师会在开课前实测，结果写进开课信、并同步到课程说明的<a href="../m0-orientation/lesson-3-course-guide.html#builder">「你的建站平台」框</a>：</span><span class="en">The steps on this page come from the platform's own help documentation (checked August 2026). But three things <b>can only be known by actually running them on your network</b>; the instructor tests them before the course opens and puts the results in the welcome letter and in the course guide's <a href="../m0-orientation/lesson-3-course-guide.html#builder">“Your site builder” box</a>:</span> <span class="tag"><span class="zh">开课前公布</span><span class="en">announced before launch</span></span></p>
+<ol>
+<li><span class="zh"><b>能不能顺畅打开</b>：网站、编辑器、上传图片，都得在没有任何特殊网络工具的情况下跑得动。这一条过不了，课程就换成本页最后一节的备选平台。</span><span class="en"><b>Whether it opens smoothly</b>: the site, the editor and image uploads all have to work with no special network tooling of any kind. If this one fails, the course moves to the fallback platform in the final section of this page.</span></li>
+<li><span class="zh"><b>注册那天是不是真的只要邮箱</b>：官方文档写的是邮箱注册、没有手机号那一栏，但注册页每年都在改。<b>屏幕上真要手机号，就是我们写错了</b>——截图告诉导师，不是你的问题。</span><span class="en"><b>Whether sign-up really is email-only on the day</b>: the official documentation describes email registration with no phone field, but sign-up pages change every year. <b>If your screen asks for a phone number, we got it wrong</b> — screenshot it for your mentor; it is not your fault.</span></li>
+<li><span class="zh"><b>你看到的是哪一版编辑器</b>：这家平台从 2026 年 1 月起在小范围试行一个新版编辑器，与本页描述的老版并行（新版目前只有英文，且要走专门入口，多数新用户还不会碰到）。<b>万一屏幕和本页对不上</b>：认两个词就够——找“<b>发布 / Publish</b>”和“<b>页面 / Pages</b>”。这两个词在任何版本里都在，五个动作也就都还成立。</span><span class="en"><b>Which version of the editor you land in</b>: since January 2026 this platform has been trialling a new editor alongside the one described here (the new one is English-only for now and reached through a dedicated link, so most new users will not meet it). <b>If your screen and this page disagree</b>: two words are enough — find “<b>Publish</b>” and “<b>Pages</b>”. Those exist in every version, and so the five moves still hold.</span></li>
+</ol>
+</div>
+
+<h2 id="phone"><span class="zh">只有手机怎么办</span><span class="en">Phone only</span></h2>
+<p><span class="zh">诚实的回答：<b>能建，但很吃力，而且有几步大概率做不了</b>。挑模板、加页面、调手机版排布、找 SEO 设置，这些在小屏幕上都很难。可行的做法，按优先顺序：</span><span class="en">The honest answer: <b>it can be done, but it is hard work, and a few steps will most likely be out of reach</b>. Choosing a template, adding pages, adjusting the phone layout and finding the SEO settings are all difficult on a small screen. What to try, in order:</span></p>
+<ol>
+<li><span class="zh"><b>借一次电脑，把骨架搭完</b>：注册、选模板、建三页、发布、设不收录——大约半小时。学校机房、图书馆、家人的电脑都行。骨架一旦立起来，以后每周写日志用手机就够了。</span><span class="en"><b>Borrow a computer once and put up the skeleton</b>: register, pick a template, make the three pages, publish, set no-index — about half an hour. A school lab, a library, a family machine all serve. Once the skeleton stands, a phone is enough for the weekly log from then on.</span></li>
+<li><span class="zh"><b>实在借不到</b>：用手机浏览器打开建站平台，<b>横过来</b>用（横屏能多出很多操作空间）。改文字、换图片、再发布，这几件事手机上能做（Wix 写明这项功能“尚未对所有用户开放”，所以要试了才知道你的账号有没有）。</span><span class="en"><b>If no computer can be borrowed</b>: open the builder in the phone's browser and turn it <b>sideways</b> (landscape buys a great deal of room). Retyping text, swapping images and publishing again are doable on a phone (Wix says the feature “is not yet available for all users”, so only trying tells whether your account has it).</span></li>
+<li><span class="zh"><b>卡在哪一步都别自己扛</b>：截图 + 三句话，邮件导师。手机建站的卡点是<b>设备的限制，不是你的失误</b>——导师会给你另一条路走完本周，分数不受影响。</span><span class="en"><b>Wherever you get stuck, do not carry it alone</b>: screenshot + three sentences, email your mentor. A phone-only wall is <b>the device's limit, not your mistake</b> — your mentor will find you another route through the week, and your score is unaffected.</span></li>
+</ol>
+
+<h2 id="weebly"><span class="zh">如果课程改用备选平台（Weebly）</span><span class="en">If the course switches to the fallback platform (Weebly)</span></h2>
+<p><span class="zh">开课前的实测万一没通过，课程会换成备选平台。<b>只有这一节需要重写，前面各节的“为什么”一句都不用改</b>——五个动作一模一样，只是按钮换了名字：</span><span class="en">Should the pre-launch test fail, the course moves to the fallback platform. <b>Only this section would be rewritten; not a sentence of the “why” in the sections above changes</b> — the five moves are identical, and only the button names differ:</span></p>
+<ul>
+<li><b><span class="zh">① 选模板</span><span class="en">① Pick a template</span></b><br><span class="zh"><b>Wix：</b>创建新网站 → 从模板开始 → 编辑　<b>Weebly：</b>注册后选一个主题 Theme，开始编辑</span><span class="en"><b>Wix:</b> Create New Site → Choose a template → Edit　<b>Weebly:</b> Register, choose a Theme, start editing</span></li>
+<li><b><span class="zh">② 改文字与图片</span><span class="en">② Edit text and images</span></b><br><span class="zh"><b>Wix：</b>双击画布上的文字或图片　<b>Weebly：</b>把元素从左边拖到页面上，再点进去改</span><span class="en"><b>Wix:</b> Double-click the text or image on the canvas　<b>Weebly:</b> Drag an element from the left onto the page, then click into it</span></li>
+<li><b><span class="zh">③ 发布</span><span class="en">③ Publish</span></b><br><span class="zh"><b>Wix：</b>右上角 <b>Publish</b>　<b>Weebly：</b>右上角 <b>Publish</b>（位置几乎一样）</span><span class="en"><b>Wix:</b> Top right: <b>Publish</b>　<b>Weebly:</b> Top right: <b>Publish</b> (all but the same place)</span></li>
+<li><b><span class="zh">④ 复制链接</span><span class="en">④ Copy your link</span></b><br><span class="zh"><b>Wix：</b>形如 账号名<span data-neutral>.wixsite.com/</span>网站名　<b>Weebly：</b>形如 网站名<span data-neutral>.weebly.com</span></span><span class="en"><b>Wix:</b> Of the form account-name<span data-neutral>.wixsite.com/</span>site-name　<b>Weebly:</b> Of the form site-name<span data-neutral>.weebly.com</span></span></li>
+<li><b><span class="zh">⑤ 设不收录</span><span class="en">⑤ Hide from search</span></b><br><span class="zh"><b>Wix：</b>后台 → SEO → SEO 设置 → 关掉“允许收录本网站”　<b>Weebly：</b>设置 Settings → SEO → “不让搜索引擎收录本网站”；单页在 Pages → 选中该页 → SEO Settings → 勾选“不让搜索引擎收录本页” <span class="tag"><span class="zh">待实测确认</span><span class="en">to be confirmed by test</span></span></span><span class="en"><b>Wix:</b> Dashboard → SEO → SEO Settings → turn off “Let search engines index your site”　<b>Weebly:</b> Settings → SEO → “hide site from search engines”; per page: Pages → select the page → SEO Settings → tick “hide this page from search engines” <span class="tag"><span class="zh">待实测确认</span><span class="en">to be confirmed by test</span></span></span></li>
+</ul>
+<p class="reader-note"><span class="zh">这张表右边一列的菜单位置来自公开的社区资料，<b>尚未由本课程实测</b>；真要换平台，教师会在实测后把这一节改写成和前面各步一样详细的说明。留着它是为了让你现在就看清一件事：<b>换平台要重写的只是按钮名，不是你学会的东西</b>。</span><span class="en">The menu positions in the right-hand column come from public community sources and have <b>not yet been tested by this course</b>; should a switch actually happen, the instructor rewrites this section to the same detail as the steps above. It is here now to make one thing visible: <b>switching platforms rewrites button names, not what you have learned</b>.</span></p>
+
+<div class="card note"><b><span class="zh">还是卡住了？</span><span class="en">Still stuck?</span></b><br><span class="zh">用本周微课 2 的求助姿势：<b>一张标注好的截图 + 三句话</b>（我想做什么 · 我做了什么 · 出现了什么），邮件发给导师，主题“建站问题 · 化名（学生编号）”。截图里如果有邮箱地址、真名之类的信息，<b>先打码再发</b>。24–48 小时内会有回信。</span><span class="en">Use micro-lesson 2's way of asking: <b>one annotated screenshot plus three sentences</b> (what I wanted to do · what I did · what appeared), emailed to your mentor with the subject “site question · pseudonym (student number)”. If the screenshot shows an email address or a real name, <b>mask it before sending</b>. A reply comes within 24–48 hours.</span></div>
+
+<div class="next"><a href="task-1-build-your-website.html"><span class="zh">← 回到任务页</span><span class="en">← Back to the task</span></a><a href="media/handouts/site-launch-checklist.html"><span class="zh">发布检查单（可打印）→</span><span class="en">The launch checklist (printable) →</span></a></div>
+
+</main>
+<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 第一学期 B2</footer>
+<script src="../../assets/lang.js"></script>
+</body>
+</html>

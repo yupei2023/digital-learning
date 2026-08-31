@@ -11,6 +11,9 @@ Status r2: revised per _tongxue's first test and _jonassen's module review, rege
 
 状态 Status 2026-08-31（r3 · 站点视觉评审跟进）：把微课 4「五级台阶图」那根从 ③ 弯回 ② 的回头箭头接进计分任务——任务第 6 步在“用访客的眼睛看一遍”之后加一句：看到要改的地方，改一改再点一次“发布”（编辑器里改好了，网址上不会自己跟着变）；w3 自评第 7 条同口径；figure 加锚点 `#moves-figure`。分钟不变（任务 50、总 120），量规未动。「三个房间平面图」与「带截图提问」图**保留为插图**：前者把硬性要求里已经列全的三页再列一遍，让学习者拿它对照等于拿清单对清单；后者所教的求助动作不进量规，接进任务等于凭空造一条要求。落 _jonassen 站点评审 J1。
 
+状态 Status 2026-08-31（r4 · ShiFu 指令“B2 还需要教学生怎样在 Wix 上从零建站”）：**新增参考页 `wix-guide.html`「从零建一个 Wix 网站 · 分步手册」，明确不计入本周 120 分钟。** 单元原有的“五个通用动作 + 不落平台名”结构一字未动（它才是换平台也带得走的东西）；新页是平台专属的操作手册，学习者动手时摊在旁边翻。 每一步取自 Wix 官方帮助中心（2026-08-31 核对，逐条来源见 `media/scripts.md` 末节），**不使用任何平台界面截图**——改为两张自绘线框 SVG（编辑器形状、两个网址的对照）。 无法核实的三件事（大陆可达性、注册页当天是否仍只要邮箱、Weebly 的不收录路径）在页面上以“开课前公布 / 待实测确认”的既有样式如实标注。 分钟未变：w3 时间表逐项仍合计 120，新页在 w3 §3、任务页、微课 4、单元首页四处都以“不计入本周分钟”的措辞链接。 Weebly 备选独立成最后一节——换平台只需改写这一节。
+Status r4: a new reference page `wix-guide.html` (a step-by-step Wix build guide), explicitly outside the week's 120 minutes. The module's platform-neutral five moves are untouched; every step in the guide comes from Wix's own help centre (checked 2026-08-31, sourced line by line in `media/scripts.md`); no platform screenshots — two hand-drawn wireframes instead; what could not be verified is marked in the established “announced before launch” style; the week still totals exactly 120 required minutes; the Weebly fallback is one closing section, so a platform switch costs that section and nothing else.
+
 核心问题 Essential question（教纲 v7 W3 行）：我的学习会留在哪里？Where will my learning live?
 
 **本单元的特别之处 What makes B2 different**：登记表从本周启用——"提交 = 发布到自己网站 + 登记链接"的全年机制在本周建立。学生第一次拥有公开可访问的页面，所以**隐私四条与"不被搜索引擎收录"**贯穿页面各处，导师评分表把隐私巡查列为先于打分的主业。**建站平台未定**（年计划 §7：Wix 首选，Strikingly / Weebly / Carrd 顺位候补，均待大陆实测），全单元只教五个通用动作（选模板 → 改文字与图片 → 发布 → 复制链接 → 设不收录），页面写"开课信将告知本课程指定的建站平台 [placeholder]"——平台定下后无需改页面，只需在开课信里补平台名与官方教程链接。The tracking sheet starts this week — the all-year "submit = publish + register" machinery is built here. Students gain their first publicly reachable pages, so the four privacy rules and no-index run through everything, and the mentor sheet makes the privacy sweep the week's first job. The builder is undecided (Year Plan §7), so the module teaches only the five universal moves and defers the platform name to the welcome letter.
@@ -64,6 +67,11 @@ English parallel: ① Build and publish the three-page site on the course's buil
 28. **（r2 · W5）跟做三幕改 7 + 6 + 12**：第三幕（_tongxue 实测最紧，含 4:20 视频）加到 12 分钟；未采纳其“第二幕 5 分钟”方案，保住打码演练的时间，改从第一、二幕各匀 1 分钟。合计仍 25。
 29. **（r2 · W4）Game Bar 诚实化**：微课 3 Windows 行与跟做第三幕明写“只录当前打开的应用、录不了桌面——先开好浏览器再按 Win + G”，避免学生把系统限制当成自己的错。
 
+30. **（r4）Wix 手册建成“参考页”而非第五段微课**：ShiFu 要求教到位，但第 3 周的 120 分钟已经排满（微课 25 · 跟做 25 + 任务 50 · 日志 20）。取“说明书”而非“课”：分钟不变，页面写明“读它不算学习时间，用它才算”，四个入口处的链接文字都带“不计入本周分钟”。理由：从零建站的时间本来就已经算在任务的 50 分钟里，这一页只是让那 50 分钟花得准。
+31. **（r4）平台名只出现在这一页**：微课 4、任务页、量规、讲义、导师材料一律不改，仍教五个通用动作、仍写“开课信公布”。手册开头明说“Wix 是首选，开课前实测确认；万一不过，只有最后一节要换”。换平台的成本因此被压在一节里。
+32. **（r4）不用任何平台界面截图**：教师无法自行抓取，且第三方 UI 截图放在公开课程页上有权利问题。改为两张自绘线框 SVG（沿 B1 写邮件窗口图的做法）：编辑器的形状（顶栏 保存/手机视图/发布，左侧 页面与菜单，中间 画布，底部 不收录开关在哪）与两个网址的对照（编辑器网址 vs 网站网址）。两张都加 `class="dl-fit"`——它们的裁切都会“看起来完整”（前者会切掉最要紧的“发布”，后者会整列切掉“网站网址”），按 DIAGRAM-PATTERNS 的判据必须整幅显示。
+33. **（r4）三张三列表改成列表**：新手七个坑、账号安全、Weebly 对照三处原本是三列表，390 px 下第一列被压成每行一两个字。改成 `<ul>` 的“标题 + 为什么 + 怎么办”条目，手机与桌面都好读（截图复核过）。
+
 
 ---
 
@@ -86,6 +94,7 @@ English parallel: ① Build and publish the three-page site on the course's buil
 | 6 | `lesson-4-your-three-page-website.html` | 教师旧课建站故事 → 网页/网站 → 三页平面图 SVG → 五个通用动作 → 隐私四条上墙 → "房子"全学期入住表 | BV17E411v7Nu（0:35）|
 | 7 | `activity-evidence-kit.html` | 跟做三幕：电脑 + 手机各一张（8）→ 标注 + 一句问题 + 打码演练（7）→ 30 秒录屏（10）；全程留在自己设备 | BV1fG411a7d4（4:20）|
 | 8 | `task-1-build-your-website.html` | 硬性要求 · 每页写什么 · 七步 · 评分摘要 · FAQ（基线找不到/模板假字/忘点发布/要求付费/公开学习者/给家人看）| BV17E411v7Nu（选看，微课 4 同段）|
+| 8b | `wix-guide.html`（r4 新增 · **参考页，不计分钟**） | 从零建一个 Wix 网站 · 分步手册：怎么用这一页 → 开工四件事 → 编辑器线框 → 注册（只要邮箱）→ 建站选模板 → 三页 → 改文字与图片 → 发布 + 手机视图 → 复制“对的”网址 → 不收录（整站 + 单页）→ 备份截图与命名 → 改密码 / 两步验证 → 新手七个坑 → 免费版给什么 → 还没证实的三件事 → 只有手机怎么办 → Weebly 备选对照 | 如何使用 Wix 制作个人站点+作品集 BV1KsUsYCER6（14:08，**选看、不计入分钟**）|
 | 9 | `rubric.html` | ① ② 计分行四级 + ③ 完成行 · 规范要求（隐私底线）· 合成 | — |
 | 10 | `quiz.html` + `quiz-data.js` | 6 题情境题；正确项 2·0·3·1·2·0 | — |
 | 11 | `want-more.html` | 读 1 · 看 5 · 做 4；全部选做；无 AI 主题 | — |
@@ -135,9 +144,23 @@ English parallel: ① Build and publish the three-page site on the course's buil
 | quiz-data.js 语法（node --check）| PASS；正确项位置 2·0·3·1·2·0 |
 | B1 重新生成的副作用 | git status 确认仅 `s1/b1-email-attachments/w2.html` 与课程首页有差异，B1 其余页面字节不变 |
 
+### r4 复检（2026-08-31 · 新增页与四个改动页）
+
+| 检查 | 结果 |
+|---|---|
+| `tools/parity_check.py`（wix-guide / task / w3 / index / lesson-4，含两张新 SVG 的双语标签）| PASS · 5 文件 · 0 issues |
+| `tools/site_checks.py`（链接锚点 · 禁用词 · 页脚 · 无头 Chrome 双语 console · 390px 双语无溢出）| PASS · 5/5 页 |
+| 必做分钟 = 120 | PASS · w3 中英两版 items 合计 120 · printed 120（新页不进时间表，四处链接均写明“不计入本周分钟”）|
+| `tools/figure_fit_check.py`（真 390 px iframe，中英两遍）| PASS · 两张新图 off-canvas 标签 0 · 滚动被裁的图 0（`dl-fit` 整幅显示）|
+| 桌面 1280 与 390 px 全页截图人工查看 | PASS（据此把三张三列表改成列表——见决定 33）|
+| B 站 BV1KsUsYCER6 view API 核实 | code 0、公开、单 P（2026-08-31）；**大陆播放待 ShiFu 实测**；简介仅一行，内容待抽查 |
+| 禁用词扫描（S1 清单）| PASS · 0 命中 |
+
 ## 待 ShiFu 实测 / 过目 For ShiFu
 - 上方"替 ShiFu 决定的事项"22 条，尤其第 1–4（分值、② 行无半分档、③ 行不收成果、平台完全不落名）、第 9（视频计入分钟 + 6 段无简介视频抽查）。
 - 15 个 B 站视频的大陆播放实测。
+- **（r4）Wix 手册的三件未证实事项**：① 大陆能否顺畅打开 wix.com 与编辑器；② 注册页当天是否仍只要邮箱、无手机号栏；③ Weebly 的不收录菜单路径（现来自公开社区帖，非官方文档）。页面已如实标注，实测后按 `mentor/welcome-letter-spec.md` 的「Wix 的答案草稿」一节填信。
+- **（r4）新增视频 BV1KsUsYCER6**（14:08，2024）的大陆播放与内容抽查。
 - 未知事实（原占位）：建站平台与注册说明、登记表网址、开课信本身——学生页面现以“开课前公布”卡片承接，不再出现 [placeholder] 字样；开课信需包含的全部事实与依赖页面清单见 `mentor/welcome-letter-spec.md`（J1，请 ShiFu 过目并执笔开课信）。
 - 建站平台大陆实测（年计划 §7 的顺位核验法）完成后：平台名与官方新手教程只需写进开课信，本单元页面无需改动。
 - 一致性提示：M5 兜底卡与 B1 自测页写"第 3 周网站上线后抄进第一条日志作双保险"——B2 已如约实建（目标 ② + 任务硬性要求），语义完全一致，无需回改。
