@@ -6,6 +6,7 @@
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="单元首页 · M3 有意义的数字化学习 · Digital Learning 数字化学习" data-en="Module home · M3 Meaningful Digital Learning · Digital Learning">Module home · M3 Meaningful Digital Learning · Digital Learning</title>
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/diagrams.css">
 <script src="quiz-data.js"></script>
 </head>
 <body>
@@ -46,6 +47,40 @@
 <tr><td><a href="w11.html"><span class="zh">第 11 周</span><span class="en">Week 11</span></a></td><td><span class="zh">从“想学”到“学到”：目标与时间表</span><span class="en">From wanting to doing: a goal and a timetable</span></td><td><span class="zh">微课 1–3 · 跟做“这条目标 SMART 吗？”</span><span class="en">Micro-lessons 1–3 · “Is this goal SMART?” activity</span></td><td><span class="zh">任务 1：我的学习计划（目标 + 日程截图）；本周就按表学主修课第一次</span><span class="en">Task 1: My learning plan (goal + schedule screenshot); first core-course hour by that plan this week</span></td><td>9</td></tr>
 <tr><td><a href="w12.html"><span class="zh">第 12 周</span><span class="en">Week 12</span></a></td><td><span class="zh">计划没按上，怎么办：复盘与调整</span><span class="en">When the plan slips: review and adjust</span></td><td><span class="zh">微课 4 · 读本第 10 章（+ 第 09 章“多语对照”，主修课是英文的必读）</span><span class="en">Micro-lesson 4 · Reader Ch. 10 (+ Ch. 09 “two languages”, required if your core course is in English)</span></td><td><span class="zh">任务 2：一周复盘（改一处，说理由）+ 给任务 1 补一行“我的学习策略”</span><span class="en">Task 2: One-week review (change one thing, with a reason) + add a “my strategy” line to Task 1</span></td><td>6</td></tr>
 </table></div>
+
+<figure class="dl-fig">
+<svg viewBox="0 0 640 312" role="img" aria-labelledby="fig-m3loop-t">
+<title id="fig-m3loop-t">计划回路，四站走一圈：① 写下目标，具体到能勾对错；② 排进日程，两个真实存在的时段；③ 一周后复盘，三问，先数一数；④ 只改一处，理由里有一件真事——然后回到 ①，下周再走一遍。The planning loop, four stations: 1 write the goal, specific enough to tick; 2 put it into the week, two slots that really exist; 3 review after a week, three questions, count first; 4 change one thing only, with one real event as the reason — then back to 1 and run it again next week.</title>
+<defs><marker id="dlArrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="dl-head" d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<rect class="dl-node is-key" x="40" y="36" width="210" height="84" rx="10"/>
+<rect class="dl-node" x="390" y="36" width="210" height="84" rx="10"/>
+<rect class="dl-node" x="390" y="192" width="210" height="84" rx="10"/>
+<rect class="dl-node is-key" x="40" y="192" width="210" height="84" rx="10"/>
+<g class="dl-link" marker-end="url(#dlArrow)">
+  <path d="M254 78 H380"/><path d="M495 124 V186"/><path d="M386 234 H258"/><path d="M145 188 V126"/>
+</g>
+<g class="dl-t dl-b" text-anchor="middle">
+  <text class="zh dl-ink" x="145" y="68">① 写下目标</text><text class="en dl-ink" x="145" y="68">① Write the goal</text>
+  <text class="zh dl-ink" x="495" y="68">② 排进日程</text><text class="en dl-ink" x="495" y="68">② Put it in the week</text>
+  <text class="zh dl-ink" x="495" y="224">③ 一周后复盘</text><text class="en dl-ink dl-long" x="495" y="224">③ Review the week</text>
+  <text class="zh dl-ink" x="145" y="224">④ 只改一处</text><text class="en dl-ink" x="145" y="224">④ Change one thing</text>
+</g>
+<g class="dl-t-sm" text-anchor="middle">
+  <text class="zh dl-muted" x="145" y="94">具体到能勾对错</text><text class="en dl-muted dl-long" x="145" y="94">specific enough to tick</text>
+  <text class="zh dl-muted" x="495" y="94">两个真实的时段</text><text class="en dl-muted dl-long" x="495" y="94">two slots that exist</text>
+  <text class="zh dl-muted" x="495" y="250">三问，先数一数</text><text class="en dl-muted dl-long" x="495" y="250">three questions, count</text>
+  <text class="zh dl-muted" x="145" y="250">理由里有一件真事</text><text class="en dl-muted dl-long" x="145" y="250">with one real event in it</text>
+</g>
+<g class="dl-t-sm dl-b" text-anchor="middle">
+  <text class="zh dl-acc" x="320" y="148">一个回路</text><text class="en dl-acc" x="320" y="148">one loop</text>
+  <text class="zh dl-acc" x="320" y="170">每周走一遍</text><text class="en dl-acc dl-long" x="320" y="170">run once a week</text>
+</g>
+<g class="dl-t-xs" text-anchor="middle">
+  <text class="zh dl-muted" x="320" y="300">第 11 周做上半圈，第 12 周做下半圈；之后每周只是再走一遍。</text><text class="en dl-muted dl-long" x="320" y="300">Week 11 is the top half, Week 12 the bottom; after that you only run it again.</text>
+</g>
+</svg>
+<figcaption><span class="zh">回路图：终点接回起点，所以它可以再走一遍。这也是本单元两个任务的关系——任务 1 和任务 2 不是两份作业，是同一个循环的上下半圈。（比喻的边界：回路上的四站不像机器零件，走过一圈以后，目标本身也可能被改掉。）</span><span class="en">The loop: the last station feeds the first, which is why it can be run again. It is also the relation between this module’s two tasks — Task 1 and Task 2 are not two assignments but the two halves of one cycle. (Where the metaphor gives out: the four stations are not machine parts — after one turn, the goal itself may be the thing that changes.)</span></figcaption>
+</figure>
 
 <h2><span class="zh">预计用时</span><span class="en">Time</span></h2>
 <p><span class="zh">每周 120 分钟以内，其中 <b>60 分钟是你的主修外部课程</b>——从第 11 周起，它是每周必做的一部分。剩下 60 分钟：看/读约 20 · 做约 30 · 反思与日志约 10。标注“选做”的内容不计入。</span><span class="en">Within 120 minutes a week, of which <b>60 minutes are your core external course</b> — from Week 11 it is part of every week's required work. The other 60: watch &amp; read ~20 · do ~30 · reflect &amp; log ~10. Items marked optional don't count.</span></p>
