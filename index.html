@@ -18,11 +18,10 @@
 @media(max-width:600px){.home-credo{line-height:1.95}}
 
 /* the seal that signs the course, above the instructor's name in the footer */
-.home-seal{padding:0 clamp(1.25rem,5vw,5rem) .5rem;background:var(--h-paper)}
-.home-seal-mark{display:block;width:96px;height:96px;color:var(--h-navy);opacity:.68}
-.home-seal .seal-band{font-family:Georgia,"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:10.5px;letter-spacing:1.9px;fill:currentColor}
-.home-seal .seal-year{font-family:Georgia,"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:12px;letter-spacing:3.2px;fill:currentColor}
-@media(max-width:600px){.home-seal-mark{width:82px;height:82px;opacity:.78}}
+.home-community-intro .home-seal-mark{display:block;width:176px;height:176px;margin:clamp(2.5rem,4vw,3.5rem) auto 0;color:var(--h-navy)}
+/* the intro paragraph is no longer :last-child, so site.css stops styling it — re-assert here */
+.home-community-intro>p:not(.home-kicker){max-width:540px;margin:1.5rem 0 0;color:var(--h-muted);line-height:1.85}
+@media(max-width:600px){.home-community-intro .home-seal-mark{width:156px;height:156px}}
 </style>
 </head>
 <body class="course-home">
@@ -60,24 +59,34 @@
     </div><p class="home-calendar-link"><a class="home-text-link" href="calendar.html"><span class="zh">查看本学期日历</span><span class="en">View the semester calendar</span> <span aria-hidden="true">→</span></a></p>
   </section>
   <section class="home-community" id="community" aria-labelledby="community-title">
-    <div class="home-community-intro"><p class="home-kicker"><span class="zh">学习共同体</span><span class="en">Learning community</span></p><h2 id="community-title"><span class="zh">一起支持自主学习</span><span class="en">Supporting independent learning, together</span></h2><p><span class="zh">自主学习并不意味着独自承担。家长、学校管理者与导师各有不同的角色，也共享同一个目标：为学习者创造时间、信任与持续支持。</span><span class="en">Independent learning does not mean carrying everything alone. Parents, school administrators, and mentors play different roles while sharing one goal: creating time, trust, and sustained support for learners.</span></p></div>
+    <div class="home-community-intro"><p class="home-kicker"><span class="zh">学习共同体</span><span class="en">Learning community</span></p><h2 id="community-title"><span class="zh">一起支持自主学习</span><span class="en">Supporting independent learning, together</span></h2><p><span class="zh">自主学习并不意味着独自承担。家长、学校管理者与导师各有不同的角色，也共享同一个目标：为学习者创造时间、信任与持续支持。</span><span class="en">Independent learning does not mean carrying everything alone. Parents, school administrators, and mentors play different roles while sharing one goal: creating time, trust, and sustained support for learners.</span></p>
+      <svg class="home-seal-mark" viewBox="0 0 200 200" role="img" aria-labelledby="dl-seal-title" aria-describedby="dl-seal-desc">
+    <title id="dl-seal-title">Digital Learning 数字化学习 · 本课程的印记 The seal of this course</title>
+    <desc id="dl-seal-desc">深色圆形实地印记，课程标识以镂空方式刻在其上——一个既可读作两页书、也可读作两块亮起面板的对开面；外围一道细环。A solid dark disc with the course mark cut out of it — an open spread that reads either as two facing pages or as two lit panels — inside a thin outer ring.</desc>
+    <defs>
+      <!-- the mark is cut out of the disc, so the hole shows the page itself; the seal
+           therefore works on any background and needs no hard-coded paper colour -->
+      <mask id="dl-seal-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+        <rect width="200" height="200" fill="#000"/>
+        <circle cx="100" cy="100" r="88" fill="#fff"/>
+        <g transform="translate(29.6 27.4) scale(2.2)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.6"/>
+          <path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.6"/>
+          <path d="M32 18 V48" stroke-width="2.9"/>
+          <path d="M11.4 27.6 H24.2" stroke-width="2.1"/><path d="M11.4 33.6 H21" stroke-width="2.1"/>
+          <path d="M39.8 27.6 H52.6" stroke-width="2.1"/><path d="M39.8 33.6 H49.4" stroke-width="2.1"/>
+        </g>
+      </mask>
+    </defs>
+    <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <rect width="200" height="200" fill="currentColor" mask="url(#dl-seal-cut)"/>
+    </svg>
+    </div>
     <div class="community-resources">
       <article><p><span class="zh">致家长</span><span class="en">For parents</span></p><h3><span class="zh">致家长的一封信</span><span class="en">A Letter to Parents</span></h3><p><span class="zh">了解课程如何运行、怎样保护学习者，以及家庭可以提供的具体支持。</span><span class="en">Understand how the course works, how learners are protected, and how families can help in practical ways.</span></p><div><a href="resources/letter-to-parents.html"><span class="zh">在线阅读</span><span class="en">Read online</span> →</a><a href="resources/letter-to-parents.pdf" download><span class="zh">下载 PDF</span><span class="en">Download PDF</span> ↓</a><a href="resources/letter-to-parents-editable.docx" download><span class="zh">编辑 Word</span><span class="en">Edit in Word</span> ↓</a></div></article>
       <article><p><span class="zh">致学校管理者</span><span class="en">For school administrators</span></p><h3><span class="zh">致学校管理者的一封信</span><span class="en">A Letter to School Administrators</span></h3><p><span class="zh">了解学校如何为异步学习提供制度、时间、技术与人员支持。</span><span class="en">See how schools can provide the structures, time, technology, and people that asynchronous learning needs.</span></p><div><a href="resources/letter-to-school-administrators.html"><span class="zh">在线阅读</span><span class="en">Read online</span> →</a><a href="resources/letter-to-school-administrators.pdf" download><span class="zh">下载 PDF</span><span class="en">Download PDF</span> ↓</a><a href="resources/letter-to-school-administrators.docx" download><span class="zh">编辑 Word</span><span class="en">Edit in Word</span> ↓</a></div></article>
       <article><p><span class="zh">致导师</span><span class="en">For mentors</span></p><h3><span class="zh">导师手册</span><span class="en">Mentor Handbook</span></h3><p><span class="zh">为每周反馈、量规评分、隐私保护与学习者支持提供可执行的工作指南。</span><span class="en">A practical guide to weekly feedback, rubric-based assessment, privacy, and learner support.</span></p><div><a href="resources/mentor-handbook.html"><span class="zh">在线阅读</span><span class="en">Read online</span> →</a><a href="resources/mentor-handbook.pdf" download><span class="zh">下载 PDF</span><span class="en">Download PDF</span> ↓</a><a href="resources/mentor-handbook.docx" download><span class="zh">编辑 Word</span><span class="en">Edit in Word</span> ↓</a><a href="for-mentors.html"><span class="zh">导师工作说明</span><span class="en">Mentor overview</span> →</a></div></article>
     </div>
-  </section>
-  <section class="home-seal" aria-label="课程印记 The seal of this course">
-    <!-- assets/logo-seal.svg, inlined so the seal inherits the page colour -->
-    <svg class="home-seal-mark" viewBox="0 0 200 200" role="img" aria-labelledby="dl-seal-title">
-    <title id="dl-seal-title">Digital Learning 数字化学习 · 2026 · 本课程的印记 The seal of this course</title>
-    <defs><path id="dl-seal-arc" d="M18.5 100 A81.5 81.5 0 0 1 181.5 100" fill="none"/></defs>
-    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="100" cy="100" r="95.5" stroke-width="0.9"/><circle cx="100" cy="100" r="90.5" stroke-width="2"/><circle cx="100" cy="100" r="71" stroke-width="0.9"/></g>
-    <text class="seal-band"><textPath href="#dl-seal-arc" startOffset="48%" text-anchor="middle">DIGITAL LEARNING · 数字化学习</textPath></text>
-    <text class="seal-year" x="101.6" y="185.5" text-anchor="middle">2026</text>
-    <g fill="currentColor"><circle cx="19.5" cy="100" r="1.9"/><circle cx="180.5" cy="100" r="1.9"/></g>
-    <g transform="translate(42.4 37.7) scale(1.8)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="1.7"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="1.7"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.05"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.05"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.25"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.25"/><path d="M11.4 27.6 H24.2" stroke-width="1.35"/><path d="M11.4 32.6 H21" stroke-width="1.35"/><path d="M39.8 27.6 H52.6" stroke-width="1.35"/><path d="M39.8 32.6 H49.4" stroke-width="1.35"/><path d="M32 18 V48" stroke-width="1.85"/><path d="M29.6 26 H34.4" stroke-width="1.15"/><path d="M29.6 40 H34.4" stroke-width="1.15"/></g>
-    </svg>
   </section>
 </main>
 <footer class="site home-footer"><p>Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 2026–27</p><p><span class="zh">公开 · 自由 · 异步</span><span class="en">Public · Self-directed · Asynchronous</span></p><a href="#main"><span class="zh">回到顶部</span><span class="en">Back to top</span> ↑</a></footer>
