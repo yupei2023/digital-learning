@@ -1,7 +1,7 @@
 # B4 微课素材与录制脚本 Micro-lesson sources & recording scripts
 
 ## 现状 Status（2026-08-30）
-四个微课位、跟做页、任务页与单元首页全部配有公开 B 站短视频（密码安全漫画、密码泄露科普、密码管理器思路、数据泄露普法、强密码对照、密码全景科普、文件夹分类命名），另有"想学更多"里的 KeePass 入门 / Bitwarden 速览 / Apple 密码 App / 桌面整理。微课与跟做页的短视频计入相应分钟；首页密码科普与任务页文件夹视频为选看、不计入。**没有找到平台通用、面向中学生的"两步验证"专讲视频**（检索到的均为游戏外服、苹果账号等单一平台教程，或"如何关闭验证"的反向内容）——两步验证靠微课 3 文字版 + 任务第 4 步的寻找指引讲清；下方脚本保留，供教师日后自录替换。
+四个微课位、跟做页、任务页与单元首页全部配有公开 B 站短视频（密码安全漫画、密码泄露科普、密码管理器思路、数据泄露普法、强密码对照、密码全景科普、文件夹分类命名），另有"想学更多"里的 KeePass 入门 / Bitwarden 速览 / Apple 密码 App / 桌面整理。微课与跟做页的短视频计入相应分钟（r2 起微课 2 的 6:15 只计前 3 分钟，页内写明可停点，其余属选看）；首页密码科普与任务页文件夹视频为选看、不计入。**没有找到平台通用、面向中学生的"两步验证"专讲视频**（检索到的均为游戏外服、苹果账号等单一平台教程，或"如何关闭验证"的反向内容）——两步验证靠微课 3 文字版 + 任务第 4 步的寻找指引讲清；下方脚本保留，供教师日后自录替换。
 All lesson slots, the follow-along, the task page and the module home carry public Bilibili clips. Lesson/follow-along clips count inside their minutes; the module-home primer and the task page's folder clip are optional. **No platform-neutral "two-step verification for teenagers" video exists on Bilibili** (candidates were game- or Apple-specific, or taught switching verification OFF) — the second door relies on the micro-lesson 3 text and task step 4's search guidance. Scripts below are kept for future self-recorded replacements.
 
 ## 素材来源表 Sources
@@ -9,7 +9,7 @@ All lesson slots, the follow-along, the task page and the module home carry publ
 | 位置 Where | 素材 Item | 来源 / 链接 Source / link | 许可依据 Permission basis | 访问状态 Access |
 |---|---|---|---|---|
 | lesson-1 · w5 §3（复用同一段） | 漫话安全 密码安全篇（3:05，2022） | B 站 BV1BF411s7GX · UP 主 深圳市网络安全协会 | 官方外链播放器嵌入 + 直达链接 | BV 号经 B 站 view API 核实（2026-08-30，code 0，公开，单 P）；大陆播放**待实测**；无简介，内容**待 ShiFu 抽查** |
-| lesson-2 | 【柴知道】你的密码是怎么泄露的？（6:15，2020，15.8 万播放） | B 站 BV1hE411G7BL · UP 主 柴知道 | 同上 | view API 核实（2026-08-30）；**待实测**；科普频道，简介与主题一致（泄露链条） |
+| lesson-2 | 【柴知道】你的密码是怎么泄露的？（6:15，2020，15.8 万播放） | B 站 BV1hE411G7BL · UP 主 柴知道 | 同上 | view API 核实（2026-08-30）；**待实测**；科普频道，简介与主题一致（泄露链条）；r2 起页面只计前 3 分钟、其余选看（微课 2 kicker 的时间算术校正） |
 | lesson-3 | 真正懂安全的人，根本不背密码（密码管理器）（2:41，2026） | B 站 BV1mNE965E1J · UP 主 申看小霜 | 同上 | view API 核实（2026-08-30）；**待实测**；简介与主题一致（为何用密码管理器） |
 | lesson-4 | 漫话安全 数据泄露篇（2:50，2020 国家网络安全宣传周作品） | B 站 BV1tf4y1X7Jo · UP 主 青海普法 | 同上 | view API 核实（2026-08-30）；**待实测**；政务普法账号 |
 | activity 第一幕 | 什么样的密码最安全？我们应该如何设置密码？（2:15，2022） | B 站 BV18S4y1Y7BR · UP 主 雷雨室长 | 同上 | view API 核实（2026-08-30）；**待实测**；简介与标题一致 |

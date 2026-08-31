@@ -6,6 +6,8 @@ Semester 1, W5 · 5 pts · 🚫 **Independent** (no generative AI; passwords and
 状态 Status 2026-08-30：**r1 —— 无人值守流水线整单元建成，本地提交，未推送。** 原本"待 ShiFu 批准"的每一项都按推荐选项落实，逐条列在下方"替 ShiFu 决定的事项"，请 ShiFu 过目。学生页面无任何裸 `[placeholder]`——未知事实（建站平台的安全开关位置、Bitwarden 等外部连通）一律以"开课信公布 / 待实测"口径呈现（沿 B2 r2 / B3 的样式）；视频的大陆播放待 ShiFu 实测。本次提交同时把 B3 第 4 周页尾链接改为直链本单元（了结 B3 README 决定 19 的"即将上线"口径），并在课程首页加了 B4 一行。
 Built in full (r1) in the unattended pipeline and committed locally, not pushed. Every would-be "pending ShiFu" item took the recommended option; each is listed under "Decisions made on ShiFu's behalf" below. No raw `[placeholder]` on any student page — genuinely unknown facts (the builder's security-switch locations, Bitwarden's reachability) carry the "announced in the welcome letter / to verify" treatment established by B2 r2 and B3. This commit also flips B3's Week-4 footer link to point here and adds the B4 line on the course home.
 
+状态 Status 2026-08-30 **r2**：据 _tongxue 首测（L1–L4 · V1 · W1–W2）与 _jonassen 评估（J1–J4）完成修订——救援通道死循环的纸上出口（L1，P1）、讲义《账号安全卡》链接补齐（L3）、打码 SVG 竖排手机版 + 锚点直链（V1/W1）、纸本"安全处"共享房间句（L2）、微课 2 计时口径校正（6:15 只计前 3 分钟）、J1 开放判断句与清单 ③ 选写后缀（步骤分钟 5→4、8→9，总 120 不变）、J2「这把锁防的是谁」、J3「写真话」句（与 B2 有意呼应，闭 B2 评审问题 2、为 M9 铺垫）、J4「把不可逆改造成可逆」。逐条处理见 `feedback/s1-b4-accounts-passwords-privacy_xiaobai-response_2026-08-30.md`；新代决定 26–34 见下。Revised per the first student test (L1–L4, V1, W1–W2) and the curriculum review (J1–J4); finding-by-finding notes in the response file, new decisions 26–34 below. 仅 B4 模块文件有改动；课程首页与其他模块未动。
+
 核心问题 Essential question（教纲 v7 W5 行）：我的账号安全吗？Are my accounts safe?
 
 **本单元的特别之处 What makes B4 different**：这是数字基本功里第一个**动作带不可逆脾气**的周——密码改急了会把自己锁在门外，验证码给错一次收不回。因此按 B1 模板说明走**微课前置 + 彩排式跟做**，并把理由向学生言明（w5 §0 专节："本周为什么不先动手"，与 B2/B3 的任务式开场形成有意的对照）；任务的步骤顺序也立了硬规矩：**救援通道第一，换锁第二**（恢复方式确认能用之前不动密码），配"忘了新密码怎么办"救援卡与临时抄写规则。本单元同时承接两条既有线：B2 评估 J2 深化线——「能定位到真实的我吗」扩展为**发出之前的三问**（暴露了什么 · 谁能看到 · 拼起来能否定位），管住表单、资料页与截图；B1 命名规则线——"课程-周-内容-化名"如约扩展到整个文件世界。打码截图当证据，用的正是 B2 的标注手艺：**打码就是标注**。The first Digital Basics week whose actions carry an irreversible streak — hence micro-lessons-first with a rehearsal follow-along, the reason stated to students (w5 §0), and a hard task ordering: rescue channel before new locks. Two established threads land here: B2 review J2's generative privacy test grows into the three questions, and B1's file-naming rule extends, as promised, to the whole file world. Redaction IS annotation — B2's craft doing this week's evidence work.
@@ -54,6 +56,18 @@ English parallel: ① Complete the security setup on the course accounts and pub
 23. **页尾链接口径**：w5 页尾按惯例写"回到课程首页（B5 · 第 6 周即将上线）"；B3 w4 页尾同步改为直链本单元 w5（源片段 `tools/b3/w4.html` 已改、B3 重新生成，git 确认仅 w4.html 有差异）。课程首页在 B3 行后加 B4 一行——本次提交仅有的两处模块外改动。
 24. **情境引入与 reading.html**：单元首页转述教师《数码护照，你值得拥有》的"陌生国度 / 安全第一"意象（纯文字转述，未用家长视角内容）；无 reading.html（蓝图 §13 未给 B 周读本映射，沿 B1–B3 决定）。自测 6 题正确项位置 2·0·3·1·0·2，分散无规律。
 25. **命名**：文件夹 `b4-accounts-passwords-privacy`；页面 lesson-1-length-beats-complexity / lesson-2-one-key-many-doors / lesson-3-where-passwords-live / lesson-4-three-questions-before-posting / activity-security-rehearsal / task-1-secure-your-accounts；讲义 account-security-card。
+
+以下 26–34 为 r2（学生测试 + 课程评估修订轮）新增：
+
+26. **救援通道的例外出口（L1 · _tongxue P1）**：账号没有任何可用恢复方式、能补的又只有绑手机号时（邮箱账号自己常如此——它是别的账号的总后台，自己的后台却可能是空的），"临时抄写规则"升格为课程认可的救援通道——**改之前**先把现密码按纸上规矩抄好（家里固定安全处、不出门、不拍照），新密码顺利登录两次后销毁，清单第 ① 行如实记录。任务第 2 步硬门槛下明写此出口；跟做第三幕安抚句、w5 FAQ 第 4 条（解开"验证发到邮箱"对邮箱自身的圈）、自评 w5c3、导师评分表与句式库同口径。**措辞归 ShiFu。** 同时回答 _tongxue 问题 1：课程不推、也不要求学生为此绑手机号；绑与否仍是家庭决定（决定 17 不变），不绑也有出口。
+27. **微课 2 计时口径校正（_tongxue 算术备注）**：6:15 只计前 3 分钟——kicker、"先看一段"标题、视频说明三处写明"看到 3:00 可停，其余属选看不计入"，文字版"看完记住三件事"承接要点；四块预算 25/25/50/20 未动。**微课 1 的同款张力（5 分钟含 3:05）本轮未动，留 ShiFu 定**（其文字版更短，勉强立得住）。
+28. **J1 落地**：任务第 5 步加开放判断句（拿不准的一格用三问做一次自己的决定并写进证据）+ 清单第 ③ 行选写后缀（"一处我拿不准、最后决定保留或清空的格子，和我的理由"——不进等级）；步骤分钟重排：第 1 步 5→4、第 5 步 8→9，任务 50、总 120 不变；句式库新增接住选写行的专句。**隐私判断教学口径归 ShiFu（呼应决定 11）。**
+29. **J2 落地**：微课 3 四种"家"表前加统领之问「**这把锁防的是谁？**」，四类对手各点一次名（猜密码的程序 · 网站那头的失窃 · 来电要验证码的骗子 · 身边拿得到设备的人）；救援卡一行补"为什么是这个家"半句。**归 ShiFu。**
+30. **J3 落地**：lesson-4 三问结尾落「追不到真人的页面，才敢写真话——隐私护的不只是安全，还有你日志里的诚实」，与 B2 lesson-4 已有的同一句话**有意呼应**（页面明写"第 3 周你读过这句话，本周它有了完整的理由"——设计的回收，不是重复失误）。此关 B2 评审问题 2；M9（数字足迹）由此接。**归 ShiFu。**
+31. **J4 落地**：任务页"保命的一条"末尾点破「**先修后路，就是把"不可逆"改造成"可逆"**——今后任何大改动之前，先给自己留一条回头路」。**元原则口径归 ShiFu。**
+32. **讲义链接补齐（L3）**：微课 2 的承诺句、任务页（评分节前的选做提示）、want-more"读"各加《账号安全卡》直链；讲义定位为**选读参考**、不进任务硬性流程——回答 _tongxue 问题 2（若 ShiFu 想让它进第三幕"写救援卡"流程，改 tools/b4 两处片段重跑生成器即可）。
+33. **打码 SVG 改竖排手机版（V1/W1）**：视窗 640×420 → 420×572，判定标签从行内 11px 改为独立成行的 15px 粗体（390px 宽下约 12.7px，双语均可读，无需横屏）；figure 加锚点 `#redaction-figure`；任务硬性要求、任务第 6 步、w5 §5 任务卡、w5 FAQ 共四处"照微课 4 的图"改直达链接。
+34. **小修集**：纸本"安全处"补共享房间一句——标准是"不被随手看到"，不是保险箱（L2）；任务第 1 步补"现密码在家长手里的账号先约时间"半句（L4）；**W2（quiz/checklist 无 noscript 提示）不改**——共享组件，动 `assets/` 须 ShiFu 批准，沿 B1–B3 口径待全站统一处理。
 
 ---
 
@@ -104,7 +118,7 @@ English parallel: ① Complete the security setup on the course accounts and pub
 
 | 微课 25 | 跟做 25 | 任务 50 | 反思/日志 20 |
 |---|---|---|---|
-| 长度胜过复杂 5 · 一把钥匙 8 · 密码放哪里 6 · 三问 6 | 密码短语 8 · 分检卡 9 · 救援通道 8 | 列清单 5 · 修救援 8 · 换密码 12 · 第二道门 10 · 隐私巡查 8 · 取证发布 7 | 自测题（第 6 节）5 · 三行日志 15 |
+| 长度胜过复杂 5 · 一把钥匙 8 · 密码放哪里 6 · 三问 6 | 密码短语 8 · 分检卡 9 · 救援通道 8 | 列清单 4 · 修救援 8 · 换密码 12 · 第二道门 10 · 隐私巡查 9 · 取证发布 7 | 自测题（第 6 节）5 · 三行日志 15 |
 
 诚实的估计：设置菜单里找开关常超表内时间（页面明说不是学生的错）；改密码别放深夜（建议节奏注明理由）。选做不计入：首页密码科普（5:00）、任务页文件夹整理（5:21）、want-more 全部。
 
@@ -122,6 +136,16 @@ English parallel: ① Complete the security setup on the course accounts and pub
 | 非 B 站外链 | 0 条（工具只写名称不给外链，避免新增待实测面；Bitwarden 官网连通在 scripts.md 记"待实测"）；站内跨页链接（日历页、M0 课程说明、B3）均解析 |
 | quiz-data.js 语法（node --check）| PASS；正确项位置 2·0·3·1·0·2 |
 | B3 重新生成的副作用 | git status 确认仅 `s1/b3-translation-reading-tools/w4.html` 与课程首页有差异，B3 其余页面字节不变 |
+
+## 检查结果 Checks（r2 · 2026-08-30）
+
+| 检查 | 结果 |
+|---|---|
+| `python3 tools/build_b4.py` 重新生成 | PASS · 11 页 + 1 讲义全部重建；git 确认仅 B4 模块文件有差异，模块外零改动（课程首页未动）|
+| `tools/parity_check.py`（11 页 + 讲义，含新竖排 SVG 的双语标签）| PASS · 12 文件 · 0 issues |
+| `tools/site_checks.py`（链接锚点——含 #redaction-figure 四处直链与讲义三处直链 · S1 禁用词 · 页脚（无 "free"）· 分钟合计 · 无头 Chrome 双语 console · 390px 双语无溢出）| PASS · 12/12 页 |
+| 分钟算术 | 任务列 4+8+12+10+9+7 = 50；微课 25 · 跟做 25 · 任务 50 · 日志 20 = 120 不变（微课 2 页内计时口径 3 分钟视频 + 5 分钟文字）|
+| quiz-data.js · 共享 assets | 均未改动 |
 
 ## 待 ShiFu 实测 / 过目 For ShiFu
 - 上方"替 ShiFu 决定的事项"25 条，尤其第 3（诚实通道措辞）、第 6–7（密码方针与保管路线推荐——这是本单元最核心的教学立场）、第 9（视频计入分钟 + 3 段无简介抽查）、第 17（手机号政策口径）。
