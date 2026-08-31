@@ -5,11 +5,32 @@
 <meta name="description" content="Digital Learning 数字化学习是一门公开、自由、异步的双语自学课程。"><meta name="theme-color" content="#f4f7fa">
 <script>(function(){var l=null;try{l=localStorage.getItem("dl:lang")}catch(e){}if(l!=="zh"&&l!=="en"){var n=(navigator.language||"").toLowerCase();l=n.indexOf("zh")===0?"zh":"en"}var h=document.documentElement;h.setAttribute("data-lang",l);h.setAttribute("lang",l==="zh"?"zh-CN":"en")})();</script>
 <title data-zh="Digital Learning 数字化学习 · 课程首页" data-en="Digital Learning · Course home">Digital Learning · Course home</title><link rel="stylesheet" href="assets/site.css?v=home-simple-3">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+/* Marks and pattern from assets/ — inlined as SVG so they inherit currentColor
+   and follow the page rather than the reader's OS theme. See tools/HEADER-LOGO.md. */
+.home-wordmark{gap:.6rem}
+.home-brand-mark{width:30px;height:30px;flex:none;color:var(--h-navy)}
+
+/* the community pattern: a decorative strip left of the three letters */
+.community-with-pattern{display:flex;align-items:stretch;gap:clamp(1.5rem,2.6vw,2.75rem)}
+.community-with-pattern>.community-resources{flex:1 1 auto;min-width:0}
+.community-pattern{position:relative;flex:0 0 120px;overflow:hidden;color:var(--h-navy);opacity:.5}
+.community-pattern>svg{position:absolute;top:0;left:0;height:100%}
+@media(max-width:1000px){.community-with-pattern{display:block}.community-pattern{display:none}}
+
+/* the seal that signs the course, above the instructor's name in the footer */
+.home-seal{padding:0 clamp(1.25rem,5vw,5rem) .5rem;background:var(--h-paper)}
+.home-seal-mark{display:block;width:96px;height:96px;color:var(--h-navy);opacity:.68}
+.home-seal .seal-band{font-family:Georgia,"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:10.5px;letter-spacing:1.9px;fill:currentColor}
+.home-seal .seal-year{font-family:Georgia,"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:12px;letter-spacing:3.2px;fill:currentColor}
+@media(max-width:600px){.home-seal-mark{width:82px;height:82px;opacity:.78}}
+</style>
 </head>
 <body class="course-home">
 <a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
 <header class="site home-header"><div class="wrap">
-  <a class="brand home-wordmark" href="index.html" aria-label="Digital Learning course home"><span class="home-mark" aria-hidden="true">DL</span><strong>Digital Learning</strong></a>
+  <a class="brand home-wordmark" href="index.html" aria-label="Digital Learning course home"><svg class="home-brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg><strong>Digital Learning</strong></a>
   <nav aria-label="Course navigation"><a href="#modules"><span class="zh">课程单元</span><span class="en">Modules</span></a><a href="#community"><span class="zh">学习共同体</span><span class="en">Community</span></a><a href="calendar.html"><span class="zh">日历</span><span class="en">Calendar</span></a></nav>
   <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch language 切换语言"><span data-l="en">English</span><span class="sep" aria-hidden="true"> / </span><span data-l="zh">中文</span></button>
 </div></header>
@@ -42,11 +63,36 @@
   </section>
   <section class="home-community" id="community" aria-labelledby="community-title">
     <div class="home-community-intro"><p class="home-kicker"><span class="zh">学习共同体</span><span class="en">Learning community</span></p><h2 id="community-title"><span class="zh">一起支持自主学习</span><span class="en">Supporting independent learning, together</span></h2><p><span class="zh">自主学习并不意味着独自承担。家长、学校管理者与导师各有不同的角色，也共享同一个目标：为学习者创造时间、信任与持续支持。</span><span class="en">Independent learning does not mean carrying everything alone. Parents, school administrators, and mentors play different roles while sharing one goal: creating time, trust, and sustained support for learners.</span></p></div>
-    <div class="community-resources">
+    <div class="community-with-pattern">
+      <!-- assets/pattern-community.svg, inlined: one continuous line is the shared course,
+           each learner reaches it by their own stem, and three stand free. Decoration only. -->
+      <div class="community-pattern" aria-hidden="true"><svg width="120" height="100%" focusable="false"><defs><g id="dl-cm-mark" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" opacity=".58"><path d="M-8 2 Q0 -2.6 8 2"/><path d="M-8 5.6 Q0 1 8 5.6"/></g><pattern id="dl-cm-tile" width="120" height="160" patternUnits="userSpaceOnUse"><g>
+<path d="M60 0 V160" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".32"/>
+<g fill="none" stroke="currentColor" stroke-width="1" opacity=".2"><circle cx="32" cy="17.8" r="14"/><circle cx="92" cy="113.8" r="14"/><circle cx="74" cy="129.3" r="10"/><circle cx="26" cy="81.8" r="12"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".4"><path d="M41 17.8 H58"/><path d="M79 49.8 H62"/><path d="M35 81.8 H58"/><path d="M83 113.8 H62"/><path d="M47 145.8 H58"/><path d="M71.4 1.3 H62"/><path d="M93.4 65.3 H62"/><path d="M20.6 97.3 H58"/><path d="M67.4 129.3 H62"/><path d="M71.4 161.3 H62"/><path d="M98.6 9 H62"/><path d="M78.6 73 H62"/><path d="M39.4 105 H58"/></g>
+<g fill="currentColor" opacity=".62"><circle cx="60" cy="17.8" r="1.7"/><circle cx="60" cy="49.8" r="1.7"/><circle cx="60" cy="81.8" r="1.7"/><circle cx="60" cy="113.8" r="1.7"/><circle cx="60" cy="145.8" r="1.7"/><circle cx="60" cy="1.3" r="1.4"/><circle cx="60" cy="65.3" r="1.4"/><circle cx="60" cy="97.3" r="1.4"/><circle cx="60" cy="129.3" r="1.4"/><circle cx="60" cy="161.3" r="1.4"/><circle cx="60" cy="9" r="1.2"/><circle cx="60" cy="73" r="1.2"/><circle cx="60" cy="105" r="1.2"/></g>
+<use href="#dl-cm-mark" transform="translate(32 16)"/><use href="#dl-cm-mark" transform="translate(88 48)"/><use href="#dl-cm-mark" transform="translate(26 80)"/><use href="#dl-cm-mark" transform="translate(92 112)"/><use href="#dl-cm-mark" transform="translate(38 144)"/>
+<use href="#dl-cm-mark" transform="translate(78 0) scale(.72)"/><use href="#dl-cm-mark" transform="translate(18 32) scale(.72)"/><use href="#dl-cm-mark" transform="translate(100 64) scale(.72)"/><use href="#dl-cm-mark" transform="translate(14 96) scale(.72)"/><use href="#dl-cm-mark" transform="translate(74 128) scale(.72)"/><use href="#dl-cm-mark" transform="translate(78 160) scale(.72)"/>
+<use href="#dl-cm-mark" transform="translate(104 8) scale(.56)"/><use href="#dl-cm-mark" transform="translate(46 40) scale(.56)"/><use href="#dl-cm-mark" transform="translate(84 72) scale(.56)"/><use href="#dl-cm-mark" transform="translate(34 104) scale(.56)"/><use href="#dl-cm-mark" transform="translate(98 136) scale(.56)"/>
+</g></pattern></defs><rect width="120" height="100%" fill="url(#dl-cm-tile)"/></svg></div>
+      <div class="community-resources">
       <article><p><span class="zh">致家长</span><span class="en">For parents</span></p><h3><span class="zh">致家长的一封信</span><span class="en">A Letter to Parents</span></h3><p><span class="zh">了解课程如何运行、怎样保护学习者，以及家庭可以提供的具体支持。</span><span class="en">Understand how the course works, how learners are protected, and how families can help in practical ways.</span></p><div><a href="resources/letter-to-parents.html"><span class="zh">在线阅读</span><span class="en">Read online</span> →</a><a href="resources/letter-to-parents.pdf" download><span class="zh">下载 PDF</span><span class="en">Download PDF</span> ↓</a><a href="resources/letter-to-parents-editable.docx" download><span class="zh">编辑 Word</span><span class="en">Edit in Word</span> ↓</a></div></article>
       <article><p><span class="zh">致学校管理者</span><span class="en">For school administrators</span></p><h3><span class="zh">致学校管理者的一封信</span><span class="en">A Letter to School Administrators</span></h3><p><span class="zh">了解学校如何为异步学习提供制度、时间、技术与人员支持。</span><span class="en">See how schools can provide the structures, time, technology, and people that asynchronous learning needs.</span></p><div><a href="resources/letter-to-school-administrators.html"><span class="zh">在线阅读</span><span class="en">Read online</span> →</a><a href="resources/letter-to-school-administrators.pdf" download><span class="zh">下载 PDF</span><span class="en">Download PDF</span> ↓</a><a href="resources/letter-to-school-administrators.docx" download><span class="zh">编辑 Word</span><span class="en">Edit in Word</span> ↓</a></div></article>
       <article><p><span class="zh">致导师</span><span class="en">For mentors</span></p><h3><span class="zh">导师手册</span><span class="en">Mentor Handbook</span></h3><p><span class="zh">为每周反馈、量规评分、隐私保护与学习者支持提供可执行的工作指南。</span><span class="en">A practical guide to weekly feedback, rubric-based assessment, privacy, and learner support.</span></p><div><a href="resources/mentor-handbook.html"><span class="zh">在线阅读</span><span class="en">Read online</span> →</a><a href="resources/mentor-handbook.pdf" download><span class="zh">下载 PDF</span><span class="en">Download PDF</span> ↓</a><a href="resources/mentor-handbook.docx" download><span class="zh">编辑 Word</span><span class="en">Edit in Word</span> ↓</a><a href="for-mentors.html"><span class="zh">导师工作说明</span><span class="en">Mentor overview</span> →</a></div></article>
+      </div>
     </div>
+  </section>
+  <section class="home-seal" aria-label="课程印记 The seal of this course">
+    <!-- assets/logo-seal.svg, inlined so the seal inherits the page colour -->
+    <svg class="home-seal-mark" viewBox="0 0 200 200" role="img" aria-labelledby="dl-seal-title">
+    <title id="dl-seal-title">Digital Learning 数字化学习 · 2026 · 本课程的印记 The seal of this course</title>
+    <defs><path id="dl-seal-arc" d="M18.5 100 A81.5 81.5 0 0 1 181.5 100" fill="none"/></defs>
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="100" cy="100" r="95.5" stroke-width="0.9"/><circle cx="100" cy="100" r="90.5" stroke-width="2"/><circle cx="100" cy="100" r="71" stroke-width="0.9"/></g>
+    <text class="seal-band"><textPath href="#dl-seal-arc" startOffset="48%" text-anchor="middle">DIGITAL LEARNING · 数字化学习</textPath></text>
+    <text class="seal-year" x="101.6" y="185.5" text-anchor="middle">2026</text>
+    <g fill="currentColor"><circle cx="19.5" cy="100" r="1.9"/><circle cx="180.5" cy="100" r="1.9"/></g>
+    <g transform="translate(42.4 37.7) scale(1.8)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="1.7"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="1.7"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.05"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.05"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.25"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.25"/><path d="M11.4 27.6 H24.2" stroke-width="1.35"/><path d="M11.4 32.6 H21" stroke-width="1.35"/><path d="M39.8 27.6 H52.6" stroke-width="1.35"/><path d="M39.8 32.6 H49.4" stroke-width="1.35"/><path d="M32 18 V48" stroke-width="1.85"/><path d="M29.6 26 H34.4" stroke-width="1.15"/><path d="M29.6 40 H34.4" stroke-width="1.15"/></g>
+    </svg>
   </section>
 </main>
 <footer class="site home-footer"><p>Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan · 2026–27</p><p><span class="zh">公开 · 异步 · 各地都能打开</span><span class="en">Public · Asynchronous · Reachable wherever you are</span></p><a href="#main"><span class="zh">回到顶部</span><span class="en">Back to top</span> ↑</a></footer>
