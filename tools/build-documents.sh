@@ -4,7 +4,7 @@
 # Two different products come out of the same sources, and they are built by
 # different tools on purpose:
 #
-#   .html  the page a parent, a principal or a mentor READS ONLINE. It is a page of
+#   .html  the page a parent or a principal READS ONLINE. It is a page of
 #          this site — site.css, lang.js, the language button, and every unit written
 #          as <span class="zh"> + <span class="en"> so the reader sees ONE language.
 #          Built by tools/build-community-html.py. Pandoc cannot produce that shape.
@@ -18,7 +18,8 @@
 # Sources of truth
 #   tools/documents/letter-to-parents.md                 -> letter-to-parents.*
 #   tools/documents/letter-to-school-administrators.md   -> letter-to-school-administrators.*
-#   for-mentors.html  (the site page itself)             -> mentor-handbook.*
+#   for-mentors.html  (the site page itself)             -> mentor-handbook.{docx,pdf} only —
+#                                                           the page itself is the online version
 #
 # Run from anywhere. Requires: pandoc, python3, Google Chrome.
 
@@ -33,7 +34,7 @@ trap 'rm -rf "$TMP" resources/.print-*.html' EXIT
 
 footer () { printf '<footer class="site">%s · %s</footer>\n' "$FOOT" "$1" > "$TMP/foot.html"; }
 
-# --- 1. the online pages, inside the design system ----------------------------
+# --- 1. the two letters as online pages, inside the design system --------------
 python3 tools/build-community-html.py
 
 # --- 2. Letter to Parents · editable and printable ----------------------------

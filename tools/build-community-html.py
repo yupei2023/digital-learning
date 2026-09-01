@@ -27,7 +27,10 @@ worse than showing a short bilingual label twice.
   Sources of truth
     tools/documents/letter-to-parents.md               -> resources/letter-to-parents.html
     tools/documents/letter-to-school-administrators.md -> resources/letter-to-school-administrators.html
-    for-mentors.html (already a site page)             -> resources/mentor-handbook.html
+
+  The mentor handbook has no generated HTML. for-mentors.html IS the handbook — it was
+  already a page of this site — and resources/mentor-handbook.html was the same document
+  at a second URL. That copy is gone; the .docx and .pdf are still built from this page.
 
   Not touched here: the .docx and .pdf downloads. Those stay pandoc/Chrome products
   and keep using assets/community-doc.css; tools/build-documents.sh builds them from
@@ -129,6 +132,24 @@ def expand_strs(ils):
 MIN_EN = 10        # an English tail shorter than this is punctuation, not a translation
 MIN_ZH_IDEO = 2    # and the Chinese side must be more than a stray bracket
 
+def split_at_break(ils):
+    """Fallback: the author wrote the Chinese line, a line break, then the English line.
+       A break the author typed is far better evidence than any guess, so it is trusted
+       even when the English half itself contains Chinese — as a signature does
+       ("Your child's mentor, Digital Learning 数字化学习"), which is exactly the case the
+       'split after the last Chinese node' rule cannot see. The right half must still
+       READ as English: at most a quarter of its characters may be ideographs."""
+    brk = [i for i, n in enumerate(ils) if n.get('t') in ('SoftBreak', 'LineBreak')]
+    for i in brk:
+        zh, en = ils[:i], ils[i + 1:]
+        if not zh or not en: continue
+        zt, et = node_text(zh).strip(), node_text(en).strip()
+        if not has_cjk(zh) or len(et) < MIN_EN: continue
+        if len(IDEOCH.findall(zt)) < MIN_ZH_IDEO: continue
+        if len(IDEOCH.findall(et)) > len(et) * 0.25: continue   # right half is not English
+        return zh, en
+    return None
+
 def split_inlines(ils):
     """(zh_inlines, en_inlines) or None. The rule the documents actually follow is
        'Chinese first, then English', so the split is after the LAST Chinese node —
@@ -147,7 +168,8 @@ def split_inlines(ils):
     idx = [i for i, n in enumerate(ils) if has_cjk(n)]
     if not idx: return None
     last = idx[-1]
-    if last == len(ils) - 1: return None          # Chinese runs to the end: interleaved
+    if last == len(ils) - 1:                      # Chinese runs to the end: interleaved
+        return split_at_break(ils)                # unless the author broke the two lines
     zh, en = ils[:last + 1], ils[last + 1:]
     while zh and zh[-1].get('t') in ('Space', 'SoftBreak'): zh.pop()
     while en and en[0].get('t') in ('Space', 'SoftBreak'): en.pop(0)
@@ -243,10 +265,20 @@ def render_blocks(blocks, where, used=None, level_shift=0):
         if t in ('Para', 'Plain'):
             ils = b['c']
             nxt = blocks[i + 1] if i + 1 < len(blocks) else None
-            if (nxt and nxt.get('t') in ('Para', 'Plain')
-                    and has_cjk(ils) and not has_cjk(nxt['c'])
-                    and len(node_text(nxt['c']).strip()) >= MIN_EN):
-                out.append('<p>%s</p>' % bi(render(ils), render(nxt['c']))); i += 2; continue
+            if nxt and nxt.get('t') in ('Para', 'Plain'):
+                # Both languages may end with the SAME 【请填写 Fill in：…】 note. Left in
+                # place it makes the English paragraph test as "contains Chinese", the
+                # pair never forms, and the reader gets both languages stacked — the very
+                # fault this script exists to remove. Peel the note off both sides, pair
+                # the sentences, then show the note once after them.
+                zh_h, zh_note = strip_fillin(expand_strs(ils))
+                en_h, en_note = strip_fillin(expand_strs(nxt['c']))
+                if (has_cjk(zh_h) and not has_cjk(en_h)
+                        and len(node_text(en_h).strip()) >= MIN_EN):
+                    note = zh_note if zh_note == en_note else (zh_note + ' ' + en_note).strip()
+                    out.append('<p>%s%s%s</p>'
+                               % (bi(render(zh_h), render(en_h)), ' ' if note else '', note))
+                    i += 2; continue
             out.append('<p>%s</p>' % bi_inlines(ils, where)); i += 1; continue
 
         if t == 'HorizontalRule':
@@ -403,37 +435,47 @@ def from_markdown(src, out, title_zh, title_en, kicker_zh, kicker_en, downloads,
         page(title_zh, title_en, kicker_zh, kicker_en, toc, body, downloads, desc))
     print('  wrote', os.path.relpath(out, ROOT), '(%d sections)' % len(toc))
 
-def from_site_page(src, out, title_zh, title_en, kicker_zh, kicker_en, downloads, desc):
-    """for-mentors.html is already a page of this site: reuse its <main>, fix the
-       relative links for resources/, and give the long read a contents list."""
-    s = open(src, encoding='utf-8').read()
-    body = s[s.index('<main id="main">') + len('<main id="main">'): s.index('</main>')]
-    # this page lives one directory down
-    body = re.sub(r'href="(?!https?:|#|\.\./|mailto:)', 'href="../', body)
-    body = re.sub(r'src="(?!https?:|\.\./|data:)', 'src="../', body)
-    # its own kicker and h1 are replaced by the shell's
-    body = re.sub(r'^\s*<p class="kicker">.*?</p>\s*', '', body, count=1, flags=re.S)
-    body = re.sub(r'^\s*<h1>.*?</h1>\s*', '', body, count=1, flags=re.S)
-    toc = []
-    used = set()
-    def head(m):
-        attrs, inner = m.group(1), m.group(2)
-        had = re.search(r'\bid="([^"]+)"', attrs)
-        zh = re.search(r'<span class="zh">(.*?)</span>', inner, re.S)
-        en = re.search(r'<span class="en">(.*?)</span>', inner, re.S)
-        zt = zh.group(1) if zh else inner
-        et = en.group(1) if en else inner
-        sid = had.group(1) if had else (
-            re.sub(r'[^a-z0-9]+', '-', re.sub(r'<[^>]+>', '', et).lower()).strip('-') or 'section')
-        b = sid; i = 2
-        while sid in used: sid = '%s-%d' % (b, i); i += 1
-        used.add(sid)
-        toc.append((sid, zt, et))
-        return '<h2 id="%s">%s</h2>' % (sid, inner)
-    body = re.sub(r'<h2([^>]*)>(.*?)</h2>', head, body, flags=re.S)
-    open(out, 'w', encoding='utf-8').write(
-        page(title_zh, title_en, kicker_zh, kicker_en, toc, body, downloads, desc))
-    print('  wrote', os.path.relpath(out, ROOT), '(%d sections)' % len(toc))
+# ------------------------------------------------------------------- tripwire
+# These three documents were once raw pandoc output: no site.css, no language button,
+# and not one <span class="zh"> — so a parent read every paragraph twice. Getting them
+# back was the most expensive fix in the site-wide review, and the way it would be lost
+# again is quietly: someone points pandoc at resources/*.html "just to regenerate it",
+# or drops the language button while editing for-mentors.html by hand. This gate runs at
+# the end of every build and stops it, loudly, before a broken page reaches the site.
+DOCS = ['resources/letter-to-parents.html',
+        'resources/letter-to-school-administrators.html',
+        'for-mentors.html']   # the mentor handbook: a site page in its own right
+
+MUST_HAVE = [('assets/site.css',      'the site stylesheet'),
+             ('assets/lang.js',       'the language script'),
+             ('data-lang-toggle',     'the language button'),
+             ('class="skip"',         'the skip-to-content link'),
+             ('rel="icon"',           'the favicon'),
+             ('<title data-zh',       'a bilingual <title>')]
+MUST_NOT = [('community-doc.css', 'the print-only stylesheet (paper rules on a screen page)'),
+            ('pandoc',            'a pandoc fingerprint'),
+            ('reveal.js',         "pandoc's default stylesheet")]
+
+def verify():
+    bad = []
+    for d in DOCS:
+        path = os.path.join(ROOT, d)
+        if not os.path.exists(path):
+            bad.append('%s: missing' % d); continue
+        s = open(path, encoding='utf-8').read()
+        for needle, what in MUST_HAVE:
+            if needle not in s: bad.append('%s: no %s' % (d, what))
+        for needle, what in MUST_NOT:
+            if needle in s: bad.append('%s: contains %s' % (d, what))
+        z, e = s.count('class="zh"'), s.count('class="en"')
+        if z != e: bad.append('%s: %d zh spans but %d en spans' % (d, z, e))
+        elif z == 0: bad.append('%s: not one bilingual span — the two languages are stacked' % d)
+        else: print('  %-46s %d bilingual pairs' % (d, z))
+    if bad:
+        print('\nTHESE DOCUMENTS ARE OUTSIDE THE DESIGN SYSTEM:')
+        for b in bad: print('   ' + b)
+        sys.exit(1)
+    print('  all three documents are inside the design system')
 
 def main():
     os.chdir(ROOT)
@@ -455,19 +497,13 @@ def main():
          ('letter-to-school-administrators.docx', '编辑 Word', 'Edit in Word')],
         '致学校管理者的一封信：一页看懂这门课，以及整门开设、嵌入已有课程、开放资源三种落地方式。 · '
         'A letter to school administrators: the course on one page, and three ways to implement it.')
-    from_site_page(
-        'for-mentors.html', 'resources/mentor-handbook.html',
-        '导师手册', 'Mentor Handbook',
-        '课程站点 · 公开文件', 'Course site · Open document',
-        [('mentor-handbook.pdf', '下载 PDF', 'Download PDF'),
-         ('mentor-handbook.docx', '编辑 Word', 'Edit in Word')],
-        '导师手册：导师每周做什么、怎么按量规评分、怎么写反馈，以及哪些事导师一概不做。 · '
-        'Mentor handbook: what a mentor does each week, how work is scored, how feedback is written, and what a mentor never does.')
     if SHARED:
         print('\n%d run(s) could not be split into zh/en and are shown in both languages:' % len(SHARED))
         for w, t in SHARED: print('   [%s] %s' % (w, t))
     else:
         print('\nevery bilingual run split cleanly')
+    print('\nchecking the three documents against the design system')
+    verify()
 
 if __name__ == '__main__':
     main()

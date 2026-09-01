@@ -97,17 +97,18 @@ site, and a screen reader that announced both would say it twice.
   seal's ring lettering would land in front of it.
 * **`diagrams.css` is not needed** for the mark, the favicon or the seal. Link
   it only on pages that actually carry a `dl-fig` diagram.
-* **The three pages in `resources/` were left alone.** They are pandoc output,
-  so a hand-added favicon line would be erased by the next
-  `tools/build-documents.sh`. To give them one, add
-  `-H tools/document-head.html` (a file holding just the
-  `<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">` line) to
-  each of the three `pandoc … -o resources/*.html` calls, then rebuild — the
-  rebuild also rewrites the DOCX and PDF files, so do it in a pass of its own.
-* **`for-mentors.html` is a document source.** `tools/build-documents.sh` runs
-  pandoc over it to make `resources/mentor-handbook.{html,docx,pdf}`. After the
-  next rebuild, check that the inline `<svg>` in its header did not leak into
-  the handbook; if it did, strip it in the Lua filter.
+* **The pages in `resources/` now carry the mark and the favicon like any other
+  page.** They are no longer pandoc output. `tools/build-community-html.py` writes
+  them from `assets/page-template.html`'s shell — header mark, favicon, skip link,
+  language button, bilingual `<title>` — so a rebuild puts the favicon back rather
+  than erasing it. Nothing here needs a hand-added `<link rel="icon">`, and the
+  builder fails the build if one of these pages ever loses it.
+* **`for-mentors.html` is both a site page and a document source.** It IS the mentor
+  handbook online; `tools/build-documents.sh` runs pandoc over it only to make
+  `resources/mentor-handbook.{docx,pdf}`. `resources/mentor-handbook.html` used to be
+  a second copy of it at a second URL and is gone. `tools/document-print-filter.lua`
+  strips the inline `<svg>`, the in-page contents list and the download buttons from
+  the paper editions; check after any rebuild that none of them leaked back in.
 
 ---
 
