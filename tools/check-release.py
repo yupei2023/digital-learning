@@ -22,7 +22,10 @@ Gates
   8  with --bilibili: every BV id resolves through api.bilibili.com/x/web-interface/view.
   9  every <button> declares type="button". Inside a form the default is "submit", and
      this one has now regressed twice on newly written pages.
- 10  the role in this course is 导师 / mentor and nothing else. 助教 and "TA" in the
+ 10  container tags balance: every <div>, <section>, <main>, <table>, <ul>, <ol> that
+     opens also closes. Browsers repair the damage silently, which is exactly why a
+     stray </div> (found once) and an unclosed <ol> (found once) need a gate.
+ 11  the role in this course is 导师 / mentor and nothing else. 助教 and "TA" in the
      teaching-assistant sense are forbidden anywhere in the repo. Note that bare "TA" is
      also the Chinese gender-neutral pronoun (B1 and B2 use it that way), so only the
      English article forms and "teaching assistant" are matched.
@@ -38,6 +41,10 @@ os.chdir(ROOT)
 EXEMPT = ('rubric.html', 'quiz.html', 'want-more.html', 'self-check.html', 'statement.html')
 BLOCK = re.compile(r'</?(?:li|p|td|th|h[1-6]|summary)\b')
 
+# assets/page-template.html is a template, not a page: its relative hrefs and script
+# paths are written for a page two directories deep, so at the template's own location
+# they do not resolve. Audited as a page it contributes ~10 broken-link and 3 console
+# false positives per run and nothing else — excluded here, deliberately.
 pages = [f for f in sorted(glob.glob('**/*.html', recursive=True)) if f != 'assets/page-template.html']
 docs = sorted(glob.glob('**/*.md', recursive=True)) + sorted(glob.glob('tools/documents/*.md'))
 fail = []
@@ -111,22 +118,28 @@ for f in pages:
         if not re.search(r'\btype\s*=', m.group(0)):
             bad(9, '%s: a <button> has no type — inside a form it would submit' % f)
 
+    body = re.sub(r'<!--.*?-->', '', s, flags=re.S)
+    for tag in ('div', 'section', 'main', 'table', 'ul', 'ol'):
+        o = len(re.findall(r'<%s\b' % tag, body)); c = len(re.findall(r'</%s>' % tag, body))
+        if o != c:
+            bad(10, '%s: %d <%s> opened but %d closed' % (f, o, tag, c))
+
     for pat, why in ((r'助教', '助教'), (r'\b(?:a|an|the)\s+TAs?\b', 'a TA'),
                      (r'\bTAs\b', 'TAs'), (r'(?i)teaching\s+assistants?', 'teaching assistant')):
         if re.search(pat, s):
-            bad(10, '%s: says %s — this course has 导师 / mentors, never 助教 or a TA' % (f, why))
+            bad(11, '%s: says %s — this course has 导师 / mentors, never 助教 or a TA' % (f, why))
 
     ids = re.findall(r'\sid="([^"]+)"', s)
     for k, v in collections.Counter(ids).items():
         if v > 1: bad(7, '%s: id "%s" appears %d times' % (f, k, v))
 
-# ---- 10, over the Markdown too --------------------------------------------
+# ---- 11, over the Markdown too --------------------------------------------
 for f in sorted(set(docs)):
     s = open(f, encoding='utf-8').read()
     for pat, why in ((r'助教', '助教'), (r'\b(?:a|an|the)\s+TAs?\b', 'a TA'),
                      (r'\bTAs\b', 'TAs'), (r'(?i)teaching\s+assistants?', 'teaching assistant')):
         if re.search(pat, s):
-            bad(10, '%s: says %s — this course has 导师 / mentors, never 助教 or a TA' % (f, why))
+            bad(11, '%s: says %s — this course has 导师 / mentors, never 助教 or a TA' % (f, why))
 
 # ---- 8 ----------------------------------------------------------------------
 if '--bilibili' in sys.argv:
