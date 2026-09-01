@@ -1,35 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="dl-seal-title dl-seal-desc">
-<title id="dl-seal-title">Digital Learning 数字化学习 · 2026</title>
-<desc id="dl-seal-desc">A light circular seal: the Digital Learning mark — an open spread that reads either as two facing pages or as two lit panels — inside a thin band carrying DIGITAL LEARNING · 数字化学习, with the year 2026 at the foot. 圆形印记：中间是课程标识——一个既可读作两页书、也可读作两块亮起面板的对开面；外圈细带书「DIGITAL LEARNING · 数字化学习」，底部年份 2026。</desc>
+<title id="dl-seal-title">Digital Learning 数字化学习 · 本课程的印记 The seal of this course</title>
+<desc id="dl-seal-desc">深色圆形实地印记，课程标识以镂空方式刻在其上；外围一道细环。两台笔记本电脑相对扣放，屏幕在顶端相抵、留出一道窄缝，向下向外张开，机身沿下缘外展——合起来是一本摊开的书的轮廓。Two laptop computers set facing each other: their screens meet at the top, leaving a narrow gutter, and open downward and outward with the bodies splayed along the lower edge — together the silhouette of an open book. A solid dark disc with the course mark cut out of it, inside a thin outer ring.</desc>
 <style>
 svg:root{color:var(--dl-logo-ink,#183b5d)}
 @media (prefers-color-scheme:dark){svg:root{color:var(--dl-logo-ink,#c2d5e7)}}
-.seal-band{font-family:Georgia,"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:10.5px;letter-spacing:1.9px;fill:currentColor}
-.seal-year{font-family:Georgia,"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:12px;letter-spacing:3.2px;fill:currentColor}
 </style>
-<defs><path id="dl-seal-arc" d="M18.5 100 A81.5 81.5 0 0 1 181.5 100" fill="none"/></defs>
-<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="100" cy="100" r="95.5" stroke-width="0.9"/>
-  <circle cx="100" cy="100" r="90.5" stroke-width="2"/>
-  <circle cx="100" cy="100" r="71" stroke-width="0.9"/>
-</g>
-<text class="seal-band"><textPath href="#dl-seal-arc" startOffset="48%" text-anchor="middle">DIGITAL LEARNING · 数字化学习</textPath></text>
-<text class="seal-year" x="101.6" y="185.5" text-anchor="middle">2026</text>
-<g fill="currentColor"><circle cx="19.5" cy="100" r="1.9"/><circle cx="180.5" cy="100" r="1.9"/></g>
-<!-- the mark, at 1.8×, with its strokes thinned so the band stays the lighter element -->
-<g transform="translate(42.4 37.7) scale(1.8)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="1.7"/>
-  <path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="1.7"/>
-  <path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.05"/>
-  <path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.05"/>
-  <rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.25"/>
-  <rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.25"/>
-  <path d="M11.4 27.6 H24.2" stroke-width="1.35"/>
-  <path d="M11.4 32.6 H21" stroke-width="1.35"/>
-  <path d="M39.8 27.6 H52.6" stroke-width="1.35"/>
-  <path d="M39.8 32.6 H49.4" stroke-width="1.35"/>
-  <path d="M32 18 V48" stroke-width="1.85"/>
-  <path d="M29.6 26 H34.4" stroke-width="1.15"/>
-  <path d="M29.6 40 H34.4" stroke-width="1.15"/>
-</g>
+<defs>
+  <mask id="dl-seal-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+    <rect width="200" height="200" fill="#000"/>
+    <circle cx="100" cy="100" r="88" fill="#fff"/>
+    <g transform="translate(26.15 26.15) scale(2.308)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M28.77 15.34 L11.03 22.66 Q9 23.5 9 25.7 L9 41.3 Q9 43.5 11.09 42.83 L28.71 37.17 Q30.8 36.5 30.8 34.3 L30.8 16.7 Q30.8 14.5 28.77 15.34 Z" stroke-width="2.4"/>
+  <path d="M10.47 43.03 L29.33 36.97 Q30.8 36.5 30.8 38.04 L30.8 38.96 Q30.8 40.5 29.35 41.03 L7.45 48.97 Q6 49.5 6.69 48.12 L8.31 44.88 Q9 43.5 10.47 43.03 Z" stroke-width="2.2"/>
+  <path d="M12.05 29.14 L25.13 24.14" stroke-width="1.7"/>
+  <path d="M12.05 34.41 L20.99 31.21" stroke-width="1.7"/>
+  <path d="M10.76 45.38 L26.61 39.94" stroke-width="1.4"/>
+  <path d="M35.23 15.34 L52.97 22.66 Q55 23.5 55 25.7 L55 41.3 Q55 43.5 52.91 42.83 L35.29 37.17 Q33.2 36.5 33.2 34.3 L33.2 16.7 Q33.2 14.5 35.23 15.34 Z" stroke-width="2.4"/>
+  <path d="M53.53 43.03 L34.67 36.97 Q33.2 36.5 33.2 38.04 L33.2 38.96 Q33.2 40.5 34.65 41.03 L56.55 48.97 Q58 49.5 57.31 48.12 L55.69 44.88 Q55 43.5 53.53 43.03 Z" stroke-width="2.2"/>
+  <path d="M51.95 29.14 L38.87 24.14" stroke-width="1.7"/>
+  <path d="M51.95 34.41 L43.01 31.21" stroke-width="1.7"/>
+  <path d="M53.24 45.38 L37.39 39.94" stroke-width="1.4"/>
+    </g>
+  </mask>
+</defs>
+<circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<rect width="200" height="200" fill="currentColor" mask="url(#dl-seal-cut)"/>
 </svg>
