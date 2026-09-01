@@ -81,3 +81,18 @@ Embeds use Bilibili's official external player with danmaku off and no autoplay,
 - 编辑器版本：**Wix Harmony**（2026 年 1 月发布）与经典 Wix Editor **并行**，目前仅英文、需专门入口创建，**不是新用户默认**（About the New Wix Harmony Editor）——手册第「还没证实的三件事」第 3 条据此写成
 
 **无法核实、页面已如实标注的**：① 大陆网络可达性（教师开课前实测）；② 注册页当天是否仍无手机号栏；③ Weebly 的不收录菜单路径（来自公开社区帖，非 Weebly 官方文档，页面标「待实测确认」）。
+
+---
+
+## 2026-08-31（第二轮）补入的选看视频 Optional clips added 2026-08-31 (second pass)
+
+同样全部标为**选看**，不计入该周 120 分钟必做时间——各周预算仍精确排满 120 分钟，本轮未动任何一周的必做时长。Also marked **optional** and outside the week's 120 required minutes: every week still totals exactly 120, and this pass moved no required time.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| activity-draft-before-you-build §选看 | 漫话安全 · 数据泄露篇 Data leaks, the illustrated primer（2:50） | B 站 青海普法（2020，国家网络安全宣传周作品；B4 微课 4 同源） | https://www.bilibili.com/video/BV1tf4y1X7Jo · 嵌入 `player.bilibili.com/player.html?bvid=BV1tf4y1X7Jo&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+
+本轮的理由 Why this one：跟做页第二幕是「这句话能放上网吗？」——八张卡片里五张要先改。这段片子讲的正是零碎信息如何被拼成一个人，是那五张卡片的理由。与 B4 微课 4 同一片源（第 5 周会再展开），在第 3 周先看一遍不重复浪费时间，因为这里用的是它的结论，那里用的是它的方法。
+
+**`lesson-2-five-moves-and-seven-pits.html` 仍留 `［placeholder］`，是一次有理由的取舍 A deliberate gap**
+这一课刻意讲的是**与平台无关**的五个动作。2026-08-31 按「所见即所得 建站」「网站 发布 上线」检索，中文片源要么绑定某一家平台，要么是 AI 生成建站（第一学期不用）。唯一可用的候选，是本单元《从零建站的分步手册》已经嵌着的那一段（BV1KsUsYCER6，14:08，UP 主 HOW向阳学习，讲 Wix，2024-11-18，已核实）——把它搬进微课，就等于在教学里认定了平台，与本文件开头「平台定下来之前不嵌任何平台专属教程」的既定做法直接冲突。所以本轮**没有**嵌入它，改为在页面上写明这一冲突。平台一旦定下来，把 `<p class="ph">` 换成正常的 `.video` 区块即可，候选片源已在此备好。

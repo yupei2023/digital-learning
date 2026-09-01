@@ -73,3 +73,46 @@ English captions: see the text version on w1.html (section 3, "Course intro · t
 - `lesson-2-about-ai.html`：选片牵涉信息披露规则（第一学期不放 AI 主题拓展材料），交 ShiFu 定夺，本轮不代选。
 - `lesson-4-get-set-up.html`：候选片源要么演示本课程不用的平台，要么与 B1、B4 重复；待平台确定后再补。
 - `activity-how-this-course-works.html`：检索结果多为应试与“逆袭”口吻（「卷王」「暴涨」「逆袭」），与本课程“不谈分数、不设迟交处罚”的立场冲突，宁缺。
+
+---
+
+## 2026-08-31 · 必做视频：关于本课程与 AI Required clip on the About-AI page
+
+ShiFu 2026-08-31 裁定：第一学期可以在 `lesson-2-about-ai.html` 放一段**必做**的"安全使用 AI"视频。
+ShiFu ruled on 2026-08-31 that a **required** clip on using AI safely may sit on this page in Semester 1.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+
+**2026-08-31 · 已撤下 Withdrawn**：`lesson-2-about-ai.html` 上一度出现过一段必做视频（《学生用 AI 搜题写作业，怎样才算用得合理？》，3:18，中国青年报，BV17tcZzVE8L）。撤下的理由有三条，任何一条都足够：
+1. **它是 AI 主题的。** 第一学期的披露控制明确规定不放 AI 主题的拓展材料——片源的权威性不改变这一条。
+2. **它被标成"必做 3:18"。** 第 1 周的时间表已经精确排满 120 分钟，且未把这 3:18 计入；页面说必做、周页面不计时，两处直接矛盾，学生按哪一处都不对。
+3. **它是坏的。** 嵌入地址写的是 `bvid=%s`，一个没有被替换掉的格式占位符——那个播放器根本加载不出任何东西。
+BV 号本身有效（2026-08-31 核实），此处保留记录，供第二学期第 8 单元（AI 使用那一单元）需要时取用。
+
+**Withdrawn 2026-08-31**: a required 3:18 clip on students using AI for homework (China Youth Daily, BV17tcZzVE8L) briefly appeared on `lesson-2-about-ai.html`. Any one of three reasons is sufficient to remove it: it is AI-themed, which Semester 1 disclosure control forbids regardless of how authoritative the source is; it was marked required while Week 1 already totals exactly 120 minutes and does not count it, so the page and the week page contradict each other; and the embed read `bvid=%s`, an unsubstituted format placeholder that loads nothing. The BV id is valid (verified 2026-08-31) and is kept on record for Semester 2 Module 8, where AI use is the actual subject.
+
+### ⚠️ 待 ShiFu 裁定：第 1 周分钟数超出 120 Open for ShiFu: Week 1 now exceeds 120 minutes
+
+`w1.html` 的时间表原本正好排满 120 分钟必做，其中"第 2 步 关于本课程与 AI"记 8 分钟。加入这段 3:18 的必做视频后，本周必做合计约 **123.5 分钟**，超出上限。
+本轮**没有**改动 `w1.html` 的时间表——重新分配分钟数是教学决定。请 ShiFu 定夺：把这一步从 8 分钟改为 12 分钟并从别处减 4 分钟，或将本片改回选做。
+Week 1's table was budgeted at exactly 120 required minutes, 8 of them for Step 2. With this 3:18 required clip the week now totals about **123.5 minutes**. The table in `w1.html` was deliberately left untouched, because rebalancing it is a teaching decision. ShiFu to decide: raise Step 2 to 12 minutes and take 4 from elsewhere, or return this clip to optional.
+
+---
+
+## 2026-08-31（第二轮）补入的选看视频 Optional clips added 2026-08-31 (second pass)
+
+同样全部标为**选看**，不计入该周 120 分钟必做时间——各周预算仍精确排满 120 分钟，本轮未动任何一周的必做时长。Also marked **optional** and outside the week's 120 required minutes: every week still totals exactly 120, and this pass moved no required time.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| activity-how-this-course-works §选看 | 什么是 MOOC，MOOC 和普通公开课比有什么区别？ What a MOOC is, and how it differs from an ordinary open course（3:24） | B 站 UP 主 赵小格er（2022，原创） | https://www.bilibili.com/video/BV1Re4y1z7SH · 嵌入 `player.bilibili.com/player.html?bvid=BV1Re4y1z7SH&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| lesson-2-about-ai §选看 | 是隐私？还是个人信息？ Privacy, or personal information?（3:00） | B 站 UP 主 小贝说安全（2024，原创） | https://www.bilibili.com/video/BV1oy411v7un · 嵌入 `player.bilibili.com/player.html?bvid=BV1oy411v7un&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+
+本轮为这两页选片的理由与取舍 Why these two, and what was ruled out：
+- `activity-how-this-course-works.html`：上一轮以“检索结果多为应试与逆袭口吻”留空。本轮换了检索词（“慕课 MOOC 是什么”而非“自主学习/网课”），找到一段只讲课程形态、不谈分数与名次的科普短片。页面上的“看什么”一行已点明它与本课程的一处不同——它提到讨论区，本课程没有。
+- `lesson-2-about-ai.html`：上一轮以“选片牵涉信息披露规则”留空，这一点仍然成立——**本轮没有、也不会为这一页选任何 AI 主题的片源**。所选片子讲的是“哪些东西算个人信息”，对应的是本页“安全提示”第 ② 条（不把个人信息放进对话框），与 AI 无关，第一学期的披露控制不受影响。若 ShiFu 认为这一页不该出现与 AI 无关的视频，删掉页面上那一个 `<h2>选看 · 视频` 区块即可，其余不受影响。
+
+**仍留 `［placeholder］` 的两页 Still placeholders**
+- `lesson-1-meet-the-instructor.html`：需教师本人出镜。这一页讲的是教师自己的学习经历，**任何第三方视频都替不了**——本轮不代选。可剪用的素材仍是 `[Chinese]-Introduction-to-Online-Learning.mov`（2021 自录），是否剪用由 ShiFu 决定。
+- `lesson-4-get-set-up.html`：本轮又检索了「注册账号 邮箱 安全」「浏览器 书签 整理」两组词，结果不是绑定某一家平台的操作演示（本课程平台未定），就是与 B1（邮箱）、B4（账号安全）、B6（书签与日程）重复。这一页是五件杂事的清单，任一视频只覆盖其中一件。宁缺——待平台定下来后一并补。

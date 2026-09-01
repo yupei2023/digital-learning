@@ -69,3 +69,18 @@ Two of the three micro-lesson slots carry established materials; one is text-onl
 **待补 To come（2026-08-31）** — 两页留有 `［placeholder］` 视频位：
 - `index.html`：三节微课已各有一段吴恩达 MOOC 讲座；单元首页重复其一还是另选，是教学取舍，交 ShiFu。
 - `reading.html`：未找到既讲“数字化学习”本义、又足够短、又中英双字幕的片源——中文检索里“数字化”几乎都指向企业数字化转型。
+
+---
+
+## 2026-08-31（第二轮）补入的选看视频 Optional clips added 2026-08-31 (second pass)
+
+同样全部标为**选看**，不计入该周 120 分钟必做时间——各周预算仍精确排满 120 分钟，本轮未动任何一周的必做时长。Also marked **optional** and outside the week's 120 required minutes: every week still totals exactly 120, and this pass moved no required time.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| index.html §选看 | 《在线学习知多少》· 21 世纪的学习方式 Online learning, in brief（3:27） | B 站 UP 主 十一画生_（2019，原创） | https://www.bilibili.com/video/BV1DJ411e7VF · 嵌入 `player.bilibili.com/player.html?bvid=BV1DJ411e7VF&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+| reading.html §选看 | 【神经可塑性】你的大脑一生都在重塑·用进废退 Neuroplasticity: your brain is remodelling itself for life（3:39） | B 站 UP 主 原理X（2026，原创） | https://www.bilibili.com/video/BV1d1DeB7EGU · 嵌入 `player.bilibili.com/player.html?bvid=BV1d1DeB7EGU&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+
+本轮为这两页选片的理由 Why these two：
+- `index.html`：上一轮的问题是“重复微课里的吴恩达讲座还是另选”。本轮另选了一段三分半的科普短片，它一次过完本单元的三个核心问题（是什么 / 为什么 / 利与弊），既不与三节微课重复，也正好是单元首页需要的开场。
+- `reading.html`：上一轮只按“数字化学习”检索，撞上了企业数字化转型。本轮换了角度——**本页必读的是第 05 章，而第 05 章讲的是脑科学**（大脑是硬件、心智是软件；丰富环境让小白鼠更聪明；可塑性与态度）。按“大脑可塑性 / 神经可塑性”检索，材料立刻就有了。所选片子把该章缺的那一步机制补上：突触用得多则强、用得少则退。

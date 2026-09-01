@@ -95,3 +95,16 @@ SMART 是五个问题。S，清晰——到底要完成什么？哪门课的哪�
 | task-1-my-plan §选看 | 【TED】只需 20 小时，你就能学会任何事情 The first 20 hours（3:02，中英双字幕） | B 站 UP 主 彼得潘在摸鱼（TED 转载，2021） | https://www.bilibili.com/video/BV11y4y1272t · 嵌入 `player.bilibili.com/player.html?bvid=BV11y4y1272t&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
 
 **待补 To come（2026-08-31）** — `task-2-one-week-review.html` 留有 `［placeholder］`：中文检索里“复盘”几乎被公考与股市内容占满，没有适合中学生的学习复盘片源。
+
+---
+
+## 2026-08-31（第二轮）补入的选看视频 Optional clips added 2026-08-31 (second pass)
+
+同样全部标为**选看**，不计入该周 120 分钟必做时间——各周预算仍精确排满 120 分钟，本轮未动任何一周的必做时长。Also marked **optional** and outside the week's 120 required minutes: every week still totals exactly 120, and this pass moved no required time.
+
+| 位置 Where | 素材 Item | 来源 Source | 链接 Link | 许可 / 依据 Licence | 访问状态 Access |
+|---|---|---|---|---|---|
+| task-2-one-week-review §选看 | 周回顾有多重要？复盘究竟应该复盘什么？ How much a weekly review matters, and what to review（2:16） | B 站 滴答清单（一家日程工具的官方频道，2023，原创） | https://www.bilibili.com/video/BV1wm4y1i7h8 · 嵌入 `player.bilibili.com/player.html?bvid=BV1wm4y1i7h8&p=1&high_quality=1&danmaku=0&autoplay=0` | B 站官方外链播放器嵌入（页内嵌 + 直达链接），不下载不转存 Bilibili official embed player (in-page + direct link); not downloaded or re-hosted | BV 号 2026-08-31 经 `api.bilibili.com/x/web-interface/view` 核实（code 0）；开课前从大陆网络实测播放 BV id verified via the view API 2026-08-31; play-test from a mainland connection before launch |
+
+本轮的理由 Why this one：上一轮按「复盘 / 每周复盘」检索，结果被公考与股市占满——这一点复核后属实（2026-08-31 重检，前十条里八条是股票复盘）。本轮改按「PDCA 计划 复盘」检索，才翻出这一条：两分十六秒，讲的正是本页三问（做了什么 / 没做什么 / 下周改哪一处）。
+一处需要向学生说明、页面上已经写了的事：片子出自一家日程工具公司的官方频道，片中会提到它自家的产品。本课程不要求学生使用任何一款此类工具，页面上的“看什么”一行已注明「看方法就行」。
