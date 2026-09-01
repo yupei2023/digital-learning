@@ -78,112 +78,19 @@ cropping went unnoticed the first time — do not test that way.
 
 ---
 
-## 1 · For the m0–m5 agent: the header mark and the favicon on 85 pages
+## 1 · The header mark and the favicon — HISTORICAL, superseded
 
-**Owner: the m0–m5 content agent.** M0–M5 carry neither the course mark in the
-header nor a favicon; B1–B6 carry both. A learner with a B page and an M page
-open in two tabs sees one book icon and one blank page and thinks they have
-landed on two different sites.
+This section used to carry the full retrofit recipe for putting the mark on 85
+module pages, including a copy of the mark's path data. That recipe did its job
+and is now dangerous to follow: the mark has since been redesigned, and anyone
+pasting the old paths would resurrect the old mark.
 
-The four M generators (`tools/build_m1.py`, `build_m3.py`, `build_m4.py`,
-`build_m5.py`, in the **project** `tools/`, outside the repo) have already been
-patched, so anything built from now on carries both. That does not help the 85
-pages already on disk:
-
-* `build_m3.py`, `build_m4.py`, `build_m5.py` produce output byte-identical to
-  the live pages apart from these lines — verified on 2026-08-31 by building to
-  a temp directory and diffing all 47 files. Re-running them is safe **only if
-  you have not yet hand-edited the built pages**; the body fragments they read
-  live in the project `tools/m3|m4|m5/`, so edit those, not the output.
-* `build_m1.py` carries its own warning at line 2: the live M1 pages have been
-  hand-edited since it last ran and re-running it would overwrite them. **Do not
-  run it.**
-* M0 and M2 have no generator at all.
-
-So the reliable route for all 85 is the edit below, applied in place.
-
-### The three parts (verbatim from `tools/HEADER-LOGO.md`)
-
-**(a)** in `<head>`, immediately after the last stylesheet link:
-
-```html
-<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
-<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
-header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
-header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
-```
-
-**(b)** the brand link — **no whitespace between `</svg>` and `Digital`**, the
-flex `gap` supplies it:
-
-```html
-<a class="brand" href="../../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
-```
-
-**(c)** the depth. Both snippets above are for a page at
-`s1/<module>/<page>.html`. The three handout pages sit two levels deeper and
-need `../../../../assets/` and `../../../../index.html`:
-
-* `s1/m3-meaningful-digital-learning/media/handouts/the-roads-excerpt.html`
-* `s1/m4-digital-learning-technologies/media/handouts/artifact-spec-card.html`
-* `s1/m4-digital-learning-technologies/media/handouts/micro-review-template.html`
-* `s1/m5-semester-portfolio/media/handouts/growth-note-template.html`
-
-`aria-hidden="true"` on the mark is deliberate: the words beside it already name
-the site, and a screen reader that announced both would say it twice.
-
-### Doing it in one pass
-
-This is the same transform the generators now perform. It is idempotent — a page
-that already has the mark is skipped — and it derives the depth from the path,
-so it is safe on the handout pages too. Run it from `course-site/`:
-
-```python
-import os, re, glob
-MARK = ('<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" '
-        'stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">'
-        '<path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/>'
-        '<path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/>'
-        '<path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/>'
-        '<path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/>'
-        '<rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/>'
-        '<rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/>'
-        '<path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/>'
-        '<path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/>'
-        '<path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/>'
-        '<path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>')
-STYLE = ('<style>/* header mark · assets/logo.svg inlined so it inherits currentColor '
-         '— see tools/HEADER-LOGO.md */\n'
-         'header.site .brand{display:inline-flex;align-items:center;gap:.5rem}\n'
-         'header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>')
-
-for path in sorted(glob.glob('s1/m[0-5]*/**/*.html', recursive=True)):
-    s = open(path, encoding='utf-8').read()
-    if 'brand-mark' in s:
-        continue
-    up = '../' * (path.count('/'))          # depth from the page to course-site/
-    if 'rel="icon"' not in s:
-        links = list(re.finditer(r'<link rel="stylesheet"[^>]*>', s))
-        assert links, path
-        end = links[-1].end()
-        s = (s[:end] + '\n<link rel="icon" href="%sassets/favicon.svg" type="image/svg+xml">\n'
-             % up + STYLE + s[end:])
-    s = re.sub(r'(<a class="brand" href="[^"]*">)(Digital Learning)', r'\1' + MARK + r'\2', s, count=1)
-    open(path, 'w', encoding='utf-8').write(s)
-    print('marked', path)
-```
-
-Afterwards, `grep -L brand-mark s1/m*/**/*.html` should print nothing, and
-`python3 tools/site_checks.py` (project `tools/`) should still pass — the mark
-carries no `<text>`, so it cannot disturb the footer check, and it carries no
-`<desc>`, so it cannot disturb `parity_check.py`.
-
-**Not covered here:** the three `resources/*.html` letters. They are pandoc
-output and a hand-added line would be erased by the next
-`tools/build-documents.sh`; `tools/HEADER-LOGO.md` gives the `-H` recipe. That
-is a separate pass and it rewrites the DOCX and PDF files too.
-
----
+**Geometry's single source is the project folder's `tools/gen-mark.py`; the one
+way to (re)apply the mark anywhere is `python3 tools/apply-mark.py`.** It writes
+the small variant into every page header and `assets/favicon.svg`/`assets/logo.svg`,
+and the full variant into the home-page seal and `assets/logo-seal.svg`. Sizing
+rules (`header.site .brand`, `.brand-mark{width:1.75em}`) live in `site.css`.
+See `tools/HEADER-LOGO.md` for the current mechanism and measured stroke widths.
 
 ## 2 · English labels that still need a markup change
 

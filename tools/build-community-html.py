@@ -359,18 +359,15 @@ def render_table(b, where):
     return '<div class="table-wrap"><table%s>%s</table></div>' % (cls, ''.join(rows))
 
 # ------------------------------------------------------------------ page shell
+# The header mark's geometry comes from the parametric model, never from path data
+# kept here: this file used to carry a hard-coded copy, which would have quietly
+# resurrected the old mark on the two letters at every rebuild.
+import importlib.util as _u
+_spec = _u.spec_from_file_location('genmark', os.path.join(HERE, '..', '..', 'tools', 'gen-mark.py'))
+_gm = _u.module_from_spec(_spec); _spec.loader.exec_module(_gm)
 BRAND_SVG = ('<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" '
- 'stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">'
- '<path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/>'
- '<path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/>'
- '<path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/>'
- '<path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/>'
- '<rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/>'
- '<rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/>'
- '<path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/>'
- '<path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/>'
- '<path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/>'
- '<path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>')
+             'stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">'
+             + _gm.group('', _gm.SMALL_PARTS).replace('\n', '') + '</svg>')
 
 # The header mark and the long-document rules now live in assets/site.css; nothing
 # on these pages is one-off enough to need an inline <style>.

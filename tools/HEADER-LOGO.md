@@ -1,148 +1,97 @@
-# 页眉标识与站点图标 · The header mark and the favicon
+# 课程标识：从模型到页面 · The course mark, from model to page
 
-`assets/logo.svg` and `assets/favicon.svg` are already wired into the four
-top-level pages (`index.html`, `for-mentors.html`, `calendar.html`,
-`external-courses.html`). The module pages under `s1/` are **not** done yet:
-they are produced by the generators in the project folder's `tools/`
-(`build_m*.py`, `build_b*.py`, `revise_m3_r2.py`), so the change belongs in the
-generator's page template, not in the built HTML. This note is the exact text
-to paste.
+**几何只有一个来源：项目文件夹的 `tools/gen-mark.py`。** 任何地方都不要手贴、手改
+路径数据——包括这份文档。想改标识，改 `gen-mark.py` 的参数；想让改动落到站点上，跑
+`tools/apply-mark.py`。这份文档从前贴着"复制即用"的路径范例，谁照着做旧标识就会
+回来，所以范例删除了。
+**Geometry has exactly one source: `tools/gen-mark.py` in the project folder.** Never
+paste or hand-edit path data anywhere — this document included. To change the mark,
+change the parameters in `gen-mark.py`; to land the change on the site, run
+`tools/apply-mark.py`. This file used to carry copy-paste path data as an example,
+which meant anyone following it would resurrect the old mark; the example is gone.
 
-Nothing here touches `assets/`. Do not edit the asset files.
-
----
-
-## Why the mark is pasted inline rather than loaded with `<img>`
-
-`logo.svg` paints itself when it is loaded as an `<img>` or a CSS background,
-and it inherits `currentColor` when it is pasted inline. The site ships a single
-light palette, but the asset carries its own `prefers-color-scheme: dark` rule —
-so a reader whose computer is set to dark mode could be served the pale ink on
-the site's light paper and see almost nothing. Pasting the mark inline removes
-that risk entirely: inline, `svg:root` never matches, and the mark simply takes
-the colour of the text beside it.
-
-The cost is that the inline copies are transcriptions. **If `assets/logo.svg`
-ever changes, re-transcribe the paths into this note and re-run the
-generators.** The transcription is mechanical: drop the `<title>`, `<desc>` and
-`<style>` blocks, hoist the `<g>`'s stroke attributes onto the `<svg>`, keep
-every path exactly as it is.
-
----
-
-## 1 · The favicon
-
-One line in every page's `<head>`. Adjust the depth to match the page:
-
-```html
-<!-- top-level page -->
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-
-<!-- module page under s1/<module>/ -->
-<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+```
+python3 tools/apply-mark.py     # run from the project folder
 ```
 
-Put it immediately after the `site.css` link.
+## 两个变体，按尺寸分工 · Two variants, matched to size
 
-## 2 · The style rule
+The mark (variant 4: two laptops facing each other, together an open book) is drawn
+by a parametric model. `gen-mark.py` exposes two parameter sets:
 
-Module pages have no page-scoped `<style>` today, so add this small block to the
-`<head>`, after the stylesheet links. (It is deliberately *not* in `site.css`:
-`site.css` is a shared asset and needs ShiFu's go-ahead before it is edited. A
-later pass can hoist these three lines into `site.css` and delete the block from
-every page.)
+| set | strokes | 用在哪 where it lands |
+|---|---|---|
+| `P` (full) | outline 2.4 · base 2.2 · two screen lines 1.7 · keyboard 1.4 | the 176px seal on the home page, and `assets/logo-seal.svg` |
+| `SMALL` | w=1.6 → outline 3.84 · base 3.52 · ONE screen line 3.52 · no keyboard line | the ~30px header of all pages, `assets/logo.svg`, and `assets/favicon.svg` |
 
-```html
-<style>/* header mark · assets/logo.svg inlined so it inherits currentColor — see tools/HEADER-LOGO.md */
-header.site .brand{display:inline-flex;align-items:center;gap:.5rem}
-header.site .brand-mark{width:1.75em;height:1.75em;flex:none}</style>
-```
+Why: at 30px the full mark's screen lines render 0.80px and the keyboard line 0.66px —
+sub-pixel, the very defect the old seal was retired for. Measured with the SMALL set:
 
-`1.75em` on the 17 px bold brand line gives a 30 px box; the drawn mark fills
-about 0.61 of that box, so its ink lands at roughly 1.5× the cap height of the
-words beside it — present, not shouting.
+| stroke | header @30px (viewBox 64) | favicon @16px (viewBox 56) |
+|---|---|---|
+| screen outline | 1.80px | 1.10px |
+| base | 1.65px | 1.01px |
+| screen line | 1.65px | 1.01px |
 
-## 3 · The mark in the header
+Every stroke stays at or above one device pixel at both sizes. The seal keeps the full
+set: at 176px its finest stroke renders ≈2.8px.
 
-Replace the brand link. **There is no whitespace between `</svg>` and
-`Digital`** — the flex `gap` supplies the space.
+`apply-mark.py` writes, in one run:
+- the inline `<svg class="brand-mark">` in every page header (SMALL),
+- the inline `<svg class="home-brand-mark">` on the course home (SMALL),
+- the inline `<svg class="home-seal-mark">` on the course home (full),
+- `assets/favicon.svg` (SMALL, fitted square viewBox, dark-scheme hook kept),
+- `assets/logo.svg` (SMALL) and `assets/logo-seal.svg` (full), so the standalone
+  assets can never drift from the pages.
 
-Before:
+## 为什么页眉是内联而不是 `<img>` · Why the header mark is inline
 
-```html
-<a class="brand" href="../../index.html">Digital Learning 数字化学习</a>
-```
+`logo.svg` carries its own `prefers-color-scheme` rule for when it is viewed as a
+file; loaded via `<img>` that rule could fight the page. Inline, `svg:root` never
+matches and the mark simply inherits `currentColor` from the text beside it — which
+is also what makes the site's dark mode recolour it for free. `aria-hidden="true"`
+is deliberate: the words next to the mark already name the site.
 
-After:
+The header sizing rules live in `site.css` (`header.site .brand`,
+`header.site .brand-mark{width:1.75em;…}`) — they are shared rules now, not a
+page-level `<style>` block. `1.75em` on the 17px brand line gives the 30px box the
+SMALL stroke table above is computed against.
 
-```html
-<a class="brand" href="../../index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17 Q18.5 13.5 30.5 19 L30.5 47 Q18.5 52.5 5 45 Z" stroke-width="2.4"/><path d="M59 17 Q45.5 13.5 33.5 19 L33.5 47 Q45.5 52.5 59 45 Z" stroke-width="2.4"/><path d="M5 41.4 Q18.5 48.9 30.5 43.4" stroke-width="1.5"/><path d="M59 41.4 Q45.5 48.9 33.5 43.4" stroke-width="1.5"/><rect x="8.6" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><rect x="37" y="21.6" width="18.4" height="16" rx="2.2" stroke-width="1.8"/><path d="M11.4 27.6 H24.2" stroke-width="1.9"/><path d="M11.4 32.6 H21" stroke-width="1.9"/><path d="M39.8 27.6 H52.6" stroke-width="1.9"/><path d="M39.8 32.6 H49.4" stroke-width="1.9"/><path d="M32 18 V48" stroke-width="2.6"/><path d="M29.6 26 H34.4" stroke-width="1.6"/><path d="M29.6 40 H34.4" stroke-width="1.6"/></svg>Digital Learning 数字化学习</a>
-```
+## 会咬人的地方 · Things that will bite you
 
-`aria-hidden="true"` is deliberate: the words next to the mark already name the
-site, and a screen reader that announced both would say it twice.
-
----
-
-## Things that will bite you
-
-* **The bilingual parity check.** `tools/parity_check.py` flags any bare text
-  node of 8+ CJK characters or 8+ English words that is not inside a `.zh`/`.en`
-  pair. The asset files' `<desc>` elements are long and bilingual and *would* be
-  flagged — that is the other reason the snippet above drops them. Keep them
-  dropped. An SVG `<title>` is safe: the checker skips `title`.
-* **The footer check.** `tools/site_checks.py` requires the footer's text to
-  begin with the contracted wording. Never put an SVG that contains `<text>`
-  elements inside `<footer>` before that line — the checker strips tags and the
-  seal's ring lettering would land in front of it.
-* **`diagrams.css` is not needed** for the mark, the favicon or the seal. Link
-  it only on pages that actually carry a `dl-fig` diagram.
-* **The pages in `resources/` now carry the mark and the favicon like any other
-  page.** They are no longer pandoc output. `tools/build-community-html.py` writes
-  them from `assets/page-template.html`'s shell — header mark, favicon, skip link,
-  language button, bilingual `<title>` — so a rebuild puts the favicon back rather
-  than erasing it. Nothing here needs a hand-added `<link rel="icon">`, and the
-  builder fails the build if one of these pages ever loses it.
+* **The bilingual parity check.** The asset files' `<desc>` elements are long and
+  bilingual and would be flagged if pasted into a page — the inline copies carry no
+  `<title>`/`<desc>`/`<style>`, and `apply-mark.py` keeps it that way. An SVG
+  `<title>` is safe in the standalone assets: the checker skips `title`.
+* **The footer check.** `tools/site_checks.py` requires the footer's text to begin
+  with the contracted wording. Never put an SVG containing `<text>` inside
+  `<footer>` before that line.
+* **`diagrams.css` is not needed** for the mark, the favicon or the seal.
+* **The pages in `resources/` carry the mark like any other page.** They are built by
+  `tools/build-community-html.py`, so a rebuild re-emits the current mark rather than
+  erasing it.
 * **`for-mentors.html` is both a site page and a document source.** It IS the mentor
   handbook online; `tools/build-documents.sh` runs pandoc over it only to make
-  `resources/mentor-handbook.{docx,pdf}`. `resources/mentor-handbook.html` used to be
-  a second copy of it at a second URL and is gone. `tools/document-print-filter.lua`
-  strips the inline `<svg>`, the in-page contents list and the download buttons from
-  the paper editions; check after any rebuild that none of them leaked back in.
+  `resources/mentor-handbook.{docx,pdf}` (the old second URL is a redirect page).
+  The paper editions are BLOCK format — the whole Chinese document, then the whole
+  English one — built by `tools/build-community-print.py`, which also keeps them
+  free of the on-screen chrome (mark, contents list, download buttons).
 
----
+## 印记只用一次 · The seal is used once
 
-## Where the other three assets went
-
-| asset | where it is used | how |
+| asset | where | how |
 |---|---|---|
-| `logo.svg` | header of every page | inline, `aria-hidden`, 1.75em |
+| `logo.svg` | header of every page | inline via `apply-mark.py`, `aria-hidden`, 1.75em |
 | `favicon.svg` | `<head>` of every page | `<link rel="icon">` |
-| `logo-seal.svg` | **course home only**, at the foot of `<main>`, directly above the instructor's name and the year in the footer | inline, `role="img"` + bilingual `<title>`, 96 px (82 px below 600 px), `opacity:.68` |
-| `pattern-community.svg` | **course home only**, a 120 px vertical strip to the left of the three letters | inline, `aria-hidden`, hidden below 1000 px |
+| `logo-seal.svg` | **course home only**, above the instructor's name | inline, `role="img"`, real SVG mask — the knock-out shows the page through, so it adapts to dark mode on its own |
+| `pattern-community.svg` | course home only | inline, `aria-hidden`, hidden below 1000px |
 
-The seal is deliberately used **once**. It signs the course; a mark that appears
-on every page stops being a seal.
+The seal signs the course; a mark that appears on every page stops being a seal.
 
 ### Not done: the seal on the three downloadable letters
 
-Left for ShiFu to decide, with a reason. The three letters are built by
-`tools/build-documents.sh` from `tools/documents/*.md` and `for-mentors.html`;
-adding a seal means editing `assets/community-doc.css` (a shared asset), editing
-the build script, and regenerating three HTML files, four DOCX files and three
-PDFs. Two of those are content decisions that are not mine: *where* on a letter
-a seal belongs (it belongs at the signature block, and the letters do not have
-one yet), and whether a seal on a letter changes how a school reads it. The
-mechanical part, when ShiFu says go:
-
-```html
-<!-- in the CSS: -->
-.doc-seal{display:block;width:88px;height:88px;margin:2.5rem 0 0;opacity:.7}
-<!-- in each document's Markdown, at the end, after the closing: -->
-<img class="doc-seal" src="../assets/logo-seal.svg"
-     alt="Digital Learning 数字化学习 课程印记 · The seal of the course, 2026">
-```
-
-Use `<img>` there rather than inline SVG: pandoc's DOCX writer cannot carry
-inline SVG, and the printed PDF is always light, so the dark-mode risk described
-at the top does not apply to a printed page.
+Left for ShiFu to decide. Adding it means a `.doc-seal` rule, an `<img>` at each
+letter's signature block (pandoc's DOCX writer cannot carry inline SVG), and a
+rebuild of three HTML, four DOCX and three PDF files — but *where* a seal belongs on
+a letter, and whether a sealed letter reads differently to a school, are content
+decisions that are not this file's to make.
