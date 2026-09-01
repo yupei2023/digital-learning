@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 700" font-family="-apple-system,'PingFang SC','Noto Sans CJK SC',sans-serif">
+<defs>
+<linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c2d5e7"/><stop offset="1" stop-color="#183b5d"/></linearGradient>
+<linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9d9bd"/><stop offset="1" stop-color="#a66f26"/></linearGradient>
+</defs>
+<rect width="1560" height="700" fill="#f4f7fa"/>
+<text x="120" y="62" font-size="30" fill="#142338" font-weight="600">第二学期课程地图 <tspan fill="#58687a" font-weight="400" font-size="22">Semester 2 Map · Digital Learning 数字化学习</tspan></text>
+<text x="120" y="92" font-size="14.5" fill="#58687a">16 个教学周 · 每周必做 ≤ 120 分钟 · 判断、创造、自主 &#160;&#160;16 teaching weeks · ≤ 120 required minutes a week · Judging, creating, self-directing</text>
+<text x="161.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">1</text>
+<line x1="120.0" y1="162" x2="120.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="243.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">2</text>
+<line x1="202.5" y1="162" x2="202.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="326.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">3</text>
+<line x1="285.0" y1="162" x2="285.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="408.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">4</text>
+<line x1="367.5" y1="162" x2="367.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="491.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">5</text>
+<line x1="450.0" y1="162" x2="450.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="573.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">6</text>
+<line x1="532.5" y1="162" x2="532.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="656.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">7</text>
+<line x1="615.0" y1="162" x2="615.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="738.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">8</text>
+<line x1="697.5" y1="162" x2="697.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="821.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">9</text>
+<line x1="780.0" y1="162" x2="780.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="903.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">10</text>
+<line x1="862.5" y1="162" x2="862.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="986.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">11</text>
+<line x1="945.0" y1="162" x2="945.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="1068.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">12</text>
+<line x1="1027.5" y1="162" x2="1027.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="1151.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">13</text>
+<line x1="1110.0" y1="162" x2="1110.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="1233.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">14</text>
+<line x1="1192.5" y1="162" x2="1192.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="1316.25" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">15</text>
+<line x1="1275.0" y1="162" x2="1275.0" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="1398.75" y="154" font-size="11.5" fill="#58687a" text-anchor="middle">16</text>
+<line x1="1357.5" y1="162" x2="1357.5" y2="166" stroke="#c2d5e7" stroke-width="1"/>
+<text x="110" y="154" font-size="11.5" fill="#58687a" text-anchor="end">周 Wk</text>
+<line x1="120" y1="162" x2="1440.0" y2="162" stroke="#c2d5e7" stroke-width="1.2"/>
+<rect x="123.0" y="174" width="76.5" height="150" rx="8" fill="#ffffff" stroke="#183b5d" stroke-width="1.6"/>
+<text x="133.0" y="200" font-size="14" fill="#426b92" font-weight="700">M6</text>
+<text x="133.0" y="224" font-size="14.5" fill="#142338" font-weight="600">重启</text>
+<text x="133.0" y="246.0" font-size="10" fill="#426b92">Restart</text>
+<rect x="205.5" y="174" width="159.0" height="150" rx="8" fill="#183b5d"/>
+<text x="215.5" y="200" font-size="14" fill="#c2d5e7" font-weight="700">M7</text>
+<text x="215.5" y="224" font-size="14.5" fill="#ffffff" font-weight="600">数字化学习资源</text>
+<text x="215.5" y="246.0" font-size="10" fill="#c2d5e7">Digital Learning</text>
+<text x="215.5" y="259.0" font-size="10" fill="#c2d5e7">Resources</text>
+<rect x="370.5" y="174" width="159.0" height="150" rx="8" fill="#183b5d"/>
+<text x="380.5" y="200" font-size="14" fill="#c2d5e7" font-weight="700">M8</text>
+<text x="380.5" y="224" font-size="14.5" fill="#ffffff" font-weight="600">人工智能</text>
+<text x="380.5" y="243.0" font-size="14.5" fill="#ffffff" font-weight="600">辅助学习</text>
+<text x="380.5" y="265.0" font-size="10" fill="#c2d5e7">AI-Assisted Learning</text>
+<rect x="535.5" y="174" width="159.0" height="150" rx="8" fill="#183b5d"/>
+<text x="545.5" y="200" font-size="14" fill="#c2d5e7" font-weight="700">M9</text>
+<text x="545.5" y="224" font-size="14.5" fill="#ffffff" font-weight="600">数字公民与</text>
+<text x="545.5" y="243.0" font-size="14.5" fill="#ffffff" font-weight="600">数字健康</text>
+<text x="545.5" y="265.0" font-size="10" fill="#c2d5e7">Digital Citizenship</text>
+<text x="545.5" y="278.0" font-size="10" fill="#c2d5e7">&amp; Wellbeing</text>
+<rect x="700.5" y="174" width="159.0" height="150" rx="8" fill="#183b5d"/>
+<text x="710.5" y="200" font-size="14" fill="#c2d5e7" font-weight="700">M10</text>
+<text x="710.5" y="224" font-size="14.5" fill="#ffffff" font-weight="600">信息与媒介</text>
+<text x="710.5" y="243.0" font-size="14.5" fill="#ffffff" font-weight="600">可信度</text>
+<text x="710.5" y="265.0" font-size="10" fill="#c2d5e7">Information &amp; Media</text>
+<text x="710.5" y="278.0" font-size="10" fill="#c2d5e7">Credibility</text>
+<rect x="865.5" y="174" width="159.0" height="150" rx="8" fill="#183b5d"/>
+<text x="875.5" y="200" font-size="14" fill="#c2d5e7" font-weight="700">M11</text>
+<text x="875.5" y="224" font-size="14.5" fill="#ffffff" font-weight="600">创造与表达</text>
+<text x="875.5" y="246.0" font-size="10" fill="#c2d5e7">Creating &amp;</text>
+<text x="875.5" y="259.0" font-size="10" fill="#c2d5e7">Expressing</text>
+<rect x="1030.5" y="174" width="241.5" height="150" rx="8" fill="#183b5d"/>
+<text x="1040.5" y="200" font-size="14" fill="#c2d5e7" font-weight="700">M12</text>
+<text x="1040.5" y="224" font-size="14.5" fill="#ffffff" font-weight="600">个人毕业项目</text>
+<text x="1040.5" y="246.0" font-size="10" fill="#c2d5e7">Personal Capstone Project</text>
+<rect x="1278.0" y="174" width="159.0" height="150" rx="8" fill="#426b92"/>
+<text x="1288.0" y="200" font-size="14" fill="#c2d5e7" font-weight="700">M13</text>
+<text x="1288.0" y="224" font-size="14.5" fill="#ffffff" font-weight="600">年度作品集与反思</text>
+<text x="1288.0" y="246.0" font-size="10" fill="#c2d5e7">Year Portfolio &amp;</text>
+<text x="1288.0" y="259.0" font-size="10" fill="#c2d5e7">Reflection</text>
+<path d="M123.0 350 v6 H199.5 v-6" fill="none" stroke="#c2d5e7" stroke-width="1.6"/>
+<text x="161.25" y="374" font-size="13" fill="#183b5d" font-weight="600" text-anchor="middle">起点 <tspan fill="#58687a" font-weight="400" font-size="11">Start</tspan></text>
+<path d="M205.5 350 v6 H859.5 v-6" fill="none" stroke="#c2d5e7" stroke-width="1.6"/>
+<text x="532.5" y="374" font-size="13" fill="#183b5d" font-weight="600" text-anchor="middle">判断 <tspan fill="#58687a" font-weight="400" font-size="11">Judging</tspan></text>
+<path d="M865.5 350 v6 H1272.0 v-6" fill="none" stroke="#c2d5e7" stroke-width="1.6"/>
+<text x="1068.75" y="374" font-size="13" fill="#183b5d" font-weight="600" text-anchor="middle">创造 <tspan fill="#58687a" font-weight="400" font-size="11">Creating</tspan></text>
+<path d="M1278.0 350 v6 H1437.0 v-6" fill="none" stroke="#c2d5e7" stroke-width="1.6"/>
+<text x="1357.5" y="374" font-size="13" fill="#183b5d" font-weight="600" text-anchor="middle">作品集 <tspan fill="#58687a" font-weight="400" font-size="11">Portfolio</tspan></text>
+<text x="120" y="408" font-size="14" fill="#142338" font-weight="600">课程主线 · 个人网站：从改版到年度作品集 <tspan fill="#58687a" font-weight="400" font-size="11.5">Curriculum line · your website, from redesign to the year portfolio</tspan></text>
+<rect x="120.0" y="420" width="1320.0" height="30" rx="15" fill="url(#gBlue)" opacity="1"/>
+<path d="M1442.0 435 l-12 -7 v14 Z" fill="#183b5d" opacity="1"/>
+<line x1="202.5" y1="424" x2="202.5" y2="446" stroke="#f4f7fa" stroke-width="2" opacity=".8"/>
+<line x1="1027.5" y1="424" x2="1027.5" y2="446" stroke="#f4f7fa" stroke-width="2" opacity=".8"/>
+<line x1="1275.0" y1="424" x2="1275.0" y2="446" stroke="#f4f7fa" stroke-width="2" opacity=".8"/>
+<text x="161.25" y="439.5" font-size="12" fill="#142338" font-weight="600" text-anchor="middle">改版</text>
+<text x="161.25" y="466" font-size="10" fill="#58687a" text-anchor="middle">redesign</text>
+<text x="615.0" y="439.5" font-size="12" fill="#142338" font-weight="600" text-anchor="middle">每周任务发布 + 三行日志</text>
+<text x="615.0" y="466" font-size="10" fill="#58687a" text-anchor="middle">publish weekly + three-line log</text>
+<text x="1151.25" y="439.5" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">项目页</text>
+<text x="1151.25" y="466" font-size="10" fill="#58687a" text-anchor="middle">project pages</text>
+<text x="1357.5" y="439.5" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">年度作品集</text>
+<text x="1357.5" y="466" font-size="10" fill="#58687a" text-anchor="middle">year portfolio</text>
+<text x="120" y="504" font-size="14" fill="#142338" font-weight="600">自选课程线 · 本学期为选做 <tspan fill="#58687a" font-weight="400" font-size="11.5">Elective line · optional this semester</tspan></text>
+<rect x="202.5" y="516" width="1237.5" height="30" rx="15" fill="url(#gAmber)" opacity="0.72"/>
+<path d="M1442.0 531 l-12 -7 v14 Z" fill="#a66f26" opacity="0.72"/>
+<line x1="367.5" y1="520" x2="367.5" y2="542" stroke="#f4f7fa" stroke-width="2" opacity=".8"/>
+<line x1="1275.0" y1="520" x2="1275.0" y2="542" stroke="#f4f7fa" stroke-width="2" opacity=".8"/>
+<text x="285.0" y="535.5" font-size="12" fill="#142338" font-weight="600" text-anchor="middle">M7 评鉴你修过的课</text>
+<text x="285.0" y="562" font-size="10" fill="#58687a" text-anchor="middle">appraise the course you took</text>
+<text x="821.25" y="535.5" font-size="12" fill="#142338" font-weight="600" text-anchor="middle">选做：继续或另选一门</text>
+<text x="821.25" y="562" font-size="10" fill="#58687a" text-anchor="middle">optional: continue, or choose another</text>
+<text x="1357.5" y="535.5" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">凭证入册</text>
+<text x="1357.5" y="562" font-size="10" fill="#58687a" text-anchor="middle">credentials to portfolio</text>
+</svg>
