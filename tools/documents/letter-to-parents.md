@@ -110,9 +110,9 @@ Every graded task comes with a rubric. Each row *is* one of that module's object
 
 Work is **published on your child's own website**, and its link registered with me; I score by rubric and reply by email within a week. Each semester is out of 100: **60 or above passes and earns the semester certificate, 85 or above is marked "with distinction"**, and passing both semesters earns the year certificate.
 
-课程中还有几次**不计分的"学习自检"**，帮孩子看清自己的变化。它不进成绩，不影响证书，结果只显示在孩子自己的浏览器里。
+课程网页上还有几次**不计分的"学习状态自测"**，帮孩子看清自己的变化。它不进成绩，不影响证书，结果只显示在孩子自己的浏览器里，我们不收集。（若学校另行开展需要家长同意的问卷，会以单独的告知信与回执征求您的意见，与课程网页无关。）
 
-The course also includes a few **ungraded "learning self-checks"**. They never enter the grade, never affect the certificate, and display only in your child's own browser.
+The course pages also include a few **ungraded "learning self-checks"**. They never enter the grade, never affect the certificate, and display only in your child's own browser — we collect nothing. (Should the school ever run a questionnaire that needs parental consent, we will ask you separately, with its own information letter and reply slip; it is unrelated to the course pages.)
 
 ---
 
