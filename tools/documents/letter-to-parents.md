@@ -121,7 +121,7 @@ The course also includes a few **ungraded "learning self-checks"**. They never e
 
 - **化名，不用真名。** 孩子在网站上使用英文名或化名。**Pseudonyms, not real names.**
 - **不放正脸照片，不写学校全名**，也不发布任何他人的个人信息。**No face photos, no full school name**, and no one else's personal information.
-- **网站默认"不被搜索引擎收录"。** 建站那一周我们会一步一步教孩子把这个开关关上：网站能通过链接打开，但搜不到。**The site is set to no-index by default.** We walk your child through that switch step by step: the site opens by link but does not appear in search results.
+- **网站设置为"不被搜索引擎收录"。** 建站那一周我们会一步一步教孩子关掉"允许搜索引擎收录"的开关：网站能通过链接打开，但搜不到。**The site is set not to be indexed by search engines.** We walk your child through turning search indexing off, step by step: the site opens by link but does not appear in search results.
 - **要不要公开发布，是第二学年末才出现的一个选项，并且必须有家长的书面同意。** 在那之前不存在"公开"这个动作。**Making the site public is only an option at the very end of Semester 2, and only with written parental consent.** Until then, going public is simply not an action that exists.
 - **所有工具都免费，注册只需一个邮箱——不要手机号，不需要 VPN。** 这是选工具的硬规则。**All tools are free and sign up with an email address only — no phone number, no VPN.** This is a hard rule, not a preference.
 - **AI 的使用有明确规范。** 第一学期不强制使用任何 AI 工具。课程规定：不得把 AI 生成的内容当作自己的作业提交；事实性内容必须另找可靠来源核实；**任何时候都不得向 AI 工具输入自己或他人的个人信息**。**AI use has explicit rules.** Nothing in Semester 1 requires an AI tool. AI-generated content may never be submitted as one's own; factual claims must be verified against a reliable source; and **personal information — your child's or anyone else's — is never typed into an AI tool.**
@@ -151,7 +151,7 @@ If the site breaks, content is lost, or your child meets anything online that ma
 
 1. **孩子会用邮箱注册账号。** 第 3 周注册一个建站平台账号，第一学期还会注册 1–2 个外部课程平台。全部免费，只需邮箱，不需要手机号。**注册前孩子会告诉您**——请花两分钟看一眼是哪个平台。**Your child will register accounts with an email address**: a website builder in Week 3, plus one or two external course platforms in Semester 1. All free, email only, no phone number. **They will tell you before registering** — please take two minutes to look at which platform it is.
 2. **部分 AI 工具的年龄条款。** 有些工具要求 14 岁以下的使用者获得监护人同意。第一学期不强制使用任何 AI 工具；家中不便使用的孩子可以申请在校完成相关任务。**AI-tool age terms.** Some tools require guardian consent for users under 14. Nothing in Semester 1 requires an AI tool, and any child who cannot use one at home may complete the work on campus.
-3. **网站的隐私设置与年末的公开选项。** 网站默认不被搜索引擎收录、使用化名、不放正脸照片和学校全名。第二学期末如果孩子希望把作品集公开发布，**需要您的书面同意**——到时会另有一份说明和同意表送到您手上。**The site's privacy settings and the year-end public option.** The site is unindexed and pseudonymous by default, with no face photos and no full school name. If at the end of Semester 2 your child wishes to make their portfolio public, **your written consent is required** — a separate note and consent form will reach you then. 【请填写 Fill in：家长知情同意书是否已有、链接或送达方式 whether a parent consent form exists, and its link or delivery method】
+3. **网站的隐私设置与年末的公开选项。** 网站设置为不被搜索引擎收录、使用化名、不放正脸照片和学校全名。第二学期末如果孩子希望把作品集公开发布，**需要您的书面同意**——到时会另有一份说明和同意表送到您手上。**The site's privacy settings and the year-end public option.** The site is unindexed and pseudonymous by default, with no face photos and no full school name. If at the end of Semester 2 your child wishes to make their portfolio public, **your written consent is required** — a separate note and consent form will reach you then. 【请填写 Fill in：家长知情同意书是否已有、链接或送达方式 whether a parent consent form exists, and its link or delivery method】
 
 ---
 

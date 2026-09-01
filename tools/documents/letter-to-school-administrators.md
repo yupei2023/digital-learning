@@ -72,7 +72,7 @@ The three models differ only in **how much staffing you put in**; the course con
 
 **A · Full adoption.** Students work week by week, publish each week's work on their own website, and register the link on the mentor's tracking sheet. The mentor scores by rubric, replies by email within a week, contacts anyone whose link is missing that same week, and offers 1:1 video by appointment. **The tracking sheet is the gradebook** — no separate system needed.
 
-**B · 嵌入已有课程。** 以下几块是自足的，可以单独取用：**数字基本功六周**（邮件与附件、截图录屏与个人网站、翻译与阅读工具、账号密码与隐私、检索保存与引用、个人数字工作台）适合信息技术课的开学阶段；**"什么是学习""有意义的数字化学习"**适合学习方法指导或班会；**外部课程学习线**本身就是一个现成的研究性学习项目；**数字公民与数字健康、信息与媒介可信度**适合德育课程与家校活动。
+**B · 嵌入已有课程。** 以下几块是自足的，可以单独取用：**数字基本功六周**（邮件、截图与附件，我的网站与录屏，翻译与阅读工具，账号、密码与隐私，检索、保存与引用，我的数字工作台）适合信息技术课的开学阶段；**"什么是学习""有意义的数字化学习"**适合学习方法指导或班会；**外部课程学习线**本身就是一个现成的研究性学习项目；**数字公民与数字健康、信息与媒介可信度**适合德育课程与家校活动。
 
 **B · Embedded.** Each of these stands alone: **the six digital-basics modules** (email and attachments, screenshots and recording plus a personal website, translation and reading tools, accounts and privacy, search and citation, a personal digital workspace) fit the opening weeks of a technology course; **"what is learning" and "meaningful digital learning"** fit study-skills or homeroom time; **the external-course thread** is a ready-made independent-study project; **digital citizenship and wellbeing, and information credibility** fit moral education and family-facing events.
 
