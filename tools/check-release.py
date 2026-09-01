@@ -9,8 +9,10 @@ Gates
   1  every <input type=checkbox> inside ul.checklist has a stable id, and every list
      has an id. checklist.js keys saved ticks by that id; with no id it does not save,
      because a positional key silently shifts every tick when an item is inserted.
-  2  every [data-module-progress] declares data-total and data-pages, and data-total
-     equals the number of checkboxes actually present in that module.
+  2  every [data-module-progress] declares data-total and data-pages; data-total equals
+     the number of checkboxes actually present in that module, and data-pages equals the
+     number of its pages that carry a self-review list (a page with two lists counts once,
+     which is what progress.js reports back to the learner).
   3  every page has a <meta name="description">.
   4  every teaching page (not rubric / quiz / want-more / self-check / statement)
      carries a Bilibili embed or a marked ［placeholder］.
@@ -18,6 +20,12 @@ Gates
   6  every non-Bilibili external link is marked 待实测 inside its own list item or paragraph.
   7  no duplicate id anywhere in one page.
   8  with --bilibili: every BV id resolves through api.bilibili.com/x/web-interface/view.
+  9  every <button> declares type="button". Inside a form the default is "submit", and
+     this one has now regressed twice on newly written pages.
+ 10  the role in this course is 导师 / mentor and nothing else. 助教 and "TA" in the
+     teaching-assistant sense are forbidden anywhere in the repo. Note that bare "TA" is
+     also the Chinese gender-neutral pronoun (B1 and B2 use it that way), so only the
+     English article forms and "teaching assistant" are matched.
 
 The browser gates (console errors, horizontal overflow at 320/390/600/900) are not here;
 they need Chrome, and are documented in the site-wide review's re-run checklist.
@@ -31,13 +39,15 @@ EXEMPT = ('rubric.html', 'quiz.html', 'want-more.html', 'self-check.html', 'stat
 BLOCK = re.compile(r'</?(?:li|p|td|th|h[1-6]|summary)\b')
 
 pages = [f for f in sorted(glob.glob('**/*.html', recursive=True)) if f != 'assets/page-template.html']
+docs = sorted(glob.glob('**/*.md', recursive=True)) + sorted(glob.glob('tools/documents/*.md'))
 fail = []
 
 def bad(gate, msg):
     fail.append((gate, msg))
 
 # ---- 1 & 2 ------------------------------------------------------------------
-counts = collections.defaultdict(lambda: [0, 0])
+counts = collections.defaultdict(lambda: [0, 0])   # [checkboxes, pages carrying a list]
+pages_with_list = collections.defaultdict(set)
 for f in pages:
     s = open(f, encoding='utf-8').read()
     for m in re.finditer(r'<ul\b[^>]*class="[^"]*\bchecklist\b[^"]*"[^>]*>(.*?)</ul>', s, re.S):
@@ -49,7 +59,10 @@ for f in pages:
             if not re.search(r'\bid="', b):
                 bad(1, '%s: a checklist checkbox has no id -> its ticks would not be saved' % f)
         d = os.path.dirname(f)
-        counts[d][0] += len(boxes); counts[d][1] += 1
+        counts[d][0] += len(boxes)
+        pages_with_list[d].add(f)          # a page with two lists still counts once
+for d in pages_with_list:
+    counts[d][1] = len(pages_with_list[d])
 
 for f in pages:
     s = open(f, encoding='utf-8').read()
@@ -73,7 +86,7 @@ for f in pages:
         bad(3, '%s: no <meta name="description">' % f)
 
     if f.startswith('s1/') and os.path.basename(f) not in EXEMPT and '/media/handouts/' not in f:
-        if 'player.bilibili.com' not in s and 'placeholder' not in s:
+        if 'player.bilibili.com' not in s and '\uff3bplaceholder\uff3d' not in s:
             bad(4, '%s: a teaching page with neither a video nor a marked placeholder' % f)
 
     for m in re.finditer(r'player\.bilibili\.com/player\.html\?([^"\']+)', s):
@@ -94,9 +107,26 @@ for f in pages:
         if '待实测' not in s[st:en]:
             bad(6, '%s: external link not marked 待实测 — %s' % (f, m.group(1)))
 
+    for m in re.finditer(r'<button\b[^>]*>', s):
+        if not re.search(r'\btype\s*=', m.group(0)):
+            bad(9, '%s: a <button> has no type — inside a form it would submit' % f)
+
+    for pat, why in ((r'助教', '助教'), (r'\b(?:a|an|the)\s+TAs?\b', 'a TA'),
+                     (r'\bTAs\b', 'TAs'), (r'(?i)teaching\s+assistants?', 'teaching assistant')):
+        if re.search(pat, s):
+            bad(10, '%s: says %s — this course has 导师 / mentors, never 助教 or a TA' % (f, why))
+
     ids = re.findall(r'\sid="([^"]+)"', s)
     for k, v in collections.Counter(ids).items():
         if v > 1: bad(7, '%s: id "%s" appears %d times' % (f, k, v))
+
+# ---- 10, over the Markdown too --------------------------------------------
+for f in sorted(set(docs)):
+    s = open(f, encoding='utf-8').read()
+    for pat, why in ((r'助教', '助教'), (r'\b(?:a|an|the)\s+TAs?\b', 'a TA'),
+                     (r'\bTAs\b', 'TAs'), (r'(?i)teaching\s+assistants?', 'teaching assistant')):
+        if re.search(pat, s):
+            bad(10, '%s: says %s — this course has 导师 / mentors, never 助教 or a TA' % (f, why))
 
 # ---- 8 ----------------------------------------------------------------------
 if '--bilibili' in sys.argv:

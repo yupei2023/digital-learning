@@ -12,9 +12,9 @@
   --dl-line:var(--line,#e4e1da);
   --dl-card:var(--card,#ffffff);
   --dl-field:var(--bg,#fbfaf7);
-  --dl-accent:var(--accent,#2f6f9f);
-  --dl-accent-soft:var(--accent-soft,#e8f1f8);
-  --dl-ok:var(--ok,#2e7d4f);
+  --dl-accent:var(--accent,#426b92);
+  --dl-accent-soft:var(--accent-soft,#e8eef4);
+  --dl-ok:var(--ok,#2a794b);
   --dl-ok-soft:var(--ok-soft,#e6f4ec);
   --dl-warn:var(--warn,#b45309);
   --dl-warn-soft:var(--warn-soft,#fff4e0);
@@ -26,10 +26,28 @@
   --dl-fs-lg:17px; --dl-fs:14px; --dl-fs-sm:12.5px; --dl-fs-xs:11px;
 }
 
-/* Dark is opt-in, never inferred. The site is light-only today, so an OS set to
-   dark must NOT flip a diagram sitting on a light page. When a dark theme lands,
-   put data-theme="dark" on <html>; data-theme="auto" follows the OS instead.
-   Both routes land on the same token values. */
+/* The site now turns dark with the reader's OS (see the tail of site.css), so the
+   diagrams follow the same signal — a diagram must never sit light on a dark page.
+   data-theme="dark" still forces it, and data-theme="auto" is kept for pages that
+   want to opt in explicitly. All three routes land on the same token values. */
+@media (prefers-color-scheme:dark){
+ :root:not([data-theme="light"]){
+  --dl-ink:#e9eef4;
+  --dl-muted:#a5b4c6;
+  --dl-line:#31465c;
+  --dl-card:#152740;
+  --dl-field:#0b1b2d;
+  --dl-accent:#8fbde4;
+  --dl-accent-soft:#1c3350;
+  --dl-ok:#7ec79c;
+  --dl-ok-soft:#16332a;
+  --dl-warn:#e0a95c;
+  --dl-warn-soft:#3a2c15;
+  --dl-bad:#e98a82;
+  --dl-bad-soft:#3a1d1a;
+  --dl-on-accent:#0b1b2d;
+}
+}
 :root[data-theme="dark"]{
   --dl-ink:#e9eef4;
   --dl-muted:#a5b4c6;
