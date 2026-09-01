@@ -17,12 +17,15 @@
   var folder=location.pathname.replace(/[^\/]*$/,'');
   var declared=parseInt(bar.getAttribute('data-total'),10);
   var pages=parseInt(bar.getAttribute('data-pages'),10);
-  var done=0,opened=0;
+  var done=0,seen={},opened=0;
   try{
     for(var i=0;i<localStorage.length;i++){
       var k=localStorage.key(i);
       if(k.indexOf(PREFIX+folder)!==0)continue;
-      opened++;
+      /* one key per LIST, but data-pages counts PAGES: a page with two lists must
+         still count once, or "opened M of N pages" would exceed N. */
+      var path=k.slice(PREFIX.length).split('#')[0];
+      if(!seen[path]){seen[path]=1;opened++}
       var st=JSON.parse(localStorage.getItem(k)||'{}');
       for(var id in st){if(st[id])done++}
     }
