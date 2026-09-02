@@ -23,3 +23,37 @@
 /* Bilingual pairs from the public mentor guide. */
 p>.zh,p>.en,h1>.zh,h1>.en,h2>.zh,h2>.en,h3>.zh,h3>.en,td>.zh,td>.en,th>.zh,th>.en{display:block}.en+.zh,.zh+.en{margin-top:.28rem}.en{color:var(--muted)}h1>.en,h2>.en,h3>.en{color:var(--blue);font-size:.78em}td>.en,th>.en{font-size:.9em}
 .heading-translation{margin:.1rem 0 .8rem;color:var(--blue);font-family:var(--serif);font-style:italic}.heading-translation.level-2{font-size:1.15rem}.heading-translation.level-3{font-family:var(--sans);font-size:.92rem;font-weight:600}.heading-translation p{margin:0}
+
+/* Formal print pass (2026-09-01, at ShiFu's direction): the paper editions read as a
+   formal document, not a printed web page. Body up to 11pt on a fuller measure; section
+   spacing at document scale instead of screen scale; the contents list shares its page
+   with the opening instead of commanding a page of its own; info tables get a narrow
+   label column. Appended last so it wins inside @media print. */
+@media print{
+  @page{margin:22mm 20mm 24mm}
+  body{font-size:11pt;line-height:1.72}
+  p{margin:.55em 0}li{margin:.3em 0}
+  #TOC{break-after:auto;margin:0 0 1.6em;padding:1.1em 1.4em}
+  #TOC>ul{columns:2}
+  body>h1{margin:1.6em 0 .55em;padding-top:.55em;font-size:19pt}
+  h2{margin:1.35em 0 .45em;font-size:14pt}
+  h3{margin:1.15em 0 .35em;font-size:11.5pt}
+  hr{margin:1.3em 0}
+  blockquote{margin:1.1em 0;padding:.75em 1em}
+  table{margin:.9em 0 1.3em;font-size:9pt;line-height:1.5}
+  th,td{padding:.5em .65em}
+  table td:first-child,table th:first-child{width:26%}
+  #title-block-header{min-height:210mm}
+  .en{color:#4a5a6c}
+}
+
+/* A full landscape page for the curriculum map at the end of each print edition. */
+.map-page{display:none}
+@media print{
+  .map-page{display:block;break-before:page;position:relative;height:242mm}
+  .map-page img{position:absolute;top:48%;left:50%;width:252mm;max-width:none;
+    transform:translate(-50%,-50%) rotate(90deg)}
+  .map-page~footer.site,body>footer.site{display:none}
+  .map-page .map-cap{position:absolute;bottom:0;left:0;right:0;margin:0;
+    color:#58687a;font-size:8.5pt;text-align:center}
+}

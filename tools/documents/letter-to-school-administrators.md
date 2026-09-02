@@ -61,7 +61,7 @@ It fills one particular gap: **how a student learns independently, persistently,
 
 The three models differ only in **how much staffing you put in**; the course content is identical in all three.
 
-| | **A · 完整开课** Full adoption | **B · 嵌入已有课程** Embedded | **C · 开放资源** Open resource |
+| | **方式 A · 完整开课** Model A · Full adoption | **方式 B · 嵌入已有课程** Model B · Embedded | **方式 C · 开放资源** Model C · Open resource |
 |---|---|---|---|
 | 贵校投入 What you provide | 每约 30 名学生配 1 名导师，每周约 4–5 小时；一个登记表 1 mentor per ~30 students, ~4–5 h/week; one tracking sheet | 任课教师按已有课时使用选定单元，无需额外人力 The existing teacher uses selected modules within existing periods | 只需把网址告诉学生与家长 Only the address, passed on |
 | 学生得到 Students get | 每周反馈、按量规的分数、学期与年度证书 Weekly feedback, rubric scores, semester and year certificates | 课堂内的反馈与贵校自己的成绩 In-class feedback and your own marks | 页内自评清单、自测题与可打印的学习完成声明 In-page self-checks, quizzes, and a printable completion statement |
@@ -252,9 +252,9 @@ Everything is public and free to use and adapt for teaching in your school. 【�
 
 | 项目 Item | 地址 / 联系 Address / contact |
 |---|---|
-| 课程网站（教纲、每周页面、量规、日历）Course site (syllabus, weekly pages, rubrics, calendar) | 【请填写 Fill in：课程网址 course site URL】 |
+| 课程网站（教纲、每周页面、量规、日历）Course site (syllabus, weekly pages, rubrics, calendar) | https://yupei2023.github.io/digital-learning/ |
 | 开课与落地咨询 Adoption enquiries | 【请填写 Fill in：接洽人与邮箱 name and email of the contact for adoption】 |
-| 教育者可取用的资源 Resources for educators | 【请填写 Fill in：教育者资源页网址 URL of the educator resources page】 |
+| 教育者可取用的资源 Resources for educators | https://yupei2023.github.io/digital-learning/#community |
 
 ---
 

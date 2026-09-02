@@ -286,7 +286,16 @@ def emit(ast, zh, en, base, title_meta=None):
     pandoc(['-s', '-o', 'resources/%s.docx' % base])
     if base == 'letter-to-parents':
         pandoc(['-s', '-o', 'resources/letter-to-parents-editable.docx'])
-    foot = ('<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · '
+    MAPS = {'letter-to-parents': ('curriculum-map-s1.svg', '第一学期课程地图 · Semester 1 map'),
+            'letter-to-school-administrators': ('curriculum-map.svg', '课程全景 · Curriculum map, both semesters'),
+            'mentor-handbook': ('curriculum-map-s1.svg', '第一学期课程地图 · Semester 1 map')}
+    mp = MAPS.get(base)
+    map_html = ('<div class="map-page"><img src="../assets/img/%s" alt="%s">'
+                '<p class="map-cap">%s &#160;·&#160; 课程网站 Course site: '
+                'https://yupei2023.github.io/digital-learning/<br>'
+                'Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan</p></div>' % (mp[0], mp[1], mp[1])) if mp else ''
+    foot = (map_html +
+            '<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · '
             '段玉佩 Yupei Duan</footer>')
     fp = os.path.join(ROOT, 'resources', '.foot-%s.html' % base)
     open(fp, 'w', encoding='utf-8').write(foot)

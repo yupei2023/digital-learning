@@ -20,9 +20,9 @@ lang: zh-CN
 
 I am your child's mentor in Digital Learning. This letter tells you how the course runs, what your child does each week, how we protect them, and how you can help.
 
-不用回复，也不用签字。读完约五分钟。**如果只读一节，请读第一节。**
+这封信不需要您回复。读完约五分钟。**如果只读一节，请读第一节。**
 
-No reply and no signature needed. It takes about five minutes to read. **If you read only one section, read Section 1.**
+This letter needs no reply. It takes about five minutes to read. **If you read only one section, read Section 1.**
 
 ---
 
@@ -161,7 +161,7 @@ If the site breaks, content is lost, or your child meets anything online that ma
 | 找谁 Who | 什么事 What for | 怎么联系 How |
 |---|---|---|
 | **我 · 您孩子的导师 Me — your child's mentor** | 每周进度、作品与反馈；技术故障；孩子落后了；安全、隐私与便利安排。Weekly progress, work and feedback; technical trouble; falling behind; safety, privacy and accommodations. | 【请填写 Fill in：本信落款导师的姓名与邮箱 the name and email address of the mentor sending this copy】 |
-| **课程网站 Course site** | 教纲、每周页面、量规、本学期日历。Syllabus, weekly pages, rubrics, the semester calendar. | 【请填写 Fill in：课程网址 course site URL】 |
+| **课程网站 Course site** | 教纲、每周页面、量规、本学期日历。Syllabus, weekly pages, rubrics, the semester calendar. | https://yupei2023.github.io/digital-learning/ |
 
 我承诺 **24–48 小时内回复邮件**（节假日除外）。如果孩子在读写、视听、注意力或其他方面需要便利安排（例如延长时限或替代形式），请尽早告诉我——相关信息会被保密。
 
