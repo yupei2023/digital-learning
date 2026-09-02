@@ -43,17 +43,16 @@ p>.zh,p>.en,h1>.zh,h1>.en,h2>.zh,h2>.en,h3>.zh,h3>.en,td>.zh,td>.en,th>.zh,th>.e
   table{margin:.9em 0 1.3em;font-size:9pt;line-height:1.5}
   th,td{padding:.5em .65em}
   table td:first-child,table th:first-child{width:26%}
-  #title-block-header{min-height:210mm}
+  #title-block-header{margin:-22mm -20mm 0;min-height:273mm;padding:0 26mm;justify-content:center}
   .en{color:#4a5a6c}
 }
 
-/* A full landscape page for the curriculum map at the end of each print edition. */
-.map-page{display:none}
+/* Formal print pass 2 (2026-09-01): full-height title page; small tables keep to one
+   page; the fill-in fields step back visually; last-line colophon carries no name. */
 @media print{
-  .map-page{display:block;break-before:page;position:relative;height:242mm}
-  .map-page img{position:absolute;top:48%;left:50%;width:252mm;max-width:none;
-    transform:translate(-50%,-50%) rotate(90deg)}
-  .map-page~footer.site,body>footer.site{display:none}
-  .map-page .map-cap{position:absolute;bottom:0;left:0;right:0;margin:0;
-    color:#58687a;font-size:8.5pt;text-align:center}
+  body{line-height:1.68}
+  p{margin:.5em 0}
+  table{break-inside:avoid-page}
+  .fillin{color:#8a6a2e;font-size:.92em}
+  footer.site{display:none} /* the running foot on every page already carries the colophon */
 }

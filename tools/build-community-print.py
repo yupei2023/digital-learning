@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Build the PRINTABLE community documents (.docx and the .pdf print copies) in BLOCK
@@ -286,22 +287,39 @@ def emit(ast, zh, en, base, title_meta=None):
     pandoc(['-s', '-o', 'resources/%s.docx' % base])
     if base == 'letter-to-parents':
         pandoc(['-s', '-o', 'resources/letter-to-parents-editable.docx'])
-    MAPS = {'letter-to-parents': ('curriculum-map-s1.svg', '第一学期课程地图 · Semester 1 map'),
-            'letter-to-school-administrators': ('curriculum-map.svg', '课程全景 · Curriculum map, both semesters'),
-            'mentor-handbook': ('curriculum-map-s1.svg', '第一学期课程地图 · Semester 1 map')}
-    mp = MAPS.get(base)
-    map_html = ('<div class="map-page"><img src="../assets/img/%s" alt="%s">'
-                '<p class="map-cap">%s &#160;·&#160; 课程网站 Course site: '
-                'https://yupei2023.github.io/digital-learning/<br>'
-                'Digital Learning 数字化学习 · 公开课程 A public course · 段玉佩 Yupei Duan</p></div>' % (mp[0], mp[1], mp[1])) if mp else ''
-    foot = (map_html +
-            '<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course · '
-            '段玉佩 Yupei Duan</footer>')
+    foot = ('<footer class="site">Digital Learning 数字化学习 · 公开课程 A public course</footer>')
     fp = os.path.join(ROOT, 'resources', '.foot-%s.html' % base)
     open(fp, 'w', encoding='utf-8').write(foot)
     pandoc(['-s', '--toc', '--toc-depth=2', '-c', '../assets/community-doc.css',
             '--include-after-body', fp, '-o', 'resources/.print-%s.html' % base])
     os.remove(fp)
+    pp = 'resources/.print-%s.html' % base
+    h = open(pp, encoding='utf-8').read()
+    h = re.sub(r'【请填写[^】]*】', lambda m: '<span class="fillin">%s</span>' % m.group(0), h)
+    open(pp, 'w', encoding='utf-8').write(h)
+
+def fix_quotes(blocks):
+    """Straight ASCII double quotes become “ ” (toggling per top-level block).
+    Works on Str tokens only, so markup and attributes are never touched."""
+    def walk(node, state):
+        if isinstance(node, dict):
+            if node.get('t') == 'Str' and '"' in node.get('c', ''):
+                out = []
+                for ch in node['c']:
+                    if ch == '"':
+                        out.append('\u201c' if state[0] % 2 == 0 else '\u201d')
+                        state[0] += 1
+                    else:
+                        out.append(ch)
+                node['c'] = ''.join(out)
+            else:
+                for v in node.values():
+                    walk(v, state)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v, state)
+    for blk in blocks:
+        walk(blk, [0])
 
 def ast_of(src, fmt=None):
     cmd = ['pandoc', src, '-t', 'json'] + (['-f', fmt] if fmt else [])
@@ -312,6 +330,7 @@ def letter(src, base):
     STATS = [0, 0, 0]
     ast = ast_of(src)
     blocks = ast['blocks']
+    fix_quotes(blocks)
     while blocks and blocks[0].get('t') == 'Header' and blocks[0]['c'][0] == 1:
         blocks.pop(0)                      # the title pair; the title page names the document
     zh, en = split_blocks(blocks)
@@ -326,6 +345,7 @@ def handbook():
     blocks = ast['blocks']
     if blocks and blocks[0].get('t') == 'Div':   # <main role="main">
         blocks = blocks[0]['c'][1]
+    fix_quotes(blocks)
     blocks = strip_nav(blocks)
     # drop the on-page h1 (the docx title page carries the name) and the kicker line
     blocks = [b for b in blocks if not (b.get('t') == 'Header' and b['c'][0] == 1)]
