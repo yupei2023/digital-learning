@@ -25,6 +25,8 @@ Gates
  10  container tags balance: every <div>, <section>, <main>, <table>, <ul>, <ol> that
      opens also closes. Browsers repair the damage silently, which is exactly why a
      stray </div> (found once) and an unclosed <ol> (found once) need a gate.
+ 12  every quest-def (JSON in a page) names tier pages that exist, lists that exist on
+     them, and totals equal to their checkbox counts; all pages of a module agree.
  11  the role in this course is 导师 / mentor and nothing else. 助教 and "TA" in the
      teaching-assistant sense are forbidden anywhere in the repo. Note that bare "TA" is
      also the Chinese gender-neutral pronoun (B1 and B2 use it that way), so only the
@@ -39,14 +41,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
 EXEMPT = ('rubric.html', 'quiz.html', 'want-more.html', 'self-check.html', 'statement.html')
+# Quest-layer pages declare their role; they route students to the teaching pages
+# (which keep their videos) instead of teaching, so gate 4 does not apply to them.
+ROLES = ('quest-map', 'tier', 'signpost')
 BLOCK = re.compile(r'</?(?:li|p|td|th|h[1-6]|summary)\b')
 
 # assets/page-template.html is a template, not a page: its relative hrefs and script
 # paths are written for a page two directories deep, so at the template's own location
 # they do not resolve. Audited as a page it contributes ~10 broken-link and 3 console
 # false positives per run and nothing else — excluded here, deliberately.
-pages = [f for f in sorted(glob.glob('**/*.html', recursive=True)) if f != 'assets/page-template.html']
-docs = sorted(glob.glob('**/*.md', recursive=True)) + sorted(glob.glob('tools/documents/*.md'))
+# glob returns backslashes on Windows; every gate below compares '/'-paths, so normalise
+# here (a Windows run once skipped gate 4 for every semester page without saying so).
+pages = [f for f in sorted(p.replace(os.sep, '/') for p in glob.glob('**/*.html', recursive=True)) if f != 'assets/page-template.html']
+docs = sorted(p.replace(os.sep, '/') for p in glob.glob('**/*.md', recursive=True)) + sorted(p.replace(os.sep, '/') for p in glob.glob('tools/documents/*.md'))
 fail = []
 
 def bad(gate, msg):
@@ -92,7 +99,10 @@ for f in pages:
     if 'name="description"' not in s:
         bad(3, '%s: no <meta name="description">' % f)
 
-    if f.startswith('s1/') and os.path.basename(f) not in EXEMPT and '/media/handouts/' not in f:
+    role = re.search(r'<meta name="dl-page-role" content="([^"]+)"', s)
+    if role and role.group(1) not in ROLES:
+        bad(4, '%s: unknown dl-page-role "%s"' % (f, role.group(1)))
+    if f.startswith('s1/') and os.path.basename(f) not in EXEMPT and '/media/handouts/' not in f and not role:
         if 'player.bilibili.com' not in s and '\uff3bplaceholder\uff3d' not in s:
             bad(4, '%s: a teaching page with neither a video nor a marked placeholder' % f)
 
@@ -132,6 +142,33 @@ for f in pages:
     ids = re.findall(r'\sid="([^"]+)"', s)
     for k, v in collections.Counter(ids).items():
         if v > 1: bad(7, '%s: id "%s" appears %d times' % (f, k, v))
+
+# ---- 12: quest definitions ---------------------------------------------------
+quest_defs = collections.defaultdict(dict)
+for f in pages:
+    s = open(f, encoding='utf-8').read()
+    m = re.search(r'<script type="application/json" id="quest-def">(.*?)</script>', s, re.S)
+    if not m: continue
+    d = os.path.dirname(f)
+    try:
+        qd = json.loads(m.group(1))
+    except ValueError:
+        bad(12, '%s: quest-def is not valid JSON' % f); continue
+    quest_defs[d][f] = m.group(1).strip()
+    for t in qd.get('tiers', []):
+        tp = d + '/' + t.get('page', '')
+        if not os.path.exists(tp):
+            bad(12, '%s: quest tier page %s does not exist' % (f, tp)); continue
+        ts = open(tp, encoding='utf-8').read()
+        lm = re.search(r'<ul\b[^>]*\bid="%s"[^>]*>(.*?)</ul>' % re.escape(t.get('list', '')), ts, re.S)
+        if not lm:
+            bad(12, '%s: list #%s not found on %s' % (f, t.get('list'), tp)); continue
+        n = len(re.findall(r'<input\b[^>]*type=["\']?checkbox', lm.group(1)))
+        if n != t.get('total'):
+            bad(12, '%s: tier %s declares total=%s but #%s has %d checkboxes' % (f, t.get('id'), t.get('total'), t.get('list'), n))
+for d, defs in quest_defs.items():
+    if len(set(defs.values())) > 1:
+        bad(12, '%s: pages disagree on quest-def (%s)' % (d, ', '.join(sorted(defs))))
 
 # ---- 11, over the Markdown too --------------------------------------------
 for f in sorted(set(docs)):

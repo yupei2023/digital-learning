@@ -14,7 +14,8 @@
   var VERSION='v2';
   function key(list){return 'dl:check:'+VERSION+':'+location.pathname+'#'+(list.id||'list')}
   function load(list){try{return JSON.parse(localStorage.getItem(key(list))||'{}')}catch(e){return {}}}
-  function save(list,state){try{localStorage.setItem(key(list),JSON.stringify(state))}catch(e){}}
+  var persistFailed=false;   /* private windows and blocked site data throw on write */
+  function save(list,state){try{localStorage.setItem(key(list),JSON.stringify(state))}catch(e){persistFailed=true}}
   function bi(zh,en){return '<span class="zh">'+zh+'</span><span class="en">'+en+'</span>'}
   function warn(msg){if(window.console&&console.warn)console.warn('checklist.js: '+msg)}
   function status(list,unsaved){
@@ -24,6 +25,10 @@
     if(!s||!s.classList.contains('checklist-status')){s=document.createElement('p');s.className='checklist-status';list.after(s)}
     var zh='已完成 '+done+' / '+boxes.length+'（只保存在你自己的浏览器里）';
     var en='Done '+done+' of '+boxes.length+' (saved only in this browser)';
+    if(persistFailed&&!unsaved){
+      zh='已完成 '+done+' / '+boxes.length+'（这个浏览器无法保存勾选，关掉页面就会清空）';
+      en='Done '+done+' of '+boxes.length+' (this browser cannot save ticks; they clear when you close the page)';
+    }
     if(unsaved){
       zh='已完成 '+done+' / '+boxes.length+'（其中 '+unsaved+' 项本次不会被保存）';
       en='Done '+done+' of '+boxes.length+' ('+unsaved+' of them will not be saved)';

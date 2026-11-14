@@ -1,5 +1,8 @@
 # B5 检索、保存与引用 Search, Save & Cite
 
+> **Dev copy · tiered redesign (2026-11-13) — supersedes the rubric and page map below where they conflict.**
+> B5 is now a three-tier quest: `index.html` (quest map) → `base-camp.html` (3 pts, the pass mark) → `ridge.html` (+1.5) → `summit.html` (+0.5); `rubric.html` has one row per tier plus "counting omissions". `w6.html` and `task-1-three-sources.html` are signposts only. The old 3 + 2 rubric described below is retired. Mentor scoring guidance: `MENTOR-NOTE_B5-tiers_261113.md` at the dev-copy root. Week 7 (B6) now accepts a course-pick reason from the Base Camp report as the "why" evidence.
+
 第一学期 W6 · 5 分 · 🚫 **独立**（本单元不使用生成式 AI；结果页的"智能摘要"不算来源；搜索框也是输入框——个人信息不进）· ≤ 120 分钟（年计划 v2.1 §3b 数字基本功行：微课 25 · 跟做 + 任务 75 · 日志 20；本周块内拆分为跟做 10 + 任务 65，见下"时间预算"）
 Semester 1, W6 · 5 pts · 🚫 **Independent** (no generative AI; a results-page "smart summary" is no source; the search box is an input box — no personal information enters it) · ≤ 120 min (Year Plan v2.1 §3b Digital Basics row: micro-lessons 25 · follow-along + task 75 · log 20; this week the block splits 10 + 65, see Time budget below)
 

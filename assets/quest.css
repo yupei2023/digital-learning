@@ -1,0 +1,149 @@
+/* Digital Learning · quest layer (dev copy, 2026-11-13)
+   Loaded AFTER site.css. Two parts:
+   1. A light reskin — warmer paper, rounder cards — borrowed in spirit from ISLT 2310's
+      studio look (cream cards, 20px corners, dark title strips). Only the design language
+      is borrowed; every image here is drawn new for this course.
+   2. Quest components — hero banner, quest status bar, tier cards, step cards, badges.
+   Tier colours carry meaning, so every tier is also named in text and marked by its badge:
+   colour is never the only signal. */
+
+:root{
+  --q-paper:#faf7f2; --q-paper-2:#f4eee6; --q-edge:#ede6de; --q-strip:#24212b; --q-on-strip:#ffffff;
+  --q-xp:#6b4fd8; --q-xp-soft:#ece8fb;
+  --q-bronze:#b8692a; --q-bronze-ink:#8a4a14; --q-bronze-soft:#f6e6d6;
+  --q-silver:#5f6b80; --q-silver-soft:#e9edf3;
+  --q-gold:#a87a12; --q-gold-ink:#7a5508; --q-gold-soft:#fbf0d2;
+  --q-learn:#2f6f9f; --q-practice:#2a794b; --q-make:#9a4f12; --q-reflect:#6b4fd8; --q-submit:#a3305a;
+  --radius:14px;
+}
+@media(prefers-color-scheme:dark){
+ :root{
+  --q-paper:#152740; --q-paper-2:#1c3350; --q-edge:#31465c; --q-strip:#050f1a; --q-on-strip:#e8eef4;
+  --q-xp:#b3a3f5; --q-xp-soft:#2a2550;
+  --q-bronze:#e3a668; --q-bronze-ink:#e3a668; --q-bronze-soft:#3a2a1a;
+  --q-silver:#c3cbd8; --q-silver-soft:#25303f;
+  --q-gold:#f2c14e; --q-gold-ink:#f2c14e; --q-gold-soft:#3a3115;
+  --q-learn:#8fbde4; --q-practice:#7ec79c; --q-make:#e0a95c; --q-reflect:#b3a3f5; --q-submit:#f09ab8;
+ }
+}
+
+/* ---------- 1. light reskin ---------- */
+body{background:var(--q-paper)}
+@media(prefers-color-scheme:dark){body{background:var(--bg)}}
+.card{border:2px solid var(--q-edge);border-radius:20px}
+h1{letter-spacing:.01em}
+header.site nav a[aria-current=page]{background:var(--q-xp-soft);color:var(--q-xp);border-radius:999px;padding:.1rem .6rem;text-decoration:none}
+
+/* small pixel-ish label used for English kickers on quest parts */
+.q-label{font-family:ui-monospace,"Cascadia Mono","SFMono-Regular",Menlo,Consolas,monospace;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+html[data-lang=zh] .q-label{letter-spacing:.2em;text-transform:none}
+
+/* ---------- 2. hero ---------- */
+.q-hero{position:relative;border-radius:20px;overflow:hidden;border:2px solid var(--q-edge);margin:1rem 0 1.4rem;background:#c4bdee}
+.q-hero img{display:block;width:100%;height:auto;image-rendering:pixelated;image-rendering:crisp-edges}
+.q-hero .q-hero-text{position:absolute;left:1.2rem;top:1rem;max-width:min(52%,30rem);background:rgba(250,247,242,.92);color:#1f2937;border-radius:16px;padding:.8rem 1.1rem;box-shadow:0 2px 0 rgba(36,33,43,.15)}
+.q-hero .q-hero-text h1{margin:.1rem 0 .3rem;font-size:1.7rem;line-height:1.25;color:#142338}
+.q-hero .q-hero-text p{margin:0;font-size:.95rem;line-height:1.55}
+.q-hero .q-hero-text .q-label{color:#6b4fd8}
+@media(max-width:700px){
+  .q-hero .q-hero-text{position:static;max-width:none;border-radius:0;box-shadow:none;background:var(--q-paper);color:var(--ink)}
+  .q-hero .q-hero-text h1{color:var(--ink)}
+  .q-hero .q-hero-text .q-label{color:var(--q-xp)}
+}
+@media(prefers-color-scheme:dark) and (max-width:700px){.q-hero .q-hero-text{background:var(--card)}}
+
+/* ---------- quest status ---------- */
+.q-status{background:var(--card);border:2px solid var(--q-edge);border-radius:20px;padding:1rem 1.2rem;margin:1rem 0}
+.q-status-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.3rem 1rem}
+.q-status-head .q-label{color:var(--q-xp)}
+.q-status-pts{font-weight:700;color:var(--ink)}
+.q-bar{display:flex;gap:4px;height:1.1rem;margin:.6rem 0 .4rem}
+.q-seg{position:relative;background:var(--track);border-radius:6px;overflow:hidden}
+.q-seg>i{position:absolute;inset:0 auto 0 0;width:0;border-radius:6px;transition:width .4s ease}
+.q-seg.base>i{background:var(--q-bronze)} .q-seg.ridge>i{background:var(--q-silver)} .q-seg.summit>i{background:var(--q-gold)}
+.q-seg-labels{display:flex;gap:4px;font-size:.82rem;color:var(--muted)}
+.q-seg-labels>span{overflow-wrap:anywhere;line-height:1.3}
+.q-badges{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.8rem}
+.q-badge{display:flex;align-items:center;gap:.45rem;font-size:.85rem;color:var(--muted)}
+.q-badge img{width:40px;height:40px;image-rendering:pixelated;image-rendering:crisp-edges}
+.q-badge.earned{color:var(--ink);font-weight:600}
+.q-status .q-fine{font-size:.82rem;color:var(--muted);margin:.5rem 0 0}
+
+/* ---------- tier cards ---------- */
+.q-tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(15.5rem,1fr));gap:1rem;margin:1rem 0 1.6rem}
+.q-tier{display:flex;flex-direction:column;background:var(--q-paper);border:2px solid var(--q-edge);border-radius:20px;overflow:hidden}
+@media(prefers-color-scheme:dark){.q-tier{background:var(--card)}}
+.q-tier-top{display:flex;align-items:center;gap:.7rem;background:var(--q-strip);color:var(--q-on-strip);padding:.7rem 1rem}
+.q-tier-top img{width:48px;height:48px;image-rendering:pixelated;image-rendering:crisp-edges;flex:none}
+.q-tier-top h3{margin:0;font-size:1.15rem;line-height:1.3;color:inherit}
+.q-tier-top .q-label{opacity:.8;font-size:.72rem}
+.q-tier-body{padding:.8rem 1rem 1rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.q-tier-body ul{margin:0;padding-left:1.1rem}
+.q-tier-body li{margin:.15rem 0}
+.q-tier-meta{display:flex;flex-wrap:wrap;gap:.4rem}
+.q-chip{display:inline-block;border-radius:999px;padding:.05rem .65rem;font-size:.82rem;font-weight:600;white-space:nowrap}
+.q-tier.base .q-chip.pts{background:var(--q-bronze-soft);color:var(--q-bronze-ink)}
+.q-tier.ridge .q-chip.pts{background:var(--q-silver-soft);color:var(--q-silver)}
+.q-tier.summit .q-chip.pts{background:var(--q-gold-soft);color:var(--q-gold-ink)}
+.q-chip.time{background:var(--q-paper-2);color:var(--muted)}
+.q-btn{display:inline-block;margin-top:auto;align-self:flex-start;background:var(--q-xp);color:#fff;text-decoration:none;font-weight:700;border-radius:12px;padding:.5rem 1rem;box-shadow:0 3px 0 rgba(36,33,43,.35)}
+@media(prefers-color-scheme:dark){.q-btn{color:#0b1b2d}}
+.q-btn:hover{filter:brightness(1.08)}
+.q-btn:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(36,33,43,.35)}
+.q-lock{display:none;font-size:.85rem;color:var(--muted);background:var(--q-paper-2);border-radius:10px;padding:.35rem .6rem}
+.q-tier.is-locked .q-lock{display:block}
+.q-tier.is-locked .q-tier-top img.q-on{display:none}
+.q-tier .q-tier-top img.q-off{display:none}
+.q-tier.is-locked .q-tier-top img.q-off{display:block}
+.q-tier.is-done .q-done{display:inline-block}
+.q-done{display:none;background:var(--ok-soft);color:var(--ok)}
+
+/* ---------- step cards on tier pages ---------- */
+.q-steps{list-style:none;padding:0;margin:1rem 0;display:flex;flex-direction:column;gap:.8rem}
+.q-step{display:grid;grid-template-columns:3.2rem 1fr;gap:.2rem .9rem;background:var(--card);border:2px solid var(--q-edge);border-radius:18px;padding:.9rem 1rem}
+.q-step-n{grid-row:span 2;display:flex;flex-direction:column;align-items:center;gap:.2rem}
+.q-step-n b{display:flex;align-items:center;justify-content:center;width:2.4rem;height:2.4rem;border-radius:10px;background:var(--q-strip);color:var(--q-on-strip);font-size:1.1rem}
+.q-step h3{margin:0;font-size:1.05rem;line-height:1.4}
+.q-step p{margin:.2rem 0}
+.q-step .q-step-body>*:last-child{margin-bottom:0}
+.q-kind{font-size:.72rem;font-weight:700;border-radius:6px;padding:0 .35rem;white-space:nowrap}
+.q-kind.learn{color:var(--q-learn);border:1.5px solid var(--q-learn)}
+.q-kind.practice{color:var(--q-practice);border:1.5px solid var(--q-practice)}
+.q-kind.make{color:var(--q-make);border:1.5px solid var(--q-make)}
+.q-kind.reflect{color:var(--q-reflect);border:1.5px solid var(--q-reflect)}
+.q-kind.submit{color:var(--q-submit);border:1.5px solid var(--q-submit)}
+.q-mins{font-size:.82rem;color:var(--muted);margin-left:.3rem;font-weight:400}
+.q-links{display:flex;flex-wrap:wrap;gap:.4rem .6rem;margin-top:.4rem}
+.q-links a{display:inline-block;background:var(--q-paper-2);border-radius:10px;padding:.2rem .7rem;text-decoration:none;font-weight:600;font-size:.92rem}
+.q-links a:hover{text-decoration:underline}
+
+/* tier page header */
+.q-tier-head{display:flex;align-items:center;gap:1rem;margin:1rem 0 .4rem}
+.q-tier-head img{width:72px;height:72px;image-rendering:pixelated;image-rendering:crisp-edges;flex:none}
+.q-tier-head h1{margin:0}
+.q-gate{display:none;border-left:5px solid var(--q-xp);background:var(--q-xp-soft);border-radius:12px;padding:.6rem .9rem;margin:.8rem 0}
+.q-gate.show{display:block}
+.q-gate a{font-weight:700}
+
+/* "you made it" banner shown when a tier's checklist is complete */
+.q-cheer{display:none;align-items:center;gap:.8rem;background:var(--ok-soft);color:var(--ink);border:2px solid var(--ok);border-radius:16px;padding:.7rem 1rem;margin:1rem 0}
+.q-cheer.show{display:flex}
+.q-cheer img{width:48px;height:48px;image-rendering:pixelated;image-rendering:crisp-edges}
+
+/* how-it-works mini grid */
+.q-rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.7rem;margin:.8rem 0;padding:0;list-style:none}
+.q-rules li{background:var(--card);border:2px solid var(--q-edge);border-radius:16px;padding:.7rem .9rem;font-size:.95rem}
+.q-rules li b{display:block;margin-bottom:.15rem}
+
+@media (prefers-reduced-motion:reduce){.q-seg>i{transition:none}.q-btn:active{transform:none}}
+
+/* lesson 4's source-card figure hard-codes its label green (#2e7d32), which falls to
+   ~2.9:1 on the dark card. A CSS fill beats the SVG presentation attribute. */
+@media(prefers-color-scheme:dark){#source-card-figure g[fill="#2e7d32"]{fill:var(--ok)}}
+
+/* unknown progress (storage unavailable): a hatched, empty bar, not a false zero */
+.q-seg.unknown{background:repeating-linear-gradient(45deg,var(--track),var(--track) 4px,transparent 4px,transparent 8px)}
+/* site.css's focus yellow (#f5b400) is ~1.7:1 on these pale surfaces; a dark amber
+   reaches >=5:1 in light mode, and dark mode keeps the original strong yellow */
+:root{--focus:#8a4a00}
+@media(prefers-color-scheme:dark){:root{--focus:#f5b400}}
